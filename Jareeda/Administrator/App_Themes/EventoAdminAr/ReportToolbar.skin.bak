@@ -1,0 +1,12 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxxr" Namespace="DevExpress.XtraReports.Web" Assembly="DevExpress.XtraReports.v13.1.Web, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<dxxr:ReportToolbar runat="server" RightToLeft="True">
+  <Styles CssPostfix="Office2010Blue" CssFilePath="~/App_Themes/EventoAdmin/3_DevExpress.css">
+    <ButtonStyle VerticalAlign="Middle" HorizontalAlign="Center"/>
+    <EditorStyle Paddings-Padding="2"/>
+    <ComboBoxStyle CellSpacing="0" />
+    <LabelStyle VerticalAlign="Middle" HorizontalAlign="Center" />
+  </Styles>
+  <Images SpriteCssFilePath="~/App_Themes/EventoAdmin/4_Sprite.css" />
+</dxxr:ReportToolbar>
+

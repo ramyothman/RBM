@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* Rest By Azzam */
+/* www.DesignKey.Net */
+/* MohamedAzzam@gmail.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead  {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+ol, ul {lst-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {	content: '';	content: none;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+a, :focus {outline: none;}
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, select::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {border: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {border: 1px dotted transparent !important;}
+.clear {clear:both;}
+a {text-decoration:none;}
+img {border:none;}
+
+/**********************/
+/*      COMMON        */
+/**********************/
+body {font-family: Tahoma, Geneva, sans-serif; font-size:14px; line-height:20px; background: #005992; color:#fff }
+.wrapper { width: 660px; margin:120px auto;}
+
+
+/**********************/
+/*        Login       */
+/**********************/
+
+.logo { margin-bottom: 35px;}
+.login-input { width:170px; float: left; height: 34px; display: block; background: url(images/input-01.png) no-repeat left top; line-height:34px; border: none; padding: 7px 20px; color:#80a4bb; font-size: 16px; margin-right: 15px; margin-top:2px;}
+.login-input:hover {background: url(images/input-01.png) no-repeat left bottom;}
+.login-button {width:210px; float: left; height: 48px; display: block; background: url(images/button-01.png) no-repeat left top; border: none; line-height:48px; color:#000; text-align: center; font-size: 18px;  cursor: pointer; text-shadow: 1px 1px 3px #fff;}
+.login-button:hover {background: url(images/button-01.png) no-repeat left -47px; color: #fff; text-shadow: 1px 1px 1px #333;}
+
+p { text-align: center; padding: 10px;}
+a.forget { color: #fff; font-size: 14px; text-decoration: underline; text-align: center;}
+
+
+.footer { margin-top: 100px;}

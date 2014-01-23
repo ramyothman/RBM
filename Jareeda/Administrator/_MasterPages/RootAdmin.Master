@@ -1,0 +1,198 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootAdmin.master.cs" Inherits="Administrator._MasterPages.RootAdmin" %>
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register Src="~/Controls/EventoControls/MainMenu.ascx" TagName="MainMenuControl" TagPrefix="evento" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        #icmscontainer
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        
+        #icmscontent
+        {
+            width: 800px;
+            text-align: center;
+            margin-left: -400px;
+            height: 50px;
+            margin-top: -25px;
+            line-height: 50px;
+        }
+        
+        #icmscontent
+        {
+            font-family: "Helvetica" , "Arial" , sans-serif;
+            font-size: 18px;
+            color: black;
+            text-shadow: 0px 1px 0px white;
+        }
+        
+        #icmsloadinggraphic
+        {
+            margin-right: 0.2em;
+            margin-bottom: -2px;
+        }
+        
+        #icmsloading
+        {
+            background-color: #CFDDEE;
+            background-image: url('/images/flyingdots.gif');
+            background-position:center top;
+            background-repeat:no-repeat;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            /*display:none;*/
+        }
+
+    </style>
+    <script src="/_Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/_Scripts/jNotify.jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(window).load(function () {
+
+            $("#icmsloading").fadeOut(function () {
+
+                $(this).remove();
+
+                $('body').removeAttr('style');
+
+            });
+
+        });
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style="overflow: hidden;" class="body-lightblue">
+    <!-- Remove s before publishing -->
+     <div id="icmsloading">
+        <script type="text/javascript">
+
+            document.write("<div id='icmscontainer'><p id='icmscontent'><img alt=\"logo\" src='/images/natiq-logo-small.png' /><br />" +
+
+                           "<img id='icmsloadinggraphic' width='16' height='16' src='/images/ajax-loader-eeeeee.gif' /> " +
+
+                           "Loading...</p></div>");
+
+        </script>
+    </div>
+    <form id="form1" runat="server">
+        
+        <dx:ASPxSplitter ID="MainSplitter" runat="server" AllowResize="False" Orientation="Vertical"
+        FullscreenMode="True" SeparatorVisible="False" Height="100%" Width="100%">
+            <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+            </Pane>
+        </Styles>
+            <Panes>
+                <dx:SplitterPane Name="HeaderPane" Size="40px" MinSize="40px">
+                    <PaneStyle CssClass="headerpane">
+                        <BorderBottom BorderWidth="1px" />
+                    </PaneStyle>
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="HeaderSplitterContentControl" runat="server">
+                            <div class="headerpane-header-inner">
+                                <div class="headerpane-top">
+                                    <div class="headerpane-title">
+                                        <a runat="server" href="~/Default.aspx">
+                                            <img runat="server" height="40" src="~/images/natiq-logo-small-white.png" />
+                                    </a></div>
+                                    <div class="headerpane-menu">
+                                    
+                                    <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+            <tr>
+                <td valign="top" class="TabbedMenuSideBorders">
+                    <div class="Spacer" style="width: 10px;">
+                    </div>
+                </td>
+                <td valign="top">
+                    <div class="TabbedMenuTableSide">
+                    </div>
+                </td>
+                <td valign="top">
+                    <!-- Menu Here -->
+                    <evento:MainMenuControl ID="MainMenuControl1" runat="server"></evento:MainMenuControl>
+                </td>
+                <td valign="top" class="TabbedMenuSideBorders">
+                    <div class="Spacer" style="width: 10px;">
+                    </div>
+                </td>
+            </tr>
+        </table>
+                                    
+                                </div>
+                                    <div class="headerpane-login">
+                                         <ul class="light">
+                          <li>
+                                                 <p>
+                        Logged in as 
+                        Administrator
+                </p>
+                                             </li>
+                        <li><a href="#">
+                            <img width="16" height="16" class="logout" alt="picture" runat="server" src="~/images/icon_logout.gif" />
+                            </a><a runat="server" href="~/Default.aspx?Logout=true">logout</a>
+
+                        </li>
+                                           
+                    </ul>
+                    
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </dx:SplitterContentControl>
+                     </ContentCollection>
+                </dx:SplitterPane>
+                <dx:SplitterPane Name="titlePane" Size="50px" MinSize="50px">
+                    <PaneStyle CssClass="title-pane">
+                        <BorderBottom BorderWidth="1px" />
+                    </PaneStyle>
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                            <div class="title-pane-content">
+                                <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                            </div>
+                        </dx:SplitterContentControl>
+                     </ContentCollection>
+                </dx:SplitterPane>
+                <dx:SplitterPane Name="ContentPane" MinSize="375px">
+                    <PaneStyle CssClass="main-pane"></PaneStyle>
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="ContentSplitterContentControl" runat="server">
+                            <asp:ContentPlaceHolder ID="Content" runat="server">
+                        </asp:ContentPlaceHolder>
+                        </dx:SplitterContentControl>
+                     </ContentCollection>
+                </dx:SplitterPane>
+                <dx:SplitterPane Name="Footer" Size="25px" PaneStyle-CssClass="footer-Pane">
+<PaneStyle CssClass="footer-pane"></PaneStyle>
+                <ContentCollection>
+                        <dx:SplitterContentControl ID="FooterSplitterContentControl2" runat="server">
+                        </dx:SplitterContentControl>
+                     </ContentCollection>
+            </dx:SplitterPane>
+            </Panes>
+
+        </dx:AspxSplitter>
+        <div>
+            
+        </div>
+    </form>
+</body>
+</html>

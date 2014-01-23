@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22F40D84-9617-41CD-BBFB-FC5419A7BEBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccessLayer</RootNamespace>
+    <AssemblyName>DataAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccessComponents\Conference\AbstractAuthorsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AbstractAuthorsLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AbstractReviewDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AbstractReviewerAssignmentDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AbstractReviewerDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AbstractsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AbstractsLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AbstractStatusDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AirLineDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\AirLineLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceCategoryDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceCategoryLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceHallsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceHallsLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceMainImagesDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceMediaReferenceDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceProgramsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceProgramsLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceRegisterationsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceRegisterationsLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceRegistrationItemsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceRegistrationSettingLanguagesDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceRegistrationSettingsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceRegistrationTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceRegistrationTypeLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceScheduleDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceScheduleLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferencesDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferencesLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceSpeakersDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ConferenceSpeakersLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\EmailTemplateDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\HotelDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\HotelLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\InvitedGuestsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\InvitedGuestsLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ScheduleSessionTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\ScheduleSessionTypeLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\SponsorsDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\SponsorslanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\SystemEmailTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\TransportationTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\TransportationTypeLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\TravelDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\TravellanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\VenuesDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\VenuesLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\Conference\VisaRequestDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ApprovalFlowDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ApprovalFlowDetailDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleCategoryDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleCommentDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleSourcesDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleStatusDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleTagDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ArticleViewsDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\CommentStatusDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\CommentTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ContentEntityDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ContentModuleArticleDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ContentModuleTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\EmailTemplateDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\HomePageDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\HomePageGroupDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\LanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\LookupLanguagesDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\LookupsDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MasterPageTemplateDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MediaSourceDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MediaTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MenuEntityDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MenuEntityItemDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MenuEntityItemLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MenuEntityPositionDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MenuEntityTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\ModuleSectionDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MultimediaDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\MultimediaTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\PageStatusDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\PositionDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SectionFilesDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SiteCategoryDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SiteDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SitePageCategoryDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SitePageDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SitePageLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SitePageLayoutDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SitePageManagerDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SitePageTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SiteSectionDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SiteSectionStatusDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SystemFolderDAC.cs" />
+    <Compile Include="DataAccessComponents\ContentManagement\SystemPageDAC.cs" />
+    <Compile Include="DataAccessComponents\DataAccessComponent.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormDocumentDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormDocumentLanguageDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormDocumentStatusDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormFieldColumnDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormFieldDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormFieldTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormFieldValueDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormSubmissionAnswerDAC.cs" />
+    <Compile Include="DataAccessComponents\FormBuilder\FormSubmissionDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\ContractDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\ContractTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\DepartmentLanguagesDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\DepartmentsDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\DivisionsDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\EmployeeContractDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\EmployeeDocumentDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\EmployeeDocumentTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\EmployeePaymentDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\EmployeesDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\EmployeeVacationDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\EmployeeVacationPermitDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\OrganizationLanguagesDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\OrganizationsDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\PaymentMethodDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\PaymentTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\HumanResources\VacationTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\AddressDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\AddressTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\BusinessEntityAddressDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\BusinessEntityContactDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\BusinessEntityDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\ContactTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\CountryRegionDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\CredentialDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\EducationTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\EmailAddressDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\EmailAddressTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonDependentDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonEducationDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonExtraDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonInternshipDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonLanguageProficiencyDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonLanguagesDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonPersonTypesDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonPhoneDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonPublicationDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PersonWorkExperienceDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\PhoneNumberTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\Persons\StateProvinceDAC.cs" />
+    <Compile Include="DataAccessComponents\RoleSecurity\PersonRoleDAC.cs" />
+    <Compile Include="DataAccessComponents\RoleSecurity\RoleDAC.cs" />
+    <Compile Include="DataAccessComponents\RoleSecurity\RolePrivilegeDAC.cs" />
+    <Compile Include="DataAccessComponents\RoleSecurity\SecurityAccessTypeDAC.cs" />
+    <Compile Include="DataAccessComponents\RoleSecurity\SystemFunctionDAC.cs" />
+    <Compile Include="DataAccessComponents\RoleSecurity\UserMonitorDAC.cs" />
+    <Compile Include="Helpers\Caching.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

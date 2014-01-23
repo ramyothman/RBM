@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8C92839-1E6A-4ABA-8AAB-784EBED042AB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManatiqFrontEnd</RootNamespace>
+    <AssemblyName>ManatiqFrontEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Manatiq\css\lightbox.css" />
+    <Content Include="App_Themes\Manatiq\css\main.css" />
+    <Content Include="App_Themes\Manatiq\css\reponsive.css" />
+    <Content Include="App_Themes\Manatiq\fonts\HelveticaNeueLTArabic-Roman.svg" />
+    <Content Include="App_Themes\Manatiq\images\ads1.png" />
+    <Content Include="App_Themes\Manatiq\images\ads2.png" />
+    <Content Include="App_Themes\Manatiq\images\ads3.png" />
+    <Content Include="App_Themes\Manatiq\images\ads4.png" />
+    <Content Include="App_Themes\Manatiq\images\artical-icons\fb-like.png" />
+    <Content Include="App_Themes\Manatiq\images\artical-icons\icon_message.png" />
+    <Content Include="App_Themes\Manatiq\images\artical-icons\icon_print.png" />
+    <Content Include="App_Themes\Manatiq\images\artical-writer.jpg" />
+    <Content Include="App_Themes\Manatiq\images\block-end-aside.png" />
+    <Content Include="App_Themes\Manatiq\images\block-end.png" />
+    <Content Include="App_Themes\Manatiq\images\body-bg.jpg" />
+    <Content Include="App_Themes\Manatiq\images\bx_loader.gif" />
+    <Content Include="App_Themes\Manatiq\images\close.png" />
+    <Content Include="App_Themes\Manatiq\images\commic.png" />
+    <Content Include="App_Themes\Manatiq\images\controls.png" />
+    <Content Include="App_Themes\Manatiq\images\cursoul-next.png" />
+    <Content Include="App_Themes\Manatiq\images\cursoul-prev.png" />
+    <Content Include="App_Themes\Manatiq\images\emergency.png" />
+    <Content Include="App_Themes\Manatiq\images\full-artical.jpg" />
+    <Content Include="App_Themes\Manatiq\images\img-replacement.png" />
+    <Content Include="App_Themes\Manatiq\images\international.png" />
+    <Content Include="App_Themes\Manatiq\images\loading.gif" />
+    <Content Include="App_Themes\Manatiq\images\local.png" />
+    <Content Include="App_Themes\Manatiq\images\logo-animated.gif" />
+    <Content Include="App_Themes\Manatiq\images\logo-icon.png" />
+    <Content Include="App_Themes\Manatiq\images\logo-mob.png" />
+    <Content Include="App_Themes\Manatiq\images\logo-text.png" />
+    <Content Include="App_Themes\Manatiq\images\logo.png" />
+    <Content Include="App_Themes\Manatiq\images\main-slider\main-slide1.png" />
+    <Content Include="App_Themes\Manatiq\images\main-slider\main-slide2.png" />
+    <Content Include="App_Themes\Manatiq\images\main-slider\small-1.png" />
+    <Content Include="App_Themes\Manatiq\images\main-slider\small-2.png" />
+    <Content Include="App_Themes\Manatiq\images\main-slider\small-3.png" />
+    <Content Include="App_Themes\Manatiq\images\main-slider\small-4.png" />
+    <Content Include="App_Themes\Manatiq\images\main-slider\small-5.png" />
+    <Content Include="App_Themes\Manatiq\images\nav-icon.png" />
+    <Content Include="App_Themes\Manatiq\images\news.png" />
+    <Content Include="App_Themes\Manatiq\images\next.png" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-1.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-2.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-3.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-4.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-5.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-6.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-7.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-8.jpg" />
+    <Content Include="App_Themes\Manatiq\images\photo-artical\photo-artical-9.jpg" />
+    <Content Include="App_Themes\Manatiq\images\prev.png" />
+    <Content Include="App_Themes\Manatiq\images\report.png" />
+    <Content Include="App_Themes\Manatiq\images\sectons\arts.png" />
+    <Content Include="App_Themes\Manatiq\images\sectons\econimy.png" />
+    <Content Include="App_Themes\Manatiq\images\sectons\health.png" />
+    <Content Include="App_Themes\Manatiq\images\sectons\sport.png" />
+    <Content Include="App_Themes\Manatiq\images\slider-image-report.png" />
+    <Content Include="App_Themes\Manatiq\images\slider-video-report.png" />
+    <Content Include="App_Themes\Manatiq\images\slider4.png" />
+    <Content Include="App_Themes\Manatiq\images\social-black.png" />
+    <Content Include="App_Themes\Manatiq\images\social-gray.png" />
+    <Content Include="App_Themes\Manatiq\images\soical-color.png" />
+    <Content Include="App_Themes\Manatiq\images\weather1.png" />
+    <Content Include="App_Themes\Manatiq\images\weather2.png" />
+    <Content Include="App_Themes\Manatiq\images\weather\sunny.png" />
+    <Content Include="App_Themes\Manatiq\images\weather\weather-search.png" />
+    <Content Include="App_Themes\Manatiq\images\writer-img.png" />
+    <Content Include="App_Themes\Manatiq\images\writters2.png" />
+    <Content Include="App_Themes\Manatiq\images\youtube.png" />
+    <Content Include="ArticlesView.aspx" />
+    <Content Include="Columnist\Default.aspx" />
+    <Content Include="Columns\Default.aspx" />
+    <Content Include="ContentData\Sites\Conferences\2013102-62652-1492534351-index 2013-10-02 06-18-59.png" />
+    <Content Include="Controls\Ads\Advertisement1.ascx" />
+    <Content Include="Controls\Ads\Advertisement2.ascx" />
+    <Content Include="Controls\Ads\Advertisement3.ascx" />
+    <Content Include="Controls\Ads\MainAdvertisement.ascx" />
+    <Content Include="Controls\Article\HorizontalArticle.ascx" />
+    <Content Include="Controls\Article\VerticalArticle.ascx" />
+    <Content Include="Controls\Columns\ColumnDetails.ascx" />
+    <Content Include="Controls\Columns\Columner.ascx" />
+    <Content Include="Controls\Columns\ColumnsControl.ascx" />
+    <Content Include="Controls\Forms\PollResult.ascx" />
+    <Content Include="Controls\Forms\Polls.ascx" />
+    <Content Include="Controls\General\Twitter.ascx" />
+    <Content Include="Controls\General\Weather.ascx" />
+    <Content Include="Controls\General\WeatherLarge.ascx" />
+    <Content Include="Controls\Menus\FooterControl.ascx" />
+    <Content Include="Controls\Menus\MainMenu.ascx" />
+    <Content Include="Controls\News\Comments.ascx" />
+    <Content Include="Controls\News\ImportantNews.ascx" />
+    <Content Include="Controls\News\KarikateurControl.ascx" />
+    <Content Include="Controls\News\Layout1News.ascx" />
+    <Content Include="Controls\News\Layout2News.ascx" />
+    <Content Include="Controls\News\Layout3News.ascx" />
+    <Content Include="Controls\News\List.ascx" />
+    <Content Include="Controls\News\ListItemsControl.ascx" />
+    <Content Include="Controls\News\MainNews.ascx" />
+    <Content Include="Controls\News\MultiSectionsControl.ascx" />
+    <Content Include="Controls\News\NewsDetail.ascx" />
+    <Content Include="Controls\News\OneBlockControl.ascx" />
+    <Content Include="Controls\News\RelatedNews.ascx" />
+    <Content Include="Controls\News\SearchControl.ascx" />
+    <Content Include="Controls\News\Urgent.ascx" />
+    <Content Include="Controls\News\WebUserControl1.ascx" />
+    <Content Include="Controls\WebUserControl1.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="FormTest.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HtmlWebPage.aspx" />
+    <Content Include="images\article-views.png" />
+    <Content Include="images\body-bg.jpg" />
+    <Content Include="images\failwhale.png" />
+    <Content Include="images\flyingdots.gif" />
+    <Content Include="images\logo-almnatiq-vertical.png" />
+    <Content Include="images\logo-almnatiq.gif" />
+    <Content Include="images\logo-animated1.gif" />
+    <Content Include="images\poll-result-graph.gif" />
+    <Content Include="images\tweet.gif" />
+    <Content Include="mnatiq.ico" />
+    <Content Include="News\Default.aspx" />
+    <Content Include="News\List.aspx" />
+    <Content Include="News\WebForm1.aspx" />
+    <Content Include="Search\Default.aspx" />
+    <Content Include="Services\PollService.asmx" />
+    <Content Include="Test.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="_Scripts\jquery-1.8.3.min.js" />
+    <Content Include="_Scripts\jquery-ui-1.10.3.custom.js" />
+    <Content Include="_Scripts\jquery.ba-cond.min.js" />
+    <Content Include="_Scripts\jquery.bxslider.js" />
+    <Content Include="_Scripts\jquery.cycle.all.js" />
+    <Content Include="_Scripts\jquery.easing.1.3.js" />
+    <Content Include="_Scripts\jquery.fitvids.js" />
+    <Content Include="_Scripts\jquery.placeholder.min.js" />
+    <Content Include="_Scripts\jquery.reveal.js" />
+    <Content Include="_Scripts\jquery.ThreeDots.min.js" />
+    <Content Include="_Scripts\lightbox-2.6.min.js" />
+    <Content Include="_Scripts\modernizr.custom.js" />
+    <Content Include="_Scripts\PIE.js" />
+    <Content Include="_Scripts\ServiceManager.js" />
+    <Content Include="_ui\images\ads1.png" />
+    <Content Include="_ui\images\ads2.png" />
+    <Content Include="_ui\images\ads3.png" />
+    <Content Include="_ui\images\ads4.png" />
+    <Content Include="_ui\images\artical-icons\fb-like.png" />
+    <Content Include="_ui\images\artical-icons\icon_message.png" />
+    <Content Include="_ui\images\artical-icons\icon_print.png" />
+    <Content Include="_ui\images\artical-writer.jpg" />
+    <Content Include="_ui\images\block-end-aside.png" />
+    <Content Include="_ui\images\block-end.png" />
+    <Content Include="_ui\images\bx_loader.gif" />
+    <Content Include="_ui\images\commic.png" />
+    <Content Include="_ui\images\controls.png" />
+    <Content Include="_ui\images\cursoul-next.png" />
+    <Content Include="_ui\images\cursoul-prev.png" />
+    <Content Include="_ui\images\emergency.png" />
+    <Content Include="_ui\images\full-artical.jpg" />
+    <Content Include="_ui\images\img-replacement.png" />
+    <Content Include="_ui\images\international.png" />
+    <Content Include="_ui\images\local.png" />
+    <Content Include="_ui\images\logo.png" />
+    <Content Include="_ui\images\main-slider\main-slide1.png" />
+    <Content Include="_ui\images\main-slider\main-slide2.png" />
+    <Content Include="_ui\images\main-slider\small-1.png" />
+    <Content Include="_ui\images\main-slider\small-2.png" />
+    <Content Include="_ui\images\main-slider\small-3.png" />
+    <Content Include="_ui\images\main-slider\small-4.png" />
+    <Content Include="_ui\images\main-slider\small-5.png" />
+    <Content Include="_ui\images\news.png" />
+    <Content Include="_ui\images\photo-artical\photo-artical-1.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-2.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-3.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-4.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-5.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-6.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-7.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-8.jpg" />
+    <Content Include="_ui\images\photo-artical\photo-artical-9.jpg" />
+    <Content Include="_ui\images\report.png" />
+    <Content Include="_ui\images\sectons\arts.png" />
+    <Content Include="_ui\images\sectons\econimy.png" />
+    <Content Include="_ui\images\sectons\health.png" />
+    <Content Include="_ui\images\sectons\sport.png" />
+    <Content Include="_ui\images\slider-image-report.png" />
+    <Content Include="_ui\images\slider-video-report.png" />
+    <Content Include="_ui\images\social-black.png" />
+    <Content Include="_ui\images\social-gray.png" />
+    <Content Include="_ui\images\soical-color.png" />
+    <Content Include="_ui\images\weather1.png" />
+    <Content Include="_ui\images\weather2.png" />
+    <Content Include="_ui\images\youtube.png" />
+    <Content Include="_ui\StyleSheet1.css" />
+    <Content Include="_ui\StyleSheet2.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticlesView.aspx.cs">
+      <DependentUpon>ArticlesView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticlesView.aspx.designer.cs">
+      <DependentUpon>ArticlesView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\LayoutManager.cs" />
+    <Compile Include="Code\PageManager.cs" />
+    <Compile Include="Code\PollData.cs" />
+    <Compile Include="Columnist\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Columnist\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Columns\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Columns\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ads\Advertisement1.ascx.cs">
+      <DependentUpon>Advertisement1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Ads\Advertisement1.ascx.designer.cs">
+      <DependentUpon>Advertisement1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ads\Advertisement2.ascx.cs">
+      <DependentUpon>Advertisement2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Ads\Advertisement2.ascx.designer.cs">
+      <DependentUpon>Advertisement2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ads\Advertisement3.ascx.cs">
+      <DependentUpon>Advertisement3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Ads\Advertisement3.ascx.designer.cs">
+      <DependentUpon>Advertisement3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ads\MainAdvertisement.ascx.cs">
+      <DependentUpon>MainAdvertisement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Ads\MainAdvertisement.ascx.designer.cs">
+      <DependentUpon>MainAdvertisement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Article\HorizontalArticle.ascx.cs">
+      <DependentUpon>HorizontalArticle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Article\HorizontalArticle.ascx.designer.cs">
+      <DependentUpon>HorizontalArticle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Article\VerticalArticle.ascx.cs">
+      <DependentUpon>VerticalArticle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Article\VerticalArticle.ascx.designer.cs">
+      <DependentUpon>VerticalArticle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Columns\ColumnDetails.ascx.cs">
+      <DependentUpon>ColumnDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Columns\ColumnDetails.ascx.designer.cs">
+      <DependentUpon>ColumnDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Columns\Columner.ascx.cs">
+      <DependentUpon>Columner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Columns\Columner.ascx.designer.cs">
+      <DependentUpon>Columner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Columns\ColumnsControl.ascx.cs">
+      <DependentUpon>ColumnsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Columns\ColumnsControl.ascx.designer.cs">
+      <DependentUpon>ColumnsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\PollResult.ascx.cs">
+      <DependentUpon>PollResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\PollResult.ascx.designer.cs">
+      <DependentUpon>PollResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Forms\Polls.ascx.cs">
+      <DependentUpon>Polls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\Polls.ascx.designer.cs">
+      <DependentUpon>Polls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\General\Twitter.ascx.cs">
+      <DependentUpon>Twitter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\General\Twitter.ascx.designer.cs">
+      <DependentUpon>Twitter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\General\Weather.ascx.cs">
+      <DependentUpon>Weather.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\General\Weather.ascx.designer.cs">
+      <DependentUpon>Weather.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\General\WeatherLarge.ascx.cs">
+      <DependentUpon>WeatherLarge.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\General\WeatherLarge.ascx.designer.cs">
+      <DependentUpon>WeatherLarge.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Menus\FooterControl.ascx.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\FooterControl.ascx.designer.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Menus\MainMenu.ascx.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\MainMenu.ascx.designer.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\Comments.ascx.cs">
+      <DependentUpon>Comments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\Comments.ascx.designer.cs">
+      <DependentUpon>Comments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\ImportantNews.ascx.cs">
+      <DependentUpon>ImportantNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\ImportantNews.ascx.designer.cs">
+      <DependentUpon>ImportantNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\KarikateurControl.ascx.cs">
+      <DependentUpon>KarikateurControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\KarikateurControl.ascx.designer.cs">
+      <DependentUpon>KarikateurControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\Layout1News.ascx.cs">
+      <DependentUpon>Layout1News.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\Layout1News.ascx.designer.cs">
+      <DependentUpon>Layout1News.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\Layout2News.ascx.cs">
+      <DependentUpon>Layout2News.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\Layout2News.ascx.designer.cs">
+      <DependentUpon>Layout2News.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\Layout3News.ascx.cs">
+      <DependentUpon>Layout3News.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\Layout3News.ascx.designer.cs">
+      <DependentUpon>Layout3News.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\List.ascx.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\List.ascx.designer.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\ListItemsControl.ascx.cs">
+      <DependentUpon>ListItemsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\ListItemsControl.ascx.designer.cs">
+      <DependentUpon>ListItemsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\MainNews.ascx.cs">
+      <DependentUpon>MainNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\MainNews.ascx.designer.cs">
+      <DependentUpon>MainNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\MultiSectionsControl.ascx.cs">
+      <DependentUpon>MultiSectionsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\MultiSectionsControl.ascx.designer.cs">
+      <DependentUpon>MultiSectionsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\NewsDetail.ascx.cs">
+      <DependentUpon>NewsDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\NewsDetail.ascx.designer.cs">
+      <DependentUpon>NewsDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\OneBlockControl.ascx.cs">
+      <DependentUpon>OneBlockControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\OneBlockControl.ascx.designer.cs">
+      <DependentUpon>OneBlockControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\RelatedNews.ascx.cs">
+      <DependentUpon>RelatedNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\RelatedNews.ascx.designer.cs">
+      <DependentUpon>RelatedNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\SearchControl.ascx.cs">
+      <DependentUpon>SearchControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\SearchControl.ascx.designer.cs">
+      <DependentUpon>SearchControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\Urgent.ascx.cs">
+      <DependentUpon>Urgent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\Urgent.ascx.designer.cs">
+      <DependentUpon>Urgent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest.aspx.cs">
+      <DependentUpon>FormTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormTest.aspx.designer.cs">
+      <DependentUpon>FormTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlWebPage.aspx.cs">
+      <DependentUpon>HtmlWebPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HtmlWebPage.aspx.designer.cs">
+      <DependentUpon>HtmlWebPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ControlsManagement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\PollService.asmx.cs">
+      <DependentUpon>PollService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Masters\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Masters\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_ui\images\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Manatiq\fonts\HelveticaNeueLTArabic-Roman.eot" />
+    <Content Include="App_Themes\Manatiq\fonts\HelveticaNeueLTArabic-Roman.ttf" />
+    <Content Include="App_Themes\Manatiq\fonts\HelveticaNeueLTArabic-Roman.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Manatiq\images\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Masters\Master.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\licenses.licx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{d0cb5460-1b83-4cc8-9a64-ae6bf04288fc}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{5526280c-7ed8-4734-b2f1-9f4b78a79964}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Settings\AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Manatiq\fonts\GE_SS_Two_Light.eot" />
+    <Content Include="App_Themes\Manatiq\fonts\GE_SS_Two_Light.ttf" />
+    <Content Include="App_Themes\Manatiq\fonts\Sakkal_Majalla_mac.ttf" />
+    <Content Include="App_Themes\Manatiq\fonts\Sakkal_Majalla_mac.eot" />
+    <None Include="Properties\PublishProfiles\Manatiq.pubxml" />
+    <None Include="Properties\PublishProfiles\Manatiq2.pubxml" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58525/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

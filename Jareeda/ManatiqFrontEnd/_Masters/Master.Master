@@ -1,0 +1,253 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ManatiqFrontEnd._Masters.Master" %>
+<%@ Register Src="~/Controls/Menus/MainMenu.ascx" TagName="MainMenu" TagPrefix="natiq" %>
+<%@ Register Src="~/Controls/Menus/FooterControl.ascx" TagName="FooterMenu" TagPrefix="natiq" %>
+<%@ Register Src="~/Controls/Ads/MainAdvertisement.ascx" TagName="MainAds" TagPrefix="natiq" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>صحيفه المناطق الاخبارية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="all" href="/App_Themes/Manatiq/css/main.css" />
+    <link rel="stylesheet" media="all" href="/App_Themes/Manatiq/css/reponsive.css" />
+    <link rel="stylesheet" media="all" href="/App_Themes/Manatiq/css/lightbox.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/mnatiq.ico" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
+<script>("<script src='/_Scripts/jquery-1.8.3.min.js'>\x3C/script>")</script> 
+<!--[if lte IE 9]>
+		<script src="/_Scripts/PIE.js"></script>
+		<script src="/_Scripts/jquery.placeholder.min.js"></script>
+	<![endif]--> 
+    <script src="/_Scripts/jquery-ui-1.10.3.custom.js"></script>
+ <script src="/_Scripts/jquery.cycle.all.js"></script>
+  
+<script src="/_Scripts/jquery.reveal.js"></script>
+<script src="/_Scripts/modernizr.custom.79639.js"></script>
+    <script src="/_Scripts/lightbox-2.6.min.js"></script>
+<script src="/_Scripts/jquery.ba-cond.min.js"></script>
+    <script src="/_Scripts/jquery.bxslider.js"></script>
+    <script src="/_Scripts/ServiceManager.js"></script>
+<script type="text/javascript">var switchTo5x = true;</script>
+
+
+     <style type="text/css">
+        #icmscontainer
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        
+        #icmscontent
+        {
+            width: 800px;
+            text-align: center;
+            margin-left: -400px;
+            height: 50px;
+            margin-top: -25px;
+            line-height: 50px;
+        }
+        
+        #icmscontent
+        {
+            font-family: "Helvetica" , "Arial" , sans-serif;
+            font-size: 18px;
+            color: black;
+            text-shadow: 0px 1px 0px white;
+        }
+        
+        #icmsloadinggraphic
+        {
+            margin-right: 0.2em;
+            margin-bottom: -2px;
+        }
+        
+        #icmsloading
+        {
+            background-color: #e6e6e6;
+            background-image: url('/images/flyingdots.gif');
+            background-position:center top;
+            background-repeat:no-repeat;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            /*display:none;*/
+        }
+
+    </style>
+    <script type="text/javascript">
+
+        //$(window).load(function () {
+
+        //    $("#icmsloading").fadeOut(function () {
+
+        //        $(this).remove();
+
+        //        $('body').removeAttr('style');
+
+        //    });
+
+        //});
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body  class="no-js">
+    <%--style="overflow: hidden;"--%>
+    <%--<div id="icmsloading">
+        <script type="text/javascript">
+
+            document.write("<div id='icmscontainer'><p id='icmscontent'>" +
+
+                           "<img id='icmsloadinggraphic'  src='/images/logo-almnatiq.gif' /> " +
+
+                           "</p></div>");
+
+        </script>
+    </div>--%>
+    <div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <form id="form1" runat="server">
+        <header>
+	<div class="header-1">
+		<div class="container">	
+			<a href="#" class="date"><% Response.Write(GetDate(System.DateTime.Today)); %> </a>
+			<div class="content-left">
+				<div class="search">
+					<input runat="server" type="text" value="" placeholder="ابحث" class="search-text1" ID="txtSearchText" />
+					
+                    <asp:Button runat="server" CssClass="search-btn" ID="btnSearch" OnClick="btnSearch_Click" />
+				</div>
+				<ul>
+					<li><a href="https://www.facebook.com/AlMnatiq" class="facebook"></a></li>
+					<li><a href="https://twitter.com/almnatiq" class="tweet"></a></li>
+					<li><a href="http://www.youtube.com/user/Almnatiq" class="youtube"></a></li>
+					<li><a href="#" class="google"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header-2">
+		<div class="container">
+		<div class="logo-holder"> 
+			<a runat="server" href="~/Default.aspx" rel="index" title="Go to homepage" class="ir mntiq">al manatiq<span></span></a>
+		</div>
+		<natiq:MainAds runat="server"></natiq:MainAds>
+		<%--<div class="weather1-wrapper">
+			<a href="#"><img  src="/_ui/images/weather1.png" alt="" /></a>
+		</div>--%>
+	</div>
+	</div>
+</header>
+
+        <natiq:MainMenu runat="server" ID="MainMenu" />
+
+
+<section id="content clearfix"> 
+	<div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderMain"  runat="server">
+        
+        </asp:ContentPlaceHolder>
+		
+	</div>
+</section>
+
+<footer>
+	<div class="container clearfix">
+		<div class="block-1">
+			<natiq:FooterMenu visible="false" runat="server" />
+            <div style="float:left;width:30%;height:100%;background-color: #A9B0B3;">
+                <img src="/App_Themes/Manatiq/images/logo.png" height="30" style="float:left;margin-top:10px;" />
+            <p style="width:43%;font-size:12px;" >جميع الحقوق محفوظة لصحيفة المناطق الالكترونية 2014 ©</p>	
+            </div>
+			<div style="float:right;width:70%;height:100%;background-color:gray;color: #EFE;">
+                <p>المشاركات والتعليقات المنشورة في موقع صحيفة "المناطق" الإلكترنية بأسماء أصحابها أو بأسماء مستعارة لا تمثل رأي الصحيفة بل تمثل وجهة نظر كاتبها</p>
+			</div>
+            
+			
+		</div>
+	</div>
+</footer>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1"  runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <script type="text/javascript">
+        $(function () {
+            //$('.drop-holder').css('display','none');
+            $('li.main-drop').hover(function () {
+                $(this).find('.drop-holder').slideDown('slow');
+            }, function () {
+                $(this).find('.drop-holder').slideUp('slow');
+            });
+        });
+</script>
+    <script>
+
+    
+
+    
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        var pull = $('#pull');
+        menu = $('.nav2 ul');
+        menuHeight = menu.height();
+
+        $(pull).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+        //$('.bxslider').bxSlider({
+        //    minSlides: 3,
+        //    maxSlides: 4,
+        //    slideWidth: 170,
+        //    slideMargin: 10
+        //});
+
+        //$('.bxslider3').bxSlider({
+        //    infiniteLoop: false,
+        //    hideControlOnEnd: true
+        //});
+    });
+</script>
+    
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({ publisher: "5c2c61b9-46c1-40e8-8f17-1edbd015805a", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-46712650-1', 'almnatiq.com');
+        ga('send', 'pageview');
+
+</script>
+</body>
+</html>

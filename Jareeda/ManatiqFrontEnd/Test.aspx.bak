@@ -1,0 +1,121 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/Master.Master" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="ManatiqFrontEnd.Test" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxCallbackPanel" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPanel" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxHiddenField" tagprefix="dx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <dx:ASPxPopupControl ID="popup" ClientInstanceName="popup" runat="server" HeaderText="Articles" ><ContentCollection>
+<dx:PopupControlContentControl runat="server" SupportsDisabledAttribute="True">
+    <div>
+    <table>
+        <tr>
+            <td>Site</td>
+            <td>
+                <dx:ASPxComboBox ID="comboSite" runat="server" DataSourceID="ObjectDataSourceSite" TextField="Name" ValueField="SiteId" ValueType="System.Int32" ClientInstanceName="comboSite">
+                    <ClientSideEvents SelectedIndexChanged="function(s, e) {
+	grid.PerformCallback(comboSite.GetValue() + ',' + comboSection.GetValue());
+}" />
+                </dx:ASPxComboBox>
+            </td>
+        </tr>
+        <tr>
+            <td>Section</td>
+            <td>
+                <dx:ASPxComboBox ID="comboSection" runat="server" DataSourceID="ObjectDataSourceSection" TextField="Name" ValueField="SiteSectionId" ValueType="System.Int32" ClientInstanceName="comboSection">
+                    <ClientSideEvents SelectedIndexChanged="function(s, e) {
+	grid.PerformCallback(comboSite.GetValue() + ',' + comboSection.GetValue());
+}" />
+                </dx:ASPxComboBox>
+                <asp:ObjectDataSource ID="ObjectDataSourceSection" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.SiteSectionLogic">
+                    <SelectParameters>
+                        <asp:Parameter DefaultValue="0" Name="SiteId" Type="Int32" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </td>
+        </tr>
+       
+        <tr>
+            <td></td>
+            <td>
+                <dx:ASPxButton runat="server" ID="btnSelect" ClientInstanceName="btnSelect" Text="Select" AutoPostBack="False"></dx:ASPxButton>
+            </td>
+        </tr>
+    </table><br />
+
+    </div>
+    <div id="gridDiv">
+        <dx:ASPxCallbackPanel ID="articleCallbackPanel" runat="server" ClientInstanceName="articleCallbackPanel" OnCallback="articleCallbackPanel_Callback" ><PanelCollection>
+<dx:PanelContent runat="server" SupportsDisabledAttribute="True">
+    <dx:ASPxGridView ID="gridViewArticles" runat="server" AutoGenerateColumns="False" ClientInstanceName="grid" DataSourceID="ObjectDataSourceArticles" KeyFieldName="ArticleId" OnCustomCallback="gridViewArticles_CustomCallback" Width="400px">
+        <Columns>
+            <dx:GridViewCommandColumn ShowInCustomizationForm="True" ShowSelectCheckbox="True" VisibleIndex="0">
+                <ClearFilterButton Visible="True">
+                </ClearFilterButton>
+            </dx:GridViewCommandColumn>
+            <dx:GridViewDataTextColumn FieldName="ArticleId" ReadOnly="True" ShowInCustomizationForm="True" Visible="False" VisibleIndex="1">
+            </dx:GridViewDataTextColumn>
+            <dx:GridViewDataComboBoxColumn Caption="Status" FieldName="ArticleStatusId" ShowInCustomizationForm="True" VisibleIndex="14" Width="70px">
+                <PropertiesComboBox DataSourceID="ObjectDataSourceStatus" TextField="Name" ValueField="ArticleStatusId" ValueType="System.Int32">
+                </PropertiesComboBox>
+            </dx:GridViewDataComboBoxColumn>
+            <dx:GridViewDataTextColumn FieldName="ArticleName" ShowInCustomizationForm="True" VisibleIndex="3" Width="350px">
+                <EditItemTemplate>
+                 <dx:ASPxLabel runat="server" ID="lblArticleID" ClientInstanceName="lblArticleID" Text='<%# Bind("ArticleID") %>'></dx:ASPxLabel>   <dx:ASPxHyperLink runat="server" ID="txtArticleName" ClientInstanceName="txtArticleName" Value='<%# Bind("ArticleId") %>' Text="Select Article" >
+                        <ClientSideEvents Click="function(s, e) {
+		popup.Show();
+}" />
+                    </dx:ASPxHyperLink>
+                </EditItemTemplate>
+            </dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="ArticleDescription" ShowInCustomizationForm="True" Visible="False" VisibleIndex="17">
+            </dx:GridViewDataTextColumn>
+        </Columns>
+        <SettingsBehavior AllowSelectByRowClick="True" AllowSelectSingleRowOnly="True" />
+        <Settings ShowFilterRow="True" />
+    </dx:ASPxGridView>
+
+    <asp:ObjectDataSource ID="ObjectDataSourceArticles" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.ArticleLogic">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="0" Name="SiteId" Type="String" />
+                <asp:Parameter DefaultValue="0" Name="SectionId" Type="String" />
+                <asp:Parameter DefaultValue="0" Name="TypeId" Type="String" />
+            </SelectParameters>
+        </asp:ObjectDataSource>
+            </dx:PanelContent>
+</PanelCollection>
+        </dx:ASPxCallbackPanel>
+        
+        <asp:ObjectDataSource ID="ObjectDataSourceStatus" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.ArticleStatusLogic"></asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="ObjectDataSourceSite" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.SiteLogic"></asp:ObjectDataSource>
+        <dx:ASPxHiddenField ID="ASPxHiddenField1" runat="server">
+        </dx:ASPxHiddenField>
+    </div>
+</dx:PopupControlContentControl>
+
+</ContentCollection>
+</dx:ASPxPopupControl>
+    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.ContentModuleArticleLogic" UpdateMethod="Update">
+        <DeleteParameters>
+            <asp:Parameter Name="Original_ContentModuleArticleID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="HomePageID" Type="Int32" />
+            <asp:Parameter Name="ArticleID" Type="Int32" />
+            <asp:Parameter Name="ArticleOrder" Type="Int32" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="HomePageID" Type="Int32" />
+            <asp:Parameter Name="ArticleID" Type="Int32" />
+            <asp:Parameter Name="ArticleOrder" Type="Int32" />
+            <asp:Parameter Name="Original_ContentModuleArticleID" Type="Int32" />
+        </UpdateParameters>
+    </asp:ObjectDataSource>
+</asp:Content>

@@ -1,0 +1,1652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DE4052A-7E45-410F-8C68-A656F69535D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Administrator</RootNamespace>
+    <AssemblyName>Administrator</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxGauges.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Web, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v13.2.Presets, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2.Web, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\EventoAdminAr\1_style.css" />
+    <Content Include="App_Themes\EventoAdminAr\2_DevExpress.css" />
+    <Content Include="App_Themes\EventoAdminAr\3_Sprite.css" />
+    <Content Include="App_Themes\EventoAdminAr\Chart\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\caChallengeImageBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtBtnBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtBtnPBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtDropDownBtnBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtDropDownBtnDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtDropDownBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtDropDownBtnPBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtProgressBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtProgressIndicatorBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtSpinDecBtnBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtSpinDecBtnDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtSpinIncBtnBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtSpinIncBtnDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtSpinIncDecBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarBarHighlightH.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarBarHighlightV.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarDoubleLargeTickH.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarDoubleLargeTickV.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarDoubleSmallTickH.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarDoubleSmallTickV.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarLargeTickH.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarLargeTickV.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarSmallTickH.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarSmallTickV.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarTrackH.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\edtTrackBarTrackV.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\lbHeaderBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Editors\sprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\GridView\gvHeaderBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\GridView\gvHoverBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\GridView\gvTitleBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\GridView\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\GridView\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\GridView\sprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\HtmlEditor\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\evento-orange.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\evento-orange1.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\filesave.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\filesave32.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\header_bg_right.jpg" />
+    <Content Include="App_Themes\EventoAdminAr\images\ItemBackground.gif" />
+    <Content Include="App_Themes\EventoAdminAr\images\ItemBackgroundHover.gif" />
+    <Content Include="App_Themes\EventoAdminAr\images\ItemBackgroundSelected.gif" />
+    <Content Include="App_Themes\EventoAdminAr\images\LeftSideSeparators.gif" />
+    <Content Include="App_Themes\EventoAdminAr\images\menu_balloon.gif" />
+    <Content Include="App_Themes\EventoAdminAr\images\menu_bg.gif" />
+    <Content Include="App_Themes\EventoAdminAr\images\menu_split.gif" />
+    <Content Include="App_Themes\EventoAdminAr\images\natiq-logo-small.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\notify\error.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\notify\info.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\notify\success.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-16-default.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-16-featured.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-16-logout.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-16-maintenance.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-16-menu.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-16-newarticle.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-16-search.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-apply.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-back.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-cancel.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-checkin.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-config.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-copy.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-css.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-default.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-delete-style.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-delete.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-edit.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-error.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-export.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-featured %281%29.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-featured.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-forward.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-help.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-html.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-menu.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-move.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-new-style.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-new.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-preview.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-print.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-publish.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-purge.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-refresh.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-remove.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-revert.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-save-copy.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-save-new.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-save.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-send.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-stats.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-trash.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-unarchive.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-unblock.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-unpublish.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\icon-32-upload.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\options\tick.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\paper_01.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\paper_02.png" />
+    <Content Include="App_Themes\EventoAdminAr\images\RootItemSeparator.gif" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\CustomizationTreeNodeImages.gif" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\CustomizationTreeNodeImages.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\FLsprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\FLsprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\GrandTotalBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\HeaderBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\HeaderHoverBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\pcHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\TitleBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\TotalBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\PivotGrid\tvNodeLoading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Scheduler\CssImages\ButtonBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Scheduler\CssImages\ButtonHoverBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Scheduler\CssImages\ButtonPressedBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Scheduler\CssImages\DateHeaderAltBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Scheduler\sprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\EventoAdminAr\TreeList\CssImages\HeaderBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\TreeList\CssImages\TitleBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\TreeList\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\TreeList\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\TreeList\sprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\edtBtnBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\edtBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Web\Loading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mItemBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mItemHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mItemSBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mScrollBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mScrollHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mSubItemGutterBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mSubItemHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mSubItemRtlGutterBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\mSubItemSepBack.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Web\nbHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\nbIHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\nbISBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\pcFBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\pcHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\pDropDownButtonBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\pDropDownButtonDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\pDropDownButtonHoverBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\pDropDownButtonPressedBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\rcMapImage.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\rpHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\splHSepHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Web\splVSepHBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Web\sprite.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\tiFBBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\EventoAdminAr\Web\ucButtonBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\ucButtonHoverBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\ucButtonPressedBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\ucProgressBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\Web\ucProgressIndicatorBack.png" />
+    <Content Include="App_Themes\EventoAdminAr\XtraReports\sprite.gif" />
+    <Content Include="App_Themes\EventoAdminAr\XtraReports\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\1_style.css" />
+    <Content Include="App_Themes\EventoAdmin\2_DevExpress.css" />
+    <Content Include="App_Themes\EventoAdmin\3_Sprite.css" />
+    <Content Include="App_Themes\EventoAdmin\Chart\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\caChallengeImageBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtBtnBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtBtnPBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtDropDownBtnBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtDropDownBtnDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtDropDownBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtDropDownBtnPBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtProgressBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtProgressIndicatorBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtSpinDecBtnBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtSpinDecBtnDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtSpinIncBtnBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtSpinIncBtnDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtSpinIncDecBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarBarHighlightH.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarBarHighlightV.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarDoubleLargeTickH.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarDoubleLargeTickV.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarDoubleSmallTickH.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarDoubleSmallTickV.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarLargeTickH.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarLargeTickV.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarSmallTickH.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarSmallTickV.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarTrackH.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\edtTrackBarTrackV.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\lbHeaderBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Editors\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\Editors\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\GridView\gvHeaderBack.png" />
+    <Content Include="App_Themes\EventoAdmin\GridView\gvHoverBack.png" />
+    <Content Include="App_Themes\EventoAdmin\GridView\gvTitleBack.png" />
+    <Content Include="App_Themes\EventoAdmin\GridView\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\GridView\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\GridView\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\HtmlEditor\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\images\evento-orange.png" />
+    <Content Include="App_Themes\EventoAdmin\images\evento-orange1.png" />
+    <Content Include="App_Themes\EventoAdmin\images\filesave.png" />
+    <Content Include="App_Themes\EventoAdmin\images\filesave32.png" />
+    <Content Include="App_Themes\EventoAdmin\images\header_bg_right.jpg" />
+    <Content Include="App_Themes\EventoAdmin\images\ItemBackground.gif" />
+    <Content Include="App_Themes\EventoAdmin\images\ItemBackgroundHover.gif" />
+    <Content Include="App_Themes\EventoAdmin\images\ItemBackgroundSelected.gif" />
+    <Content Include="App_Themes\EventoAdmin\images\LeftSideSeparators.gif" />
+    <Content Include="App_Themes\EventoAdmin\images\menu_balloon.gif" />
+    <Content Include="App_Themes\EventoAdmin\images\menu_bg.gif" />
+    <Content Include="App_Themes\EventoAdmin\images\menu_split.gif" />
+    <Content Include="App_Themes\EventoAdmin\images\natiq-logo-small.png" />
+    <Content Include="App_Themes\EventoAdmin\images\notify\error.png" />
+    <Content Include="App_Themes\EventoAdmin\images\notify\info.png" />
+    <Content Include="App_Themes\EventoAdmin\images\notify\success.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-16-default.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-16-featured.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-16-logout.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-16-maintenance.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-16-menu.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-16-newarticle.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-16-search.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-apply.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-back.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-cancel.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-checkin.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-config.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-copy.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-css.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-default.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-delete-style.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-delete.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-edit.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-error.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-export.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-featured %281%29.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-featured.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-forward.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-help.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-html.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-menu.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-move.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-new-style.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-new.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-preview.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-print.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-publish.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-purge.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-refresh.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-remove.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-revert.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-save-copy.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-save-new.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-save.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-send.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-stats.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-trash.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-unarchive.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-unblock.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-unpublish.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\icon-32-upload.png" />
+    <Content Include="App_Themes\EventoAdmin\images\options\tick.png" />
+    <Content Include="App_Themes\EventoAdmin\images\paper_01.png" />
+    <Content Include="App_Themes\EventoAdmin\images\paper_02.png" />
+    <Content Include="App_Themes\EventoAdmin\images\RootItemSeparator.gif" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\CustomizationTreeNodeImages.gif" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\CustomizationTreeNodeImages.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\FLsprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\FLsprite.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\GrandTotalBack.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\HeaderBack.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\HeaderHoverBack.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\pcHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\TitleBack.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\TotalBack.png" />
+    <Content Include="App_Themes\EventoAdmin\PivotGrid\tvNodeLoading.gif" />
+    <Content Include="App_Themes\EventoAdmin\Scheduler\CssImages\ButtonBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Scheduler\CssImages\ButtonHoverBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Scheduler\CssImages\ButtonPressedBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Scheduler\CssImages\DateHeaderAltBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\Scheduler\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\EventoAdmin\TreeList\CssImages\HeaderBack.png" />
+    <Content Include="App_Themes\EventoAdmin\TreeList\CssImages\TitleBack.png" />
+    <Content Include="App_Themes\EventoAdmin\TreeList\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\TreeList\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\TreeList\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\edtBtnBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\edtBtnHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\EventoAdmin\Web\Loading.gif" />
+    <Content Include="App_Themes\EventoAdmin\Web\mItemBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mItemHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mItemSBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mScrollBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mScrollHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mSubItemGutterBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mSubItemHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mSubItemRtlGutterBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\mSubItemSepBack.gif" />
+    <Content Include="App_Themes\EventoAdmin\Web\nbHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\nbIHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\nbISBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\pcFBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\pcHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\pDropDownButtonBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\pDropDownButtonDisabledBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\pDropDownButtonHoverBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\pDropDownButtonPressedBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\rcMapImage.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\rpHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\splHSepHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\EventoAdmin\Web\splVSepHBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\Web\sprite.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\tiFBBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\EventoAdmin\Web\ucButtonBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\ucButtonHoverBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\ucButtonPressedBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\ucProgressBack.png" />
+    <Content Include="App_Themes\EventoAdmin\Web\ucProgressIndicatorBack.png" />
+    <Content Include="App_Themes\EventoAdmin\XtraReports\sprite.gif" />
+    <Content Include="App_Themes\EventoAdmin\XtraReports\sprite.png" />
+    <Content Include="App_Themes\EventoLogin\images\button-01.png" />
+    <Content Include="App_Themes\EventoLogin\images\input-01.png" />
+    <Content Include="App_Themes\EventoLogin\images\loginbg.jpg" />
+    <Content Include="App_Themes\EventoLogin\images\loginbg.png" />
+    <Content Include="App_Themes\EventoLogin\images\loginHead.png" />
+    <Content Include="App_Themes\EventoLogin\images\loginLogo.png" />
+    <Content Include="App_Themes\EventoLogin\images\loginTxt.png" />
+    <Content Include="App_Themes\EventoLogin\images\loginTxtFocus.png" />
+    <Content Include="App_Themes\EventoLogin\images\logo.png" />
+    <Content Include="App_Themes\EventoLogin\images\logo-noshadow.png" />
+    <Content Include="App_Themes\EventoLogin\images\logo-p.png" />
+    <Content Include="App_Themes\EventoLogin\images\logo1.png" />
+    <Content Include="App_Themes\EventoLogin\images\logo2.png" />
+    <Content Include="App_Themes\EventoLogin\images\logo3.png" />
+    <Content Include="App_Themes\EventoLogin\images\signinbutton.png" />
+    <Content Include="App_Themes\EventoLogin\style.css" />
+    <Content Include="App_Themes\Office2010Blue\Chart\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\Chart\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\Editors\caChallengeImageBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtBtnBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtBtnPBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtDropDownBtnBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtDropDownBtnDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtDropDownBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtDropDownBtnPBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtProgressBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtProgressIndicatorBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtSpinDecBtnBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtSpinDecBtnDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtSpinIncBtnBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtSpinIncBtnDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtSpinIncDecBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarBarHighlightH.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarBarHighlightV.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarDoubleLargeTickH.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarDoubleLargeTickV.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarDoubleSmallTickH.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarDoubleSmallTickV.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarLargeTickH.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarLargeTickV.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarSmallTickH.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarSmallTickV.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarTrackH.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\edtTrackBarTrackV.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\lbHeaderBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\Editors\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\Editors\sprite.png" />
+    <Content Include="App_Themes\Office2010Blue\Editors\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\GridView\gvHeaderBack.png" />
+    <Content Include="App_Themes\Office2010Blue\GridView\gvHoverBack.png" />
+    <Content Include="App_Themes\Office2010Blue\GridView\gvTitleBack.png" />
+    <Content Include="App_Themes\Office2010Blue\GridView\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\GridView\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\GridView\sprite.png" />
+    <Content Include="App_Themes\Office2010Blue\GridView\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\HtmlEditor\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\Office2010Blue\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\CustomizationTreeNodeImages.gif" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\CustomizationTreeNodeImages.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\FLsprite.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\GrandTotalBack.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\HeaderBack.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\HeaderHoverBack.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\pcHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\TitleBack.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\TotalBack.png" />
+    <Content Include="App_Themes\Office2010Blue\PivotGrid\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\CssImages\ButtonBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\CssImages\ButtonHoverBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\CssImages\ButtonPressedBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\CssImages\DateHeaderAltBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\sprite.png" />
+    <Content Include="App_Themes\Office2010Blue\Scheduler\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\SpellChecker\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\Office2010Blue\SpellChecker\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\TreeList\CssImages\HeaderBack.png" />
+    <Content Include="App_Themes\Office2010Blue\TreeList\CssImages\TitleBack.png" />
+    <Content Include="App_Themes\Office2010Blue\TreeList\Loading.gif" />
+    <Content Include="App_Themes\Office2010Blue\TreeList\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\TreeList\sprite.png" />
+    <Content Include="App_Themes\Office2010Blue\TreeList\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\Web\edtBtnBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\edtBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\fmFileCheck.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\Office2010Blue\Web\igLoading.gif" />
+    <Content Include="App_Themes\Office2010Blue\Web\igNavBtnsBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\isLoading.gif" />
+    <Content Include="App_Themes\Office2010Blue\Web\Loading.GIF" />
+    <Content Include="App_Themes\Office2010Blue\Web\Loading1.GIF" />
+    <Content Include="App_Themes\Office2010Blue\Web\mItemBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mItemHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mItemSBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mScrollBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mScrollHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mSubItemGutterBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mSubItemHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mSubItemRtlGutterBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\mSubItemSepBack.gif" />
+    <Content Include="App_Themes\Office2010Blue\Web\nbHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\nbIHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\nbISBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\pcFBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\pcHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\pDropDownButtonBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\pDropDownButtonDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\pDropDownButtonHoverBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\pDropDownButtonPressedBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\rcMapImage.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\rpHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\splHSepHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\Office2010Blue\Web\splVSepHBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\Web\sprite.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\styles.css" />
+    <Content Include="App_Themes\Office2010Blue\Web\tiFBBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Office2010Blue\Web\ucButtonBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\ucButtonHoverBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\ucButtonPressedBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\ucProgressBack.png" />
+    <Content Include="App_Themes\Office2010Blue\Web\ucProgressIndicatorBack.png" />
+    <Content Include="App_Themes\Office2010Blue\XtraReports\sprite.css" />
+    <Content Include="App_Themes\Office2010Blue\XtraReports\sprite.png" />
+    <Content Include="Builder\FormBuilder\Builder.aspx" />
+    <Content Include="Builder\FormBuilder\DocumentStatus\Manage.aspx" />
+    <Content Include="Builder\FormBuilder\FormFieldTypes\Manage.aspx" />
+    <Content Include="Builder\FormBuilder\Forms\Manage.aspx" />
+    <Content Include="Builder\FormBuilder\images\download.png" />
+    <Content Include="Builder\FormBuilder\images\filesaveas.png" />
+    <Content Include="Builder\FormBuilder\images\page_accept.png" />
+    <Content Include="Builder\FormBuilder\images\process_accept.png" />
+    <Content Include="Builder\FormBuilder\images\rbmbkg-grey.png" />
+    <Content Include="Builder\FormBuilder\images\rpRightEdge.gif" />
+    <Content Include="Builder\FormBuilder\images\sprites_1.gif" />
+    <Content Include="Builder\FormBuilder\Scripts\JQuery\backup-SurveyQuestion.js" />
+    <Content Include="Builder\FormBuilder\Scripts\JQuery\GeneralBuilderScript.js" />
+    <Content Include="Builder\FormBuilder\Scripts\JQuery\jquery-ui.min.js" />
+    <Content Include="Builder\FormBuilder\Scripts\JQuery\jquery.min.js" />
+    <Content Include="Builder\FormBuilder\Scripts\JQuery\JSON.js" />
+    <Content Include="Builder\FormBuilder\Scripts\JQuery\SurveyQuestion.js" />
+    <Content Include="Builder\FormBuilder\Scripts\Rbm\Tools.js" />
+    <Content Include="Builder\FormBuilder\Styles\iepngfix.htc" />
+    <Content Include="Builder\FormBuilder\Styles\Main.css" />
+    <Content Include="Builder\FormBuilder\View.aspx" />
+    <Content Include="Builder\WebBuilder\Builder.aspx" />
+    <Content Include="Builder\WebBuilder\BuilderInternal.aspx" />
+    <Content Include="Builder\WebBuilder\Controls\BaseBuilderControl.ascx" />
+    <Content Include="Builder\WebBuilder\Controls\NewsData.ascx" />
+    <Content Include="Builder\WebBuilder\Controls\WidgetData.ascx" />
+    <Content Include="Builder\WebBuilder\css\all.css" />
+    <Content Include="Builder\WebBuilder\css\editor-loading.css" />
+    <Content Include="Builder\WebBuilder\css\iframe.css" />
+    <Content Include="Builder\WebBuilder\css\reset.css" />
+    <Content Include="Builder\WebBuilder\css\structure.css" />
+    <Content Include="Builder\WebBuilder\images\490.GIF" />
+    <Content Include="Builder\WebBuilder\images\add1-.png" />
+    <Content Include="Builder\WebBuilder\images\Cloud_Add.png" />
+    <Content Include="Builder\WebBuilder\images\black-close.png" />
+    <Content Include="Builder\WebBuilder\images\block-delete.png" />
+    <Content Include="Builder\WebBuilder\images\block-options.png" />
+    <Content Include="Builder\WebBuilder\images\button-active.png" />
+    <Content Include="Builder\WebBuilder\images\button.png" />
+    <Content Include="Builder\WebBuilder\images\checkmark-white.png" />
+    <Content Include="Builder\WebBuilder\images\grid-mode-bg.png" />
+    <Content Include="Builder\WebBuilder\images\help-white.png" />
+    <Content Include="Builder\WebBuilder\images\icon-white.png" />
+    <Content Include="Builder\WebBuilder\images\icon.png" />
+    <Content Include="Builder\WebBuilder\images\layout-selector-caret-closed.png" />
+    <Content Include="Builder\WebBuilder\images\layout-selector-caret-open.png" />
+    <Content Include="Builder\WebBuilder\images\left-arrow.png" />
+    <Content Include="Builder\WebBuilder\images\loading-cog-bottom-left.png" />
+    <Content Include="Builder\WebBuilder\images\loading-cog-top-right.png" />
+    <Content Include="Builder\WebBuilder\images\logo-white.png" />
+    <Content Include="Builder\WebBuilder\images\maximize.png" />
+    <Content Include="Builder\WebBuilder\images\menu-bg.png" />
+    <Content Include="Builder\WebBuilder\images\menu-layout-bg.png" />
+    <Content Include="Builder\WebBuilder\images\menu-layout-left.png" />
+    <Content Include="Builder\WebBuilder\images\menu-layout-right.png" />
+    <Content Include="Builder\WebBuilder\images\menu-logo.png" />
+    <Content Include="Builder\WebBuilder\images\menu-mode-bg.png" />
+    <Content Include="Builder\WebBuilder\images\menu-mode-left.png" />
+    <Content Include="Builder\WebBuilder\images\menu-mode-right.png" />
+    <Content Include="Builder\WebBuilder\images\minimize-button-active.png" />
+    <Content Include="Builder\WebBuilder\images\minimize-button.png" />
+    <Content Include="Builder\WebBuilder\images\minimize.png" />
+    <Content Include="Builder\WebBuilder\images\multi-image-container-open.png" />
+    <Content Include="Builder\WebBuilder\images\options-button-active.png" />
+    <Content Include="Builder\WebBuilder\images\options-button.png" />
+    <Content Include="Builder\WebBuilder\images\right-arrow.png" />
+    <Content Include="Builder\WebBuilder\images\Save-as.png" />
+    <Content Include="Builder\WebBuilder\images\save-button-active.png" />
+    <Content Include="Builder\WebBuilder\images\save-button.png" />
+    <Content Include="Builder\WebBuilder\images\search-button.png" />
+    <Content Include="Builder\WebBuilder\images\search-open.png" />
+    <Content Include="Builder\WebBuilder\images\small-cog.png" />
+    <Content Include="Builder\WebBuilder\images\tab-close.png" />
+    <Content Include="Builder\WebBuilder\images\textarea-open.png" />
+    <Content Include="Builder\WebBuilder\images\transparent-bg.png" />
+    <Content Include="Builder\WebBuilder\images\white-close.png" />
+    <Content Include="Builder\WebBuilder\js\all.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\codemirror.css" />
+    <Content Include="Builder\WebBuilder\js\codemirror\codemirror.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\languages\clike.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\languages\css.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\languages\htmlmixed.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\languages\javascript.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\languages\php.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\languages\xml.js" />
+    <Content Include="Builder\WebBuilder\js\codemirror\theme-default.css" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\colorpicker.js" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_background.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_hex.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_hsb_b.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_hsb_h.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_hsb_s.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_indic.gif" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_overlay.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_rgb_b.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_rgb_g.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_rgb_r.png" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_select.gif" />
+    <Content Include="Builder\WebBuilder\js\colorpicker\images\colorpicker_submit.png" />
+    <Content Include="Builder\WebBuilder\js\editor.functions.js" />
+    <Content Include="Builder\WebBuilder\js\editor.inputs.js" />
+    <Content Include="Builder\WebBuilder\js\editor.js" />
+    <Content Include="Builder\WebBuilder\js\editor.mode.design.js" />
+    <Content Include="Builder\WebBuilder\js\editor.mode.grid.js" />
+    <Content Include="Builder\WebBuilder\js\editor.mode.manage.js" />
+    <Content Include="Builder\WebBuilder\js\editor.widget.grid.js" />
+    <Content Include="Builder\WebBuilder\js\ie9.js" />
+    <Content Include="Builder\WebBuilder\js\itstylesheet.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.animate-shadow.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.cookie.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.hoverIntent.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.iframe.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.masonry.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.qtip.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.scrollbarpaper.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.scrollto.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.tabby.js" />
+    <Content Include="Builder\WebBuilder\js\jquery.ui.js" />
+    <Content Include="Builder\WebBuilder\js\mouseover_popup.js" />
+    <Content Include="Builder\WebBuilder\Scripts\BlockBuilder.js" />
+    <Content Include="Builder\WebBuilder\Scripts\jquery.simulate.js" />
+    <Content Include="Builder\WebBuilder\Scripts\LayoutBuilder.js" />
+    <Content Include="Builder\WebBuilder\Scripts\oldjs.js" />
+    <Content Include="Builder\WebBuilder\Scripts\Tools.js" />
+    <Content Include="Conference\Airlines\Manage.aspx" />
+    <Content Include="Conference\ConferenceHalls\Manage.aspx" />
+    <Content Include="Conference\ConferenceImages\Manage.aspx" />
+    <Content Include="Conference\ConferencePrograms\Manage.aspx" />
+    <Content Include="Conference\ConferenceSchedules\Manage.aspx" />
+    <Content Include="Conference\Conferences\Manage.aspx" />
+    <Content Include="Conference\Hotels\Manage.aspx" />
+    <Content Include="Conference\Reviewers\Manage.aspx" />
+    <Content Include="Conference\ScheduleSessionTypes\Manage.aspx" />
+    <Content Include="Conference\Sponsors\Manage.aspx" />
+    <Content Include="Conference\TransportationTypes\Manage.aspx" />
+    <Content Include="Conference\Travels\Manage.aspx" />
+    <Content Include="ContentManagement\ApprovalFlow\Manage.aspx" />
+    <Content Include="ContentManagement\ArticleType\Manage.aspx" />
+    <Content Include="ContentManagement\Article\Manage.aspx" />
+    <Content Include="ContentManagement\Article\Save.aspx" />
+    <Content Include="ContentManagement\EmailTemplates\Manage.aspx" />
+    <Content Include="ContentManagement\EmailTemplates\Save.aspx" />
+    <Content Include="ContentManagement\Email\Send.aspx" />
+    <Content Include="ContentManagement\Home\ContentModuleType\Manage.aspx" />
+    <Content Include="ContentManagement\Home\HomePage\Manage.aspx" />
+    <Content Include="ContentManagement\Home\HomePage\Save.aspx" />
+    <Content Include="ContentManagement\Home\HomePage\WebForm1.aspx" />
+    <Content Include="ContentManagement\Home\Position\Manage.aspx" />
+    <Content Include="ContentManagement\MainImages\Manage.aspx" />
+    <Content Include="ContentManagement\MediaType\Manage.aspx" />
+    <Content Include="ContentManagement\Menu\Manage.aspx" />
+    <Content Include="ContentManagement\Menu\Save.aspx" />
+    <Content Include="ContentManagement\MultimediaType\Manage.aspx" />
+    <Content Include="ContentManagement\Multimedia\Manage.aspx" />
+    <Content Include="ContentManagement\OfferPackage\Manage.aspx" />
+    <Content Include="ContentManagement\PageLayout\Manage.aspx" />
+    <Content Include="ContentManagement\SitePage\Manage.aspx" />
+    <Content Include="ContentManagement\SitePage\Save.aspx" />
+    <Content Include="ContentManagement\SiteSections\Manage.aspx" />
+    <Content Include="ContentManagement\SiteSections\Save.aspx" />
+    <Content Include="ContentManagement\Sources\Manage.aspx" />
+    <Content Include="Controls\EventoControls\ImageUpload.ascx" />
+    <Content Include="Controls\EventoControls\InsertTemplate.ascx" />
+    <Content Include="Controls\EventoControls\MainMenu.ascx" />
+    <Content Include="Controls\EventoControls\VerticalMenu.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HumanResources\ContractType\Manage.aspx" />
+    <Content Include="HumanResources\Contract\Manage.aspx" />
+    <Content Include="HumanResources\Departments\Manage.aspx" />
+    <Content Include="HumanResources\Divisions\Manage.aspx" />
+    <Content Include="HumanResources\EmployeeContract\Manage.aspx" />
+    <Content Include="HumanResources\EmployeeDocumentType\Manage.aspx" />
+    <Content Include="HumanResources\EmployeeDocument\Manage.aspx" />
+    <Content Include="HumanResources\EmployeePayment\Manage.aspx" />
+    <Content Include="HumanResources\Employees\Controls\Credentials.ascx" />
+    <Content Include="HumanResources\Employees\Manage.aspx" />
+    <Content Include="HumanResources\Employees\Save.aspx" />
+    <Content Include="HumanResources\EmployeeVacationPermits\Manage.aspx" />
+    <Content Include="HumanResources\EmployeeVacation\Manage.aspx" />
+    <Content Include="HumanResources\Organizations\Manage.aspx" />
+    <Content Include="HumanResources\PaymentMethods\Manage.aspx" />
+    <Content Include="HumanResources\PaymentType\Manage.aspx" />
+    <Content Include="HumanResources\VacationType\Manage.aspx" />
+    <Content Include="images\aDelete.png" />
+    <Content Include="images\ajax-loader-eeeeee.gif" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\applysave.png" />
+    <Content Include="images\bAdd.png" />
+    <Content Include="images\bDelete.png" />
+    <Content Include="images\cancelsave.png" />
+    <Content Include="images\cancelsave32.png" />
+    <Content Include="images\contact-newBig.png" />
+    <Content Include="images\deletegrid.png" />
+    <Content Include="images\document-new.png" />
+    <Content Include="images\editgrid.png" />
+    <Content Include="images\evento-orange.png" />
+    <Content Include="images\evento-orange1.png" />
+    <Content Include="images\evento-orange2.png" />
+    <Content Include="images\filesave.png" />
+    <Content Include="images\filesave32.png" />
+    <Content Include="images\flyingdots.gif" />
+    <Content Include="images\griddelete.png" />
+    <Content Include="images\icon_logout.gif" />
+    <Content Include="images\img-replacement.png" />
+    <Content Include="images\IMG_5307.JPG" />
+    <Content Include="images\natiq-logo-small-white.png" />
+    <Content Include="images\natiq-logo-small.png" />
+    <Content Include="images\newgrid.png" />
+    <Content Include="images\newpage.png" />
+    <Content Include="images\no-frame-person.png" />
+    <Content Include="images\page_copy.png" />
+    <Content Include="images\pams--logo-small-white.png" />
+    <Content Include="images\preferences-contact-list.png" />
+    <Content Include="images\reviewers.jpg" />
+    <Content Include="images\searchpage.png" />
+    <Content Include="images\SiteMenu.png" />
+    <Content Include="images\SiteMenuAdd.png" />
+    <Content Include="images\sitesManagement.png" />
+    <Content Include="images\template.png" />
+    <Content Include="images\view_icon.png" />
+    <Content Include="Libraries\itextsharp.dll" />
+    <Content Include="Libraries\Newtonsoft.Json.dll" />
+    <Content Include="Libraries\System.Net.Json.dll" />
+    <Content Include="App_Themes\EventoAdmin\ASPxButton.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxCalendar.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxComboBox.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxDataView.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxFileManager.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxGridView.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxHeadline.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxLabel.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxListBox.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxMemo.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxNavBar.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxPageControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxPager.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxScheduler.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxSplitter.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxTabControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxTextBox.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxTreeList.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxTreeView.skin" />
+    <Content Include="App_Themes\EventoAdmin\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\MonthEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\EventoAdmin\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\EventoAdmin\ReportToolbar.skin" />
+    <Content Include="App_Themes\EventoAdmin\ReportViewer.skin" />
+    <Content Include="App_Themes\EventoAdmin\WebChartControl.skin" />
+    <Content Include="App_Themes\EventoAdmin\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\EventoAdmin\WeekOfMonthEdit.skin" />
+    <None Include="Properties\PublishProfiles\Natiq.pubxml" />
+    <None Include="Properties\PublishProfiles\Natiq2.pubxml" />
+    <None Include="Properties\PublishProfiles\NatiqNew.pubxml" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Login\Default.aspx" />
+    <Content Include="Person\Manage.aspx" />
+    <Content Include="Person\View.aspx" />
+    <Content Include="RoleSecurity\Roles\Manage.aspx" />
+    <Content Include="Scripts\home.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="Scripts\knockout.validation.debug.js" />
+    <Content Include="Scripts\knockout.validation.js" />
+    <Content Include="TestScripts\text.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="_MasterPages\RootAdmin.Master" />
+    <Content Include="_MasterPages\AdminLight.master" />
+    <Content Include="_MasterPages\AdminMain.master" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxButton.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxCalendar.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxComboBox.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxDataView.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxFileManager.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxGridView.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxHeadline.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxLabel.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxListBox.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxMemo.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxNavBar.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxPageControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxPager.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxScheduler.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxSplitter.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxTabControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxTextBox.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxTreeList.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxTreeView.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\MonthEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ReportToolbar.skin" />
+    <Content Include="App_Themes\EventoAdminAr\ReportViewer.skin" />
+    <Content Include="App_Themes\EventoAdminAr\WebChartControl.skin" />
+    <Content Include="App_Themes\EventoAdminAr\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\EventoAdminAr\WeekOfMonthEdit.skin" />
+    <Content Include="_MasterPages\AdminMainFull.master" />
+    <Content Include="packages.config" />
+    <None Include="_Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="_MasterPages\WebForm1.aspx" />
+    <Content Include="_MasterPages\WebForm2.aspx" />
+    <Content Include="_MasterPages\WebForm3.aspx" />
+    <Content Include="_MasterPages\WebForm4.aspx" />
+    <Content Include="_MasterPages\WebForm5.aspx" />
+    <Content Include="_MasterPages\WebForm6.aspx" />
+    <Content Include="_Scripts\jNotify.jquery.min.js" />
+    <Content Include="_Scripts\jquery-1.7.1.js" />
+    <Content Include="_Scripts\jquery-1.7.1.min.js" />
+    <None Include="_Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="_Scripts\jquery-1.8.2.js" />
+    <Content Include="_Scripts\jquery-1.8.2.min.js" />
+    <Content Include="_Scripts\jquery.cycle.all.js" />
+    <Content Include="_Scripts\jquery.Jcrop.js" />
+    <Content Include="_Scripts\jquery.Jcrop.min.js" />
+    <Content Include="_Settings\AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\ContentManagement.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentManagement.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ContentManagement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContentManagement.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\Builder.aspx.cs">
+      <DependentUpon>Builder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\Builder.aspx.designer.cs">
+      <DependentUpon>Builder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\DocumentStatus\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\DocumentStatus\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\FormFieldTypes\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\FormFieldTypes\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\Forms\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\Forms\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\FormBuilder\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Builder.aspx.cs">
+      <DependentUpon>Builder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Builder.aspx.designer.cs">
+      <DependentUpon>Builder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\BuilderInternal.aspx.cs">
+      <DependentUpon>BuilderInternal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\BuilderInternal.aspx.designer.cs">
+      <DependentUpon>BuilderInternal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Controls\BaseBuilderControl.ascx.cs">
+      <DependentUpon>BaseBuilderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Controls\BaseBuilderControl.ascx.designer.cs">
+      <DependentUpon>BaseBuilderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Controls\NewsData.ascx.cs">
+      <DependentUpon>NewsData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Controls\NewsData.ascx.designer.cs">
+      <DependentUpon>NewsData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Controls\WidgetData.ascx.cs">
+      <DependentUpon>WidgetData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Builder\WebBuilder\Controls\WidgetData.ascx.designer.cs">
+      <DependentUpon>WidgetData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\AdminBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\CommonSession.cs" />
+    <Compile Include="Code\WaterMarkImage.cs" />
+    <Compile Include="Conference\Airlines\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\Airlines\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\ConferenceHalls\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\ConferenceHalls\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\ConferenceImages\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\ConferenceImages\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\ConferencePrograms\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\ConferencePrograms\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\ConferenceSchedules\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\ConferenceSchedules\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\Conferences\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\Conferences\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\Hotels\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\Hotels\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\Reviewers\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\Reviewers\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\ScheduleSessionTypes\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\ScheduleSessionTypes\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\Sponsors\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\Sponsors\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\TransportationTypes\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\TransportationTypes\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference\Travels\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference\Travels\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\ApprovalFlow\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\ApprovalFlow\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\ArticleType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\ArticleType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Article\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Article\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Article\Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Article\Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\EmailTemplates\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\EmailTemplates\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\EmailTemplates\Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\EmailTemplates\Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Email\Send.aspx.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Email\Send.aspx.designer.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Home\ContentModuleType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Home\ContentModuleType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Home\HomePage\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Home\HomePage\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Home\HomePage\Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Home\HomePage\Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Home\HomePage\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Home\HomePage\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Home\Position\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Home\Position\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\MainImages\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\MainImages\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\MediaType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\MediaType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Menu\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Menu\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Menu\Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Menu\Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\MultimediaType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\MultimediaType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Multimedia\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Multimedia\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\OfferPackage\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\OfferPackage\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\PageLayout\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\PageLayout\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\SitePage\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\SitePage\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\SitePage\Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\SitePage\Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\SiteSections\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\SiteSections\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\SiteSections\Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\SiteSections\Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentManagement\Sources\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentManagement\Sources\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventoControls\ImageUpload.ascx.cs">
+      <DependentUpon>ImageUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventoControls\ImageUpload.ascx.designer.cs">
+      <DependentUpon>ImageUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventoControls\InsertTemplate.ascx.cs">
+      <DependentUpon>InsertTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventoControls\InsertTemplate.ascx.designer.cs">
+      <DependentUpon>InsertTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventoControls\MainMenu.ascx.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventoControls\MainMenu.ascx.designer.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventoControls\VerticalMenu.ascx.cs">
+      <DependentUpon>VerticalMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventoControls\VerticalMenu.ascx.designer.cs">
+      <DependentUpon>VerticalMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\ContractType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\ContractType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\Contract\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\Contract\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\Departments\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\Departments\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\Divisions\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\Divisions\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeContract\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeContract\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeDocumentType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeDocumentType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeDocument\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeDocument\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\EmployeePayment\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\EmployeePayment\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\Employees\Controls\Credentials.ascx.cs">
+      <DependentUpon>Credentials.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\Employees\Controls\Credentials.ascx.designer.cs">
+      <DependentUpon>Credentials.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\Employees\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\Employees\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\Employees\Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\Employees\Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeVacationPermits\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeVacationPermits\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeVacation\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\EmployeeVacation\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\Organizations\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\Organizations\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\PaymentMethods\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\PaymentMethods\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\PaymentType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\PaymentType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResources\VacationType\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HumanResources\VacationType\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Person\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Person\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Person\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Person\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleSecurity\Roles\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleSecurity\Roles\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\AdminLight.master.cs">
+      <DependentUpon>AdminLight.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\AdminLight.master.designer.cs">
+      <DependentUpon>AdminLight.master</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\AdminMain.master.cs">
+      <DependentUpon>AdminMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\AdminMain.master.designer.cs">
+      <DependentUpon>AdminMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\AdminMainFull.master.cs">
+      <DependentUpon>AdminMainFull.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\AdminMainFull.master.designer.cs">
+      <DependentUpon>AdminMainFull.master</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\RootAdmin.Master.cs">
+      <DependentUpon>RootAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\RootAdmin.Master.designer.cs">
+      <DependentUpon>RootAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_MasterPages\WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Conference\Abstracts\" />
+    <Folder Include="Conference\InvitedGuests\" />
+    <Folder Include="Conference\Registrations\" />
+    <Folder Include="Conference\Speakers\" />
+    <Folder Include="Conference\Venues\" />
+    <Folder Include="Conference\VisitRequests\" />
+    <Folder Include="ContentData\Documents\" />
+    <Folder Include="ContentData\Images\" />
+    <Folder Include="ContentData\Sites\Conferences\" />
+    <Folder Include="ContentData\UploadTemp\" />
+    <Folder Include="ContentManagement\SystemFolder\" />
+    <Folder Include="ContentManagement\SystemPage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{d0cb5460-1b83-4cc8-9a64-ae6bf04288fc}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{5526280c-7ed8-4734-b2f1-9f4b78a79964}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ContentManagement.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ContentManagement.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ContentManagement.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ContentManagement.ar.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Properties\licenses.licx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2004/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
