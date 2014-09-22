@@ -9,6 +9,8 @@ using System.Linq.Expressions;
 using DevExpress.Web.ASPxDataView;
 using System.Data;
 using System.Web.UI.HtmlControls;
+using System.Text;
+using System.IO;
 namespace ManatiqFrontEnd.Controls.News
 {
     public class SectionItem
@@ -66,17 +68,29 @@ namespace ManatiqFrontEnd.Controls.News
             //if (!IsPostBack)
             {
                 LoadDataControls();
+                
                 //ImportantNewsRepeater.ItemTemplate = new ListItemTemplate(Articles);
                 //ImportantNewsRepeater.DataSource = Articles;
                 //ImportantNewsRepeater.DataBind();
             }
             if (this.Page.IsCallback)
             {
-                //ImportantNewsRepeater.DataSource = Articles;
-                //ImportantNewsRepeater.DataBind();
+                
             }
         }
-
+        public List<BusinessLogicLayer.Entities.ContentManagement.Article> ArticlesList
+        {
+            set
+            {
+                Session["ArticlesList" + this.ID] = value;
+            }
+            get
+            {
+                if (Session["ArticlesList" + this.ID] == null)
+                    Session["ArticlesList" + this.ID] = new List<BusinessLogicLayer.Entities.ContentManagement.Article>();
+                return Session["ArticlesList" + this.ID] as List<BusinessLogicLayer.Entities.ContentManagement.Article>;
+            }
+        }
         private void LoadDataControls()
         {
             descLength = 30;
@@ -107,6 +121,17 @@ namespace ManatiqFrontEnd.Controls.News
                 dv.DataBind();
                 itemid++;
             }
+            int i = ArticlesList.Count();
+            
+            foreach(BusinessLogicLayer.Entities.ContentManagement.Article a in Articles)
+            {
+                if (i == 10)
+                    break;
+                i++;
+                ArticlesList.Add(a);
+            }
+            ListNewsContainer.DataSource = ArticlesList;
+            ListNewsContainer.DataBind();
             //SectionsRepeater.DataSource = SectionItems;
             //SectionsRepeater.DataBind();
         }
@@ -232,6 +257,29 @@ namespace ManatiqFrontEnd.Controls.News
             }
             
             
+        }
+
+        protected void callBackList_Callback(object source, DevExpress.Web.ASPxCallback.CallbackEventArgs e)
+        {
+            StringBuilder b = new StringBuilder();
+            HtmlTextWriter h = new HtmlTextWriter(new StringWriter(b));
+            int i = ArticlesList.Count();
+            int max = i + 10;
+            List<BusinessLogicLayer.Entities.ContentManagement.Article> temp = new List<BusinessLogicLayer.Entities.ContentManagement.Article>();
+            foreach(BusinessLogicLayer.Entities.ContentManagement.Article a in Articles)
+            {
+                if (i == max)
+                    break;
+                i++;
+                ArticlesList.Add(a);
+                temp.Add(a);
+            }
+            List<object> itemList = new List<object>();
+            itemList.Add(temp);
+            itemList.Add(HomePageID);
+            this.LoadControl(typeof(ListItemsControl),itemList.ToArray()).RenderControl(h);
+            string controlAsString = b.ToString();
+            e.Result = controlAsString;
         }
 
         

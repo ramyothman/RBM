@@ -1,8 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Layout3News.ascx.cs" Inherits="ManatiqFrontEnd.Controls.News.Layout3News" %>
 <div runat="server" id="MainBlockContainer" class="block-news international">
-				<div class="block-head">
+				<div runat="server" id="BlockHead" class="block-head">
 					<h1 runat="server" id="ModuleTitleText"></h1>
-                     <a href="#" id="MoreLink" runat="server" class="more_btn-head">المزيد</a>
+                     
 				</div>
 				<div class="txt-wrapper">
                     <% ItemIndex = 0; %>
@@ -56,6 +56,6 @@
 					
 					
 					
-					
+					<a href="#" id="MoreLink" runat="server" class="more_btn">المزيد</a>
 				</div>
 			</div>

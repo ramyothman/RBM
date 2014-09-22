@@ -13,6 +13,7 @@ namespace Administrator.RoleSecurity.Roles
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            base.Page_Load(sender, e);
             if (!IsPostBack)
             {
                 object values = gvRoles.GetRowValues(Convert.ToInt32(0), new string[] { "RoleId" });

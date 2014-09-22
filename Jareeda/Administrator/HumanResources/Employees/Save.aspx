@@ -1,27 +1,44 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMainFull.master" AutoEventWireup="true" CodeBehind="Save.aspx.cs" Inherits="Administrator.HumanResources.Employees.Save" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Save.aspx.cs" Inherits="Administrator.HumanResources.Employees.Save" %>
 <%@ Register Src="~/Controls/EventoControls/ImageUpload.ascx" TagName="ImageUploadControl" TagPrefix="evento" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
-    <script src="../../_Scripts/jquery.Jcrop.min.js"></script>
+    <link href="/Assets/css/jquery.Jcrop.min.css" rel="stylesheet" /> 
+    <script src="/Assets/JS/jquery.Jcrop.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
      <div style="width:18%;float:left;"><h1><asp:Literal runat="server" Text="<%$Resources:ContentManagement, HREmployeeTitle %>"></asp:Literal> </h1></div>
     <div style="float:left;margin-top:12px;width:40%;" class="TopInformation"><dx:ASPxTextBox runat="server" ID="miPersonName" Width="100%" Font-Size="18px" NullText="<%$Resources:ContentManagement, HREmployeeFullName %>"></dx:ASPxTextBox></div>
     
-    <div class="toolbar">
+    <div class="toolbar control-box">
         <ul>
+            <li>
+               <dx:ASPxButton ID="btnCancel" runat="server" Text="<%$Resources:ContentManagement, Cancel %>" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" OnClick="btnCancel_Click" ValidationGroup="Cancel">
+                    <Image Url="~/App_Themes/Jareeda/images/options/icon-32-cancel.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                </dx:ASPxButton>
+            </li>
+            <li>
+                <dx:ASPxButton ID="btnSaveandNew" runat="server" Text="<%$Resources:ContentManagement, SaveandNew %>" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" OnClick="SaveandNew_Click">
+                    <Image Url="~/App_Themes/Jareeda/images/options/icon-32-save-new.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                </dx:ASPxButton>
+            </li>
+            <li>
+                <dx:ASPxButton ID="btnSaveandClose" runat="server" Text="<%$Resources:ContentManagement, SaveandClose %>" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" OnClick="btnSaveandClose_Click">
+                    <Image Url="~/App_Themes/Jareeda/images/options/icon-32-save.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                </dx:ASPxButton>
+            </li>
+            <li>
+                <dx:ASPxButton ID="btnSave" runat="server" Text="<%$Resources:ContentManagement, Save %>" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" OnClick="btnSave_Click">
+                    <Image Url="~/App_Themes/Jareeda/images/options/icon-32-apply.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                </dx:ASPxButton>
+            </li>
             
-            <li>
-                <asp:Button runat="server" ID="btnSave" CssClass="button-link icon-32-apply" OnClientClick="return ASPxClientEdit.ValidateGroup('', false);"  Text="<%$Resources:ContentManagement, Save %>" OnClick="btnSave_Click"/>
-            </li>
-            <li>
-                <asp:Button runat="server" ID="btnSaveandClose" CssClass="button-link icon-32-save" OnClientClick="return ASPxClientEdit.ValidateGroup('', false);" Text="<%$Resources:ContentManagement, SaveandClose %>" OnClick="btnSaveandClose_Click"/>
-            </li>
-            <li>
-                <asp:Button runat="server" ID="SaveandNew" CssClass="button-link icon-32-save-new" OnClientClick="return ASPxClientEdit.ValidateGroup('', false);" Text="<%$Resources:ContentManagement, SaveandNew %>" OnClick="SaveandNew_Click"/>
-            </li>
-            <li>
-                <asp:Button runat="server" ID="btnCancel" CssClass="button-link icon-32-cancel" Text="<%$Resources:ContentManagement, Cancel %>" OnClick="btnCancel_Click"/>
-            </li>
         </ul>
     </div>
 </asp:Content>
@@ -146,21 +163,19 @@
                         
             </div>
         </div>
-        <div id="employeeusername" class="row">
+        <div id="employeecredential" class="row">
             <span class="label"><asp:Literal ID="Literal8" runat="server" Text="<%$Resources:ContentManagement, HREmployeeUserName %>"></asp:Literal></span>
             <div class="editor">
-                             <dx:ASPxTextBox ID="employeeUserName" runat="server" Font-Size="14px" Width="40%"  ></dx:ASPxTextBox>
+                             <dx:ASPxTextBox ID="employeeCredential" AutoCompleteType="None" runat="server" Font-Size="14px" Width="40%"  ></dx:ASPxTextBox>
                         
             </div>
         </div>
-        <div id="employeepassword" class="row">
+        <div id="employeecredential2" class="row">
             <span class="label"><asp:Literal ID="Literal9" runat="server" Text="<%$Resources:ContentManagement, HREmployeePassword %>"></asp:Literal></span>
             <div class="editor">
-                             <dx:ASPxTextBox ID="employeePassword" runat="server" Font-Size="14px" Width="40%" Password="True"  ></dx:ASPxTextBox>
+                             <dx:ASPxTextBox ID="employeePassword" runat="server" AutoCompleteType="None" Font-Size="14px" Width="40%" Password="True"  ></dx:ASPxTextBox>
                         
             </div>
         </div>
     </div>
-</asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="RightContent" runat="server">
 </asp:Content>

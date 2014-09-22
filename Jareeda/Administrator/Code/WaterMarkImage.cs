@@ -89,6 +89,7 @@ namespace Administrator.Code
 
             //Determine its x-coordinate by calculating the center of the width of the image
             float xCenterOfImg = (phWidth / 2);
+            float yCenterOfImg = (phHeight / 2) + wmHeight + 5;
 
             //Define the text layout by setting the text alignment to centered
             StringFormat StrFormat = new StringFormat();
@@ -101,7 +102,7 @@ namespace Administrator.Code
             grPhoto.DrawString(Copyright,                 //string of text
                 crFont,                                   //font
                 semiTransBrush2,                           //Brush
-                new PointF(xCenterOfImg + 1, yPosFromBottom + 1),  //Position
+                new PointF(xCenterOfImg + 1, yCenterOfImg + 1),  //Position
                 StrFormat);
 
             //define a Brush which is semi trasparent white (Alpha set to 153)
@@ -112,7 +113,7 @@ namespace Administrator.Code
             grPhoto.DrawString(Copyright,                 //string of text
                 crFont,                                   //font
                 semiTransBrush,                           //Brush
-                new PointF(xCenterOfImg, yPosFromBottom),  //Position
+                new PointF(xCenterOfImg, yCenterOfImg),  //Position
                 StrFormat);                               //Text alignment
 
 

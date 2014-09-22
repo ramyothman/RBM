@@ -57,6 +57,94 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\esperto\animations.css" />
+    <Content Include="App_Themes\esperto\application.css">
+      <DependentUpon>application.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\esperto\application.min.css">
+      <DependentUpon>application.css</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\esperto\bootstrap\bootstrap.css" />
+    <Content Include="App_Themes\esperto\bootstrap\font-awesome.min.css" />
+    <Content Include="App_Themes\esperto\custom.css">
+      <DependentUpon>custom.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\esperto\custom.min.css">
+      <DependentUpon>custom.css</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\esperto\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\esperto\navbar.css">
+      <DependentUpon>navbar.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\esperto\navbar.min.css">
+      <DependentUpon>navbar.css</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\esperto\normalize.css" />
+    <Content Include="App_Themes\esperto\font.css" />
+    <Content Include="App_Themes\esperto\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_Themes\esperto\images\background\bg01.jpg" />
+    <Content Include="App_Themes\esperto\images\background\bg02.jpg" />
+    <Content Include="App_Themes\esperto\images\background\bg03.jpg" />
+    <Content Include="App_Themes\esperto\images\background\bg04.jpg" />
+    <Content Include="App_Themes\esperto\images\background\bg05.jpg" />
+    <Content Include="App_Themes\esperto\images\background\bg06.png" />
+    <Content Include="App_Themes\esperto\images\bg-tasks.jpg" />
+    <Content Include="App_Themes\esperto\images\desktop_chair.png" />
+    <Content Include="App_Themes\esperto\images\footer-card-gradient.png" />
+    <Content Include="App_Themes\esperto\images\logo\animated_pams.gif" />
+    <Content Include="App_Themes\esperto\images\logo\animated_pams2.gif" />
+    <Content Include="App_Themes\esperto\images\logo\animated_pams_main.gif" />
+    <Content Include="App_Themes\esperto\images\logo\logo-icon.png" />
+    <Content Include="App_Themes\esperto\images\meta-trails-bg-e2fc48a333172a45e5674894bbc72f4f.jpg" />
+    <Content Include="App_Themes\esperto\images\team.png" />
+    <Content Include="App_Themes\esperto\style.css" />
+    <Content Include="App_Themes\PAMS\bootstrap\2_bootstrap.css" />
+    <Content Include="App_Themes\PAMS\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="App_Themes\PAMS\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="App_Themes\PAMS\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="App_Themes\PAMS\fonts\arsmaquetteprolight.eot" />
+    <Content Include="App_Themes\PAMS\fonts\arsmaquetteprolight.ttf" />
+    <Content Include="App_Themes\PAMS\fonts\arsmaquetteprolight.woff" />
+    <Content Include="App_Themes\PAMS\fonts\dincondensedlight.eot" />
+    <Content Include="App_Themes\PAMS\fonts\dincondensedlight.ttf" />
+    <Content Include="App_Themes\PAMS\fonts\dincondensedlight.woff" />
+    <Content Include="App_Themes\PAMS\fonts\dincondensedmedium.eot" />
+    <Content Include="App_Themes\PAMS\fonts\dincondensedmedium.ttf" />
+    <Content Include="App_Themes\PAMS\fonts\dincondensedmedium.woff" />
+    <Content Include="App_Themes\PAMS\fonts\pfbeau-thin.woff" />
+    <Content Include="App_Themes\esperto\fonts\arsmaquetteprolight.eot" />
+    <Content Include="App_Themes\esperto\fonts\arsmaquetteprolight.ttf" />
+    <Content Include="App_Themes\esperto\fonts\arsmaquetteprolight.woff" />
+    <Content Include="App_Themes\esperto\fonts\dincondensedlight.eot" />
+    <Content Include="App_Themes\esperto\fonts\dincondensedlight.ttf" />
+    <Content Include="App_Themes\esperto\fonts\dincondensedlight.woff" />
+    <Content Include="App_Themes\esperto\fonts\dincondensedmedium.eot" />
+    <Content Include="App_Themes\esperto\fonts\dincondensedmedium.ttf" />
+    <Content Include="App_Themes\esperto\fonts\dincondensedmedium.woff" />
+    <Content Include="App_Themes\esperto\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="App_Themes\esperto\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="App_Themes\esperto\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="App_Themes\esperto\fonts\pfbeau-thin.woff" />
+    <Content Include="Assets\css\layerslider.css" />
+    <Content Include="Assets\images\iMac.png" />
+    <Content Include="Assets\images\layerslider\loading.gif" />
+    <Content Include="Assets\images\layerslider\skin.png" />
+    <Content Include="Assets\images\Portfolio.png" />
+    <Content Include="Assets\images\shortcuts.png" />
+    <Content Include="Assets\JS\layerslider.js" />
+    <Content Include="Assets\JS\layerslider.transitions.js" />
+    <Content Include="Masters\Application.Master" />
+    <Content Include="App_Themes\esperto\application.less">
+      <Generator>LessCss</Generator>
+    </Content>
+    <Content Include="App_Themes\esperto\custom.less">
+      <Generator>LessCss</Generator>
+    </Content>
+    <Content Include="App_Themes\esperto\fonts\fontawesome-webfont.eot" />
+    <Content Include="App_Themes\esperto\fonts\fontawesome-webfont.ttf" />
+    <Content Include="App_Themes\esperto\fonts\fontawesome-webfont.woff" />
+    <Content Include="App_Themes\esperto\fonts\FontAwesome.otf" />
+    <Content Include="App_Themes\esperto\navbar.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,11 +153,69 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\PAMS\1_normalize.css" />
+    <Content Include="App_Themes\PAMS\3_Style.css" />
+    <Content Include="App_Themes\PAMS\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_Themes\PAMS\images\background\bg01.jpg" />
+    <Content Include="App_Themes\PAMS\images\background\bg02.jpg" />
+    <Content Include="App_Themes\PAMS\images\background\bg03.jpg" />
+    <Content Include="App_Themes\PAMS\images\background\bg04.jpg" />
+    <Content Include="App_Themes\PAMS\images\background\bg05.jpg" />
+    <Content Include="App_Themes\PAMS\images\background\bg06.png" />
+    <Content Include="App_Themes\PAMS\images\bg-tasks.jpg" />
+    <Content Include="App_Themes\PAMS\images\desktop_chair.png" />
+    <Content Include="App_Themes\PAMS\images\footer-card-gradient.png" />
+    <Content Include="App_Themes\PAMS\images\logo\animated_pams.gif" />
+    <Content Include="App_Themes\PAMS\images\logo\animated_pams2.gif" />
+    <Content Include="App_Themes\PAMS\images\logo\animated_pams_main.gif" />
+    <Content Include="App_Themes\PAMS\images\logo\logo-icon.png" />
+    <Content Include="App_Themes\PAMS\images\meta-trails-bg-e2fc48a333172a45e5674894bbc72f4f.jpg" />
+    <Content Include="App_Themes\PAMS\images\team.png" />
+    <Content Include="Assets\images\bg07.jpg" />
+    <Content Include="Assets\images\book.png" />
+    <Content Include="Assets\images\cover-front.jpg" />
+    <Content Include="Assets\images\bg06.png" />
+    <Content Include="Assets\images\dashboard.png" />
+    <Content Include="Assets\images\innter-image.png" />
+    <Content Include="Assets\images\meta-trails-bg-e2fc48a333172a45e5674894bbc72f4f.jpg" />
+    <Content Include="Assets\images\nm_full_1-m.png" />
+    <Content Include="Assets\images\nm_full_1.png" />
+    <Content Include="Assets\images\guarantee.png" />
+    <Content Include="Assets\images\phone-magnify.png" />
+    <Content Include="Assets\images\push-messages.png" />
+    <Content Include="Assets\images\social.png" />
+    <Content Include="Assets\images\starred.png" />
+    <Content Include="Assets\JS\bootstrap.min.js" />
+    <Content Include="Assets\JS\jquery-1.10.2.min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Masters\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Application.Master.cs">
+      <DependentUpon>Application.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Application.Master.designer.cs">
+      <DependentUpon>Application.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

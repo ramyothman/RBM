@@ -142,7 +142,7 @@ namespace DataAccessLayer.DataAccessComponents
         public static string Encrypt(string originalString)
         {
             //MessageBox.Show("Before Encrypt 1");
-
+            if (string.IsNullOrEmpty(originalString)) return "";
             if (String.IsNullOrEmpty(originalString))
             {
                 throw new ArgumentNullException

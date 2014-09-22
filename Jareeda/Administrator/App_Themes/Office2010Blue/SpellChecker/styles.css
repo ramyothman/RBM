@@ -1,4 +1,23 @@
-/* -- ASPxSpellChecker -- */
+.dxwscCheckedTextContainer_Office2010Blue
+{
+	background-color: white;
+	font-size: 11px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 1px solid #8ba0bc;
+	vertical-align: top;
+	overflow: auto;
+	height: 110px;
+	width: 340px;
+	padding: 5px;
+}
+.dxwscErrorWord_Office2010Blue 
+{
+	background: url('scErrorUnderline.gif') repeat-x left bottom;
+	padding-bottom: 3px;
+	color: Black;
+	font-weight: bold;
+}
+/* -- Loading panel -- */
 .dxwscLoadingDiv_Office2010Blue
 {
 	background-color:Gray;
@@ -19,64 +38,47 @@
 	padding: 10px 14px;
 }
 
-.dxwscCheckedTextContainer_Office2010Blue
-{
-	background-color: white;
-	font-size: 11px;
-	font-family: Verdana, Geneva, sans-serif;
-	border: 1px solid #8ba0bc;
-	vertical-align: top;
-	overflow: auto;
-	height: 110px;
-	width: 340px;
-	padding: 5px;
-}
-.dxwscErrorWord_Office2010Blue 
-{
-	background: url('scErrorUnderline.gif') repeat-x left bottom;
-	padding-bottom: 3px;
-	color: Black;
-	font-weight: bold;
-}
-
-/*-- Dialog Forms --*/
-#dxMainSpellCheckFormTable .buttonsCell,
-#dxMainSpellCheckOptionsFormTable .buttonsCell
-{
-	border-top: 1px solid #aec0d5;
-}
-.leftBottomButton
-{
-    padding: 12px 0;
-    text-align:right;
-}
-.rightBottomButton 
-{
-	padding: 10px 12px 10px 10px;
-	width: 100px;
-}
-.dxwsc-rtl .rightBottomButton 
-{
-	padding: 10px 10px 10px 12px;
-}
-.footerBackground 
+/* -- Forms -- */
+.dxwsc-main .dxpcLite_Office2010Blue .dxwscDlgFooter
 {
 	background-color: #cfddee;
+	border-top: 1px solid #aec0d5;
+
+	padding: 12px 12px;
+	text-align: right;
 }
-#dxMainSpellCheckFormTable .contentSCFormContainer
+.dxwsc-main.dxwsc-rtl .dxpcLite_Office2010Blue .dxwscDlgFooter
+{
+    text-align: left;
+}
+.dxwsc-main .dxpcLite_Office2010Blue .dxwscDlgFooterBtn
+{
+    width: 80px;
+    margin-left: 8px;
+}
+.dxwsc-main.dxwsc-rtl .dxpcLite_Office2010Blue .dxwscDlgFooterBtn
+{
+    margin-right: 8px;
+    margin-right: 0;
+}
+.dxwsc-main .dxpcLite_Office2010Blue .dxwscDlgSpellCheckBtn
+{
+    width: 120px;
+}
+.dxwsc-main .dxpcLite_Office2010Blue .dxwscDlgMainSpellCheckFormTable .dxwscDlgContentSCFormContainer
 {
 	padding: 9px 12px 0px;
 }
-#dxMainSpellCheckOptionsFormTable .contentSCOptionsFormContainer
+.dxwsc-main .dxpcLite_Office2010Blue .dxwscDlgMainSpellCheckOptionsFormTable .dxwscDlgContentSCOptionsFormContainer
 {
 	padding: 12px 12px 0px;
 }
-#dxSpellCheckForm .listBoxContainer
+.dxwsc-main .dxpcLite_Office2010Blue .dxwscDlgSpellCheckForm .dxwscDlgListBoxContainer
 {
 	padding-top: 5px;
 	padding-bottom: 12px;
 }
-#dxOptionsForm .languagePanel
+.dxwsc-main .dxpcLite_Office2010Blue .dxwscDlgOptionsForm .dxwscDlgLanguagePanel
 {
 	padding-top: 10px;
 	padding-bottom: 12px;

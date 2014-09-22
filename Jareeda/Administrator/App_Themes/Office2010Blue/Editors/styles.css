@@ -215,9 +215,6 @@
 .dxeTBIncBtn_Office2010Blue,
 .dxeTBDecBtn_Office2010Blue
 {
-	padding: 2px;
-	width: 16px;
-	height: 16px;
 }
 
 .dxeTBVSys .dxeTBRBLabel_Office2010Blue,
@@ -605,63 +602,47 @@ input.dxeEditArea_Office2010Blue
 /* -- Buttons -- */
 .dxeButtonEditButton_Office2010Blue,
 .dxeCalendarButton_Office2010Blue,
-.dxeButtonEditButton_Office2010Blue td.dx,
-.dxeCalendarButton_Office2010Blue td.dx,
 .dxeSpinIncButton_Office2010Blue,
 .dxeSpinDecButton_Office2010Blue,
 .dxeSpinLargeIncButton_Office2010Blue,
 .dxeSpinLargeDecButton_Office2010Blue,
-.dxeSpinIncButton_Office2010Blue td.dx,
-.dxeSpinDecButton_Office2010Blue td.dx,
-.dxeSpinLargeIncButton_Office2010Blue td.dx,
-.dxeSpinLargeDecButton_Office2010Blue td.dx
+.dxeColorEditButton_Office2010Blue
 {
 	font: normal 11px Verdana, Geneva, sans-serif;
 	text-align: center;
 	white-space: nowrap;
-}
-
-.dxeButtonEditButton_Office2010Blue,
-.dxeCalendarButton_Office2010Blue,
-.dxeSpinIncButton_Office2010Blue,
-.dxeSpinDecButton_Office2010Blue,
-.dxeSpinLargeIncButton_Office2010Blue,
-.dxeSpinLargeDecButton_Office2010Blue
-{
 	vertical-align: middle;
 	cursor: pointer;
 }
-.dxeButtonEdit_Office2010Blue .dxeSBC,
 .dxeCalendarButton_Office2010Blue,
-.dxeButtonEditButton_Office2010Blue
+.dxeButtonEditButton_Office2010Blue,
+.dxeColorEditButton_Office2010Blue
 {
 	border-style: solid;
 	border-color: #8ba0bc;
 }
-.dxeCalendarButton_Office2010Blue
+.dxeCalendarButton_Office2010Blue,
+.dxeColorEditButton_Office2010Blue
 {
 	border-width: 1px;
 }
-.dxeButtonEditButton_Office2010Blue,
-.dxeButtonEdit_Office2010Blue .dxeSBC
+.dxeButtonEditButton_Office2010Blue
 {
-	border-top-width: 0;
-	border-right-width: 0;
-	border-bottom-width: 0;
-	border-left-width: 1px;
+	border-width: 0 0 0 1px;
 }
-.dxeButtonEdit_Office2010Blue .dxeButtonLeft,
-.dxeButtonEdit_Office2010Blue .dxeSBC.dxeButtonLeft
+.dxeSpinIncButton_Office2010Blue.dxeHasLarge,
+.dxeSpinDecButton_Office2010Blue.dxeHasLarge,
+.dxeSpinLargeIncButton_Office2010Blue
 {
-	border-top-width: 0;
-	border-right-width: 1px;
-	border-bottom-width: 0;
-	border-left-width: 0;
+	border-width: 0;
 }
-.dxeSpinIncButton_Office2010Blue,
-.dxeSpinDecButton_Office2010Blue,
-.dxeSpinLargeIncButton_Office2010Blue,
-.dxeSpinLargeDecButton_Office2010Blue
+.dxeButtonEditButton_Office2010Blue.dxeButtonLeft
+{
+	border-width: 0 1px 0 0;
+}
+.dxeSpinIncButton_Office2010Blue.dxeHasLarge.dxeButtonLeft,
+.dxeSpinDecButton_Office2010Blue.dxeHasLarge.dxeButtonLeft,
+.dxeSpinLargeDecButton_Office2010Blue.dxeButtonLeft
 {
 	border-width: 0;
 }
@@ -681,67 +662,44 @@ input.dxeEditArea_Office2010Blue
 	background: #c5d6e7 url('edtSpinDecBtnBack.png') repeat-x left top;
 }
 
-.dxeButtonEditButton_Office2010Blue table.dxbebt
+.dxeButtonEditButton_Office2010Blue
 {
 	padding: 3px 2px 3px 3px;
 }
-.dxeSpinIncButton_Office2010Blue table.dxbebt,
-.dxeSpinDecButton_Office2010Blue table.dxbebt,
-.dxeSpinLargeIncButton_Office2010Blue table.dxbebt,
-.dxeSpinLargeDecButton_Office2010Blue table.dxbebt
-{
-	padding: 0;
-}
-
 .dxeSpinIncButton_Office2010Blue
 {
-	padding: 1px 0 2px;
+	padding: 2px 4px 2px;
 }
 .dxeSpinDecButton_Office2010Blue
 {
-	padding: 3px 0 2px;
+	padding: 3px 4px 2px;
 }
 .dxeSpinLargeIncButton_Office2010Blue,
 .dxeSpinLargeDecButton_Office2010Blue
 {
-	padding: 6px 0;
-}
-
-.dxeButtonEditButton_Office2010Blue table.dxbebt,
-.dxeSpinLargeIncButton_Office2010Blue table.dxbebt,
-.dxeSpinLargeDecButton_Office2010Blue table.dxbebt
-{
-	width: 9px;
-}
-.dxeSpinIncButton_Office2010Blue table.dxbebt,
-.dxeSpinDecButton_Office2010Blue table.dxbebt
-{
-	width: 15px;
+	padding: 6px 2px;
 }
 .dxeCalendarButton_Office2010Blue
 {
 	font-size: 11px;
 	background: #d1dfee url('edtBtnBack.png') repeat-x left top;
 	padding: 3px 11px 4px;
-	width: 32px;
+	width: 37px;
 }
-.dxeCalendarButton_Office2010Blue td.dx
+.dxeColorEditButton_Office2010Blue
 {
 	font-size: 11px;
-	text-align: center;
-	white-space: nowrap;
-}
-.dxeCalendarButton_Office2010Blue table.dxbebt
-{
-	width: 100%;
+	background: #d1dfee url('edtBtnBack.png') repeat-x left top;
 }
 
 /* -- Pressed -- */
-.dxeCalendarButtonPressed_Office2010Blue
+.dxeCalendarButtonPressed_Office2010Blue,
+.dxeColorEditButton_Office2010Blue:active
 {
 	border-color: #c2762b;
 }
-.dxeCalendarButtonPressed_Office2010Blue
+.dxeCalendarButtonPressed_Office2010Blue,
+.dxeColorEditButton_Office2010Blue:active
 {
 	background: #fee287 url('edtBtnPBack.png') repeat-x left top;
 }
@@ -754,11 +712,13 @@ input.dxeEditArea_Office2010Blue
 	background: #f3d984 url('edtDropDownBtnPBack.png') repeat-x left top;
 }
 /* -- Hover -- */
-.dxeCalendarButtonHover_Office2010Blue
+.dxeCalendarButtonHover_Office2010Blue,
+.dxeColorEditButton_Office2010Blue:hover
 {
 	border-color: #eecc53;
 }
-.dxeCalendarButtonHover_Office2010Blue
+.dxeCalendarButtonHover_Office2010Blue,
+.dxeColorEditButton_Office2010Blue:hover
 {
 	background: #fcf8e5 url('edtBtnHBack.png') repeat-x left top;
 }
@@ -1139,6 +1099,7 @@ a.dxeHyperlink_Office2010Blue:visited
 {
 	color: Black;
 	background: #d5e8ff none;
+	float: none; /* B250635 */
 }
 .dxeListBoxItemHover_Office2010Blue em,
 .dxeListBoxItemSelected_Office2010Blue em
@@ -1399,12 +1360,15 @@ a.dxeHyperlink_Office2010Blue:visited
 	color: #b2b7bd;
 	cursor: default;
 }
+.dxeEditArea_Office2010Blue.dxeDisabled_Office2010Blue /*Bootstrap correction*/
+{
+    color: #b2b7bd;
+}
 a.dxeDisabled_Office2010Blue:hover
 {
 	color: #b2b7bd;
 }
-.dxeButtonDisabled_Office2010Blue,
-.dxeButtonDisabled_Office2010Blue td.dxe
+.dxeButtonDisabled_Office2010Blue
 {
 	border-color: #bdcbdf;
 	color: #b2b7bd;
@@ -1415,11 +1379,15 @@ a.dxeDisabled_Office2010Blue:hover
 {
 	color: #1e395b;
 	font: normal 11px Verdana, Geneva, sans-serif;
-	vertical-align: middle;
 	border: 1px solid #abbad0;
 	background: #d1dfef url('edtBtnBack.png') repeat-x left top;
 	padding: 1px;
+
 	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
 }
 .dxbButtonHover_Office2010Blue
 {
@@ -1441,12 +1409,11 @@ a.dxeDisabled_Office2010Blue:hover
 }
 .dxbButton_Office2010Blue div.dxb
 {
-	padding: 3px 15px;
-	border-width: 0px;
+	padding: 2px 14px;
+	border: 1px dotted transparent;
 }
 .dxbButton_Office2010Blue div.dxbf
 {
-	padding: 2px 14px;
 	border: 1px dotted black;
 }
 .dxbButton_Office2010Blue div.dxb td.dxb
@@ -1566,11 +1533,6 @@ a.dxfcValue_Office2010Blue
 	width: 15px;
 	height: 15px;
 	cursor: pointer;
-}
-.dxeColorTable_Office2010Blue
-{
-	background-color: White;
-	border: 1px solid #8ba0bc;
 }
 .dxeItemPicker_Office2010Blue
 {
@@ -1760,3 +1722,118 @@ a.dxfcValue_Office2010Blue
     }
 }
 
+/* ASPxCololrEdit */
+.dxcpParametersCell_Office2010Blue label
+{
+	font: 11px Verdana, Geneva, sans-serif;
+}
+.dxcpParametersCell_Office2010Blue input
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	margin-left: 3px;
+	padding-left: 5px;
+	width: 60px;
+	height: 17px;
+}
+.dxcpWebColorInput_Office2010Blue
+{
+	float: right;
+	margin-top: 40px;
+}
+.dxcpColorParameterMainDiv_Office2010Blue
+{
+	padding: 0px 0 4px 15px;
+	width: 90px;
+	text-align: right;
+}
+.dxeCustomColorButton_Office2010Blue
+{
+	height: 21px;
+	line-height: 21px;
+	margin: 3px 7px;
+	cursor: pointer;
+}
+.dxcpCurrentColor_Office2010Blue,
+.dxcpSavedColor_Office2010Blue
+{
+	height: 35px;
+}
+.dxcpCurrentAndSaved_Office2010Blue
+{
+	width: 65px;
+	margin: 34px 0px 0px auto;
+	cursor: pointer;
+}
+.dxeColorTablesMainDiv_Office2010Blue,
+.dxeColorSelectorMainDiv_Office2010Blue
+{
+	background-color: #FFFFFF;
+}
+.dxeColorSelectorMainDiv_Office2010Blue
+{
+	padding: 7px;
+}
+.dxcpColorArea_Office2010Blue,
+.dxcpHueArea_Office2010Blue,
+.dxcpCurrentAndSaved_Office2010Blue,
+.dxeColorTablesMainDiv_Office2010Blue,
+.dxeColorSelectorMainDiv_Office2010Blue,
+.dxcpParametersCell_Office2010Blue input 
+{
+	border: 1px solid #8ba0bc;
+}
+.dxeButtonsPanelDiv_Office2010Blue
+{
+	margin-top: 15px;
+	text-align: right;
+}
+.dxeButtonsPanelDiv_Office2010Blue input
+{
+	width: 60px;
+	height: 21px;
+	margin-left: 10px;
+}
+
+/* -- ASPxTokenBox -- */
+input.dxeTokenBoxInput_Office2010Blue[type="text"] {
+	display: inline-block;
+	float: left;
+	width: 30px;
+	outline: none;
+	height: 17px;
+	line-height: 17px;
+}
+.dxeToken_Office2010Blue {
+    display: inline-block;
+    font: 11px Verdana, Geneva, sans-serif;
+    margin: 0px 0px 1px 1px;
+    padding: 0px;
+	float: left;
+	min-width: 30px;
+	height: 17px;
+}
+.dxeTokenText_Office2010Blue, .dxeTokenRemoveButton_Office2010Blue {
+	display: block;
+	float: left;
+}
+.dxeTokenText_Office2010Blue {
+	padding: 0px 2px 0px 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.dxeTokenRemoveButton_Office2010Blue {
+	cursor: pointer;
+}
+.dxeToken_Office2010Blue {
+	background: #ffffff url('edtTokenBoxTokenBackground.png') repeat-x top;
+}
+.dxeButtonEdit_Office2010Blue td.dxictb {
+    padding: 1px 0px 0px 0px;
+}
+.dxeButtonEdit_Office2010Blue td.dxictb {
+    *padding-bottom: 1px;
+}
+.dxeButtonEdit_Office2010Blue td.dxictb
+{
+    *padding-left: 2px;
+}

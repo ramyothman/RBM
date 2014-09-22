@@ -1,8 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ImportantNews.ascx.cs" Inherits="ManatiqFrontEnd.Controls.News.ImportantNews" %>
 <div runat="server" id="MainBlockContainer" class="block-news">
-				<div class="block-head">
+				<div runat="server" id="BlockHead" class="block-head">
 					<h1 runat="server" id="ModuleTitleText"></h1>
-                     <a href="#" id="MoreLink" runat="server" class="more_btn-head">المزيد</a>
+                     
 				</div>
 				<div class="txt-wrapper">
                     <asp:Repeater runat="server" ID="ImportantNewsRepeater">
@@ -63,6 +63,6 @@
 					</div>
 					
 					
-					
+					<a href="#" id="MoreLink" runat="server" class="more_btn">المزيد</a>
 				</div>
 			</div>

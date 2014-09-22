@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Builder.aspx.cs" Inherits="Administrator.Builder.FormBuilder.Builder" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Builder.aspx.cs" Inherits="Administrator.Builder.FormBuilder.Builder" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
     
     <link href="Styles/Main.css" rel="stylesheet" type="text/css" />
@@ -9,6 +9,42 @@
     <script src="Scripts/JQuery/SurveyQuestion.js" type="text/javascript"></script>
     <script src="Scripts/JQuery/GeneralBuilderScript.js" type="text/javascript"></script>
    
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+   <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="Form Builder"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+      <ul>
+          <li>
+              <dx:ASPxButton ID="btnConfirmationMessage" runat="server" Text="Edit Confirmation" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" AutoPostBack="false">
+                    <Image Url="images/page_accept.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                  <ClientSideEvents Click="function(s,e){ popupSurveySettings.Show(); }" />
+                </dx:ASPxButton>
+          </li>
+          
+          <li>
+              <dx:ASPxButton ID="btnSave" runat="server" Text="<%$Resources:ContentManagement, Save %>" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" AutoPostBack="false">
+                    <Image Url="~/App_Themes/Jareeda/images/options/icon-32-save.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                  <ClientSideEvents Click="function(s,e){ SaveData(); }" />
+                </dx:ASPxButton>
+          </li>
+          <li>
+              <%-- <a href="javascript:SaveData();"><img src="images/filesaveas.png" class="ImageLink" alt="Save" /></a><a href="javascript:popupSurveySettings.Show();"><img src="images/page_accept.png" class="ImageLink" alt="Edit Confirmation" /></a>--%>
+          </li>
+      </ul>
+
+    </div>
+   
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
     <div class="content">
@@ -24,7 +60,7 @@
                     </select>
                 </div>
                 <div class="commandpanelright">
-                   <a href="javascript:SaveData();"><img src="images/filesaveas.png" class="ImageLink" alt="Save" /></a><a href="javascript:popupSurveySettings.Show();"><img src="images/page_accept.png" class="ImageLink" alt="Edit Confirmation" /></a>
+                  
                 </div>
             </div>
             <div class="fix">

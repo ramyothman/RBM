@@ -27,6 +27,8 @@ namespace ManatiqFrontEnd.Controls.News
                     article = BusinessLogicLayer.Common.ArticleLogic.GetByID(id);
                     if (article != null)
                     {
+                        NewsBlock.Visible = true;
+                        NoNewsBlock.Visible = false;
                         ArticleTitle.InnerText = article.ArticleName;
                         ArticleTitleText = article.ArticleName;
                         this.Page.Title = article.ArticleName;
@@ -68,6 +70,15 @@ namespace ManatiqFrontEnd.Controls.News
 
                 }
             }
+        }
+        public string GetWriterImagePath(string url)
+        {
+            string urlFinal = BusinessLogicLayer.Common.NewsImages + url;
+            if (string.IsNullOrEmpty(url))
+            {
+                urlFinal = "~/App_Themes/Manatiq/images/writters2.png";
+            }
+            return urlFinal;
         }
         public string GetDate(DateTime d)
         {

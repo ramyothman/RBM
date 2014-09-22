@@ -14,7 +14,7 @@ namespace Administrator.HumanResources.Divisions
         {
             if (!IsPostBack)
             {
-                
+                base.Page_Load(sender, e);
             }
         }
 

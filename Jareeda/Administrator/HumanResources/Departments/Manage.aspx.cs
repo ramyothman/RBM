@@ -13,6 +13,7 @@ namespace Administrator.HumanResources.Departments
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            base.Page_Load(sender, e);
             if (!IsPostBack)
             {
                 object values = DepartmentGrid.GetRowValues(Convert.ToInt32(0), new string[] { "DepartmentId" });

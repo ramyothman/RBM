@@ -48,7 +48,7 @@ namespace Administrator.Controls.EventoControls
                     }
                    byte []thumb = Tools.CreateThumb(uploadedFile.FileBytes, width, false);
                     FileStream stream = new FileStream(Server.MapPath(BusinessLogicLayer.Common.ConferenceContentPath) + fileName, FileMode.Create);
-                    stream.Write(thumb, 0, thumb.Length);
+                    stream.Write(uploadedFile.FileBytes, 0, uploadedFile.FileBytes.Length);
                     stream.Flush();
                     stream.Close();
                 }

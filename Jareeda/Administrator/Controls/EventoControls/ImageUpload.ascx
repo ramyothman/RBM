@@ -10,6 +10,7 @@
               
               $('#previewImage').attr("src", args.callbackData);
               //alert(getPreviewImageElement().src);
+              //$('#previewImage').Jcrop();
               $('#previewImage').Jcrop({
                   onSelect: storeCoords,
                   setSelect: [0, 0, 200, 200],
@@ -48,7 +49,7 @@
 </PanelCollection>
 </dx:ASPxCallbackPanel>
 
-<dx:ASPxPopupControl ID="popupEditImage" ClientInstanceName="popupEditImage" runat="server" Width="300px" HeaderText="Edit Image" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter">
+<dx:ASPxPopupControl ID="popupEditImage" ClientInstanceName="popupEditImage" runat="server" Width="300px" HeaderText="Edit Image" PopupHorizontalAlign="Center" PopupVerticalAlign="WindowCenter">
     <ContentCollection>
         <dx:PopupControlContentControl runat="server" SupportsDisabledAttribute="True">
             <table>
@@ -70,7 +71,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img  src="/images/no-frame-person.png"  id="previewImage" AlternateText="preview" />
+                        <img  src="/images/no-frame-person.png"   id="previewImage" AlternateText="preview" />
                         
                     </td>
                 </tr>

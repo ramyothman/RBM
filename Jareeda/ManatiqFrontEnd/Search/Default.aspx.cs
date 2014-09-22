@@ -12,7 +12,7 @@ namespace ManatiqFrontEnd.Search
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            //if (!IsPostBack)
             {
                 PageManager manager = new PageManager();
                 _Masters.Master master = this.Master as _Masters.Master;
@@ -25,5 +25,7 @@ namespace ManatiqFrontEnd.Search
                 }
             }
         }
+
+        
     }
 }

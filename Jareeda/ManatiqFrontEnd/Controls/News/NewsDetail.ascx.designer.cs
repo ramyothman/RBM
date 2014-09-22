@@ -13,6 +13,15 @@ namespace ManatiqFrontEnd.Controls.News {
     public partial class NewsDetail {
         
         /// <summary>
+        /// NewsBlock control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NewsBlock;
+        
+        /// <summary>
         /// ArticleSubTitle control.
         /// </summary>
         /// <remarks>
@@ -92,5 +101,14 @@ namespace ManatiqFrontEnd.Controls.News {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Content;
+        
+        /// <summary>
+        /// NoNewsBlock control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NoNewsBlock;
     }
 }

@@ -220,6 +220,7 @@ namespace ManatiqFrontEnd.Code
                 control.HomePageID = module.HomePageID;
                 control.SectionID = module.SectionID;
                 control.IsFirst = isFirst;
+                control.Attributes.Add("rel", module.HomePageID.ToString());
                 //CurrentContainer = GetContainer((ControlPosition)module.PositionID, module.IsFullWidth);
                 container.Controls.Add(control);
             }
@@ -266,6 +267,8 @@ namespace ManatiqFrontEnd.Code
                         mainControl.Controls.Add(subContainer);
                     }
                     Holders.Controls.Add(mainControl);
+                    mainControl.DataBind();
+                    Holders.DataBind();
                 }
             }
             //List<BusinessLogicLayer.Entities.ContentManagement.HomePage> result = GetHomePages(page, SiteID);

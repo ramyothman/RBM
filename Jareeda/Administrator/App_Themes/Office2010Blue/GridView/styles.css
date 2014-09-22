@@ -96,6 +96,20 @@
 	overflow: hidden;
 	color: Black;
 }
+.dxgvTable_Office2010Blue .dxgvHEC
+{
+	background-color: White;
+	border-width: 0;
+	overflow: hidden;
+}
+.dxgvControl_Office2010Blue .dxgvFSDC
+{
+    background-color: #e2ebf6;
+}
+.dxgvControl_Office2010Blue .dxgvFSDC .dxgvFooter_Office2010Blue td.dxgv
+{
+    border-bottom: 0;
+}
 .dxgvInlineEditRow_Office2010Blue,
 .dxgvDataRow_Office2010Blue
 {
@@ -530,4 +544,26 @@
 .dxgvTable_Office2010Blue
 {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.dxgvControl_Office2010Blue td.dxgvBatchEditCell_Office2010Blue
+{
+    padding: 0;
+}
+.dxgvControl_Office2010Blue td.dxgvBatchEditModifiedCell_Office2010Blue
+{
+    background: #d7f9c7;
+}
+.dxgvControl_Office2010Blue .dxgvErrorCell
+{
+    padding-left: 5px;
+    width: 1px;
+}
+.dxgvControl_Office2010Blue .dxgvErrorCell img
+{
+    margin: -3px 0;
+}
+.dxgvStatusBar_Office2010Blue .dxgvCommandColumn_Office2010Blue a
+{
+    margin-right: 10px;
 }

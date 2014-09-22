@@ -59,7 +59,7 @@
                 <ul class="clearfix">
             </HeaderTemplate>
             <ItemTemplate>
-                <li><asp:HyperLink runat="server" href='<%# GetLink(Convert.ToInt32(Eval("MenuEntityItemId"))) %>'><%# Eval("Name").ToString() %></asp:HyperLink></li>
+                <li><a runat="server" href='<%# GetLink(Convert.ToInt32(Eval("MenuEntityItemId"))) %>'><%# Eval("Name").ToString() %></a></li>
             </ItemTemplate>
             <FooterTemplate>
                 </ul>

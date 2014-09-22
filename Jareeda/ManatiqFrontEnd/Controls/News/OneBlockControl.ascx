@@ -7,7 +7,7 @@
 					<ul class="sections-list">
         </HeaderTemplate>
         <ItemTemplate>
-            <li><h1><%# Eval("SectionName") %></h1></li>
+             <li><h1><a href='<%#  "~/list/5-" + Eval("SectionId") %>' runat="server"><%# Eval("SectionName") %></a></h1></li>
         </ItemTemplate>
         <FooterTemplate>
             </ul>
@@ -46,7 +46,7 @@
                             </ItemTemplate>
                             <FooterTemplate>
                                 <%--<a href="#" class="more_btn">المزيد</a>--%>
-                                <a href='<%#  GetMoreLink() %>' runat="server" style="vertical-align:bottom;" class="more_btn display-table-cell">المزيد</a>
+                                <%--<a href='<%#  GetMoreLink() %>' runat="server" style="vertical-align:bottom;" class="more_btn display-table-cell">المزيد</a>--%>
                             </FooterTemplate>
                         </asp:Repeater>
                     </li>

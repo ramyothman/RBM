@@ -68,11 +68,12 @@
 body.dxheDesignViewArea_Office2010Blue, 
 body.dxhePreviewArea_Office2010Blue
 {
-    padding: 4px 0 0 4px;
+    padding: 4px 4px 0 4px;
 }
 .dxheControl_Office2010Blue .dxheContentArea_Office2010Blue .dxeMemo_Office2010Blue td
 {
     padding-top: 0;
+    padding-right: 0;
 }
 .dxheContentArea_Office2010Blue .dxeMemoEditArea_Office2010Blue
 {
@@ -80,9 +81,7 @@ body.dxhePreviewArea_Office2010Blue
     padding-right: 0;
 }
 .dxheControl_Office2010Blue.dxhe-rtl .dxheHtmlViewArea_Office2010Blue td,
-.dxheControl_Office2010Blue.dxhe-rtl .dxheHtmlViewArea_Office2010Blue.dxeMemo_Office2010Blue td,
-body.dxheDesignViewArea_Office2010Blue.dxhe-rtl, 
-body.dxhePreviewArea_Office2010Blue.dxhe-rtl
+.dxheControl_Office2010Blue.dxhe-rtl .dxheHtmlViewArea_Office2010Blue.dxeMemo_Office2010Blue td
 {
     padding: 0 4px 0 1px;
 }
@@ -121,6 +120,11 @@ body.dxheDesignViewArea_Office2010Blue table.dxEmptyBorderTable td
 		border:0px;
 	}
 }
+body.dxheDesignViewArea_Office2010Blue pre
+{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
 
 /* Status Bar */
 .dxheStatusBar_Office2010Blue
@@ -128,16 +132,17 @@ body.dxheDesignViewArea_Office2010Blue table.dxEmptyBorderTable td
 }
 .dxheStatusBar_Office2010Blue .dxheStatusBarTab_Office2010Blue
 {
-    padding-left: 34px;
-    padding-right: 35px;
-    padding-bottom: 5px;
-    border-bottom-width: 0;
-    border-left-width: 0;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+}
+.dxheStatusBar_Office2010Blue .dxheStatusBarTab_Office2010Blue .dxtc-link
+{
+    padding: 4px 35px 5px 34px;
 }
 .dxheControl_Office2010Blue.dxhe-rtl .dxheStatusBar_Office2010Blue .dxheStatusBarTab_Office2010Blue
 {
-    border-left-width: 1px;
-    border-right-width: 0;
+    border-left-width: 1px !important;
+    border-right-width: 0 !important;
 }
 .dxheStatusBarActiveTab_Office2010Blue
 {
@@ -152,8 +157,6 @@ body.dxheDesignViewArea_Office2010Blue table.dxEmptyBorderTable td
 }
 .dxheSizeGripContainer_Office2010Blue
 {
-    float: left;
-    height: 0;
     width: 100%;
     text-align: right;
     font-size: 0;
@@ -164,23 +167,35 @@ body.dxheDesignViewArea_Office2010Blue table.dxEmptyBorderTable td
 	text-align: left;
 }
 /* ----------------- Dialog Forms ----------------- */
-#dxInsertTableForm .buttonsCell,
-#dxInsertLinkForm .buttonsCell,
-#dxInsertImageForm .buttonsCell,
-#dxPasteFromWordForm .buttonsCell,
-#dxTableColumnPropertiesForm .buttonsCell,
-.dxheCustomDialog_Office2010Blue .dxhecd-Buttons
+.dxpcLite_Office2010Blue .dxheDlgFooter,
+.dxpcLite_Office2010Blue .dxheCustomDialog_Office2010Blue .dxhecd-Buttons
 {
     background-color: #cfddee;
     border-top: 1px solid #aec0d5;
-    padding: 11px;
+	padding: 10px 11px;
+	text-align: right;
 }
-#dxInsertImageForm .imagePreviewCell
+.dxpcLite_Office2010Blue.dxRtl .dxheDlgFooter,
+.dxpcLite_Office2010Blue.dxRtl .dxheCustomDialog_Office2010Blue .dxhecd-Buttons
+{
+    text-align: left;
+}
+.dxpcLite_Office2010Blue .dxheDlgFooterBtn
+{
+    width: 80px;
+    margin-left: 8px;
+}
+.dxpcLite_Office2010Blue.dxRtl .dxheDlgFooterBtn
+{
+    margin-right: 8px;
+    margin-left: 0;
+}
+.dxpcLite_Office2010Blue .dxheDlgInsertImageForm .dxheDlgImagePreviewCell
 {
     color: #737373;
     border: 1px dashed #cac8c8;
 }
-#dxPasteFromWordForm .pasteContainerCell td
+.dxpcLite_Office2010Blue .dxheDlgPasteFromWordForm .dxheDlgPasteContainerCell td
 {
 	border: 1px solid #8ba0bc;
 }
@@ -210,28 +225,6 @@ body.dxheDesignViewArea_Office2010Blue table.dxEmptyBorderTable td
 .dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-main
 {
     border-width: 0;
-}
-.dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-horizontal.dxmtb .dxtb-comboBoxMenuItem
-{
-	border-width: 0;
-	padding: 2px 2px 1px !important;
-}
-.dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-horizontal.dxmtb .dxm-image-l .dxm-dropDownMode.dxtb-cb .dxm-content, 
-.dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-horizontal.dxmtb .dxm-image-r .dxm-dropDownMode.dxtb-cb .dxm-content
-{
-	padding-top: 3px;
-	padding-bottom: 3px;
-}
-.dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-horizontal.dxmtb .dxm-image-l .dxm-item.dxtb-cddi .dxm-content, 
-.dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-horizontal.dxmtb .dxm-image-r .dxm-item.dxtb-cddi .dxm-content
-{
-	padding-top: 4px;
-	padding-bottom: 3px;
-}
-.dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-horizontal.dxmtb .dxm-image-l .dxm-item.dxtb-cddi .dxm-content img,
-.dxtbControl_Office2010Blue .dxmLite_Office2010Blue .dxm-horizontal.dxmtb .dxm-image-r .dxm-item.dxtb-cddi .dxm-content img
-{
-	margin-top: -1px;
 }
 .dxmLite_Office2010Blue .dxhetipControl_Office2010Blue img
 {

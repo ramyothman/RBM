@@ -111,7 +111,7 @@ namespace Administrator.HumanResources.Employees
                 }
                 CurrentPerson.Credentials.ModifiedDate = DateTime.Now;
 
-                CurrentPerson.Credentials.Username = employeeUserName.Text;
+                CurrentPerson.Credentials.Username = employeeCredential.Text;
             }
 
         }
@@ -140,7 +140,7 @@ namespace Administrator.HumanResources.Employees
 
             if (!CurrentPerson.Credentials.NewRecord)
             {
-                employeeUserName.Text = CurrentPerson.Credentials.Username;
+                employeeCredential.Text = CurrentPerson.Credentials.Username;
             }
 
             employeeEmail.Text = CurrentPerson.Email;
@@ -230,6 +230,7 @@ namespace Administrator.HumanResources.Employees
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            base.Page_Load(sender, e);
             if (!IsPostBack)
             {
                 CurrentPerson = null;

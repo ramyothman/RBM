@@ -145,7 +145,7 @@
     <value>حالة الوقت المستغرق بالساعات</value>
   </data>
   <data name="AFTitle" xml:space="preserve">
-    <value>إدارة تتابع الإعتماد</value>
+    <value>العنوان</value>
   </data>
   <data name="AFUser" xml:space="preserve">
     <value>المستخدم</value>
@@ -265,7 +265,7 @@
     <value>إدارة القائمة</value>
   </data>
   <data name="MMTitlePath" xml:space="preserve">
-    <value>المسار</value>
+    <value>الرابط</value>
   </data>
   <data name="MSPCreator" xml:space="preserve">
     <value>المعد</value>
@@ -415,7 +415,7 @@
     <value>الموقع</value>
   </data>
   <data name="SSTitle" xml:space="preserve">
-    <value>قسم إدارة الموقع</value>
+    <value>إدارة الأقسام</value>
   </data>
   <data name="SAArticleShortTitle" xml:space="preserve">
     <value>العنوان المختصر - 6 كلمات فقط</value>
@@ -557,5 +557,254 @@
   </data>
   <data name="SAMSources" xml:space="preserve">
     <value>المصادر</value>
+  </data>
+  <data name="SSAlias" xml:space="preserve">
+    <value>اسم التصفح</value>
+  </data>
+  <data name="WITotalArticlesTitle" xml:space="preserve">
+    <value>محتوى</value>
+  </data>
+  <data name="WITotalArticlesTitleToday" xml:space="preserve">
+    <value>محتوى اليوم</value>
+  </data>
+  <data name="WILastArticleModifiedHour" xml:space="preserve">
+    <value>ساعة</value>
+  </data>
+  <data name="WILastArticleModifiedMinute" xml:space="preserve">
+    <value>دقيقة</value>
+  </data>
+  <data name="WILastArticleModifiedTitle" xml:space="preserve">
+    <value>آخر تحديث منذ</value>
+  </data>
+  <data name="WILastArticleModifiedItemTitle" xml:space="preserve">
+    <value>اخر تحديث</value>
+  </data>
+  <data name="WITotalSectionsTitle" xml:space="preserve">
+    <value>قسم</value>
+  </data>
+  <data name="WITotalVisitsTitle" xml:space="preserve">
+    <value>زيارة</value>
+  </data>
+  <data name="WITotalVisitsTodayTitle" xml:space="preserve">
+    <value>زيارة اليوم</value>
+  </data>
+  <data name="WITopArticleTitle" xml:space="preserve">
+    <value>الأكثر قراءه اليوم</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>ارسال بريد الكتروني</value>
+  </data>
+  <data name="ManageEmailTemplates" xml:space="preserve">
+    <value>ادارة قوالب البريد الالكتروني</value>
+  </data>
+  <data name="NewEmailTemplate" xml:space="preserve">
+    <value>اضافه قالب بريد الكتروني</value>
+  </data>
+  <data name="SaveEmailTemplate" xml:space="preserve">
+    <value>حفظ قالب بريد الكتروني</value>
+  </data>
+  <data name="SBBlocks" xml:space="preserve">
+    <value>القوالب</value>
+  </data>
+  <data name="SBLayout" xml:space="preserve">
+    <value>التصميم و الهيكله</value>
+  </data>
+  <data name="JareedaStyle" xml:space="preserve">
+    <value>/_GeniMaster/styles/ar/main.min.css</value>
+  </data>
+  <data name="FormCancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="FormDeleteMsg" xml:space="preserve">
+    <value>هل تريد حذف هذا البيان؟</value>
+  </data>
+  <data name="FormEditForm" xml:space="preserve">
+    <value>حفظ نموذج</value>
+  </data>
+  <data name="FormUpdate" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="HRContractTypeName" xml:space="preserve">
+    <value>نوع العقد</value>
+  </data>
+  <data name="HRContractTypeTitle" xml:space="preserve">
+    <value>إدارة أنواع العقود</value>
+  </data>
+  <data name="HRDepartmentsTitle" xml:space="preserve">
+    <value>إدارة إدارات المؤسسة</value>
+  </data>
+  <data name="AccountLogout" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="MainSiteTitle" xml:space="preserve">
+    <value>لوحة تحكم صحيفة المناطق</value>
+  </data>
+  <data name="JareedaStyleAdmin" xml:space="preserve">
+    <value>css/builder-ar.min.css</value>
+  </data>
+  <data name="MUVideoUrl" xml:space="preserve">
+    <value>رابط اليوتيوب</value>
+  </data>
+  <data name="AFTitleMain" xml:space="preserve">
+    <value>إدارة آعتماد النشر</value>
+  </data>
+  <data name="MSComments" xml:space="preserve">
+    <value>ادارة التعليقات</value>
+  </data>
+  <data name="HREmployeeName" xml:space="preserve">
+    <value>الموظف</value>
+  </data>
+  <data name="JareedaStyleBootstrap" xml:space="preserve">
+    <value>/_GeniMaster/styles/ar/bootstrap.min.css</value>
+  </data>
+  <data name="RTSignOut" xml:space="preserve">
+    <value>تسجيل خروج</value>
+  </data>
+  <data name="TBExcel" xml:space="preserve">
+    <value>ملف إكسل</value>
+  </data>
+  <data name="TBNew" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="TBPDF" xml:space="preserve">
+    <value>ملف بي دي اف</value>
+  </data>
+  <data name="TBWord" xml:space="preserve">
+    <value>ملف ورد</value>
+  </data>
+  <data name="GridEditFormCaption" xml:space="preserve">
+    <value>تحرير نموذج</value>
+  </data>
+  <data name="GridNew" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="GridConfirmDelete" xml:space="preserve">
+    <value>هل تريد حذف هذا البيان؟</value>
+  </data>
+  <data name="GridCancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="GridSave" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="GridGroupPanel" xml:space="preserve">
+    <value>اسحب رأس العمود هنا للجمع بحسب هذا الحقل</value>
+  </data>
+  <data name="MenuItemManagerLanguage" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+  <data name="MenuItemManagerLanguages" xml:space="preserve">
+    <value>اللغات</value>
+  </data>
+  <data name="MenuItemManagerModified" xml:space="preserve">
+    <value>تاريخ التعديل</value>
+  </data>
+  <data name="MenuItemManagerName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="MenuItemManagerOrder" xml:space="preserve">
+    <value>الترتيب</value>
+  </data>
+  <data name="MenuItemManagerPath" xml:space="preserve">
+    <value>المسار</value>
+  </data>
+  <data name="MenuManagerEnterTitle" xml:space="preserve">
+    <value>ادخل اسم القائمة</value>
+  </data>
+  <data name="MenuManagerName" xml:space="preserve">
+    <value>القائمة</value>
+  </data>
+  <data name="MenuManagerTitle" xml:space="preserve">
+    <value>إدارة القوائم</value>
+  </data>
+  <data name="MenuManagerType" xml:space="preserve">
+    <value>نوع القائمة</value>
+  </data>
+  <data name="MenuItemManagerIcon" xml:space="preserve">
+    <value>الايقونة</value>
+  </data>
+  <data name="MMISDisplayOrder" xml:space="preserve">
+    <value>الترتيب</value>
+  </data>
+  <data name="MMISExternalPageURL" xml:space="preserve">
+    <value>رابط الصفحة</value>
+  </data>
+  <data name="MMISIcon" xml:space="preserve">
+    <value>الايقونة</value>
+  </data>
+  <data name="MMISLanguage" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+  <data name="MMISMenuName" xml:space="preserve">
+    <value>اسم القائمة</value>
+  </data>
+  <data name="MMISMenuPosition" xml:space="preserve">
+    <value>موقع القائمة</value>
+  </data>
+  <data name="MMISMenuType" xml:space="preserve">
+    <value>نوع القائمة</value>
+  </data>
+  <data name="MMISPageName" xml:space="preserve">
+    <value>الصفحة</value>
+  </data>
+  <data name="MMISRemoveIcon" xml:space="preserve">
+    <value>حذف الايقونة</value>
+  </data>
+  <data name="MMISSectionName" xml:space="preserve">
+    <value>القسم</value>
+  </data>
+  <data name="MMISSiteName" xml:space="preserve">
+    <value>الموقع</value>
+  </data>
+  <data name="MMISSystemPageName" xml:space="preserve">
+    <value>اسم الصفحة</value>
+  </data>
+  <data name="ARModifiedBy" xml:space="preserve">
+    <value>عدلت بواسطة</value>
+  </data>
+  <data name="PMSAddTitle" xml:space="preserve">
+    <value>اضف عنوان</value>
+  </data>
+  <data name="PMSAlias" xml:space="preserve">
+    <value>الاسم المستعار</value>
+  </data>
+  <data name="PMSCategory" xml:space="preserve">
+    <value>الفئة</value>
+  </data>
+  <data name="PMSIsMain" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="PMSLanguage" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+  <data name="PMSSection" xml:space="preserve">
+    <value>القسم</value>
+  </data>
+  <data name="PMSSecurityAccess" xml:space="preserve">
+    <value>نظام الحماية</value>
+  </data>
+  <data name="PMSSite" xml:space="preserve">
+    <value>الموقع</value>
+  </data>
+  <data name="PMSState" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="SAInSlider" xml:space="preserve">
+    <value>وضع في السلايدر</value>
+  </data>
+  <data name="SAInSliderOrder" xml:space="preserve">
+    <value>الترتيب في السلايدر</value>
+  </data>
+  <data name="SAPerson" xml:space="preserve">
+    <value>المحرر</value>
+  </data>
+  <data name="ARSFileManager" xml:space="preserve">
+    <value>إدارة الملفات</value>
+  </data>
+  <data name="ARSSelect" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="CultureLink" xml:space="preserve">
+    <value>~/?culture=en</value>
   </data>
 </root>

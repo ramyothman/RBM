@@ -53,6 +53,23 @@ namespace BusinessLogicLayer.Entities.ContentManagement
             }
 		}
 
+        private string _alias = "";
+        [DataObjectField(false, false, true, 50)]
+        public string Alias
+        {
+            get
+            {
+                return _alias;
+            }
+            set
+            {
+                if (!RBMInitiatingEntity && _alias != value)
+                    RBMDataChanged = true;
+                _alias = value;
+            }
+        }
+
+
 		/// <summary>
 		/// This Property represents the SiteSectionParentId which has int type
 		/// </summary>

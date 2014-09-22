@@ -17,6 +17,7 @@ namespace Administrator.Builder.WebBuilder
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            base.Page_Load(sender, e);
             if (!IsPostBack)
             {
                 hiddenJSONLoad.Add("JSONLayout", "");

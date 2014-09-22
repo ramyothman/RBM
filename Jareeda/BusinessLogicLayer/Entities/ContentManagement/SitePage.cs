@@ -287,7 +287,7 @@ namespace BusinessLogicLayer.Entities.ContentManagement
         {
             get 
             {
-                if (SitePageEnglish != null)
+                if (SitePageEnglish != null && !SitePageEnglish.NewRecord)
                     return SitePageEnglish.PageName;
                 else if (SitePageArabic != null)
                     return SitePageArabic.PageName;
@@ -301,7 +301,7 @@ namespace BusinessLogicLayer.Entities.ContentManagement
         {
             get 
             {
-                if (SitePageEnglish != null)
+                if (SitePageEnglish != null && !SitePageEnglish.NewRecord)
                     return SitePageEnglish.PageContent;
                 else if (SitePageArabic != null)
                     return SitePageArabic.PageContent;

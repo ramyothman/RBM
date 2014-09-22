@@ -1,45 +1,48 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/Master.Master" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="ManatiqFrontEnd.Test" %>
-
-<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
-<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxDataView" TagPrefix="dx" %>
-<%@ Register assembly="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+﻿<%@ Page Title=""  Language="C#" MasterPageFile="~/_Masters/Master.Master" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="ManatiqFrontEnd.Test" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxCallback" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxDataView" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<%@ Register Src="~/Controls/General/Weather.ascx" TagName="WeatherControl" TagPrefix="natiq" %>
+<%@ Register Src="~/Controls/News/MostReadCommented.ascx" TagName="MostReadControl" TagPrefix="natiq" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	<dx:ASPxDataView ID="ASPxDataView1" runat="server" DataSourceID="ObjectDataSource1">
-<PagerSettings ShowNumericButtons="False"></PagerSettings>
-                            <ItemTemplate>
-                                <b>ArticleId</b>:
-                                <asp:Label ID="ArticleIdLabel" runat="server" Text='<%# Eval("ArticleId") %>' />
-                                <br/>
-                                <b>SiteSectionId</b>:
-                                <asp:Label ID="SiteSectionIdLabel" runat="server" Text='<%# Eval("SiteSectionId") %>' />
-                                <br/>
-                                <b>CurrentSection</b>:
-                                <asp:Label ID="CurrentSectionLabel" runat="server" Text='<%# Eval("CurrentSection") %>' />
-                                <br/>
-                                <b>SectionName</b>:
-                                <asp:Label ID="SectionNameLabel" runat="server" Text='<%# Eval("SectionName") %>' />
-                                <br/>
-                                <b>CreatorId</b>:
-                                <asp:Label ID="CreatorIdLabel" runat="server" Text='<%# Eval("CreatorId") %>' />
-                                <br/>
-                                <b>ArticleStatusId</b>:
-                                <asp:Label ID="ArticleStatusIdLabel" runat="server" Text='<%# Eval("ArticleStatusId") %>' />
-                                <br/>
-                                <b>AuthorId</b>:
-                                <asp:Label ID="AuthorIdLabel" runat="server" Text='<%# Eval("AuthorId") %>' />
-                                <br/>
-                                <b>Author</b>:
-                                <asp:Label ID="AuthorLabel" runat="server" Text='<%# Eval("Author") %>' />
-                                <br/>
-                                <b>AuthorName</b>:
-                                <asp:Label ID="AuthorNameLabel" runat="server" Text='<%# Eval("AuthorName") %>' />
-                                <br/>
-                                <br/>
-                            </ItemTemplate>
-</dx:ASPxDataView>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="server">
+    <div style="width:300px;">
+    <natiq:WeatherControl runat="server" />
+        <br /><br />
+    <natiq:MostReadControl runat="server" />
+ </div>
 
-<asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.ArticleLogic"></asp:ObjectDataSource>
- 
+
+    <div id="more_news" ></div>
+            <div class="clear clearfix clear-fix"></div>
+            <div class="readMoreList">
+                <img id="loadingMore" style="display:none;" src="~/images/DXR.gif" runat="server" />
+                <a href="javascript:void(0);" onclick="cb2.PerformCallback();" >تحميل أكثر</a>
+            </div>
+
+    <dx:ASPxCallback ID="callBackList" ClientInstanceName="callBackList"  runat="server" OnCallback="callBackList_Callback" ClientIDMode="Static">
+    <ClientSideEvents BeginCallback="function(s, e) {
+        alert('test');
+	$('#loadingMore').show();
+}" EndCallback="function(s, e) {
+		$('#loadingMore').hide();
+        #('#more_news').append(e.result);
+}" />
+</dx:ASPxCallback>
+
+
+     <dx:ASPxCallback ID="ASPxCallback1" ClientInstanceName="cb2" OnCallback="cb2_Callback" runat="server">
+            <ClientSideEvents BeginCallback="function(s, e) {
+	alert('test');
+}" Init="function(s, e) {
+	alert('init');
+}" />
+            
+        </dx:ASPxCallback>
+    <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="170px"></dx:ASPxTextBox>
+    <dx:ASPxButton ID="ASPxButton1" runat="server" Text="Callback" AutoPostBack=false>
+        <ClientSideEvents Click="function (s, e) {  cb2.PerformCallback(); }" />
+        </dx:ASPxButton>
 </asp:Content>

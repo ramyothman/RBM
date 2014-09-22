@@ -24,19 +24,22 @@ namespace ManatiqFrontEnd.Controls.News
         {
             if (!IsPostBack)
             {
+                BlockHead.Attributes.Add("class", "block-head " + GetBackground());
                 descLength = 32;
                 LoadData();
                 //Articles = new BusinessLogicLayer.Components.ContentManagement.ContentModuleArticleLogic().GetAllByHomePageID(HomePageID);
                 if (Articles.Count > 0)
                 {
                     int i = 1;
+                    int leftNews = HomePage.ItemsPerPage + ((Articles.Count - HomePage.ItemsPerPage) / 2);
                     foreach (BusinessLogicLayer.Entities.ContentManagement.ContentModuleArticle article in Articles)
                     {
-                        if (i <= 6)
+
+                        if (i <= HomePage.ItemsPerPage)
                         {
                             ArticlesMain.Add(article);
                         }
-                        else if (i <= 10)
+                        else if (i <= leftNews)
                         {
                             ArticlesRight.Add(article);
                         }

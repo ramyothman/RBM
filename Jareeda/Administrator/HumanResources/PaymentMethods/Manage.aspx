@@ -1,20 +1,24 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.PaymentMethods.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.PaymentMethods.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+     <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="Manage Payment Methods"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+  
+
+    </div>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     
-    
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<h3 class="handle">Manage Payment Methods</h3>
-				<div class="inner-content">
-                    
-
-            <dx:ASPxGridView ID="PaymentMethodGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="PaymentMethodID"
+     <dx:ASPxGridView ID="PaymentMethodGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="PaymentMethodID"
                 Width="100%" DataSourceID="DSAirLine" >
                 <Columns>
                     <dx:GridViewCommandColumn ButtonType="Image" VisibleIndex="0" Width="60px" Caption=" ">
@@ -41,7 +45,7 @@
                         <ClearFilterButton Visible="True">
                         </ClearFilterButton>
                     </dx:GridViewCommandColumn>
-                    <dx:GridViewDataTextColumn FieldName="PaymentMethodID" ReadOnly="True" VisibleIndex="1" Caption="Id" Width="50px">
+                    <dx:GridViewDataTextColumn FieldName="PaymentMethodID" ReadOnly="True" Visible="false" VisibleIndex="1" Caption="Id" Width="50px">
                         <EditFormSettings Visible="False" />
                     </dx:GridViewDataTextColumn>
                     <dx:GridViewDataTextColumn FieldName="Name" VisibleIndex="2">
@@ -56,8 +60,7 @@
                 <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
                 
             </dx:ASPxGridView>
-            </div>
-
+    
             <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
                 OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.PaymentMethodLogic"
                 UpdateMethod="Update">
@@ -72,7 +75,5 @@
                     <asp:Parameter Name="Original_PaymentMethodID" Type="Int32" />
                 </UpdateParameters>
             </asp:ObjectDataSource>
-            <br />
-                </div>
-         </div>
+
 </asp:Content>

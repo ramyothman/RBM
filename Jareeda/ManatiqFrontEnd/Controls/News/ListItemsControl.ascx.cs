@@ -15,6 +15,16 @@ namespace ManatiqFrontEnd.Controls.News
         protected int ItemIndex = 0;
         protected int ItemCount = 0;
         #endregion
+        public ListItemsControl()
+        {
+
+        }
+
+        public ListItemsControl(List<BusinessLogicLayer.Entities.ContentManagement.Article> articles, BusinessLogicLayer.Entities.ContentManagement.HomePage homePage)
+        {
+            Articles = articles;
+            HomePage = homePage;
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 

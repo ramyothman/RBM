@@ -1,8 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Layout1News.ascx.cs" Inherits="ManatiqFrontEnd.Controls.News.Layout1News" %>
 <div class="block-3">
-				<div class="block-head">
+				<div runat="server" id="BlockHead" class="block-head">
 					<h1 runat="server" id="ModuleTitleText"></h1>
-                     <a href='<%#  GetMoreLink() %>' runat="server" class="more_btn-head">المزيد</a>
+                     
 				</div>
 				<div class="txt-wrapper">
                     <asp:Repeater runat="server" ID="LayoutNewsRepeater">
@@ -13,8 +13,8 @@
 							<a runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>'><img runat="server" width="181" height="100" src='<%#  GetImagePath(Convert.ToString(Eval("ImagePath"))) %>' alt="" /></a>
 						</div>
 						<div class="block-text-wrapper">
-							<a runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>'><h2><%# Eval("ShortTitle").ToString() %></h2></a>
-							<p class="dots2"><%# GetDescriptionText(Eval("Description").ToString()).ToString() %><a runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>' class="more-small">المزيد</a></p>
+							<a runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>'><h2><%# Eval("ArticleName").ToString() %></h2></a>
+							<%--<p class="dots2"><%# GetDescriptionText(Eval("Description").ToString()).ToString() %><a runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>' class="more-small">المزيد</a></p>--%>
 							<div class="social-wrapper">
 							<ul>
                                 
@@ -37,6 +37,6 @@
                     <div style="float:right;clear:both;height:45px;"></div>
                     
 					
-					
+					<a href='<%#  GetMoreLink() %>' runat="server" class="more_btn">المزيد</a>
 				</div>
 		</div>

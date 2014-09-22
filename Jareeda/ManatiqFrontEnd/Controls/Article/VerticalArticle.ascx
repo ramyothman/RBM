@@ -10,11 +10,11 @@ border-color: #c8c8c8;font-size: 18px;line-height: 27px;">
                                 </HeaderTemplate>
                         <ItemTemplate>
                             <a runat="server" style="text-decoration:none;" href='<%# "~/ns2-" + Eval("ArticleId") %>'><h3 style="text-align:center;margin-top:20px;"><%# Eval("ShortTitle").ToString() %></h3></a><div class="clearfix"></div>
-                               <a class="example-image-link" title='<%# Eval("ShortTitle").ToString() %>' href='<%#  GetImagePath(Convert.ToString(Eval("ImagePath"))) %>'  data-lightbox='<%= this.ClientID.ToString() %>'><img runat="server" width="300" height="140" src='<%#  GetImagePath(Convert.ToString(Eval("ImagePath"))) %>' style="text-align:center;margin:10px;border: 1px solid #dedede;" alt="" /></a> <div style="padding:10px;"><%# Eval("Description").ToString() %> <a runat="server" style='<%# GetDisplay(Convert.ToInt32(Eval("ArticleId"))) %>' href='<%# "~/ns2-" + Eval("ArticleId") %>' class="more-small">.....المزيد</a></div> 
+                               <a class="example-image-link" title='<%# Eval("ShortTitle").ToString() %>' href='<%#  GetImagePath(Convert.ToString(Eval("ImagePath"))) %>'  data-lightbox='<%= this.ClientID.ToString() %>'><img runat="server" width="300" height="200" src='<%#  GetImagePath(Convert.ToString(Eval("ImagePath"))) %>' style="text-align:center;margin:10px;border: 1px solid #dedede;" alt="" /></a> <div style="padding:10px;"><%# Eval("Description").ToString() %> <a runat="server" style='<%# GetDisplay(Convert.ToInt32(Eval("ArticleId"))) %>' href='<%# "~/ns2-" + Eval("ArticleId") %>' class="more-small">.....المزيد</a></div> 
                         </ItemTemplate>
                                 <FooterTemplate>
                                     </div>          
                                 </FooterTemplate>
                     </asp:Repeater>
-			
+			<a href="#" id="MoreLink" runat="server" class="more_btn">المزيد</a>
 		</div>

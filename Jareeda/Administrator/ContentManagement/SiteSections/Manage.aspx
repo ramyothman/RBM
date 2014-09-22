@@ -45,6 +45,9 @@
                     <dx:GridViewDataTextColumn FieldName="Name" Caption="<%$Resources:ContentManagement, SSName %>" VisibleIndex="2" Width="200px">
                         <editformsettings columnspan="2" />
                     </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Alias" Caption="<%$Resources:ContentManagement, SSAlias %>" VisibleIndex="2" Width="200px">
+                        <editformsettings columnspan="2" />
+                    </dx:GridViewDataTextColumn>
                     <dx:GridViewDataComboBoxColumn Caption="<%$Resources:ContentManagement, SSSectionParent %>" 
                         FieldName="SiteSectionParentId" VisibleIndex="3">
                         <PropertiesComboBox DataSourceID="SiteSectionObjectDS" TextField="Name" 
@@ -111,6 +114,7 @@
                         <asp:Parameter Name="SecurityAccessTypeId" Type="Int32" />
                         <asp:Parameter DbType="Guid" Name="RowGuid" />
                         <asp:Parameter Name="ModifiedDate" Type="DateTime" />
+                        <asp:Parameter Name="Alias" Type="String" />
                     </InsertParameters>
                     <SelectParameters>
                         <asp:SessionParameter DefaultValue="0" Name="SiteId" 
@@ -126,6 +130,7 @@
                         <asp:Parameter Name="SecurityAccessTypeId" Type="Int32" />
                         <asp:Parameter DbType="Guid" Name="RowGuid" />
                         <asp:Parameter Name="ModifiedDate" Type="DateTime" />
+                        <asp:Parameter Name="Alias" Type="String" />
                         <asp:Parameter Name="Original_SiteSectionId" Type="Int32" />
                     </UpdateParameters>
                 </asp:ObjectDataSource>

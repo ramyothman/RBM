@@ -29,7 +29,7 @@ namespace ManatiqFrontEnd.Controls.News
                     articleItem = BusinessLogicLayer.Common.ArticleLogic.GetByID(id);
                     if (articleItem != null)
                     {
-                        List<BusinessLogicLayer.Entities.ContentManagement.Article> articles = BusinessLogicLayer.Common.ArticleLogic.GetAllBySectionIdandCount(articleItem.SiteSectionId.ToString(), HomePage.ItemsNumber);
+                        List<BusinessLogicLayer.Entities.ContentManagement.Article> articles = BusinessLogicLayer.Common.ArticleLogic.GetAllBySectionIdandCountExcludingCurrent(articleItem.ArticleId, articleItem.SiteSectionId.ToString(), HomePage.ItemsNumber);
                         foreach (BusinessLogicLayer.Entities.ContentManagement.Article article in articles)
                         {
                             if (i >= HomePage.ItemsNumber) break;

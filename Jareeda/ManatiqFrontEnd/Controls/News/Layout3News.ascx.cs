@@ -14,6 +14,7 @@ namespace ManatiqFrontEnd.Controls.News
         {
             if (!IsPostBack)
             {
+                BlockHead.Attributes.Add("class", "block-head " + GetBackground());
                 descLength = 30;
                 LoadData();
                 LayoutNewsRepeater.DataSource = Articles;

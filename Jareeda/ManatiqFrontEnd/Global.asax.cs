@@ -18,6 +18,7 @@ namespace ManatiqFrontEnd
 
         public static void RegisterRoutes(RouteCollection routeCollection)
         {
+            
             routeCollection.MapPageRoute("RouteForNews", "ns2-{Id}", "~/News/Default.aspx");
             routeCollection.MapPageRoute("RouteForColumnist", "columnist/cl8-{cl}", "~/Columnist/Default.aspx");
             routeCollection.MapPageRoute("RouteForColumn", "column/cl3-{Id}", "~/Columns/Default.aspx");
@@ -26,6 +27,8 @@ namespace ManatiqFrontEnd
             routeCollection.MapPageRoute("RouteForNewsList", "list/5-{sections}", "~/News/List.aspx");
             //routeCollection.MapPageRoute("RouteForColumnistsList", "columnists/{Id}", "~/Customer.aspx");
             routeCollection.MapPageRoute("RouteForColumnsList", "customer/4-{Id}", "~/Customer.aspx");
+
+            routeCollection.MapPageRoute("RouteForSections", "{sectionName}", "~/Default.aspx");
         }
 
         protected void Session_Start(object sender, EventArgs e)

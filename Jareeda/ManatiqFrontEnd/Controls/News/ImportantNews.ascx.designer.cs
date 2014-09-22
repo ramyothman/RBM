@@ -22,6 +22,15 @@ namespace ManatiqFrontEnd.Controls.News {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl MainBlockContainer;
         
         /// <summary>
+        /// BlockHead control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl BlockHead;
+        
+        /// <summary>
         /// ModuleTitleText control.
         /// </summary>
         /// <remarks>
@@ -29,15 +38,6 @@ namespace ManatiqFrontEnd.Controls.News {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl ModuleTitleText;
-        
-        /// <summary>
-        /// MoreLink control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor MoreLink;
         
         /// <summary>
         /// ImportantNewsRepeater control.
@@ -65,5 +65,14 @@ namespace ManatiqFrontEnd.Controls.News {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater SecondItemsRepeater;
+        
+        /// <summary>
+        /// MoreLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor MoreLink;
     }
 }

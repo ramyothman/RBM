@@ -36,7 +36,7 @@
                         </ul>
                     </div>
                          </div>
-                        
+                       <a href='<%#  GetMoreLink() %>' runat="server" class="more_btn">المزيد</a>
                             </div>
                     </FooterTemplate>
                 </asp:Repeater>

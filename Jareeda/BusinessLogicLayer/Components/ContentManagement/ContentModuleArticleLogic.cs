@@ -34,6 +34,8 @@ namespace BusinessLogicLayer.Components.ContentManagement
                      _contentModuleArticle.ArticleID = Convert.ToInt32(reader["ArticleID"]);
                  if(reader["ArticleOrder"] != DBNull.Value)
                      _contentModuleArticle.ArticleOrder = Convert.ToInt32(reader["ArticleOrder"]);
+                 if (reader["ArticleName"] != DBNull.Value)
+                     _contentModuleArticle.ArticleName = Convert.ToString(reader["ArticleName"]);
              _contentModuleArticle.NewRecord = false;
              _contentModuleArticleList.Add(_contentModuleArticle);
              }             reader.Close();
@@ -59,6 +61,8 @@ namespace BusinessLogicLayer.Components.ContentManagement
                     _contentModuleArticle.ArticleID = Convert.ToInt32(reader["ArticleID"]);
                 if (reader["ArticleOrder"] != DBNull.Value)
                     _contentModuleArticle.ArticleOrder = Convert.ToInt32(reader["ArticleOrder"]);
+                if (reader["ArticleName"] != DBNull.Value)
+                    _contentModuleArticle.ArticleName = Convert.ToString(reader["ArticleName"]);
                 _contentModuleArticle.NewRecord = false;
                 _contentModuleArticleList.Add(_contentModuleArticle);
             } reader.Close();
@@ -84,6 +88,8 @@ namespace BusinessLogicLayer.Components.ContentManagement
                     _contentModuleArticle.ArticleID = Convert.ToInt32(reader["ArticleID"]);
                 if (reader["ArticleOrder"] != DBNull.Value)
                     _contentModuleArticle.ArticleOrder = Convert.ToInt32(reader["ArticleOrder"]);
+                if (reader["ArticleName"] != DBNull.Value)
+                    _contentModuleArticle.ArticleName = Convert.ToString(reader["ArticleName"]);
                 _contentModuleArticle.NewRecord = false;
                 _contentModuleArticleList.Add(_contentModuleArticle);
             } reader.Close();

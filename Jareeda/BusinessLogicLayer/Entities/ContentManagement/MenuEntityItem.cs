@@ -3,6 +3,8 @@ using System.ComponentModel;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 namespace BusinessLogicLayer.Entities.ContentManagement
 {
 	/// <summary>
@@ -303,6 +305,41 @@ namespace BusinessLogicLayer.Entities.ContentManagement
              _MenuEntityPositionID = value;
          }
      }
+
+        private List<MenuEntityItemLanguage> _ItemLanguages = null;
+        public List<MenuEntityItemLanguage> ItemLanguages
+        {
+            set { _ItemLanguages = value; }
+            get
+            {
+                if (_ItemLanguages == null)
+                {
+                    _ItemLanguages = new Components.ContentManagement.MenuEntityItemLanguageLogic().GetAll(MenuEntityItemId);
+                    if (_ItemLanguages == null)
+                        _ItemLanguages = new List<MenuEntityItemLanguage>();
+                }
+                return _ItemLanguages;
+            }
+        }
+
+        public MenuEntityItemLanguage GetNameItemByLanguageId(int id)
+        {
+            MenuEntityItemLanguage lang = new MenuEntityItemLanguage();
+            var availableSitePageLanguages = from x in ItemLanguages where x.LanguageID == id select x;
+            foreach (MenuEntityItemLanguage l in availableSitePageLanguages)
+            {
+                lang = l;
+            }
+            return lang;
+        }
+
+        public string GetNameByLanguageId(int id)
+        {
+            MenuEntityItemLanguage lang = GetNameItemByLanguageId(id);
+            if (lang.NewRecord)
+                return Name;
+            return lang.Name;
+        }
 
      private List<MenuEntityItem> _ChildItems = null;
      public List<MenuEntityItem> ChildItems

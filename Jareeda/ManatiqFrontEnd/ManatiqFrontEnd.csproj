@@ -41,12 +41,23 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Hammock">
+      <HintPath>..\packages\Hammock.1.3.1\lib\4.0\Hammock.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock.ClientProfile">
+      <HintPath>..\packages\Hammock.1.3.1\lib\4.0\Hammock.ClientProfile.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
@@ -62,11 +73,45 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="WWB.DisqusSharp">
+      <HintPath>..\packages\disqussharp.0.8.5\lib\net4\WWB.DisqusSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\Manatiq\css\lightbox.css" />
-    <Content Include="App_Themes\Manatiq\css\main.css" />
-    <Content Include="App_Themes\Manatiq\css\reponsive.css" />
+    <Content Include="App_Themes\Manatiq\css\application.css">
+      <DependentUpon>application.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\application.less" />
+    <None Include="App_Themes\Manatiq\css\lightbox.less" />
+    <None Include="App_Themes\Manatiq\css\main.less" />
+    <Content Include="App_Themes\Manatiq\css\application.min.css">
+      <DependentUpon>application.css</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\lightbox.css">
+      <DependentUpon>lightbox.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\lightbox.min.css">
+      <DependentUpon>lightbox.css</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\main.css">
+      <DependentUpon>main.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <None Include="App_Themes\Manatiq\css\reponsive.less" />
+    <Content Include="App_Themes\Manatiq\css\reponsive.css">
+      <DependentUpon>reponsive.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\reponsive.min.css">
+      <DependentUpon>reponsive.css</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\weather.css">
+      <DependentUpon>weather.less</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\Manatiq\css\weather.min.css">
+      <DependentUpon>weather.css</DependentUpon>
+    </Content>
     <Content Include="App_Themes\Manatiq\fonts\HelveticaNeueLTArabic-Roman.svg" />
     <Content Include="App_Themes\Manatiq\images\ads1.png" />
     <Content Include="App_Themes\Manatiq\images\ads2.png" />
@@ -76,6 +121,10 @@
     <Content Include="App_Themes\Manatiq\images\artical-icons\icon_message.png" />
     <Content Include="App_Themes\Manatiq\images\artical-icons\icon_print.png" />
     <Content Include="App_Themes\Manatiq\images\artical-writer.jpg" />
+    <Content Include="App_Themes\Manatiq\images\block-end-aside-blue.png" />
+    <Content Include="App_Themes\Manatiq\images\block-end-aside-green.png" />
+    <Content Include="App_Themes\Manatiq\images\block-end-aside-orange.png" />
+    <Content Include="App_Themes\Manatiq\images\block-end-aside-purple.png" />
     <Content Include="App_Themes\Manatiq\images\block-end-aside.png" />
     <Content Include="App_Themes\Manatiq\images\block-end.png" />
     <Content Include="App_Themes\Manatiq\images\body-bg.jpg" />
@@ -143,6 +192,7 @@
     <Content Include="Controls\Ads\Advertisement3.ascx" />
     <Content Include="Controls\Ads\MainAdvertisement.ascx" />
     <Content Include="Controls\Article\HorizontalArticle.ascx" />
+    <Content Include="Controls\Article\TodayImage.ascx" />
     <Content Include="Controls\Article\VerticalArticle.ascx" />
     <Content Include="Controls\Columns\ColumnDetails.ascx" />
     <Content Include="Controls\Columns\Columner.ascx" />
@@ -163,6 +213,7 @@
     <Content Include="Controls\News\List.ascx" />
     <Content Include="Controls\News\ListItemsControl.ascx" />
     <Content Include="Controls\News\MainNews.ascx" />
+    <Content Include="Controls\News\MostReadCommented.ascx" />
     <Content Include="Controls\News\MultiSectionsControl.ascx" />
     <Content Include="Controls\News\NewsDetail.ascx" />
     <Content Include="Controls\News\OneBlockControl.ascx" />
@@ -177,6 +228,7 @@
     <Content Include="HtmlWebPage.aspx" />
     <Content Include="images\article-views.png" />
     <Content Include="images\body-bg.jpg" />
+    <Content Include="images\DXR.gif" />
     <Content Include="images\failwhale.png" />
     <Content Include="images\flyingdots.gif" />
     <Content Include="images\logo-almnatiq-vertical.png" />
@@ -184,6 +236,7 @@
     <Content Include="images\logo-animated1.gif" />
     <Content Include="images\poll-result-graph.gif" />
     <Content Include="images\tweet.gif" />
+    <Content Include="Libraries\Newtonsoft.Json.dll" />
     <Content Include="mnatiq.ico" />
     <Content Include="News\Default.aspx" />
     <Content Include="News\List.aspx" />
@@ -191,6 +244,102 @@
     <Content Include="Search\Default.aspx" />
     <Content Include="Services\PollService.asmx" />
     <Content Include="Test.aspx" />
+    <Content Include="WeatherIcons\200d.png" />
+    <Content Include="WeatherIcons\200n.png" />
+    <Content Include="WeatherIcons\201d.png" />
+    <Content Include="WeatherIcons\201n.png" />
+    <Content Include="WeatherIcons\202d.png" />
+    <Content Include="WeatherIcons\202n.png" />
+    <Content Include="WeatherIcons\210d.png" />
+    <Content Include="WeatherIcons\210n.png" />
+    <Content Include="WeatherIcons\211d.png" />
+    <Content Include="WeatherIcons\211n.png" />
+    <Content Include="WeatherIcons\212d.png" />
+    <Content Include="WeatherIcons\212n.png" />
+    <Content Include="WeatherIcons\221d.png" />
+    <Content Include="WeatherIcons\221n.png" />
+    <Content Include="WeatherIcons\230d.png" />
+    <Content Include="WeatherIcons\230n.png" />
+    <Content Include="WeatherIcons\231d.png" />
+    <Content Include="WeatherIcons\231n.png" />
+    <Content Include="WeatherIcons\232d.png" />
+    <Content Include="WeatherIcons\232n.png" />
+    <Content Include="WeatherIcons\300d.png" />
+    <Content Include="WeatherIcons\300n.png" />
+    <Content Include="WeatherIcons\301d.png" />
+    <Content Include="WeatherIcons\301n.png" />
+    <Content Include="WeatherIcons\302d.png" />
+    <Content Include="WeatherIcons\302n.png" />
+    <Content Include="WeatherIcons\310d.png" />
+    <Content Include="WeatherIcons\310n.png" />
+    <Content Include="WeatherIcons\311d.png" />
+    <Content Include="WeatherIcons\311n.png" />
+    <Content Include="WeatherIcons\312d.png" />
+    <Content Include="WeatherIcons\312n.png" />
+    <Content Include="WeatherIcons\321d.png" />
+    <Content Include="WeatherIcons\321n.png" />
+    <Content Include="WeatherIcons\500d.png" />
+    <Content Include="WeatherIcons\500n.png" />
+    <Content Include="WeatherIcons\501d.png" />
+    <Content Include="WeatherIcons\501n.png" />
+    <Content Include="WeatherIcons\502d.png" />
+    <Content Include="WeatherIcons\502n.png" />
+    <Content Include="WeatherIcons\503d.png" />
+    <Content Include="WeatherIcons\503n.png" />
+    <Content Include="WeatherIcons\504d.png" />
+    <Content Include="WeatherIcons\504n.png" />
+    <Content Include="WeatherIcons\511d.png" />
+    <Content Include="WeatherIcons\511n.png" />
+    <Content Include="WeatherIcons\520d.png" />
+    <Content Include="WeatherIcons\520n.png" />
+    <Content Include="WeatherIcons\521d.png" />
+    <Content Include="WeatherIcons\521n.png" />
+    <Content Include="WeatherIcons\522d.png" />
+    <Content Include="WeatherIcons\522n.png" />
+    <Content Include="WeatherIcons\600d.png" />
+    <Content Include="WeatherIcons\600n.png" />
+    <Content Include="WeatherIcons\601d.png" />
+    <Content Include="WeatherIcons\601n.png" />
+    <Content Include="WeatherIcons\602d.png" />
+    <Content Include="WeatherIcons\602n.png" />
+    <Content Include="WeatherIcons\611d.png" />
+    <Content Include="WeatherIcons\611n.png" />
+    <Content Include="WeatherIcons\621d.png" />
+    <Content Include="WeatherIcons\621n.png" />
+    <Content Include="WeatherIcons\701d.png" />
+    <Content Include="WeatherIcons\701n.png" />
+    <Content Include="WeatherIcons\711d.png" />
+    <Content Include="WeatherIcons\711n.png" />
+    <Content Include="WeatherIcons\721d.png" />
+    <Content Include="WeatherIcons\721n.png" />
+    <Content Include="WeatherIcons\731d.png" />
+    <Content Include="WeatherIcons\731n.png" />
+    <Content Include="WeatherIcons\741d.png" />
+    <Content Include="WeatherIcons\741n.png" />
+    <Content Include="WeatherIcons\800d.png" />
+    <Content Include="WeatherIcons\800n.png" />
+    <Content Include="WeatherIcons\801d.png" />
+    <Content Include="WeatherIcons\801n.png" />
+    <Content Include="WeatherIcons\802d.png" />
+    <Content Include="WeatherIcons\802n.png" />
+    <Content Include="WeatherIcons\803d.png" />
+    <Content Include="WeatherIcons\803n.png" />
+    <Content Include="WeatherIcons\804d.png" />
+    <Content Include="WeatherIcons\804n.png" />
+    <Content Include="WeatherIcons\900d.png" />
+    <Content Include="WeatherIcons\900n.png" />
+    <Content Include="WeatherIcons\901d.png" />
+    <Content Include="WeatherIcons\901n.png" />
+    <Content Include="WeatherIcons\902d.png" />
+    <Content Include="WeatherIcons\902n.png" />
+    <Content Include="WeatherIcons\903d.png" />
+    <Content Include="WeatherIcons\903n.png" />
+    <Content Include="WeatherIcons\904d.png" />
+    <Content Include="WeatherIcons\904n.png" />
+    <Content Include="WeatherIcons\905d.png" />
+    <Content Include="WeatherIcons\905n.png" />
+    <Content Include="WeatherIcons\906d.png" />
+    <Content Include="WeatherIcons\906n.png" />
     <Content Include="Web.config" />
     <Content Include="_Scripts\jquery-1.8.3.min.js" />
     <Content Include="_Scripts\jquery-ui-1.10.3.custom.js" />
@@ -268,9 +417,17 @@
     <Compile Include="ArticlesView.aspx.designer.cs">
       <DependentUpon>ArticlesView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Code\AsyncCommand.cs" />
+    <Compile Include="Code\Disqus\Comment.cs" />
+    <Compile Include="Code\Disqus\DisqusComments.cs" />
+    <Compile Include="Code\Disqus\PopularArticle.cs" />
+    <Compile Include="Code\JSON\WeatherJson.cs" />
+    <Compile Include="Code\JSON\WeatherListJson.cs" />
     <Compile Include="Code\LayoutManager.cs" />
     <Compile Include="Code\PageManager.cs" />
     <Compile Include="Code\PollData.cs" />
+    <Compile Include="Code\Weather.cs" />
+    <Compile Include="Code\WeatherDetails.cs" />
     <Compile Include="Columnist\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -319,6 +476,13 @@
     </Compile>
     <Compile Include="Controls\Article\HorizontalArticle.ascx.designer.cs">
       <DependentUpon>HorizontalArticle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Article\TodayImage.ascx.cs">
+      <DependentUpon>TodayImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Article\TodayImage.ascx.designer.cs">
+      <DependentUpon>TodayImage.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Article\VerticalArticle.ascx.cs">
       <DependentUpon>VerticalArticle.ascx</DependentUpon>
@@ -462,6 +626,13 @@
     </Compile>
     <Compile Include="Controls\News\MainNews.ascx.designer.cs">
       <DependentUpon>MainNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\News\MostReadCommented.ascx.cs">
+      <DependentUpon>MostReadCommented.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\News\MostReadCommented.ascx.designer.cs">
+      <DependentUpon>MostReadCommented.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\News\MultiSectionsControl.ascx.cs">
       <DependentUpon>MultiSectionsControl.ascx</DependentUpon>
@@ -633,6 +804,8 @@
     <Content Include="App_Themes\Manatiq\fonts\GE_SS_Two_Light.ttf" />
     <Content Include="App_Themes\Manatiq\fonts\Sakkal_Majalla_mac.ttf" />
     <Content Include="App_Themes\Manatiq\fonts\Sakkal_Majalla_mac.eot" />
+    <Content Include="App_Themes\Manatiq\css\weather.less" />
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Manatiq.pubxml" />
     <None Include="Properties\PublishProfiles\Manatiq2.pubxml" />
   </ItemGroup>

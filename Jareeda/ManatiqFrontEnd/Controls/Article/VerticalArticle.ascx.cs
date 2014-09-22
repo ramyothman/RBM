@@ -23,11 +23,13 @@ namespace ManatiqFrontEnd.Controls.Article
                     }
                     ImportantNewsRepeater.DataSource = Articles;
                     ImportantNewsRepeater.DataBind();
-                    
+                    MoreLink.HRef = GetMoreLink();
 
                 }
                 if (!IsFirst)
-                    MainBlockContainer.Attributes.Add("class", "aside-block mrg-top");
+                    TitleDiv.Attributes.Add("class", "aside-block-head mrg-top " + GetBackground());
+                else
+                    TitleDiv.Attributes.Add("class", "aside-block-head " + GetBackground());
 
             }
         }

@@ -10,6 +10,7 @@ namespace ManatiqFrontEnd.Controls
         #region Declarations
         public List<BusinessLogicLayer.Entities.ContentManagement.ModuleSection> ModuleSections = new List<BusinessLogicLayer.Entities.ContentManagement.ModuleSection>();
         public List<BusinessLogicLayer.Entities.ContentManagement.ContentModuleArticle> Articles = new List<BusinessLogicLayer.Entities.ContentManagement.ContentModuleArticle>();
+        public List<BusinessLogicLayer.Entities.ContentManagement.ContentModuleArticle> Articles2 = new List<BusinessLogicLayer.Entities.ContentManagement.ContentModuleArticle>();
         public BusinessLogicLayer.Entities.ContentManagement.HomePage HomePage = new BusinessLogicLayer.Entities.ContentManagement.HomePage();
         public BusinessLogicLayer.Components.ContentManagement.ModuleSectionLogic ModuleSectionLogic = new BusinessLogicLayer.Components.ContentManagement.ModuleSectionLogic();
         public BusinessLogicLayer.Components.ContentManagement.HomePageLogic HomePageLogic = new BusinessLogicLayer.Components.ContentManagement.HomePageLogic();
@@ -124,11 +125,18 @@ namespace ManatiqFrontEnd.Controls
         }
         #endregion
 
+        string[] backgroundHeader = { "block-head-black", "block-head-blue", "block-head-green", "block-head-orange", "block-head-blue" };
+
+        public string GetBackground()
+        {
+            return backgroundHeader[new Random().Next(0, 5)];
+        }
 
         #region HelperMethods
         protected int descLength = 10;
         public string GetDescriptionText(string text)
         {
+            if (string.IsNullOrEmpty(text)) return "";
             string result = "";
             string[] split = text.Split(' ');
             int count = 1;

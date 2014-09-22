@@ -97,6 +97,61 @@ namespace BusinessLogicLayer
                 return GetSecuredString("DefaultLanguageId"); //return System.Configuration.ConfigurationManager.AppSettings["DefaultLanguageId"]; 
             }
         }
+
+        public static string GoogleServicePassword
+        {
+            get 
+            {
+                return GetSecuredString("GoogleServicePassword"); //return System.Configuration.ConfigurationManager.AppSettings["DefaultLanguageId"]; 
+            }
+        }
+        public static string DefaultAnalaticsProfile
+        {
+            get 
+            {
+                return GetSecuredString("DefaultAnalaticsProfile"); //return System.Configuration.ConfigurationManager.AppSettings["DefaultLanguageId"]; 
+            }
+        }
+        
+        public static string ClientID
+        {
+            get
+            {
+                return GetSecuredString("ClientID"); //return System.Configuration.ConfigurationManager.AppSettings["DefaultLanguageId"]; 
+            }
+        }
+
+        public static string ClientEmailAddress
+        {
+            get
+            {
+                return GetSecuredString("ClientEmailAddress"); //return System.Configuration.ConfigurationManager.AppSettings["DefaultLanguageId"]; 
+            }
+        }
+
+        public static string GoogleAPIKey
+        {
+            get
+            {
+                return GetSecuredString("GoogleAPIKey");
+            }
+        }
+        public static string AnalyticsUserName
+        {
+            get 
+            {
+                return GetSecuredString("analyticsUserName");
+            }
+        }
+
+        public static string AnalyticsPassword
+        {
+            get
+            {
+                return GetSecuredString("analyticsPassword");
+            }
+        }
+
         public static string DefaultLanguageKey
         {
             get 
@@ -363,7 +418,7 @@ namespace BusinessLogicLayer
                 
                 string connEncrypted = DataAccessLayer.DataAccessComponents.DataAccessComponent.Encrypt(connPlain);
                 Random r = new Random();
-                int random  = r.Next(5, 9);
+                string random  = "^";
                 UpdateConfigConnectionKey(Key, string.Format("{0}{1}",random.ToString(), connEncrypted));
             }
             else
@@ -423,13 +478,17 @@ namespace BusinessLogicLayer
         {
             bool result = false;
             int num = 0;
+            if (string.IsNullOrEmpty(str))
+                return result;
             if (str.Length == 0)
                 return result;
-            Int32.TryParse(str.Substring(0,1),out num);
-            if (str.Length > 1 && num >= 5 && num <= 9)
-            {
+            if (str.Substring(0, 1) == "^")
                 result = true;
-            }
+            //Int32.TryParse(str.Substring(0,1),out num);
+            //if (str.Length > 1 && num >= 5 && num <= 9)
+            //{
+            //    result = true;
+            //}
             return result;
         }
         #endregion

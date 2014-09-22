@@ -148,6 +148,15 @@ namespace Administrator.ContentManagement.Article {
         protected global::System.Web.UI.WebControls.Literal Literal3;
         
         /// <summary>
+        /// DropDownEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxEditors.ASPxDropDownEdit DropDownEdit;
+        
+        /// <summary>
         /// pageSection control.
         /// </summary>
         /// <remarks>

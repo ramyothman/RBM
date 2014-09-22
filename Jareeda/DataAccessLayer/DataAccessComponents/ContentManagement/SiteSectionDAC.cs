@@ -118,6 +118,14 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 				return reader;
 		}
 
+        public System.Data.IDataReader GetByAliasSiteSection(string Alias)
+		{
+            DbCommand command = Database.GetStoredProcCommand("GetByAliasSiteSection");
+            Database.AddInParameter(command, "Alias", DbType.String, Alias);
+                    IDataReader reader = this.FromCache(command).CreateDataReader();// Database.ExecuteReader(command);
+				return reader;
+		}
+        
 		/// <summary>
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to Get a Record ByID From SiteSection using Stored Procedure
 		/// and return the Record Object
@@ -134,7 +142,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Insert a row into SiteSection using Stored Procedure
 		/// and return the auto number primary key of SiteSection inserted row
 		/// </summary>
-		public bool InsertNewSiteSection( int siteSectionId,  string name,  int siteSectionParentId,  int sectionStatusId,  int siteId,  int personId,  int securityAccessTypeId,  Guid rowGuid,  DateTime modifiedDate)
+		public bool InsertNewSiteSection( int siteSectionId,  string name,  int siteSectionParentId,  int sectionStatusId,  int siteId,  int personId,  int securityAccessTypeId,  Guid rowGuid,  DateTime modifiedDate,string Alias)
 		{
                  DbCommand command = Database.GetStoredProcCommand("InsertNewSiteSection");
 				Database.AddInParameter(command,"SiteSectionId",DbType.Int32,siteSectionId);
@@ -152,6 +160,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 				Database.AddInParameter(command,"SecurityAccessTypeId",DbType.Int32,securityAccessTypeId);
 				Database.AddInParameter(command,"RowGuid",DbType.Guid,rowGuid);
 				Database.AddInParameter(command,"ModifiedDate",DbType.DateTime,modifiedDate);
+                Database.AddInParameter(command, "Alias", DbType.String, Alias);
 				bool _status = false;
 				if(Database.ExecuteNonQuery(command) > 0)
 				{
@@ -164,7 +173,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Insert a row into SiteSection using Stored Procedure
 		/// and return the auto number primary key of SiteSection inserted row using Transaction
 		/// </summary>
-		public bool InsertNewSiteSection( int siteSectionId,  string name,  int siteSectionParentId,  int sectionStatusId,  int siteId,  int personId,  int securityAccessTypeId,  Guid rowGuid,  DateTime modifiedDate,DbTransaction transaction)
+        public bool InsertNewSiteSection(int siteSectionId, string name, int siteSectionParentId, int sectionStatusId, int siteId, int personId, int securityAccessTypeId, Guid rowGuid, DateTime modifiedDate, string Alias, DbTransaction transaction)
 		{
                  DbCommand command = Database.GetStoredProcCommand("InsertNewSiteSection");
 				Database.AddInParameter(command,"SiteSectionId",DbType.Int32,siteSectionId);
@@ -182,6 +191,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 				Database.AddInParameter(command,"SecurityAccessTypeId",DbType.Int32,securityAccessTypeId);
 				Database.AddInParameter(command,"RowGuid",DbType.Guid,rowGuid);
 				Database.AddInParameter(command,"ModifiedDate",DbType.DateTime,modifiedDate);
+                Database.AddInParameter(command, "Alias", DbType.String, Alias);
 				bool _status = false;
 				if(Database.ExecuteNonQuery(command,transaction) > 0)
 				{
@@ -218,7 +228,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// <summary>
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Update a row into SiteSection using Stored Procedure
 		/// </summary>
-		public bool UpdateSiteSection( int siteSectionId, string name, int siteSectionParentId, int sectionStatusId, int siteId, int personId, int securityAccessTypeId, Guid rowGuid, DateTime modifiedDate, int oldsiteSectionId)
+        public bool UpdateSiteSection(int siteSectionId, string name, int siteSectionParentId, int sectionStatusId, int siteId, int personId, int securityAccessTypeId, Guid rowGuid, DateTime modifiedDate, string Alias, int oldsiteSectionId)
 		{
                  DbCommand command = Database.GetStoredProcCommand("UpdateSiteSection");
 		    		Database.AddInParameter(command,"SiteSectionId",DbType.Int32,siteSectionId);
@@ -236,6 +246,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		    		Database.AddInParameter(command,"SecurityAccessTypeId",DbType.Int32,securityAccessTypeId);
 		    		Database.AddInParameter(command,"RowGuid",DbType.Guid,rowGuid);
 		    		Database.AddInParameter(command,"ModifiedDate",DbType.DateTime,modifiedDate);
+                    Database.AddInParameter(command, "Alias", DbType.String, Alias);
 				Database.AddInParameter(command,"oldSiteSectionId",DbType.Int32,oldsiteSectionId);
 
 				bool _status = false;
@@ -249,7 +260,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// <summary>
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Update a row into SiteSection using Stored Procedure By Transaction
 		/// </summary>
-		public bool UpdateSiteSection( int siteSectionId, string name, int siteSectionParentId, int sectionStatusId, int siteId, int personId, int securityAccessTypeId, Guid rowGuid, DateTime modifiedDate, int oldsiteSectionId,DbTransaction transaction)
+        public bool UpdateSiteSection(int siteSectionId, string name, int siteSectionParentId, int sectionStatusId, int siteId, int personId, int securityAccessTypeId, Guid rowGuid, DateTime modifiedDate, string Alias, int oldsiteSectionId, DbTransaction transaction)
 		{
                  DbCommand command = Database.GetStoredProcCommand("UpdateSiteSection");
 		    		Database.AddInParameter(command,"SiteSectionId",DbType.Int32,siteSectionId);
@@ -267,6 +278,7 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		    		Database.AddInParameter(command,"SecurityAccessTypeId",DbType.Int32,securityAccessTypeId);
 		    		Database.AddInParameter(command,"RowGuid",DbType.Guid,rowGuid);
 		    		Database.AddInParameter(command,"ModifiedDate",DbType.DateTime,modifiedDate);
+                    Database.AddInParameter(command, "Alias", DbType.String, Alias);
 				Database.AddInParameter(command,"oldSiteSectionId",DbType.Int32,oldsiteSectionId);
 
 				bool _status = false;

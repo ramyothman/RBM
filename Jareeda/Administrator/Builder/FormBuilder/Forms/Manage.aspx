@@ -1,15 +1,26 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.Builder.FormBuilder.Forms.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.Builder.FormBuilder.Forms.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+   <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="Manage Forms"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+     
+
+    </div>
+   
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<h3 class="handle">Manage Forms</h3>
-				<div class="inner-content">
-                <dx:ASPxGridView ID="gridForms" runat="server" AutoGenerateColumns="False" 
+       <dx:ASPxGridView ID="gridForms" runat="server" AutoGenerateColumns="False" 
         DataSourceID="FormsObjectDS" KeyFieldName="FormDocumentID">
         <Columns>
              <dx:GridViewCommandColumn ButtonType="Image" VisibleIndex="0" Width="60px" Caption=" ">
@@ -167,8 +178,4 @@
         </UpdateParameters>
     </asp:ObjectDataSource>
            
-            <br />
-        </div>
-    </div>
-     </div>
 </asp:Content>

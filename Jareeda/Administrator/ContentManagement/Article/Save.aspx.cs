@@ -9,6 +9,8 @@ using System.IO;
 using CommonWeb.Security;
 using CommonWeb.Common;
 using Administrator.Code;
+using DevExpress.Web.ASPxGridView;
+using DevExpress.Web.ASPxTreeList;
 
 namespace Administrator.ContentManagement.Article
 {
@@ -20,6 +22,29 @@ namespace Administrator.ContentManagement.Article
             {
 
             }
+        }
+        protected void GridView_CustomJSProperties(object sender, ASPxGridViewClientJSPropertiesEventArgs e)
+        {
+            ASPxGridView grid = (ASPxGridView)DropDownEdit.FindControl("GridView");
+            object[] employeeNames = new object[grid.VisibleRowCount];
+            object[] keyValues = new object[grid.VisibleRowCount];
+            for (int i = 0; i < grid.VisibleRowCount; i++)
+            {
+                employeeNames[i] = grid.GetRowValues(i, "Name") + " : " + grid.GetRowValues(i, "SiteSectionParentId");
+                keyValues[i] = grid.GetRowValues(i, "SiteSectionId");
+            }
+            e.Properties["cpEmployeeNames"] = employeeNames;
+            e.Properties["cpKeyValues"] = keyValues;
+        }
+        protected void GridView_AfterPerformCallback(object sender, ASPxGridViewAfterPerformCallbackEventArgs e)
+        {
+            SynchronizeFocusedRow();
+        }
+        protected void SynchronizeFocusedRow()
+        {
+            ASPxGridView grid = (ASPxGridView)DropDownEdit.FindControl("GridView");
+            object lookupKeyValue = DropDownEdit.KeyValue;
+            grid.FocusedRowIndex = grid.FindVisibleIndexByKeyValue(lookupKeyValue);
         }
         public BusinessLogicLayer.Entities.ContentManagement.Article SitePage
         {
@@ -87,6 +112,12 @@ namespace Administrator.ContentManagement.Article
                         //pageAlias.Text = SitePage.UniquePageName;
                         //chkIsMainPage.Checked = SitePage.IsMainPage;
                         pageSection.DataBind();
+                        
+                        ((DevExpress.Web.ASPxTreeList.ASPxTreeList)DropDownEdit.FindControl("SectionTreeView")).DataBind();
+                        TreeListNode node = ((DevExpress.Web.ASPxTreeList.ASPxTreeList)DropDownEdit.FindControl("SectionTreeView")).FindNodeByKeyValue(SitePage.SiteSectionId.ToString());
+                        node.Focus();
+                        DropDownEdit.KeyValue = SitePage.SiteSectionId;
+                        DropDownEdit.Text = GetEntryText(node);
                         pageSection.SelectedIndex = pageSection.Items.IndexOfValue(SitePage.SiteSectionId);
                         List<BusinessLogicLayer.Entities.ContentManagement.ArticleCategory> cats = BusinessLogicLayer.Common.ArticleCategoryLogic.GetAllByArticleId(SitePage.ArticleId);
                         foreach (BusinessLogicLayer.Entities.ContentManagement.ArticleCategory cat in cats)
@@ -178,7 +209,8 @@ namespace Administrator.ContentManagement.Article
                     SitePage.CommentsTypeId = Convert.ToInt32(cmbCommentType.Value);
                 else
                     SitePage.CommentsTypeId = 1;
-                SitePage.SiteSectionId = Convert.ToInt32(pageSection.Value);
+                //SitePage.SiteSectionId = Convert.ToInt32(pageSection.Value);
+                SitePage.SiteSectionId = Convert.ToInt32(DropDownEdit.KeyValue.ToString());
                 //SitePage.is = chkIsMainPage.Checked;
 
                 BusinessLogicLayer.Common.ArticleLogic.Insert(SitePage);
@@ -216,7 +248,8 @@ namespace Administrator.ContentManagement.Article
                 
                 //SitePage.SecurityAccessTypeId = Convert.ToInt32(pageSecurityAccess.Value);
                 //SitePage. = pageAlias.Text;
-                SitePage.SiteSectionId = Convert.ToInt32(pageSection.Value);
+                //SitePage.SiteSectionId = Convert.ToInt32(pageSection.Value);
+                SitePage.SiteSectionId = Convert.ToInt32(DropDownEdit.KeyValue.ToString());
                 //SitePage.IsMainPage = chkIsMainPage.Checked;
                 if (cmbCommentType.Value != null)
                     SitePage.CommentsTypeId = Convert.ToInt32(cmbCommentType.Value);
@@ -427,6 +460,76 @@ namespace Administrator.ContentManagement.Article
         }
 
 
+        
+
+        List<string> sectionNames = new List<string>();
+        List<int> sectionKeys = new List<int>();
+        void ProcessNodes(TreeListNode startNode, ASPxTreeList list)
+        {
+            if (startNode == null) return;
+            TreeListNodeIterator iterator = new TreeListNodeIterator(startNode);
+            while (iterator.Current != null)
+            {
+                GetParentNodeKey(iterator.Current, list);
+                iterator.GetNext();
+            }
+        }
+
+        private void GetParentNodeKey(TreeListNode node,DevExpress.Web.ASPxTreeList.ASPxTreeList treeList)
+        {
+            if (node != treeList.RootNode && node.HasChildren)
+            {
+                sectionKeys.Add(Convert.ToInt32(node.Key));
+                sectionNames.Add(node.GetValue("Name") + " : " + node.GetValue("SiteSectionParentId"));
+            }
+        }
+        protected void TreeView_CustomJSProperties(object sender, DevExpress.Web.ASPxTreeList.TreeListCustomJSPropertiesEventArgs e)
+        {
+            DevExpress.Web.ASPxTreeList.ASPxTreeList grid = (DevExpress.Web.ASPxTreeList.ASPxTreeList)DropDownEdit.FindControl("SectionTreeView");
+            sectionNames = new List<string>();
+            sectionKeys = new List<int>();
+
+
+            for (int i = 0; i < grid.Nodes.Count; i++)
+            {
+                ProcessNodes(grid.Nodes[i], grid);
+            }
+            e.Properties["cpSectionNames"] = sectionNames;
+            e.Properties["cpSectionKeyValues"] = sectionKeys;
+        }
+
+        protected void treeList_CustomDataCallback(object sender, TreeListCustomDataCallbackEventArgs e)
+        {
+            DevExpress.Web.ASPxTreeList.ASPxTreeList treeList = (DevExpress.Web.ASPxTreeList.ASPxTreeList)DropDownEdit.FindControl("SectionTreeView");
+            string key = e.Argument.ToString();
+            TreeListNode node = treeList.FindNodeByKeyValue(key);
+            e.Result = GetEntryText(node);
+        }
+
+        protected string GetEntryText(TreeListNode node)
+        {
+            if (node != null)
+            {
+                string text = "";
+                if (node.ParentNode == null)
+                    text = node["Name"].ToString();
+                else
+                    text = GetFullNodeName(node.ParentNode, node["Name"].ToString());
+                return text;
+            }
+            return string.Empty;
+        }
+
+        string GetFullNodeName(TreeListNode node,string name)
+        {
+            if (node == null || node["Name"] == null) return name;
+            if (node.ParentNode == null)
+                return name += " <- " + node["Name"].ToString();
+            else
+                return GetFullNodeName(node.ParentNode, name += " <- " + node["Name"].ToString());
+        }
+
+
         protected void btnSaveandClose_Click(object sender, EventArgs e)
         {
             try
@@ -477,5 +580,6 @@ namespace Administrator.ContentManagement.Article
         {
             Response.Redirect("Manage.aspx");
         }
+
     }
 }

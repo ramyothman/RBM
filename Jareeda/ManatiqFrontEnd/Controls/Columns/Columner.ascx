@@ -13,14 +13,14 @@
 
     <div class="block-news columns-all">
         <div class="head">
-            <span>ادخالات بـ</span>
+            <span>اقرأ له</span>
         </div>
         <div class="txt-wrapper">
             <asp:Repeater runat="server" ID="ArticlesRepeater">
                 <ItemTemplate>
                     <div class="block-small">
 
-                        <div class="block-text-wrapper">
+                        <div class="block-text-wrapper-columnist">
                             <a runat="server" href='<%# "~/column/cl3-" + Eval("ArticleId") %>'>
                                 <h2><%# Eval("ArticleName").ToString() %></h2>
                             </a>

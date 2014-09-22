@@ -1,19 +1,26 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Organizations.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Organizations.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+     <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="Manage Organizations"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+        <ul>
+            <li>
+            </li>
+        </ul>
+
+    </div>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<h3 class="handle">Manage Organizations</h3>
-				<div class="inner-content">
-                    
-
-            <dx:ASPxGridView ID="OrganizationGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="OrganizationId"
+    <dx:ASPxGridView ID="OrganizationGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="OrganizationId"
                 Width="100%" DataSourceID="ObjectDS" >
                 <Columns>
                     <dx:GridViewCommandColumn ButtonType="Image" VisibleIndex="0" Width="60px" Caption=" ">
@@ -40,7 +47,7 @@
                         <ClearFilterButton Visible="True">
                         </ClearFilterButton>
                     </dx:GridViewCommandColumn>
-                    <dx:GridViewDataTextColumn FieldName="OrganizationId" ReadOnly="True" VisibleIndex="1" Caption="Id" Width="50px">
+                    <dx:GridViewDataTextColumn FieldName="OrganizationId" ReadOnly="True" VisibleIndex="1" Caption="Id" Width="50px" Visible="False">
                         <EditFormSettings Visible="False" />
                     </dx:GridViewDataTextColumn>
                     <dx:GridViewDataTextColumn FieldName="OrganizationName" VisibleIndex="2">
@@ -132,7 +139,7 @@
                     </DetailRow>
                 </Templates>
             </dx:ASPxGridView>
-                    <asp:ObjectDataSource ID="ObjectDS" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.OrganizationsLogic" UpdateMethod="Update">
+    <asp:ObjectDataSource ID="ObjectDS" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.OrganizationsLogic" UpdateMethod="Update">
                         <DeleteParameters>
                             <asp:Parameter Name="Original_OrganizationId" Type="Int32" />
                         </DeleteParameters>
@@ -160,9 +167,8 @@
                             <asp:Parameter Name="Original_OrganizationId" Type="Int32" />
                         </UpdateParameters>
                     </asp:ObjectDataSource>
-            </div>
 
-            <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
+      <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
                 OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllByOrganizationId" TypeName="BusinessLogicLayer.Components.HumanResources.OrganizationLanguagesLogic"
                 UpdateMethod="Update">
                 <DeleteParameters>
@@ -189,10 +195,7 @@
                     <asp:Parameter Name="Original_OrganizationLanguagesId" Type="Int32" />
                 </UpdateParameters>
             </asp:ObjectDataSource>
-            <br />
-                </div>
-         </div>
-    
+
     
             
     <asp:ObjectDataSource ID="LanguagesObjectDS" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.LanguageLogic"></asp:ObjectDataSource>

@@ -44,6 +44,8 @@ namespace BusinessLogicLayer.Components.ContentManagement
                      _siteSection.RowGuid = new Guid(reader["RowGuid"].ToString());
                  if(reader["ModifiedDate"] != DBNull.Value)
                      _siteSection.ModifiedDate = Convert.ToDateTime(reader["ModifiedDate"]);
+                 if (reader["Alias"] != DBNull.Value)
+                     _siteSection.Alias = Convert.ToString(reader["Alias"]);
              _siteSection.NewRecord = false;
              _siteSectionList.Add(_siteSection);
              }             reader.Close();
@@ -84,6 +86,8 @@ namespace BusinessLogicLayer.Components.ContentManagement
                     _siteSection.RowGuid = new Guid(reader["RowGuid"].ToString());
                 if (reader["ModifiedDate"] != DBNull.Value)
                     _siteSection.ModifiedDate = Convert.ToDateTime(reader["ModifiedDate"]);
+                if (reader["Alias"] != DBNull.Value)
+                    _siteSection.Alias = Convert.ToString(reader["Alias"]);
                 _siteSection.NewRecord = false;
                 _siteSectionList.Add(_siteSection);
             } reader.Close();
@@ -120,6 +124,8 @@ namespace BusinessLogicLayer.Components.ContentManagement
                     _siteSection.RowGuid = new Guid(reader["RowGuid"].ToString());
                 if (reader["ModifiedDate"] != DBNull.Value)
                     _siteSection.ModifiedDate = Convert.ToDateTime(reader["ModifiedDate"]);
+                if (reader["Alias"] != DBNull.Value)
+                    _siteSection.Alias = Convert.ToString(reader["Alias"]);
                 _siteSection.NewRecord = false;
                 _siteSectionList.Add(_siteSection);
             } reader.Close();
@@ -130,26 +136,26 @@ namespace BusinessLogicLayer.Components.ContentManagement
 		public bool Insert(SiteSection sitesection)
 		{
 			SiteSectionDAC sitesectionComponent = new SiteSectionDAC();
-			return sitesectionComponent.InsertNewSiteSection( sitesection.SiteSectionId,  sitesection.Name,  sitesection.SiteSectionParentId,  sitesection.SectionStatusId,  sitesection.SiteId,  sitesection.PersonId,  sitesection.SecurityAccessTypeId,  sitesection.RowGuid,  sitesection.ModifiedDate);
+			return sitesectionComponent.InsertNewSiteSection( sitesection.SiteSectionId,  sitesection.Name,  sitesection.SiteSectionParentId,  sitesection.SectionStatusId,  sitesection.SiteId,  sitesection.PersonId,  sitesection.SecurityAccessTypeId,  sitesection.RowGuid,  sitesection.ModifiedDate,sitesection.Alias);
 		}
          [DataObjectMethod(DataObjectMethodType.Insert)]
-		public bool Insert( int SiteSectionId,  string Name,  int SiteSectionParentId,  int SectionStatusId,  int SiteId,  int PersonId,  int SecurityAccessTypeId,  Guid RowGuid,  DateTime ModifiedDate)
+		public bool Insert( int SiteSectionId,  string Name,  int SiteSectionParentId,  int SectionStatusId,  int SiteId,  int PersonId,  int SecurityAccessTypeId,  Guid RowGuid,  DateTime ModifiedDate,string Alias)
 		{
 			SiteSectionDAC sitesectionComponent = new SiteSectionDAC();
             int id = 0;
             BusinessLogicLayer.Common.ContentEntityLogic.Insert(ref id, "SS", Guid.NewGuid(), DateTime.Now);
-			return sitesectionComponent.InsertNewSiteSection( id,  Name,  SiteSectionParentId,  SectionStatusId,  SiteId,  PersonId,  SecurityAccessTypeId,  Guid.NewGuid(),  DateTime.Now);
+			return sitesectionComponent.InsertNewSiteSection( id,  Name,  SiteSectionParentId,  SectionStatusId,  SiteId,  PersonId,  SecurityAccessTypeId,  Guid.NewGuid(),  DateTime.Now, Alias);
 		}
 		public bool Update(SiteSection sitesection ,int old_siteSectionId)
 		{
 			SiteSectionDAC sitesectionComponent = new SiteSectionDAC();
-			return sitesectionComponent.UpdateSiteSection( sitesection.SiteSectionId,  sitesection.Name,  sitesection.SiteSectionParentId,  sitesection.SectionStatusId,  sitesection.SiteId,  sitesection.PersonId,  sitesection.SecurityAccessTypeId,  sitesection.RowGuid,  sitesection.ModifiedDate,  old_siteSectionId);
+			return sitesectionComponent.UpdateSiteSection( sitesection.SiteSectionId,  sitesection.Name,  sitesection.SiteSectionParentId,  sitesection.SectionStatusId,  sitesection.SiteId,  sitesection.PersonId,  sitesection.SecurityAccessTypeId,  sitesection.RowGuid,  sitesection.ModifiedDate, sitesection.Alias,  old_siteSectionId);
 		}
 		[DataObjectMethod(DataObjectMethodType.Update)]
-		public bool Update( int SiteSectionId,  string Name,  int SiteSectionParentId,  int SectionStatusId,  int SiteId,  int PersonId,  int SecurityAccessTypeId,  Guid RowGuid,  DateTime ModifiedDate,  int Original_SiteSectionId)
+		public bool Update( int SiteSectionId,  string Name,  int SiteSectionParentId,  int SectionStatusId,  int SiteId,  int PersonId,  int SecurityAccessTypeId,  Guid RowGuid,  DateTime ModifiedDate,string Alias,  int Original_SiteSectionId)
 		{
 			SiteSectionDAC sitesectionComponent = new SiteSectionDAC();
-			return sitesectionComponent.UpdateSiteSection( SiteSectionId,  Name,  SiteSectionParentId,  SectionStatusId,  SiteId,  PersonId,  SecurityAccessTypeId,  RowGuid,  DateTime.Now,  Original_SiteSectionId);
+			return sitesectionComponent.UpdateSiteSection( SiteSectionId,  Name,  SiteSectionParentId,  SectionStatusId,  SiteId,  PersonId,  SecurityAccessTypeId,  RowGuid,  DateTime.Now, Alias,  Original_SiteSectionId);
 		}
 
         #endregion
@@ -191,7 +197,42 @@ namespace BusinessLogicLayer.Components.ContentManagement
                      _siteSection.RowGuid = new Guid(reader["RowGuid"].ToString());
                  if(reader["ModifiedDate"] != DBNull.Value)
                      _siteSection.ModifiedDate = Convert.ToDateTime(reader["ModifiedDate"]);
+                 if (reader["Alias"] != DBNull.Value)
+                     _siteSection.Alias = Convert.ToString(reader["Alias"]);
              _siteSection.NewRecord = false;             }             reader.Close();
+             return _siteSection;
+         }
+
+         public SiteSection GetByAlias(string Alias)
+         {
+             SiteSectionDAC _siteSectionComponent = new SiteSectionDAC();
+             IDataReader reader = _siteSectionComponent.GetByAliasSiteSection(Alias);
+             SiteSection _siteSection = null;
+             while (reader.Read())
+             {
+                 _siteSection = new SiteSection();
+                 if (reader["SiteSectionId"] != DBNull.Value)
+                     _siteSection.SiteSectionId = Convert.ToInt32(reader["SiteSectionId"]);
+                 if (reader["Name"] != DBNull.Value)
+                     _siteSection.Name = Convert.ToString(reader["Name"]);
+                 if (reader["SiteSectionParentId"] != DBNull.Value)
+                     _siteSection.SiteSectionParentId = Convert.ToInt32(reader["SiteSectionParentId"]);
+                 if (reader["SectionStatusId"] != DBNull.Value)
+                     _siteSection.SectionStatusId = Convert.ToInt32(reader["SectionStatusId"]);
+                 if (reader["SiteId"] != DBNull.Value)
+                     _siteSection.SiteId = Convert.ToInt32(reader["SiteId"]);
+                 if (reader["PersonId"] != DBNull.Value)
+                     _siteSection.PersonId = Convert.ToInt32(reader["PersonId"]);
+                 if (reader["SecurityAccessTypeId"] != DBNull.Value)
+                     _siteSection.SecurityAccessTypeId = Convert.ToInt32(reader["SecurityAccessTypeId"]);
+                 if (reader["RowGuid"] != DBNull.Value)
+                     _siteSection.RowGuid = new Guid(reader["RowGuid"].ToString());
+                 if (reader["ModifiedDate"] != DBNull.Value)
+                     _siteSection.ModifiedDate = Convert.ToDateTime(reader["ModifiedDate"]);
+                 if (reader["Alias"] != DBNull.Value)
+                     _siteSection.Alias = Convert.ToString(reader["Alias"]);
+                 _siteSection.NewRecord = false;
+             } reader.Close();
              return _siteSection;
          }
 

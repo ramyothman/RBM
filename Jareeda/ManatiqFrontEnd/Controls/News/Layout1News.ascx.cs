@@ -21,6 +21,7 @@ namespace ManatiqFrontEnd.Controls.News
         {
             if (!IsPostBack)
             {
+                BlockHead.Attributes.Add("class", "block-head " + GetBackground());
                 LoadData();
                 if (Articles.Count > 0)
                 {

@@ -27,7 +27,26 @@ namespace ManatiqFrontEnd
                 {
                     manager.Holders = master.ContentPlaceHolderMain;
                     int SectionID = 0;
-                    Int32.TryParse(Request["Section"], out SectionID);
+
+                    string code = Request["Section"];
+                    if (string.IsNullOrEmpty(code))
+                    {
+                        if (Page.RouteData.Values["sectionName"] != null)
+                        {
+                            code = Page.RouteData.Values["sectionName"].ToString();
+                            if (!string.IsNullOrEmpty(code))
+                            {
+                                code.Replace("-", " ");
+                                BusinessLogicLayer.Entities.ContentManagement.SiteSection section = BusinessLogicLayer.Common.SiteSectionLogic.GetByAlias(code);
+                                if(section != null)
+                                    SectionID = section.SiteSectionId;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Int32.TryParse(code, out SectionID);
+                    }
                     manager.LoadControls(this, SectionID, 1);
                 }
 

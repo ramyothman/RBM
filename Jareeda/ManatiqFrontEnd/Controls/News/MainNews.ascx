@@ -12,11 +12,6 @@
                 <li>
 				  		<div class="slider-block">
 							<a runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>'><h3><%# Eval("ArticleName").ToString() %></h3></a>
-							<div class="slider-block-right">
-								<p>
-                                    <%# GetDescriptionText(Eval("Description").ToString()).ToString() %>
-                                    <a class="more-small" runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>'>.....المزيد</a></p>
-							</div>
 							<div class="slider-block-left">
                                 <a runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>'>
 								<img runat="server" width="450" height="280" src='<%#  GetImagePath(Convert.ToString(Eval("ImagePath"))) %>' />
@@ -24,6 +19,12 @@
                                     </a>
                                 
 							</div>
+                              <div class="slider-block-right">
+								<p>
+                                    <%# GetDescriptionText(Eval("Description").ToString()).ToString() %>
+                                    <a class="more-small" runat="server" href='<%# "~/ns2-" + Eval("ArticleId") %>'>.....المزيد</a></p>
+							</div>
+							
 						</div>
 					</li>
             </ItemTemplate>

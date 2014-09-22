@@ -134,12 +134,16 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Insert a row into MenuEntity using Stored Procedure
 		/// and return the auto number primary key of MenuEntity inserted row
 		/// </summary>
-		public bool InsertNewMenuEntity( ref int menuEntityId,  string menuName,  int contentEntityId)
+		public bool InsertNewMenuEntity( ref int menuEntityId,  string menuName,  int contentEntityId,string displayType)
 		{
                  DbCommand command = Database.GetStoredProcCommand("InsertNewMenuEntity");
 				Database.AddOutParameter(command,"MenuEntityId",DbType.Int32,Int32.MaxValue);
 				Database.AddInParameter(command,"MenuName",DbType.String,menuName);
-				Database.AddInParameter(command,"ContentEntityId",DbType.Int32,contentEntityId);
+                if(contentEntityId == 0)
+				    Database.AddInParameter(command,"ContentEntityId",DbType.Int32,DBNull.Value);
+                else
+                    Database.AddInParameter(command, "ContentEntityId", DbType.Int32, contentEntityId);
+                Database.AddInParameter(command, "DisplayType", DbType.String, displayType);
 				bool _status = false;
 				if(Database.ExecuteNonQuery(command) > 0)
 				{
@@ -152,12 +156,16 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Insert a row into MenuEntity using Stored Procedure
 		/// and return the auto number primary key of MenuEntity inserted row using Transaction
 		/// </summary>
-		public bool InsertNewMenuEntity( ref int menuEntityId,  string menuName,  int contentEntityId,DbTransaction transaction)
+        public bool InsertNewMenuEntity(ref int menuEntityId, string menuName, int contentEntityId, string displayType, DbTransaction transaction)
 		{
                  DbCommand command = Database.GetStoredProcCommand("InsertNewMenuEntity");
 				Database.AddOutParameter(command,"MenuEntityId",DbType.Int32,Int32.MaxValue);
 				Database.AddInParameter(command,"MenuName",DbType.String,menuName);
-				Database.AddInParameter(command,"ContentEntityId",DbType.Int32,contentEntityId);
+                if (contentEntityId == 0)
+                    Database.AddInParameter(command, "ContentEntityId", DbType.Int32, DBNull.Value);
+                else
+                    Database.AddInParameter(command, "ContentEntityId", DbType.Int32, contentEntityId);
+                Database.AddInParameter(command, "DisplayType", DbType.String, displayType);
 				bool _status = false;
 				if(Database.ExecuteNonQuery(command,transaction) > 0)
 				{
@@ -188,12 +196,16 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// <summary>
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Update a row into MenuEntity using Stored Procedure
 		/// </summary>
-		public bool UpdateMenuEntity( string menuName, int contentEntityId, int oldmenuEntityId)
+        public bool UpdateMenuEntity(string menuName, int contentEntityId, string displayType, int oldmenuEntityId)
 		{
                  DbCommand command = Database.GetStoredProcCommand("UpdateMenuEntity");
 
 		    		Database.AddInParameter(command,"MenuName",DbType.String,menuName);
-		    		Database.AddInParameter(command,"ContentEntityId",DbType.Int32,contentEntityId);
+                    if (contentEntityId == 0)
+                        Database.AddInParameter(command, "ContentEntityId", DbType.Int32, DBNull.Value);
+                    else
+                        Database.AddInParameter(command, "ContentEntityId", DbType.Int32, contentEntityId);
+                    Database.AddInParameter(command, "DisplayType", DbType.String, displayType);
 				Database.AddInParameter(command,"oldMenuEntityId",DbType.Int32,oldmenuEntityId);
 
 				bool _status = false;
@@ -207,12 +219,16 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 		/// <summary>
 		/// This Function Uses the Microsoft.Practices.EnterpriseLibrary.Data to get Update a row into MenuEntity using Stored Procedure By Transaction
 		/// </summary>
-		public bool UpdateMenuEntity( string menuName, int contentEntityId, int oldmenuEntityId,DbTransaction transaction)
+        public bool UpdateMenuEntity(string menuName, int contentEntityId, string displayType, int oldmenuEntityId, DbTransaction transaction)
 		{
                  DbCommand command = Database.GetStoredProcCommand("UpdateMenuEntity");
 
 		    		Database.AddInParameter(command,"MenuName",DbType.String,menuName);
-		    		Database.AddInParameter(command,"ContentEntityId",DbType.Int32,contentEntityId);
+                    if (contentEntityId == 0)
+                        Database.AddInParameter(command, "ContentEntityId", DbType.Int32, DBNull.Value);
+                    else
+                        Database.AddInParameter(command, "ContentEntityId", DbType.Int32, contentEntityId);
+                    Database.AddInParameter(command, "DisplayType", DbType.String, displayType);
 				Database.AddInParameter(command,"oldMenuEntityId",DbType.Int32,oldmenuEntityId);
 
 				bool _status = false;

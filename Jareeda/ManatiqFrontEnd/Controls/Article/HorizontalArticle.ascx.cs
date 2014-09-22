@@ -13,6 +13,7 @@ namespace ManatiqFrontEnd.Controls.Article
         {
             if (!IsPostBack)
             {
+                TitleDiv.Attributes.Add("class", "block-head " + GetBackground());
                 LoadData();
                 if (Articles.Count > 0)
                 {

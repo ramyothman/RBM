@@ -1,15 +1,26 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.Builder.FormBuilder.FormFieldTypes.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.Builder.FormBuilder.FormFieldTypes.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+   <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="Manage Form Field Types"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+      
+
+    </div>
+   
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<h3 class="handle">Manage Form Field Types</h3>
-				<div class="inner-content">
-                <dx:ASPxGridView ID="gridDocumentStatus" runat="server" 
+    <dx:ASPxGridView ID="gridDocumentStatus" runat="server" 
         AutoGenerateColumns="False" DataSourceID="DocumentObjectDS" 
         KeyFieldName="FormFieldTypeId" Width="100%">
         <Columns>
@@ -38,7 +49,7 @@
                         </ClearFilterButton>
                     </dx:GridViewCommandColumn>
             <dx:GridViewDataTextColumn Caption="Id" FieldName="FormFieldTypeId" 
-                VisibleIndex="1" Width="50px">
+                VisibleIndex="1" Width="50px" Visible="False">
             </dx:GridViewDataTextColumn>
             <dx:GridViewDataTextColumn FieldName="Name" VisibleIndex="2">
                 <EditFormSettings ColumnSpan="2" />
@@ -71,9 +82,4 @@
             <asp:Parameter Name="Original_FormFieldTypeId" Type="Int32" />
         </UpdateParameters>
     </asp:ObjectDataSource>
-           
-            <br />
-        </div>
-    </div>
-     </div>
 </asp:Content>

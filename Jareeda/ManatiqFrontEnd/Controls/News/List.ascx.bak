@@ -1,26 +1,20 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="List.ascx.cs" Inherits="ManatiqFrontEnd.Controls.News.List" %>
-<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxDataView" TagPrefix="dx" %>
-<asp:Repeater runat="server" ID="SectionsRepeater">
-    <HeaderTemplate>
-        <div class="block-news">
-    </HeaderTemplate>
-    <ItemTemplate>
-        <div class="block-head">
-					<h1 runat="server" id="ModuleTitleText">
-                        <%# Eval("SectionName").ToString() %>
-					</h1>
-				</div>
-        <div class="txt-wrapper clear">
-                   
-					
-					<dx:ASPxDataView ID="ImportantNewsRepeater" runat="server" ColumnCount="1" EnableDefaultAppearance="False" ItemSpacing="0px" RowPerPage="20" Width="100%" Height="100%" RightToLeft="True" DataSource='<%# ((ManatiqFrontEnd.Controls.News.SectionItem)Container.DataItem).Articles %>' >
-<SettingsFlowLayout ItemsPerPage="20"></SettingsFlowLayout>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxCallback" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxDataView" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
 
-<SettingsTableLayout ColumnCount="1" RowsPerPage="20"></SettingsTableLayout>
+<div runat="server" id="MainContainer" class="block-news">
 
-<PagerSettings ShowNumericButtons="False" EndlessPagingMode="OnScroll"></PagerSettings>
-                        <ItemTemplate>
-                            <div class="block-small">
+</div>
+<div  runat="server" id="DivMainContainer" class="block-news mrg-top">
+    <div runat="server" id="MainBlockContainer" class="aside-block">
+        <div class="aside-block-head">
+            </div>
+        <div class="aside-block-content">
+    <asp:Repeater runat="server" ID="ListNewsContainer">
+        <ItemTemplate>
+            <div class="block-small">
 						<div class="img-wrapper">
 							<a href="#"><img runat="server" width="182" height="100" src='<%#  GetImagePath(Convert.ToString(Eval("ArticleAttachment"))) %>' /></a>
 						</div>
@@ -33,20 +27,26 @@
 						</div>
 						
 					</div>
-                        </ItemTemplate>
-                       
-                        <EmptyDataTemplate>
-                            لا يوجد نتائج لهذا البحث
-                        </EmptyDataTemplate>
-                    </dx:ASPxDataView>
-					
-					
-					
-				</div>
-    </ItemTemplate>
-    <FooterTemplate>
-        </div>
-    </FooterTemplate>
-</asp:Repeater>
+        </ItemTemplate>
+        <FooterTemplate>
+            <div id="more_news" ></div>
+            <div class="clear clearfix clear-fix"></div>
+            <div class="readMoreList">
+                <img id="loadingMore" style="display:none;" src="~/images/DXR.gif" runat="server" />
+                <a href="javascript:void(0);" onclick="alert('test1');listCallBack.PerformCallback();" >تحميل أكثر</a>
+            </div>
+        </FooterTemplate>
+    </asp:Repeater>
+            </div>
+    </div>
+</div>
  
-                    
+<dx:ASPxCallback ID="callBackList" ClientInstanceName="listCallBack" runat="server" OnCallback="callBackList_Callback">
+    <ClientSideEvents BeginCallback="function(s, e) {
+        alert('test');
+	$('#loadingMore').show();
+}" EndCallback="function(s, e) {
+		$('#loadingMore').hide();
+        #('#more_news').append(e.result);
+}" />
+</dx:ASPxCallback>

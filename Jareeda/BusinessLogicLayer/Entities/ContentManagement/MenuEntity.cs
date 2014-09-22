@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using System.Collections.Generic;
 namespace BusinessLogicLayer.Entities.ContentManagement
 {
 	/// <summary>
@@ -71,16 +72,42 @@ namespace BusinessLogicLayer.Entities.ContentManagement
             }
 		}
 
-     private string _ContentEntityType;
-     public string ContentEntityType
-     {
-         get { return _ContentEntityType; }
-         set
+         private string _ContentEntityType;
+         public string ContentEntityType
          {
-             _ContentEntityType = value;
+             get { return _ContentEntityType; }
+             set
+             {
+                 _ContentEntityType = value;
+             }
          }
-     }
-        
+
+         private string _displayType;
+         public string DisplayType
+         {
+             get { return _displayType; }
+             set
+             {
+                 _displayType = value;
+             }
+         }
+
+         private List<MenuEntityItem> _Items = null;
+         public List<MenuEntityItem> Items
+         {
+             set { _Items = value; }
+             get
+             {
+                 if(_Items == null)
+                 {
+                     _Items = BusinessLogicLayer.Common.MenuEntityItemLogic.GetAllParents(MenuEntityId);
+                     if (_Items == null)
+                         _Items = new List<MenuEntityItem>();
+                 }
+                 return _Items;
+             }
+
+         }
 
 
 	}

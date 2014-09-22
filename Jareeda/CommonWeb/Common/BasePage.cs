@@ -33,11 +33,11 @@ namespace CommonWeb.Common
         {
             if (Thread.CurrentThread.CurrentUICulture.Name.Contains("ar"))
             {
-                this.Theme = "EventoAdminAr";
+                this.Theme = "MetropolisBlueAr";
             }
             else
             {
-                this.Theme = "EventoAdmin";
+                this.Theme = "MetropolisBlue";
             }
         }
         
@@ -226,6 +226,22 @@ namespace CommonWeb.Common
 
         }
 
+        public static string GregToHijriCompleteWithDayEng(DateTime dtTime)
+        {
+            if (dtTime == DateTime.MinValue)
+                return "";
+            UmAlQuraCalendar calHijri = new UmAlQuraCalendar();
+            GregorianCalendar calEng = new GregorianCalendar();
+            CultureInfo info = new CultureInfo("ar-sa");
+            info.DateTimeFormat.Calendar = calHijri;
+            string weekday = Convert.ToString(calEng.GetDayOfWeek(dtTime));
+            int CurrDayOfMonth = calHijri.GetDayOfMonth(dtTime);
+            int CurrMonth = calHijri.GetMonth(dtTime);
+            int Curryear = calHijri.GetYear(dtTime);
+            return string.Format("{3}/{2}/{1}  h ", weekday, CurrDayOfMonth.ToString(), CurrMonth.ToString(), Curryear.ToString());
+
+        }
+
         public static string GregToHijriTime(DateTime dtTime)
         {
             if (dtTime == DateTime.MinValue)
@@ -245,6 +261,13 @@ namespace CommonWeb.Common
         {
 
             return  dtTime.ToString("yyyy/MM/dd") + "  م  "; 
+
+        }
+
+        public static string GetGreggCompleteByDateEng(DateTime dtTime)
+        {
+
+            return dtTime.ToString("yyyy/MM/dd") + "    ";
 
         }
         #endregion

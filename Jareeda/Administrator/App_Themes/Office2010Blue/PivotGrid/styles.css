@@ -439,12 +439,12 @@ div.dxpgMainTable_Office2010Blue
 }
 .dxpgFLButtonDiv_Office2010Blue .dxbButton_Office2010Blue div.dxb
 {
-    padding: 2px 8px 1px;
+	border: 1px dotted transparent;
+	padding: 1px 7px 0px;
 }
 .dxpgFLButtonDiv_Office2010Blue .dxbButton_Office2010Blue div.dxbf
 {
 	border: 1px dotted Black;
-	padding: 1px 7px 0px;
 }
 .dxpgFLTextDiv_Office2010Blue
 {
@@ -493,16 +493,15 @@ div.dxpgMainTable_Office2010Blue
 {
     float: right;
     display: block;
-    padding: 0px 12px 0px 0px;
-    margin-top: 12px;
+    margin: 12px 12px 0 0;
 }
 .dxpgFLDefereDiv_Office2010Blue .dxbButton_Office2010Blue div.dxb
 {
-    padding: 2px 14px;
+    padding: 1px 13px;
+    border: 1px dotted transparent;
 }
 .dxpgFLDefereDiv_Office2010Blue .dxbButton_Office2010Blue div.dxbf
 {
-    padding: 1px 13px;
     border: 1px dotted Black;
 }
 .dxpgFLListDiv_Office2010Blue table 

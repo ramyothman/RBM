@@ -1,17 +1,23 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.PaymentType.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.PaymentType.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+     <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="Manage Payment Types"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+       
+
+    </div>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<h3 class="handle">Manage Payment Types</h3>
-				<div class="inner-content">
-            <dx:ASPxGridView ID="AirLineGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="PaymentTypeID"
+    <dx:ASPxGridView ID="AirLineGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="PaymentTypeID"
                 Width="100%" DataSourceID="DSAirLine" >
                 <Columns>
                     <dx:GridViewCommandColumn ButtonType="Image" VisibleIndex="0" Width="60px" Caption=" ">
@@ -38,19 +44,19 @@
                         <ClearFilterButton Visible="True">
                         </ClearFilterButton>
                     </dx:GridViewCommandColumn>
-                    <dx:GridViewDataTextColumn FieldName="PaymentTypeID" ReadOnly="True" VisibleIndex="1">
+                    <dx:GridViewDataTextColumn FieldName="PaymentTypeID" Visible="false" ReadOnly="True" VisibleIndex="1">
                         <EditFormSettings Visible="False" />
                     </dx:GridViewDataTextColumn>
                     <dx:GridViewDataTextColumn FieldName="Name" VisibleIndex="2">
                     </dx:GridViewDataTextColumn>
                     
-                    <dx:GridViewDataCheckColumn FieldName="IsRecurring" VisibleIndex="3">
+                    <dx:GridViewDataCheckColumn FieldName="IsRecurring" Width="50px" VisibleIndex="3">
                     </dx:GridViewDataCheckColumn>
-                    <dx:GridViewDataTextColumn FieldName="RecurringNumberinDays" VisibleIndex="4">
+                    <dx:GridViewDataTextColumn FieldName="RecurringNumberinDays" Width="50px" VisibleIndex="4">
                     </dx:GridViewDataTextColumn>
-                    <dx:GridViewDataCheckColumn FieldName="IsPerItem" VisibleIndex="5">
+                    <dx:GridViewDataCheckColumn FieldName="IsPerItem" Width="50px" VisibleIndex="5">
                     </dx:GridViewDataCheckColumn>
-                    <dx:GridViewDataTextColumn FieldName="ItemNumber" VisibleIndex="6">
+                    <dx:GridViewDataTextColumn FieldName="ItemNumber" Width="50px" VisibleIndex="6">
                     </dx:GridViewDataTextColumn>
                     
                 </Columns>
@@ -61,9 +67,8 @@
                 <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
                 
             </dx:ASPxGridView>
-            </div>
 
-            <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
+          <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
                 OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.PaymentTypeLogic"
                 UpdateMethod="Update">
                 <DeleteParameters>
@@ -85,7 +90,5 @@
                     <asp:Parameter Name="Original_PaymentTypeID" Type="Int32" />
                 </UpdateParameters>
             </asp:ObjectDataSource>
-            <br />
-                </div>
-         </div>
+  
 </asp:Content>

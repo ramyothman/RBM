@@ -345,12 +345,25 @@ padding: 5px;
 min-width:100px;
 }
 
-.dxmMenu_DXConnect a,
+.dxmLite_DXConnect a,
 .dxmVerticalMenu_DXConnect a
 {
     color: #FFF;
 	text-decoration: none;
 }
+.dxmLite_DXConnect ul li{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align:right;
+    background-color: #386197;
+}
+    .dxmLite_DXConnect ul li:hover {
+        color:#FF6600;
+    }
+    .dxmLite_DXConnect ul li a:hover {
+           color:#FF6600;
+    }
 .dxmSubMenu_DXConnect a {
        color: #333;
 	text-decoration: none;
@@ -368,7 +381,7 @@ min-width:100px;
 	text-align: center;
 	padding: 7px 10px;
 }   
-.dxmMenu_DXConnect,
+.dxmLite_DXConnect,
 .dxmVerticalMenu_DXConnect
 {
     font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,"sans-serif";
@@ -378,7 +391,7 @@ min-width:100px;
 	background-color: #f1f2f6;
 	padding: 0;
 }
-.dxmMenu_DXConnect
+.dxmLite_DXConnect
 {
 	background: url("images/menu_bg.gif") repeat-x scroll center top transparent;
 }

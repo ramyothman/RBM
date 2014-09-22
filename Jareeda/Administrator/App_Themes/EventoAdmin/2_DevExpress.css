@@ -345,12 +345,26 @@ padding: 5px;
 min-width:100px;
 }
 
-.dxmMenu_DXConnect a,
+.dxmLite_DXConnect a,
 .dxmVerticalMenu_DXConnect a
 {
     color: #FFF;
 	text-decoration: none;
 }
+.dxmLite_DXConnect ul li{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align:left;
+    
+    background-color: #386197;
+}
+    .dxmLite_DXConnect ul li:hover {
+        color:#FF6600;
+    }
+    .dxmLite_DXConnect ul li a:hover {
+           color:#FF6600;
+    }
 .dxmSubMenu_DXConnect a {
        color: #333;
 	text-decoration: none;
@@ -368,7 +382,7 @@ min-width:100px;
 	text-align: center;
 	padding: 7px 10px;
 }   
-.dxmMenu_DXConnect,
+.dxmLite_DXConnect,
 .dxmVerticalMenu_DXConnect
 {
     font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,"sans-serif";
@@ -378,17 +392,17 @@ min-width:100px;
 	background-color: #f1f2f6;
 	padding: 0;
 }
-.dxmMenu_DXConnect
+.dxmLite_DXConnect
 {
 	background: url("images/menu_bg.gif") repeat-x scroll center top transparent;
 }
-.dxmMenuGutter_DXConnect,
-.dxmMenuRtlGutter_DXConnect
+.dxmLiteGutter_DXConnect,
+.dxmLiteRtlGutter_DXConnect
 {
 }
 
-.dxmMenuSeparator_DXConnect .dx,
-.dxmMenuFullHeightSeparator_DXConnect .dx
+.dxmLiteSeparator_DXConnect .dx,
+.dxmLiteFullHeightSeparator_DXConnect .dx
 {
 	font-size: 0;
 	line-height: 0;
@@ -397,42 +411,42 @@ min-width:100px;
 	height: 28px;
     background-image: url('images/menu_split.gif');
 }
-.dxmMenuSeparator_DXConnect,
-.dxmMenuFullHeightSeparator_DXConnect
+.dxmLiteSeparator_DXConnect,
+.dxmLiteFullHeightSeparator_DXConnect
 {
 	width: 1px;
 }
 
-.dxmMenuSeparator_DXConnect .dx,
-.dxmMenuFullHeightSeparator_DXConnect
+.dxmLiteSeparator_DXConnect .dx,
+.dxmLiteFullHeightSeparator_DXConnect
 {
 	height: 28px;
     background-image: url('images/menu_split.gif');
 	width: 1px;
 }
-.dxmMenuSeparator_DXConnect .dx
+.dxmLiteSeparator_DXConnect .dx
 {
 	height: 19px;
 }
-.dxmMenuFullHeightSeparator_DXConnect
+.dxmLiteFullHeightSeparator_DXConnect
 {
 	display: none;
 }
-.dxmMenuVerticalSeparator_DXConnect
+.dxmLiteVerticalSeparator_DXConnect
 {
 	background: #f8f8fa url('images/mVertItemSepBack.png') no-repeat center top;
 	width: 100%;
 	height: 1px;
 }
 
-.dxmMenuItem_DXConnect,
-.dxmMenuItemWithImage_DXConnect,
-.dxmMenuItemWithPopOutImage_DXConnect,
-.dxmMenuItemWithImageWithPopOutImage_DXConnect,
-.dxmMenuLargeItem_DXConnect,
-.dxmMenuLargeItemWithImage_DXConnect,
-.dxmMenuLargeItemWithPopOutImage_DXConnect,
-.dxmMenuLargeItemWithImageWithPopOutImage_DXConnect
+.dxmLiteItem_DXConnect,
+.dxmLiteItemWithImage_DXConnect,
+.dxmLiteItemWithPopOutImage_DXConnect,
+.dxmLiteItemWithImageWithPopOutImage_DXConnect,
+.dxmLiteLargeItem_DXConnect,
+.dxmLiteLargeItemWithImage_DXConnect,
+.dxmLiteLargeItemWithPopOutImage_DXConnect,
+.dxmLiteLargeItemWithImageWithPopOutImage_DXConnect
 {
 	background: url("images/menu_bg.gif") repeat-x scroll center top transparent;
 	white-space: nowrap;
@@ -457,13 +471,13 @@ min-width:100px;
 	background-color: #f9fafb;
 	white-space: nowrap;
 }
-.dxmMenuItem_DXConnect,
-.dxmMenuItemWithImage_DXConnect
+.dxmLiteItem_DXConnect,
+.dxmLiteItemWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemWithPopOutImage_DXConnect,
-.dxmMenuItemWithImageWithPopOutImage_DXConnect
+.dxmLiteItemWithPopOutImage_DXConnect,
+.dxmLiteItemWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 9px 4px 14px;
 }	 
@@ -499,13 +513,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItem_DXConnect,
-.dxmMenuLargeItemWithImage_DXConnect
+.dxmLiteLargeItem_DXConnect,
+.dxmLiteLargeItemWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemWithPopOutImage_DXConnect,
-.dxmMenuLargeItemWithImageWithPopOutImage_DXConnect
+.dxmLiteLargeItemWithPopOutImage_DXConnect,
+.dxmLiteLargeItemWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 11px;
 }
@@ -529,13 +543,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButton_DXConnect, 
-.dxmMenuLargeItemDropDownButton_DXConnect
+.dxmLiteItemDropDownButton_DXConnect, 
+.dxmLiteLargeItemDropDownButton_DXConnect
 {
 	padding: 0 7px 0 8px;
 }
-.dxmMenuRtlItemDropDownButton_DXConnect, 
-.dxmMenuLargeRtlItemDropDownButton_DXConnect
+.dxmLiteRtlItemDropDownButton_DXConnect, 
+.dxmLiteLargeRtlItemDropDownButton_DXConnect
 {
 	padding: 0 8px 0 7px;
 }
@@ -549,10 +563,10 @@ min-width:100px;
 {
 	padding: 0 8px 0 7px;
 }
-.dxmMenuItemSelected_DXConnect,
-.dxmMenuItemSelectedWithImage_DXConnect,
-.dxmMenuItemSelectedWithPopOutImage_DXConnect,
-.dxmMenuItemSelectedWithImageWithPopOutImage_DXConnect,
+.dxmLiteItemSelected_DXConnect,
+.dxmLiteItemSelectedWithImage_DXConnect,
+.dxmLiteItemSelectedWithPopOutImage_DXConnect,
+.dxmLiteItemSelectedWithImageWithPopOutImage_DXConnect,
 .dxmVerticalMenuItemSelected_DXConnect,
 .dxmVerticalMenuItemSelectedWithImage_DXConnect,
 .dxmVerticalMenuItemSelectedWithPopOutImage_DXConnect,
@@ -561,10 +575,10 @@ min-width:100px;
 .dxmVerticalMenuRtlItemSelectedWithImage_DXConnect,
 .dxmVerticalMenuRtlItemSelectedWithPopOutImage_DXConnect,
 .dxmVerticalMenuRtlItemSelectedWithImageWithPopOutImage_DXConnect,
-.dxmMenuLargeItemSelected_DXConnect,
-.dxmMenuLargeItemSelectedWithImage_DXConnect,
-.dxmMenuLargeItemSelectedWithPopOutImage_DXConnect,
-.dxmMenuLargeItemSelectedWithImageWithPopOutImage_DXConnect,
+.dxmLiteLargeItemSelected_DXConnect,
+.dxmLiteLargeItemSelectedWithImage_DXConnect,
+.dxmLiteLargeItemSelectedWithPopOutImage_DXConnect,
+.dxmLiteLargeItemSelectedWithImageWithPopOutImage_DXConnect,
 .dxmVerticalMenuLargeItemSelected_DXConnect,
 .dxmVerticalMenuLargeItemWithImageSelected_DXConnect,
 .dxmVerticalMenuLargeItemSelectedWithPopOutImage_DXConnect,
@@ -577,13 +591,13 @@ min-width:100px;
     border-bottom:4px solid #FFA500;
 	/*background: #e9eaee url('images/mItemSBack.png') repeat-x left top;*/
 }
-.dxmMenuItemSelected_DXConnect,
-.dxmMenuItemSelectedWithImage_DXConnect
+.dxmLiteItemSelected_DXConnect,
+.dxmLiteItemSelectedWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemSelectedWithPopOutImage_DXConnect,
-.dxmMenuItemSelectedWithImageWithPopOutImage_DXConnect
+.dxmLiteItemSelectedWithPopOutImage_DXConnect,
+.dxmLiteItemSelectedWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 9px 4px 14px;
 }	
@@ -619,13 +633,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItemSelected_DXConnect,
-.dxmMenuLargeItemSelectedWithImage_DXConnect
+.dxmLiteLargeItemSelected_DXConnect,
+.dxmLiteLargeItemSelectedWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemSelectedWithPopOutImage_DXConnect,
-.dxmMenuLargeItemSelectedWithImageWithPopOutImage_DXConnect
+.dxmLiteLargeItemSelectedWithPopOutImage_DXConnect,
+.dxmLiteLargeItemSelectedWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 11px;
 }
@@ -649,14 +663,14 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButtonSelected_DXConnect,
-.dxmMenuLargeItemDropDownButtonSelected_DXConnect
+.dxmLiteItemDropDownButtonSelected_DXConnect,
+.dxmLiteLargeItemDropDownButtonSelected_DXConnect
 {
 	padding: 0 7px;
 	border-left: 1px solid #9da0aa;
 }
-.dxmMenuRtlItemDropDownButtonSelected_DXConnect,
-.dxmMenuLargeRtlItemDropDownButtonSelected_DXConnect
+.dxmLiteRtlItemDropDownButtonSelected_DXConnect,
+.dxmLiteLargeRtlItemDropDownButtonSelected_DXConnect
 {
 	padding: 0 7px;
 	border-right: 1px solid #9da0aa;
@@ -673,10 +687,10 @@ min-width:100px;
 	padding: 0 7px;
 	border-right: 1px solid #9da0aa;
 }
-.dxmMenuItemChecked_DXConnect,
-.dxmMenuItemCheckedWithImage_DXConnect,
-.dxmMenuItemCheckedWithPopOutImage_DXConnect,
-.dxmMenuItemCheckedWithImageWithPopOutImage_DXConnect,
+.dxmLiteItemChecked_DXConnect,
+.dxmLiteItemCheckedWithImage_DXConnect,
+.dxmLiteItemCheckedWithPopOutImage_DXConnect,
+.dxmLiteItemCheckedWithImageWithPopOutImage_DXConnect,
 .dxmVerticalMenuItemChecked_DXConnect,
 .dxmVerticalMenuItemCheckedWithImage_DXConnect,
 .dxmVerticalMenuItemCheckedWithPopOutImage_DXConnect,
@@ -685,10 +699,10 @@ min-width:100px;
 .dxmVerticalMenuRtlItemCheckedWithImage_DXConnect,
 .dxmVerticalMenuRtlItemCheckedWithPopOutImage_DXConnect,
 .dxmVerticalMenuRtlItemCheckedWithImageWithPopOutImage_DXConnect,
-.dxmMenuLargeItemChecked_DXConnect,
-.dxmMenuLargeItemCheckedWithImage_DXConnect,
-.dxmMenuLargeItemCheckedWithPopOutImage_DXConnect,
-.dxmMenuLargeItemCheckedWithImageWithPopOutImage_DXConnect,
+.dxmLiteLargeItemChecked_DXConnect,
+.dxmLiteLargeItemCheckedWithImage_DXConnect,
+.dxmLiteLargeItemCheckedWithPopOutImage_DXConnect,
+.dxmLiteLargeItemCheckedWithImageWithPopOutImage_DXConnect,
 .dxmVerticalMenuLargeItemChecked_DXConnect,
 .dxmVerticalMenuLargeItemWithImageChecked_DXConnect,
 .dxmVerticalMenuLargeItemCheckedWithPopOutImage_DXConnect,
@@ -700,13 +714,13 @@ min-width:100px;
 {
 	background: #e9eaee url('images/mItemSBack.png') repeat-x left top;
 }
-.dxmMenuItemChecked_DXConnect,
-.dxmMenuItemCheckedWithImage_DXConnect
+.dxmLiteItemChecked_DXConnect,
+.dxmLiteItemCheckedWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemCheckedWithPopOutImage_DXConnect,
-.dxmMenuItemCheckedWithImageWithPopOutImage_DXConnect
+.dxmLiteItemCheckedWithPopOutImage_DXConnect,
+.dxmLiteItemCheckedWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 9px 4px 14px;
 }	
@@ -742,13 +756,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItemChecked_DXConnect,
-.dxmMenuLargeItemCheckedWithImage_DXConnect
+.dxmLiteLargeItemChecked_DXConnect,
+.dxmLiteLargeItemCheckedWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemCheckedWithPopOutImage_DXConnect,
-.dxmMenuLargeItemCheckedWithImageWithPopOutImage_DXConnect
+.dxmLiteLargeItemCheckedWithPopOutImage_DXConnect,
+.dxmLiteLargeItemCheckedWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 11px;
 }
@@ -772,14 +786,14 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButtonChecked_DXConnect,
-.dxmMenuLargeItemDropDownButtonChecked_DXConnect
+.dxmLiteItemDropDownButtonChecked_DXConnect,
+.dxmLiteLargeItemDropDownButtonChecked_DXConnect
 {
 	padding: 0 7px;
 	border-left: 1px solid #9da0aa;
 }
-.dxmMenuRtlItemDropDownButtonChecked_DXConnect,
-.dxmMenuLargeRtlItemDropDownButtonChecked_DXConnect
+.dxmLiteRtlItemDropDownButtonChecked_DXConnect,
+.dxmLiteLargeRtlItemDropDownButtonChecked_DXConnect
 {
 	padding: 0 7px;
 	border-right: 1px solid #9da0aa;
@@ -796,10 +810,10 @@ min-width:100px;
 	padding: 0 7px;
 	border-right: 1px solid #9da0aa;
 }
-.dxmMenuItemHover_DXConnect,
-.dxmMenuItemHoverWithImage_DXConnect,
-.dxmMenuItemHoverWithPopOutImage_DXConnect,
-.dxmMenuItemHoverWithImageWithPopOutImage_DXConnect, 
+.dxmLiteItemHover_DXConnect,
+.dxmLiteItemHoverWithImage_DXConnect,
+.dxmLiteItemHoverWithPopOutImage_DXConnect,
+.dxmLiteItemHoverWithImageWithPopOutImage_DXConnect, 
 .dxmVerticalMenuItemHover_DXConnect,
 .dxmVerticalMenuItemHoverWithImage_DXConnect,
 .dxmVerticalMenuItemHoverWithPopOutImage_DXConnect,
@@ -808,10 +822,10 @@ min-width:100px;
 .dxmVerticalMenuRtlItemHoverWithImage_DXConnect,
 .dxmVerticalMenuRtlItemHoverWithPopOutImage_DXConnect,
 .dxmVerticalMenuRtlItemHoverWithImageWithPopOutImage_DXConnect, 
-.dxmMenuLargeItemHover_DXConnect,
-.dxmMenuLargeItemHoverWithImage_DXConnect,
-.dxmMenuLargeItemHoverWithPopOutImage_DXConnect,
-.dxmMenuLargeItemHoverWithImageWithPopOutImage_DXConnect, 
+.dxmLiteLargeItemHover_DXConnect,
+.dxmLiteLargeItemHoverWithImage_DXConnect,
+.dxmLiteLargeItemHoverWithPopOutImage_DXConnect,
+.dxmLiteLargeItemHoverWithImageWithPopOutImage_DXConnect, 
 .dxmVerticalMenuLargeItemHover_DXConnect,
 .dxmVerticalMenuLargeItemHoverWithImage_DXConnect,
 .dxmVerticalMenuLargeItemHoverWithPopOutImage_DXConnect,
@@ -824,13 +838,13 @@ min-width:100px;
     
 	background: #edeff7 url('images/menu_balloon.gif') repeat-x left top;
 }
-.dxmMenuItemHover_DXConnect,
-.dxmMenuItemHoverWithImage_DXConnect
+.dxmLiteItemHover_DXConnect,
+.dxmLiteItemHoverWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemHoverWithPopOutImage_DXConnect,
-.dxmMenuItemHoverWithImageWithPopOutImage_DXConnect
+.dxmLiteItemHoverWithPopOutImage_DXConnect,
+.dxmLiteItemHoverWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 9px 4px 14px;
 }	
@@ -866,13 +880,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItemHover_DXConnect,
-.dxmMenuLargeItemHoverWithImage_DXConnect
+.dxmLiteLargeItemHover_DXConnect,
+.dxmLiteLargeItemHoverWithImage_DXConnect
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemHoverWithPopOutImage_DXConnect,
-.dxmMenuLargeItemHoverWithImageWithPopOutImage_DXConnect
+.dxmLiteLargeItemHoverWithPopOutImage_DXConnect,
+.dxmLiteLargeItemHoverWithImageWithPopOutImage_DXConnect
 {
 	padding: 4px 11px;
 }
@@ -896,14 +910,14 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButtonHover_DXConnect,
-.dxmMenuLargeItemDropDownButtonHover_DXConnect
+.dxmLiteItemDropDownButtonHover_DXConnect,
+.dxmLiteLargeItemDropDownButtonHover_DXConnect
 {
 	padding: 0 7px;
 	border-left: 1px solid #a6a9b2;
 }
-.dxmMenuRtlItemDropDownButtonHover_DXConnect,
-.dxmMenuLargeRtlItemDropDownButtonHover_DXConnect
+.dxmLiteRtlItemDropDownButtonHover_DXConnect,
+.dxmLiteLargeRtlItemDropDownButtonHover_DXConnect
 {
 	padding: 0 7px;
 	border-right: 1px solid #a6a9b2;
@@ -1082,10 +1096,10 @@ min-width:100px;
 	padding: 0px;
 }
 
-.dxmMenuItemSpacing_DXConnect,
-.dxmMenuLargeItemSpacing_DXConnect,
-.dxmMenuItemSeparatorSpacing_DXConnect,
-.dxmMenuLargeItemSeparatorSpacing_DXConnect
+.dxmLiteItemSpacing_DXConnect,
+.dxmLiteLargeItemSpacing_DXConnect,
+.dxmLiteItemSeparatorSpacing_DXConnect,
+.dxmLiteLargeItemSeparatorSpacing_DXConnect
 {
 	display: none;
 }
@@ -1102,11 +1116,11 @@ min-width:100px;
 	height: 1px;
 }
 
-.dxmMenuItemLeftImageSpacing_DXConnect
+.dxmLiteItemLeftImageSpacing_DXConnect
 {
 	padding-right: 4px;
 }
-.dxmMenuItemRightImageSpacing_DXConnect
+.dxmLiteItemRightImageSpacing_DXConnect
 {
 	padding-left: 4px;
 }
@@ -1126,12 +1140,12 @@ min-width:100px;
 	width: 4px;
 	height: 1px;
 }
-.dxmMenuItemTopImageSpacing_DXConnect,
+.dxmLiteItemTopImageSpacing_DXConnect,
 .dxmVerticalMenuItemTopImageSpacing_DXConnect
 {
 	margin-bottom: 4px;
 }
-.dxmMenuItemBottomImageSpacing_DXConnect,
+.dxmLiteItemBottomImageSpacing_DXConnect,
 .dxmVerticalMenuItemBottomImageSpacing_DXConnect
 {
 	margin-top: 4px;
@@ -1142,7 +1156,7 @@ min-width:100px;
 	height: 1px;
 }
 /* -- ASPxMenu -- */
-.dxmMenu_Office2010Blue a,
+.dxmLite_Office2010Blue a,
 .dxmVerticalMenu_Office2010Blue a,
 .dxmSubMenu_Office2010Blue a
 {
@@ -1162,7 +1176,7 @@ min-width:100px;
 	text-align: center;
 	padding: 10px 14px;
 }   
-.dxmMenu_Office2010Blue,
+.dxmLite_Office2010Blue,
 .dxmVerticalMenu_Office2010Blue
 {
 	font: 11px Verdana;
@@ -1171,18 +1185,18 @@ min-width:100px;
 	border: 1px solid #8ba0bc;
 	padding: 0;
 }
-.dxmMenu_Office2010Blue
+.dxmLite_Office2010Blue
 {
 	background: #dae5f2 url('Web/mItemBack.png') repeat-x left top;
 }
 
-.dxmMenuGutter_Office2010Blue,
-.dxmMenuRtlGutter_Office2010Blue
+.dxmLiteGutter_Office2010Blue,
+.dxmLiteRtlGutter_Office2010Blue
 {
 }
 
-.dxmMenuSeparator_Office2010Blue .dx,
-.dxmMenuFullHeightSeparator_Office2010Blue .dx 
+.dxmLiteSeparator_Office2010Blue .dx,
+.dxmLiteFullHeightSeparator_Office2010Blue .dx 
 {
 	font-size: 0;
 	line-height: 0;
@@ -1190,37 +1204,37 @@ min-width:100px;
 	width: 1px;
 	height: 1px;
 }
-.dxmMenuSeparator_Office2010Blue,
-.dxmMenuFullHeightSeparator_Office2010Blue
+.dxmLiteSeparator_Office2010Blue,
+.dxmLiteFullHeightSeparator_Office2010Blue
 {
 	width: 1px;
 }
 
-.dxmMenuSeparator_Office2010Blue .dx,
-.dxmMenuFullHeightSeparator_Office2010Blue
+.dxmLiteSeparator_Office2010Blue .dx,
+.dxmLiteFullHeightSeparator_Office2010Blue
 {
 	background: #a9bdd8 none;
 	width: 1px;
 }
-.dxmMenuSeparator_Office2010Blue .dx
+.dxmLiteSeparator_Office2010Blue .dx
 {
 	height: 21px;
 }
-.dxmMenuFullHeightSeparator_Office2010Blue
+.dxmLiteFullHeightSeparator_Office2010Blue
 {
 	display: none;
 }
-.dxmMenuVerticalSeparator_Office2010Blue
+.dxmLiteVerticalSeparator_Office2010Blue
 {
 	background: #c5cfdd none;
 	width: 100%;
 	height: 1px;
 }
 
-.dxmMenuItem_Office2010Blue,
-.dxmMenuItemWithImage_Office2010Blue,
-.dxmMenuItemWithPopOutImage_Office2010Blue,
-.dxmMenuItemWithImageWithPopOutImage_Office2010Blue,
+.dxmLiteItem_Office2010Blue,
+.dxmLiteItemWithImage_Office2010Blue,
+.dxmLiteItemWithPopOutImage_Office2010Blue,
+.dxmLiteItemWithImageWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuItem_Office2010Blue,
 .dxmVerticalMenuItemWithImage_Office2010Blue,
 .dxmVerticalMenuItemWithPopOutImage_Office2010Blue,
@@ -1229,10 +1243,10 @@ min-width:100px;
 .dxmVerticalMenuRtlItemWithImage_Office2010Blue,
 .dxmVerticalMenuRtlItemWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuRtlItemWithImageWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItem_Office2010Blue,
-.dxmMenuLargeItemWithImage_Office2010Blue,
-.dxmMenuLargeItemWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemWithImageWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItem_Office2010Blue,
+.dxmLiteLargeItemWithImage_Office2010Blue,
+.dxmLiteLargeItemWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemWithImageWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuLargeItem_Office2010Blue,
 .dxmVerticalMenuLargeItemWithImage_Office2010Blue,
 .dxmVerticalMenuLargeItemWithPopOutImage_Office2010Blue,
@@ -1245,13 +1259,13 @@ min-width:100px;
 	background: #dae5f2 url('Web/mItemBack.png') repeat-x left top;
 	white-space: nowrap;
 }
-.dxmMenuItem_Office2010Blue,
-.dxmMenuItemWithImage_Office2010Blue
+.dxmLiteItem_Office2010Blue,
+.dxmLiteItemWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemWithPopOutImage_Office2010Blue,
-.dxmMenuItemWithImageWithPopOutImage_Office2010Blue
+.dxmLiteItemWithPopOutImage_Office2010Blue,
+.dxmLiteItemWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 9px 4px 14px;
 }	 
@@ -1287,13 +1301,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItem_Office2010Blue,
-.dxmMenuLargeItemWithImage_Office2010Blue
+.dxmLiteLargeItem_Office2010Blue,
+.dxmLiteLargeItemWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemWithImageWithPopOutImage_Office2010Blue
+.dxmLiteLargeItemWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 11px;
 }
@@ -1317,13 +1331,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButton_Office2010Blue, 
-.dxmMenuLargeItemDropDownButton_Office2010Blue
+.dxmLiteItemDropDownButton_Office2010Blue, 
+.dxmLiteLargeItemDropDownButton_Office2010Blue
 {
 	padding: 0 7px 0 8px;
 }
-.dxmMenuRtlItemDropDownButton_Office2010Blue, 
-.dxmMenuLargeRtlItemDropDownButton_Office2010Blue
+.dxmLiteRtlItemDropDownButton_Office2010Blue, 
+.dxmLiteLargeRtlItemDropDownButton_Office2010Blue
 {
 	padding: 0 8px 0 7px;
 }
@@ -1337,10 +1351,10 @@ min-width:100px;
 {
 	padding: 0 8px 0 7px;
 }
-.dxmMenuItemSelected_Office2010Blue,
-.dxmMenuItemSelectedWithImage_Office2010Blue,
-.dxmMenuItemSelectedWithPopOutImage_Office2010Blue,
-.dxmMenuItemSelectedWithImageWithPopOutImage_Office2010Blue,
+.dxmLiteItemSelected_Office2010Blue,
+.dxmLiteItemSelectedWithImage_Office2010Blue,
+.dxmLiteItemSelectedWithPopOutImage_Office2010Blue,
+.dxmLiteItemSelectedWithImageWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuItemSelected_Office2010Blue,
 .dxmVerticalMenuItemSelectedWithImage_Office2010Blue,
 .dxmVerticalMenuItemSelectedWithPopOutImage_Office2010Blue,
@@ -1349,10 +1363,10 @@ min-width:100px;
 .dxmVerticalMenuRtlItemSelectedWithImage_Office2010Blue,
 .dxmVerticalMenuRtlItemSelectedWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuRtlItemSelectedWithImageWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemSelected_Office2010Blue,
-.dxmMenuLargeItemSelectedWithImage_Office2010Blue,
-.dxmMenuLargeItemSelectedWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemSelectedWithImageWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemSelected_Office2010Blue,
+.dxmLiteLargeItemSelectedWithImage_Office2010Blue,
+.dxmLiteLargeItemSelectedWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemSelectedWithImageWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuLargeItemSelected_Office2010Blue,
 .dxmVerticalMenuLargeItemWithImageSelected_Office2010Blue,
 .dxmVerticalMenuLargeItemSelectedWithPopOutImage_Office2010Blue,
@@ -1364,13 +1378,13 @@ min-width:100px;
 {
 	background: #fddc7f url('Web/mItemSBack.png') repeat-x left top;
 }
-.dxmMenuItemSelected_Office2010Blue,
-.dxmMenuItemSelectedWithImage_Office2010Blue
+.dxmLiteItemSelected_Office2010Blue,
+.dxmLiteItemSelectedWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemSelectedWithPopOutImage_Office2010Blue,
-.dxmMenuItemSelectedWithImageWithPopOutImage_Office2010Blue
+.dxmLiteItemSelectedWithPopOutImage_Office2010Blue,
+.dxmLiteItemSelectedWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 9px 4px 14px;
 }	
@@ -1406,13 +1420,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItemSelected_Office2010Blue,
-.dxmMenuLargeItemSelectedWithImage_Office2010Blue
+.dxmLiteLargeItemSelected_Office2010Blue,
+.dxmLiteLargeItemSelectedWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemSelectedWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemSelectedWithImageWithPopOutImage_Office2010Blue
+.dxmLiteLargeItemSelectedWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemSelectedWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 11px;
 }
@@ -1436,14 +1450,14 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButtonSelected_Office2010Blue,
-.dxmMenuLargeItemDropDownButtonSelected_Office2010Blue
+.dxmLiteItemDropDownButtonSelected_Office2010Blue,
+.dxmLiteLargeItemDropDownButtonSelected_Office2010Blue
 {
 	padding: 0 7px;
 	border-left: 1px solid #c2762b;
 }
-.dxmMenuRtlItemDropDownButtonSelected_Office2010Blue,
-.dxmMenuLargeRtlItemDropDownButtonSelected_Office2010Blue
+.dxmLiteRtlItemDropDownButtonSelected_Office2010Blue,
+.dxmLiteLargeRtlItemDropDownButtonSelected_Office2010Blue
 {
 	padding: 0 7px;
 	border-right: 1px solid #c2762b;
@@ -1460,10 +1474,10 @@ min-width:100px;
 	padding: 0 7px;
 	border-right: 1px solid #c2762b;
 }
-.dxmMenuItemChecked_Office2010Blue,
-.dxmMenuItemCheckedWithImage_Office2010Blue,
-.dxmMenuItemCheckedWithPopOutImage_Office2010Blue,
-.dxmMenuItemCheckedWithImageWithPopOutImage_Office2010Blue,
+.dxmLiteItemChecked_Office2010Blue,
+.dxmLiteItemCheckedWithImage_Office2010Blue,
+.dxmLiteItemCheckedWithPopOutImage_Office2010Blue,
+.dxmLiteItemCheckedWithImageWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuItemChecked_Office2010Blue,
 .dxmVerticalMenuItemCheckedWithImage_Office2010Blue,
 .dxmVerticalMenuItemCheckedWithPopOutImage_Office2010Blue,
@@ -1472,10 +1486,10 @@ min-width:100px;
 .dxmVerticalMenuRtlItemCheckedWithImage_Office2010Blue,
 .dxmVerticalMenuRtlItemCheckedWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuRtlItemCheckedWithImageWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemChecked_Office2010Blue,
-.dxmMenuLargeItemCheckedWithImage_Office2010Blue,
-.dxmMenuLargeItemCheckedWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemCheckedWithImageWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemChecked_Office2010Blue,
+.dxmLiteLargeItemCheckedWithImage_Office2010Blue,
+.dxmLiteLargeItemCheckedWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemCheckedWithImageWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuLargeItemChecked_Office2010Blue,
 .dxmVerticalMenuLargeItemWithImageChecked_Office2010Blue,
 .dxmVerticalMenuLargeItemCheckedWithPopOutImage_Office2010Blue,
@@ -1487,13 +1501,13 @@ min-width:100px;
 {
 	background: #fddc7f url('Web/mItemSBack.png') repeat-x left top;
 }
-.dxmMenuItemChecked_Office2010Blue,
-.dxmMenuItemCheckedWithImage_Office2010Blue
+.dxmLiteItemChecked_Office2010Blue,
+.dxmLiteItemCheckedWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemCheckedWithPopOutImage_Office2010Blue,
-.dxmMenuItemCheckedWithImageWithPopOutImage_Office2010Blue
+.dxmLiteItemCheckedWithPopOutImage_Office2010Blue,
+.dxmLiteItemCheckedWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 9px 4px 14px;
 }	
@@ -1529,13 +1543,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItemChecked_Office2010Blue,
-.dxmMenuLargeItemCheckedWithImage_Office2010Blue
+.dxmLiteLargeItemChecked_Office2010Blue,
+.dxmLiteLargeItemCheckedWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemCheckedWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemCheckedWithImageWithPopOutImage_Office2010Blue
+.dxmLiteLargeItemCheckedWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemCheckedWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 11px;
 }
@@ -1559,14 +1573,14 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButtonChecked_Office2010Blue,
-.dxmMenuLargeItemDropDownButtonChecked_Office2010Blue
+.dxmLiteItemDropDownButtonChecked_Office2010Blue,
+.dxmLiteLargeItemDropDownButtonChecked_Office2010Blue
 {
 	padding: 0 7px;
 	border-left: 1px solid #c2762b;
 }
-.dxmMenuRtlItemDropDownButtonChecked_Office2010Blue,
-.dxmMenuLargeRtlItemDropDownButtonChecked_Office2010Blue
+.dxmLiteRtlItemDropDownButtonChecked_Office2010Blue,
+.dxmLiteLargeRtlItemDropDownButtonChecked_Office2010Blue
 {
 	padding: 0 7px;
 	border-right: 1px solid #c2762b;
@@ -1583,10 +1597,10 @@ min-width:100px;
 	padding: 0 7px;
 	border-right: 1px solid #c2762b;
 }
-.dxmMenuItemHover_Office2010Blue,
-.dxmMenuItemHoverWithImage_Office2010Blue,
-.dxmMenuItemHoverWithPopOutImage_Office2010Blue,
-.dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.dxmLiteItemHover_Office2010Blue,
+.dxmLiteItemHoverWithImage_Office2010Blue,
+.dxmLiteItemHoverWithPopOutImage_Office2010Blue,
+.dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .dxmVerticalMenuItemHover_Office2010Blue,
 .dxmVerticalMenuItemHoverWithImage_Office2010Blue,
 .dxmVerticalMenuItemHoverWithPopOutImage_Office2010Blue,
@@ -1595,10 +1609,10 @@ min-width:100px;
 .dxmVerticalMenuRtlItemHoverWithImage_Office2010Blue,
 .dxmVerticalMenuRtlItemHoverWithPopOutImage_Office2010Blue,
 .dxmVerticalMenuRtlItemHoverWithImageWithPopOutImage_Office2010Blue, 
-.dxmMenuLargeItemHover_Office2010Blue,
-.dxmMenuLargeItemHoverWithImage_Office2010Blue,
-.dxmMenuLargeItemHoverWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.dxmLiteLargeItemHover_Office2010Blue,
+.dxmLiteLargeItemHoverWithImage_Office2010Blue,
+.dxmLiteLargeItemHoverWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .dxmVerticalMenuLargeItemHover_Office2010Blue,
 .dxmVerticalMenuLargeItemHoverWithImage_Office2010Blue,
 .dxmVerticalMenuLargeItemHoverWithPopOutImage_Office2010Blue,
@@ -1610,13 +1624,13 @@ min-width:100px;
 {
 	background: #fcf9df url('Web/mItemHBack.png') repeat-x left top;
 }
-.dxmMenuItemHover_Office2010Blue,
-.dxmMenuItemHoverWithImage_Office2010Blue
+.dxmLiteItemHover_Office2010Blue,
+.dxmLiteItemHoverWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuItemHoverWithPopOutImage_Office2010Blue,
-.dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue
+.dxmLiteItemHoverWithPopOutImage_Office2010Blue,
+.dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 9px 4px 14px;
 }	
@@ -1652,13 +1666,13 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuLargeItemHover_Office2010Blue,
-.dxmMenuLargeItemHoverWithImage_Office2010Blue
+.dxmLiteLargeItemHover_Office2010Blue,
+.dxmLiteLargeItemHoverWithImage_Office2010Blue
 {
 	padding: 4px 12px;
 }
-.dxmMenuLargeItemHoverWithPopOutImage_Office2010Blue,
-.dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2010Blue
+.dxmLiteLargeItemHoverWithPopOutImage_Office2010Blue,
+.dxmLiteLargeItemHoverWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 11px;
 }
@@ -1682,14 +1696,14 @@ min-width:100px;
 {
 	padding: 4px 8px 4px 9px;
 }
-.dxmMenuItemDropDownButtonHover_Office2010Blue,
-.dxmMenuLargeItemDropDownButtonHover_Office2010Blue
+.dxmLiteItemDropDownButtonHover_Office2010Blue,
+.dxmLiteLargeItemDropDownButtonHover_Office2010Blue
 {
 	padding: 0 7px;
 	border-left: 1px solid #eecf71;
 }
-.dxmMenuRtlItemDropDownButtonHover_Office2010Blue,
-.dxmMenuLargeRtlItemDropDownButtonHover_Office2010Blue
+.dxmLiteRtlItemDropDownButtonHover_Office2010Blue,
+.dxmLiteLargeRtlItemDropDownButtonHover_Office2010Blue
 {
 	padding: 0 7px;
 	border-right: 1px solid #eecf71;
@@ -1872,10 +1886,10 @@ min-width:100px;
 	padding: 0px;
 }
 
-.dxmMenuItemSpacing_Office2010Blue,
-.dxmMenuLargeItemSpacing_Office2010Blue,
-.dxmMenuItemSeparatorSpacing_Office2010Blue,
-.dxmMenuLargeItemSeparatorSpacing_Office2010Blue
+.dxmLiteItemSpacing_Office2010Blue,
+.dxmLiteLargeItemSpacing_Office2010Blue,
+.dxmLiteItemSeparatorSpacing_Office2010Blue,
+.dxmLiteLargeItemSeparatorSpacing_Office2010Blue
 {
 	display: none;
 }
@@ -1892,11 +1906,11 @@ min-width:100px;
 	height: 1px;
 }
 
-.dxmMenuItemLeftImageSpacing_Office2010Blue
+.dxmLiteItemLeftImageSpacing_Office2010Blue
 {
 	padding-right: 4px;
 }
-.dxmMenuItemRightImageSpacing_Office2010Blue
+.dxmLiteItemRightImageSpacing_Office2010Blue
 {
 	padding-left: 4px;
 }
@@ -1916,12 +1930,12 @@ min-width:100px;
 	width: 4px;
 	height: 1px;
 }
-.dxmMenuItemTopImageSpacing_Office2010Blue,
+.dxmLiteItemTopImageSpacing_Office2010Blue,
 .dxmVerticalMenuItemTopImageSpacing_Office2010Blue
 {
 	margin-bottom: 4px;
 }
-.dxmMenuItemBottomImageSpacing_Office2010Blue,
+.dxmLiteItemBottomImageSpacing_Office2010Blue,
 .dxmVerticalMenuItemBottomImageSpacing_Office2010Blue
 {
 	margin-top: 4px;
@@ -1978,75 +1992,75 @@ min-width:100px;
 
 /* -- ASPxMenu Toolbar mode -- */
 /*                             */
-td.dxmtb.dxmMenu_Office2010Blue
+td.dxmtb.dxmLite_Office2010Blue
 {
 	padding: 1px;
 }
-.dxmtb .dxmMenuItem_Office2010Blue,
-.dxmtb .dxmMenuItemWithImage_Office2010Blue,
-.dxmtb .dxmMenuItemWithPopOutImage_Office2010Blue,
-.dxmtb .dxmMenuItemWithImageWithPopOutImage_Office2010Blue
+.dxmtb .dxmLiteItem_Office2010Blue,
+.dxmtb .dxmLiteItemWithImage_Office2010Blue,
+.dxmtb .dxmLiteItemWithPopOutImage_Office2010Blue,
+.dxmtb .dxmLiteItemWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 4px 5px;
 }
-.dxmtb .dxmMenuItemSelected_Office2010Blue,
-.dxmtb .dxmMenuItemChecked_Office2010Blue,
-.dxmtb .dxmMenuItemSelectedWithImage_Office2010Blue,
-.dxmtb .dxmMenuItemCheckedWithImage_Office2010Blue,
-.dxmtb .dxmMenuItemSelectedWithPopOutImage_Office2010Blue,
-.dxmtb .dxmMenuItemCheckedWithPopOutImage_Office2010Blue,
-.dxmtb .dxmMenuItemSelectedWithImageWithPopOutImage_Office2010Blue,
-.dxmtb .dxmMenuItemCheckedWithImageWithPopOutImage_Office2010Blue
+.dxmtb .dxmLiteItemSelected_Office2010Blue,
+.dxmtb .dxmLiteItemChecked_Office2010Blue,
+.dxmtb .dxmLiteItemSelectedWithImage_Office2010Blue,
+.dxmtb .dxmLiteItemCheckedWithImage_Office2010Blue,
+.dxmtb .dxmLiteItemSelectedWithPopOutImage_Office2010Blue,
+.dxmtb .dxmLiteItemCheckedWithPopOutImage_Office2010Blue,
+.dxmtb .dxmLiteItemSelectedWithImageWithPopOutImage_Office2010Blue,
+.dxmtb .dxmLiteItemCheckedWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 3px 4px;
 	border: 1px solid #d3a752;
 }
-.dxmtb .dxmMenuItemHover_Office2010Blue,
-.dxmtb .dxmMenuItemHoverWithImage_Office2010Blue,
-.dxmtb .dxmMenuItemHoverWithPopOutImage_Office2010Blue,
-.dxmtb .dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue
+.dxmtb .dxmLiteItemHover_Office2010Blue,
+.dxmtb .dxmLiteItemHoverWithImage_Office2010Blue,
+.dxmtb .dxmLiteItemHoverWithPopOutImage_Office2010Blue,
+.dxmtb .dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue
 {
 	padding: 3px 4px;
 	border: 1px solid #eccf72;
 }
-.dxmtb .dxmMenuItemHoverWithImage_Office2010Blue.dxmMenuItemLeftImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemSelectedWithImage_Office2010Blue.dxmMenuItemLeftImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemCheckedWithImage_Office2010Blue.dxmMenuItemLeftImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue.dxmMenuItemLeftImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemSelectedWithImageWithPopOutImage_Office2010Blue.dxmMenuItemLeftImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemCheckedWithImageWithPopOutImage_Office2010Blue.dxmMenuItemLeftImageSpacing_Office2010Blue
+.dxmtb .dxmLiteItemHoverWithImage_Office2010Blue.dxmLiteItemLeftImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemSelectedWithImage_Office2010Blue.dxmLiteItemLeftImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemCheckedWithImage_Office2010Blue.dxmLiteItemLeftImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue.dxmLiteItemLeftImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemSelectedWithImageWithPopOutImage_Office2010Blue.dxmLiteItemLeftImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemCheckedWithImageWithPopOutImage_Office2010Blue.dxmLiteItemLeftImageSpacing_Office2010Blue
 {
 	padding-right: 5px;
 }
-.dxmtb .dxmMenuItemHoverWithImage_Office2010Blue.dxmMenuItemRightImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemSelectedWithImage_Office2010Blue.dxmMenuItemRightImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemCheckedWithImage_Office2010Blue.dxmMenuItemRightImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue.dxmMenuItemRightImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemSelectedWithImageWithPopOutImage_Office2010Blue.dxmMenuItemRightImageSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemCheckedWithImageWithPopOutImage_Office2010Blue.dxmMenuItemRightImageSpacing_Office2010Blue
+.dxmtb .dxmLiteItemHoverWithImage_Office2010Blue.dxmLiteItemRightImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemSelectedWithImage_Office2010Blue.dxmLiteItemRightImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemCheckedWithImage_Office2010Blue.dxmLiteItemRightImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue.dxmLiteItemRightImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemSelectedWithImageWithPopOutImage_Office2010Blue.dxmLiteItemRightImageSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemCheckedWithImageWithPopOutImage_Office2010Blue.dxmLiteItemRightImageSpacing_Office2010Blue
 {
 	padding-left: 5px;
 }
-.dxmtb .dxmMenuItemDropDownButton_Office2010Blue,
-.dxmtb .dxmMenuRtlItemDropDownButton_Office2010Blue
+.dxmtb .dxmLiteItemDropDownButton_Office2010Blue,
+.dxmtb .dxmLiteRtlItemDropDownButton_Office2010Blue
 {
 	padding: 0 4px;
 }
-.dxmtb .dxmMenuItemDropDownButtonSelected_Office2010Blue,
-.dxmtb .dxmMenuRtlItemDropDownButtonSelected_Office2010Blue,
-.dxmtb .dxmMenuItemDropDownButtonChecked_Office2010Blue,
-.dxmtb .dxmMenuRtlItemDropDownButtonChecked_Office2010Blue,
-.dxmtb .dxmMenuItemDropDownButtonHover_Office2010Blue,
-.dxmtb .dxmMenuRtlItemDropDownButtonHover_Office2010Blue
+.dxmtb .dxmLiteItemDropDownButtonSelected_Office2010Blue,
+.dxmtb .dxmLiteRtlItemDropDownButtonSelected_Office2010Blue,
+.dxmtb .dxmLiteItemDropDownButtonChecked_Office2010Blue,
+.dxmtb .dxmLiteRtlItemDropDownButtonChecked_Office2010Blue,
+.dxmtb .dxmLiteItemDropDownButtonHover_Office2010Blue,
+.dxmtb .dxmLiteRtlItemDropDownButtonHover_Office2010Blue
 {
 	padding: 0 3px;
 }
-.dxmtb .dxmMenuSeparator_Office2010Blue .dx
+.dxmtb .dxmLiteSeparator_Office2010Blue .dx
 {
 	height: 16px;
 }
-.dxmtb .dxmMenuItemSpacing_Office2010Blue,
-.dxmtb .dxmMenuItemSeparatorSpacing_Office2010Blue
+.dxmtb .dxmLiteItemSpacing_Office2010Blue,
+.dxmtb .dxmLiteItemSeparatorSpacing_Office2010Blue
 {
 	width: 1px;
 	display: block;
@@ -5580,8 +5594,8 @@ td.dxnbDisabled_Office2010Blue a
 	background: transparent none repeat 0 0!important;
 }
 
-.menuButtons_Office2010Blue .dxmMenuSeparator_Office2010Blue .dx,
-.menuButtons_Office2010Blue .dxmMenuFullHeightSeparator_Office2010Blue .dx 
+.menuButtons_Office2010Blue .dxmLiteSeparator_Office2010Blue .dx,
+.menuButtons_Office2010Blue .dxmLiteFullHeightSeparator_Office2010Blue .dx 
 {
 	font-size: 0;
 	line-height: 0;
@@ -5589,40 +5603,40 @@ td.dxnbDisabled_Office2010Blue a
 	width: 1px;
 	height: 1px;
 }
-.menuButtons_Office2010Blue .dxmMenuFullHeightSeparator_Office2010Blue
+.menuButtons_Office2010Blue .dxmLiteFullHeightSeparator_Office2010Blue
 {
 	display: inline;
 }
 
-.menuButtons_Office2010Blue .dxmMenuSeparator_Office2010Blue .dx,
-.menuButtons_Office2010Blue .dxmMenuFullHeightSeparator_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuVerticalSeparator_Office2010Blue
+.menuButtons_Office2010Blue .dxmLiteSeparator_Office2010Blue .dx,
+.menuButtons_Office2010Blue .dxmLiteFullHeightSeparator_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteVerticalSeparator_Office2010Blue
 {
 	background-image: none;
 	width: 5px;
 }
-.menuButtons_Office2010Blue .dxmMenuSeparator_Office2010Blue
+.menuButtons_Office2010Blue .dxmLiteSeparator_Office2010Blue
 {
 	display: none;
 }
-.menuButtons_Office2010Blue .dxmMenuVerticalSeparator_Office2010Blue
+.menuButtons_Office2010Blue .dxmLiteVerticalSeparator_Office2010Blue
 {
 	width: 100%;
 	height: 1px;
 }
 
-.menuButtons_Office2010Blue .dxmMenuItem_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemWithPopOutImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemWithImageWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItem_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemWithImageWithPopOutImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItem_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemWithImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemWithPopOutImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemWithImageWithPopOutImage_Office2010Blue, 
-.menuButtons_Office2010Blue .dxmMenuLargeItem_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemWithPopOutImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemWithImageWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItem_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemWithImageWithPopOutImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItem_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemWithImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemWithPopOutImage_Office2010Blue,
@@ -5636,18 +5650,18 @@ td.dxnbDisabled_Office2010Blue a
 	color: #1e395b;
 	border: 1px solid #abbad0;
 }
-.menuButtons_Office2010Blue .dxmMenuItemHover_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemHoverWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemHoverWithPopOutImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.menuButtons_Office2010Blue .dxmLiteItemHover_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemHoverWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemHoverWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .menuButtons_Office2010Blue .dxmVerticalMenuItemHover_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemHoverWithImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemHoverWithPopOutImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemHoverWithImageWithPopOutImage_Office2010Blue, 
-.menuButtons_Office2010Blue .dxmMenuLargeItemHover_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemHoverWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemHoverWithPopOutImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.menuButtons_Office2010Blue .dxmLiteLargeItemHover_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemHoverWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemHoverWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemHover_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemHoverWithImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemHoverWithPopOutImage_Office2010Blue,
@@ -5661,20 +5675,20 @@ td.dxnbDisabled_Office2010Blue a
 	border: 1px solid #eecc53;
 	cursor: pointer;
 }
-.menuButtons_Office2010Blue .dxmMenuItemWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemWithImageWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemWithImageWithPopOutImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemWithImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemWithImageWithPopOutImage_Office2010Blue, 
-.menuButtons_Office2010Blue .dxmMenuLargeItemWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemWithImageWithPopOutImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemWithImageWithPopOutImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemWithImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemWithImageWithPopOutImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemHoverWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.menuButtons_Office2010Blue .dxmLiteItemHoverWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .menuButtons_Office2010Blue .dxmVerticalMenuItemHoverWithImage_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuItemHoverWithImageWithPopOutImage_Office2010Blue, 
-.menuButtons_Office2010Blue .dxmMenuLargeItemHoverWithImage_Office2010Blue,
-.menuButtons_Office2010Blue .dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.menuButtons_Office2010Blue .dxmLiteLargeItemHoverWithImage_Office2010Blue,
+.menuButtons_Office2010Blue .dxmLiteLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemHover_Office2010Blue,
 .menuButtons_Office2010Blue .dxmVerticalMenuLargeItemHoverWithImageWithPopOutImage_Office2010Blue
 {
@@ -5689,18 +5703,18 @@ td.dxnbDisabled_Office2010Blue a
 	border-width: 0px!important;
 }
 
-.menuLinks_Office2010Blue .dxmMenuItemHover_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuItemHoverWithImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuItemHoverWithPopOutImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItemHover_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItemHoverWithImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItemHoverWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHover_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHoverWithImage_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHoverWithPopOutImage_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHoverWithImageWithPopOutImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItemHover_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItemHoverWithImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItemHoverWithPopOutImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItemHover_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItemHoverWithImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItemHoverWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItemHoverWithImageWithPopOutImage_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemHover_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemHoverWithImage_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemHoverWithPopOutImage_Office2010Blue a,
@@ -5709,18 +5723,18 @@ td.dxnbDisabled_Office2010Blue a
 	text-decoration: underline;
 }
 
-.menuLinks_Office2010Blue .dxmMenuItemHover_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuItemHoverWithImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuItemHoverWithPopOutImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.menuLinks_Office2010Blue .dxmLiteItemHover_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteItemHoverWithImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteItemHoverWithPopOutImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHover_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHoverWithImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHoverWithPopOutImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemHoverWithImageWithPopOutImage_Office2010Blue, 
-.menuLinks_Office2010Blue .dxmMenuLargeItemHover_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuLargeItemHoverWithImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuLargeItemHoverWithPopOutImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
+.menuLinks_Office2010Blue .dxmLiteLargeItemHover_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteLargeItemHoverWithImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteLargeItemHoverWithPopOutImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteLargeItemHoverWithImageWithPopOutImage_Office2010Blue, 
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemHover_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemHoverWithImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemHoverWithPopOutImage_Office2010Blue,
@@ -5735,14 +5749,14 @@ td.dxnbDisabled_Office2010Blue a
 	border-width: 0px;
 }
 
-.menuLinks_Office2010Blue .dxmMenuItem_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuItem_Office2010Blue a:visited,
-.menuLinks_Office2010Blue .dxmMenuItemWithImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuItemWithImage_Office2010Blue a:visited,
-.menuLinks_Office2010Blue .dxmMenuItemWithPopOutImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuItemWithPopOutImage_Office2010Blue a:visited,
-.menuLinks_Office2010Blue .dxmMenuItemWithImageWithPopOutImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuItemWithImageWithPopOutImage_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteItem_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItem_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteItemWithImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItemWithImage_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteItemWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItemWithPopOutImage_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteItemWithImageWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteItemWithImageWithPopOutImage_Office2010Blue a:visited,
 .menuLinks_Office2010Blue .dxmVerticalMenuItem_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuItem_Office2010Blue a:visited,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemWithImage_Office2010Blue a,
@@ -5751,14 +5765,14 @@ td.dxnbDisabled_Office2010Blue a
 .menuLinks_Office2010Blue .dxmVerticalMenuItemWithPopOutImage_Office2010Blue a:visited,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemWithImageWithPopOutImage_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemWithImageWithPopOutImage_Office2010Blue a:visited,
-.menuLinks_Office2010Blue .dxmMenuLargeItem_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItem_Office2010Blue a:visited,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithImage_Office2010Blue a:visited,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithPopOutImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithPopOutImage_Office2010Blue a:visited,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithImageWithPopOutImage_Office2010Blue a,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithImageWithPopOutImage_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteLargeItem_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItem_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithImage_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithPopOutImage_Office2010Blue a:visited,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithImageWithPopOutImage_Office2010Blue a,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithImageWithPopOutImage_Office2010Blue a:visited,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItem_Office2010Blue a,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItem_Office2010Blue a:visited,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemWithImage_Office2010Blue a,
@@ -5772,18 +5786,18 @@ td.dxnbDisabled_Office2010Blue a
 	text-decoration: underline;
 }
 
-.menuLinks_Office2010Blue .dxmMenuItem_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuItemWithImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuItemWithPopOutImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuItemWithImageWithPopOutImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteItem_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteItemWithImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteItemWithPopOutImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteItemWithImageWithPopOutImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuItem_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemWithImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemWithPopOutImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuItemWithImageWithPopOutImage_Office2010Blue, 
-.menuLinks_Office2010Blue .dxmMenuLargeItem_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithPopOutImage_Office2010Blue,
-.menuLinks_Office2010Blue .dxmMenuLargeItemWithImageWithPopOutImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteLargeItem_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithPopOutImage_Office2010Blue,
+.menuLinks_Office2010Blue .dxmLiteLargeItemWithImageWithPopOutImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItem_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemWithImage_Office2010Blue,
 .menuLinks_Office2010Blue .dxmVerticalMenuLargeItemWithPopOutImage_Office2010Blue,
@@ -6229,7 +6243,7 @@ td.dxnbDisabled_Office2010Blue a
 }
 
 /* FileManager - Toolbar - Classic */
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue
 {
 	border-width: 0px;
 	background: transparent none;
@@ -6237,42 +6251,42 @@ td.dxnbDisabled_Office2010Blue a
 	padding-left: 3px;
 	display: inline-block;
 }
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue .dxmMenuSeparator_Office2010Blue 
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue .dxmLiteSeparator_Office2010Blue 
 {
 	padding: 0px 11px;
 }
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue .dxmMenuItemSpacing_Office2010Blue 
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue .dxmLiteItemSpacing_Office2010Blue 
 {
 	width: 4px;
 	display: block;
 }
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue .dxmMenuItem_Office2010Blue.dxfm-path 
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue .dxmLiteItem_Office2010Blue.dxfm-path 
 {
 	padding-right: 0px;
 	padding-left: 0px;
 }
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue .dxmMenuItem_Office2010Blue
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue .dxmLiteItem_Office2010Blue
 {
 	padding-top: 1px;
 	padding-left: 3px;
 	background: transparent none;
 }
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue .dxmMenuItemWithImage_Office2010Blue
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue .dxmLiteItemWithImage_Office2010Blue
 {
 	background: transparent none;
 }
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue .dxmMenuItemHoverWithImage_Office2010Blue
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue .dxmLiteItemHoverWithImage_Office2010Blue
 {
 	background: #fcf9df url('Web/mItemHBack.png') repeat-x left top;
 	border: 1px solid #8ba0bc;
 	padding: 2px 4px;
 }
 
-.dxfmControl_Office2010Blue .dxfm-toolbar .dxmMenu_Office2010Blue .dxfm-path input
+.dxfmControl_Office2010Blue .dxfm-toolbar .dxmLite_Office2010Blue .dxfm-path input
 {
 	margin: 0px 8px 0px 4px;
 }
-.dxfmControl_Office2010Blue.dxfm-rtl .dxfm-toolbar .dxmMenu_Office2010Blue .dxfm-path input
+.dxfmControl_Office2010Blue.dxfm-rtl .dxfm-toolbar .dxmLite_Office2010Blue .dxfm-path input
 {
 	margin: 0px 4px 0px 8px;
 }
@@ -7960,7 +7974,7 @@ body.dxheDesignViewArea_Office2010Blue table.dxEmptyBorderTable td
     width: 100%;
     border-bottom: 1px solid #859ebf;
 }
-.dxtbControl_Office2010Blue td.dxmMenu_Office2010Blue
+.dxtbControl_Office2010Blue td.dxmLite_Office2010Blue
 {
 	border: 0;
 }

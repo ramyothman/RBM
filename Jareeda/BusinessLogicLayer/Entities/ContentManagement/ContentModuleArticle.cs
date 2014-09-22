@@ -95,13 +95,7 @@ namespace BusinessLogicLayer.Entities.ContentManagement
             }
         }
 
-        public string ArticleName
-        {
-            get
-            {
-                return CurrentArticle.ArticleName;
-            }
-        }
+        
 
         public bool HasImage
         {
@@ -199,6 +193,24 @@ namespace BusinessLogicLayer.Entities.ContentManagement
                 _articleOrder = value;
             }
 		}
+
+        private string _ArticleName;
+        [DataObjectField(false, false, true)]
+        public string ArticleName
+        {
+            get
+            {
+                if(string.IsNullOrEmpty(_ArticleName))
+                    return CurrentArticle.ArticleName;
+                return _ArticleName;
+            }
+            set
+            {
+                if (!RBMInitiatingEntity && _ArticleName != value)
+                    RBMDataChanged = true;
+                _ArticleName = value;
+            }
+        }
 
 
 	}

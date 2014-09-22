@@ -1,10 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Builder.aspx.cs" Inherits="Administrator.Builder.WebBuilder.Builder" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminLight.master" AutoEventWireup="true" CodeBehind="Builder.aspx.cs" Inherits="Administrator.Builder.WebBuilder.Builder" %>
 <%@ Register Src="~/Builder/WebBuilder/Controls/WidgetData.ascx" TagName="WidgetMainData" TagPrefix="natiq" %>
 <%@ Register Src="~/Builder/WebBuilder/Controls/NewsData.ascx" TagName="WidgetNewsData" TagPrefix="natiq" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
     <%--<script src="js/jquery.js"></script>
     <script src="js/jquery.ui.js"></script>--%>
     <link rel='stylesheet' href='css/iframe.css' type='text/css' media='all' />
+    
+    <link runat="server" id="JareedaStyleReference" href="<%$Resources:ContentManagement, JareedaStyleAdmin %>" rel="stylesheet" />
     <script src="js/mouseover_popup.js"></script>
     <script src="js/jquery.animate-shadow.js"></script>
     <script src="js/jquery.hoverIntent.js"></script>
@@ -70,6 +72,37 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
 
+     <div class="col-md-4">
+        <h1>
+            <asp:Literal runat="server" Text="<%$Resources:ContentManagement, WBTitle %>"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+      <ul>
+          <li>
+              <dx:ASPxButton ID="btnConfirmationMessage" runat="server" Text="Add Block" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" AutoPostBack="false">
+                    <Image Url="images/Cloud_Add.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                  <ClientSideEvents Click="function(s,e){ AddElement(cmbPosition); }" />
+                </dx:ASPxButton>
+          </li>
+          
+          <li>
+              <dx:ASPxButton ID="btnSave" runat="server" Text="<%$Resources:ContentManagement, Save %>" Font-Size="8pt" ImagePosition="Top" ImageSpacing="0px" AutoPostBack="false">
+                    <Image Url="~/App_Themes/Jareeda/images/options/icon-32-save.png" Height="24px" Width="24px">
+                    </Image>
+                    <FocusRectPaddings PaddingBottom="0px" PaddingTop="0px" />
+                  <ClientSideEvents Click="function(s,e){ SaveLayout(); }" />
+                </dx:ASPxButton>
+          </li>
+          <li>
+              <%-- <a href="javascript:SaveData();"><img src="images/filesaveas.png" class="ImageLink" alt="Save" /></a><a href="javascript:popupSurveySettings.Show();"><img src="images/page_accept.png" class="ImageLink" alt="Edit Confirmation" /></a>--%>
+          </li>
+      </ul>
+
+    </div>
      <dx:ASPxLoadingPanel ID="LoadingPanel" runat="server" ClientInstanceName="LoadingPanel"
         Modal="True" Text="">
          <image url="~/Builder/WebBuilder/images/490.GIF">
@@ -88,7 +121,7 @@
               LoadLayout(); }" />
     </dx:aspxcallback>
     <dx:aspxhiddenfield id="hiddenJSONLoad" ClientInstanceName="hiddenJSONLoad" runat="server"></dx:aspxhiddenfield>
-    <h1>
+  <%--  <h1>
         <asp:Literal runat="server" Text="<%$Resources:ContentManagement, WBTitle %>"></asp:Literal>
         </h1>
     
@@ -102,11 +135,21 @@
                 <a href="javascript:void(0)" onclick="SaveLayout()"><img src="images/Save-as.png" /></a>
             </li>
         </ul>
-    </div>
+    </div>--%>
 </asp:Content>
 
-<asp:Content ID="Content3" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
-    <section>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="row jareeda-container">
+        <div class="col-md-3 jareeda-content-left left-builder">
+         <ul class="nav nav-tabs jareeda-tabs ">
+            <li class="active"><a href="#tabLayout" data-toggle="tab"><asp:Literal runat="server"  Text="<%$Resources:ContentManagement, SBLayout %>" ></asp:Literal></a></li>
+            <li><a href="#tabBlocks" data-toggle="tab"><asp:Literal runat="server"  Text="<%$Resources:ContentManagement, SBBlocks %>" ></asp:Literal></a></li>
+        </ul>
+            <div class="tab-content jareeda-tabs-content">
+                <div class="tab-pane fade in active" id="tabLayout">
+      <div >
+            <section>
         <span class="span"> 
             <asp:Literal runat="server" Text="<%$Resources:ContentManagement, WBSite %>"></asp:Literal>
              </span> <dx:aspxcombobox runat="server" ID="cmbSite" DataSourceID="SiteObjectDS" TextField="Name" ValueField="SiteId" ValueType="System.Int32">
@@ -173,33 +216,37 @@
                 <dx:aspxcheckbox runat="server" id="chkIsMain" ClientInstanceName="chkIsMain" text="Is Main Section"></dx:aspxcheckbox>
                 <asp:ObjectDataSource ID="ObjectDataSourcePageType" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.SitePageTypeLogic"></asp:ObjectDataSource>
     </section>
-    <hr />
-    <div style="display: none; position: absolute; z-index: 110;background-color: white; left: 400; top: 100; width: 15; height: 15" id="preview_div"></div>
-    <div id="addWidget" style="border-color: #dddddd #e7e7e7 #bbbbbb #e7e7e7;background-color:#F1F183;width:100%;height:100%;min-height:1200px;">
+          </div>
+                    </div>
+                <div class="tab-pane fade" id="tabBlocks">
+                    <div style="clear:both;" >
+                        <div id="addWidget" >
 
         
      <asp:Repeater runat="server" ID="ImportantNewsRepeater" DataSourceID="ObjectDataSourceCMTObjectDS">
                         <ItemTemplate>
-                            <div class="module-s-box" style="float:left;width:100px;height:150px;margin-left:20px;border:2px solid #2d6828;border-radius:8px; box-shadow: 2px 2px 2px #333;background-color:#fff;margin-top:10px;position:relative; " rel='<%# Eval("ContentModuleTypeID") + ";" + Eval("Name") + ";" + GetImagePath(Eval("ImagePreview").ToString()) + ';' + Eval("PositionID") %>'>
+                            <div class="module-s-box"  rel='<%# Eval("ContentModuleTypeID") + ";" + Eval("Name") + ";" + GetImagePath(Eval("ImagePreview").ToString()) + ';' + Eval("PositionID") %>'>
                                 <a href="javascript:void();">
-                                    <center><span style="color:#333;font-weight:bold;"><%# Eval("Name") %></span></center><br />
-                                    <img runat="server" width="100" height="100" onmouseover='<%# "showtrail(\""  + GetImagePath(Eval("ImagePreview").ToString()) +"\",\"" + Eval("Name") + "\",310,250)" %>' onmouseout="hidetrail()"  src='<%# GetImagePath(Eval("ImagePreview").ToString()) %>' />
-                                    <div style="position:absolute;bottom:20px;left:0px;width:100%;background-color:#2d6828;color:#fff;height:20px;line-height:15px;border:1px solid #2d6820;box-shadow: 2px 2px 2px #333;text-align:center;"><%# Eval("PositionName") %></div>
-                                    
+                                    <center><span><%# Eval("Name") %></span></center>
+                                    <img runat="server" width="72" height="80" onmouseover='<%# "showtrail(\""  + GetImagePath(Eval("ImagePreview").ToString()) +"\",\"" + Eval("Name") + "\",310,250)" %>' onmouseout="hidetrail()"  src='<%# GetImagePath(Eval("ImagePreview").ToString()) %>' />
+                                    <div class="location"><%# Eval("PositionName") %></div>
                                 </a>
                             </div>
                             </ItemTemplate>
          </asp:Repeater>
+                            <div style="clear:both;"></div>
      <asp:ObjectDataSource ID="ObjectDataSourceCMTObjectDS" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllBySiteID" TypeName="BusinessLogicLayer.Components.ContentManagement.ContentModuleTypeLogic">
          <SelectParameters>
              <asp:Parameter DefaultValue="71" Name="SiteID" Type="Int32" />
          </SelectParameters>
      </asp:ObjectDataSource>
         </div>
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    
-    <div style="width:100%;"" class="visual-editor-iframe-grid">
+                    </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-9  main-builder">
+              <div style="width:100%;"" class="visual-editor-iframe-grid">
           <div id="whitewrap">
 	<div id="wrapper-1" class="wrapper grid-active">
 		<div id="grid" class="grid-grey">
@@ -283,4 +330,7 @@
             </dx:PopupControlContentControl>
 </ContentCollection>
         </dx:aspxpopupcontrol>
+        </div>
+    </div>
+  
 </asp:Content>

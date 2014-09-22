@@ -1,19 +1,22 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Departments.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Departments.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+    <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="<%$Resources:ContentManagement, HRDepartmentsTitle %>"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+       
+
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<h3 class="handle">Manage Departments</h3>
-				<div class="inner-content">
-                    
-
-            <dx:ASPxGridView ID="DepartmentGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="DepartmentId"
+     <dx:ASPxGridView ID="DepartmentGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="DepartmentId"
                 Width="100%" DataSourceID="DSAirLine" >
                 <Columns>
                     <dx:GridViewCommandColumn ButtonType="Image" VisibleIndex="0" Width="60px" Caption=" ">
@@ -40,7 +43,7 @@
                         <ClearFilterButton Visible="True">
                         </ClearFilterButton>
                     </dx:GridViewCommandColumn>
-                    <dx:GridViewDataTextColumn FieldName="DepartmentId" ReadOnly="True" VisibleIndex="1" Caption="Id">
+                    <dx:GridViewDataTextColumn FieldName="DepartmentId" ReadOnly="True" VisibleIndex="1" Caption="Id" Visible="False">
                         <EditFormSettings Visible="False" />
                     </dx:GridViewDataTextColumn>
                     <dx:GridViewDataComboBoxColumn Caption="Organization" FieldName="OrganizationId" VisibleIndex="4" Width="80px">
@@ -78,7 +81,7 @@
                 <SettingsBehavior AllowFocusedRow="True" ConfirmDelete="True" EnableRowHotTrack="True" />
                 <SettingsEditing Mode="PopupEditForm" PopupEditFormWidth="450px" />
                 <Settings ShowFilterRow="True" />
-                <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
+                <SettingsText ConfirmDelete="<%$Resources:ContentManagement, FormDeleteMsg %>" PopupEditFormCaption="<%$Resources:ContentManagement, FormEditForm %>" CommandUpdate="<%$Resources:ContentManagement, FormUpdate %>"  CommandCancel="<%$Resources:ContentManagement, FormCancel %>"  />
                 <Templates>
                     <DetailRow>
                         <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" KeyFieldName="DepartmentLanguagesId"
@@ -141,7 +144,7 @@
                 <SettingsBehavior AllowFocusedRow="True" ConfirmDelete="True" EnableRowHotTrack="True" />
                 <SettingsEditing Mode="PopupEditForm" PopupEditFormWidth="450px" />
                 <Settings ShowFilterRow="True" />
-                <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
+                <SettingsText ConfirmDelete="<%$Resources:ContentManagement, FormDeleteMsg %>" PopupEditFormCaption="<%$Resources:ContentManagement, FormEditForm %>" CommandUpdate="<%$Resources:ContentManagement, FormUpdate %>"  CommandCancel="<%$Resources:ContentManagement, FormCancel %>"  />
                 
             </dx:ASPxGridView>
                         <asp:ObjectDataSource ID="DepartmentLangDS" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllByDepartmentId" TypeName="BusinessLogicLayer.Components.HumanResources.DepartmentLanguagesLogic" UpdateMethod="Update">
@@ -171,7 +174,10 @@
                         </asp:ObjectDataSource>
                     </DetailRow>
                 </Templates>
+
             </dx:ASPxGridView>
+
+    
                     <asp:ObjectDataSource ID="LanguageObjectDS" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.LanguageLogic" UpdateMethod="Update">
                         <DeleteParameters>
                             <asp:Parameter Name="Original_LanguageId" Type="Int32" />
@@ -187,9 +193,7 @@
                         </UpdateParameters>
                     </asp:ObjectDataSource>
                     <asp:ObjectDataSource ID="OrganizationObjectDS" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.OrganizationsLogic"></asp:ObjectDataSource>
-            </div>
-
-            <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
+     <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
                 OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.DepartmentsLogic"
                 UpdateMethod="Update">
                 <DeleteParameters>
@@ -219,7 +223,6 @@
                     <asp:Parameter Name="Original_DepartmentId" Type="Int32" />
                 </UpdateParameters>
             </asp:ObjectDataSource>
-            <br />
-                </div>
-         </div>
+
+    
 </asp:Content>

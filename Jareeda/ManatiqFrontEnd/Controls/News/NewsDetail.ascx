@@ -3,7 +3,7 @@
 				<%--<div class="block-head">
 					<h1>أهم الأخبار</h1>
 				</div>--%>
-				<div class="txt-wrapper">
+				<div class="txt-wrapper" runat="server" id="NewsBlock" visible="false">
 					<div class="full-artical">
                         <h3 runat="server"  id="ArticleSubTitle"></h3>
 						<h2 runat="server" id="ArticleTitle"></h2>
@@ -81,4 +81,8 @@
 </script>
 <!-- AddThis Smart Layers END -->
 				</div>
+
+    <div class="txt-wrapper" runat="server" id="NoNewsBlock">
+        <h3>هذا الخبر غير موجود</h3>
+        </div>
 			</div>

@@ -77,9 +77,7 @@
                     </dx:GridViewDataComboBoxColumn>
                     <dx:GridViewDataComboBoxColumn Caption="<%$Resources:ContentManagement, ARCreator %>" FieldName="AuthorName" 
                         VisibleIndex="7" Width="120px">
-                        <PropertiesComboBox DataSourceID="PersonObjectDS" TextField="UserName" 
-                            ValueField="BusinessEntityId" ValueType="System.Int32">
-                        </PropertiesComboBox>
+                        
                     </dx:GridViewDataComboBoxColumn>
                     <dx:GridViewDataDateColumn FieldName="ModifiedDate" Caption="<%$Resources:ContentManagement, ARModifiedDate %>" VisibleIndex="9" Width="80px" SortIndex="0" SortOrder="Descending">
                         <PropertiesDateEdit DisplayFormatString="dd/MM/yyyy hh:mm:ss tt">

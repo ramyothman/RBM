@@ -1,23 +1,31 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Employees.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Employees.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+    <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="<%$Resources:ContentManagement, HRMTitle %>"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+        <ul>
+            <li>
+                <dx:ASPxButton ID="btnAddNew" runat="server" Text="<%$Resources:ContentManagement, AddNew %>"
+                    OnClick="btnAddNew_Click">
+                    <Image Url="~/images/icons/plus_32.png" Height="24px" Width="24px">
+                    </Image>
+                </dx:ASPxButton>
+            </li>
+        </ul>
+
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<span class="handle"><asp:Literal runat="server" Text="<%$Resources:ContentManagement, HRMTitle %>"></asp:Literal>
-                     <span style="float:right;margin-right:5px;margin-left:5px;">
-                    <dx:ASPxButton ID="btnAddNew" runat="server" Text="<%$Resources:ContentManagement, AddNew %>" 
-                        onclick="btnAddNew_Click" >
-                    </dx:ASPxButton>
-                </span>
-				</h3>
-				<div class="inner-content">
-            <dx:ASPxGridView ID="EmployeeGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="EmployeeId"
+    <dx:ASPxGridView ID="EmployeeGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="EmployeeId"
                 Width="100%" DataSourceID="DSAirLine" >
                  <ClientSideEvents CustomButtonClick="function(s, e) {
 	window.location.href ='Save.aspx?Code=' + s.GetRowKey(s.GetFocusedRowIndex());
@@ -103,9 +111,8 @@
                 <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
                 
             </dx:ASPxGridView>
-            </div>
 
-            <asp:ObjectDataSource ID="DSAirLine" runat="server"
+      <asp:ObjectDataSource ID="DSAirLine" runat="server"
                 OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllView" TypeName="BusinessLogicLayer.Components.HumanResources.EmployeesLogic" DeleteMethod="Delete">
                 <DeleteParameters>
                     <asp:Parameter Name="Original_EmployeeId" Type="Int32" />
@@ -114,7 +121,6 @@
                     <asp:SessionParameter DefaultValue="2" Name="LanguageID" SessionField="EmpLanguageID" Type="Int32" />
                 </SelectParameters>
             </asp:ObjectDataSource>
-            <br />
-                </div>
-         </div>
+
+    
 </asp:Content>

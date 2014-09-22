@@ -5,6 +5,7 @@ using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Collections;
 namespace BusinessLogicLayer.Entities.ContentManagement
 {
 	/// <summary>
@@ -76,6 +77,12 @@ namespace BusinessLogicLayer.Entities.ContentManagement
              }
              return _CurrentSection;
          }
+     }
+     private string _creatorName = "";
+        public string CreatorName
+     {
+         set { _creatorName = value; }
+         get { return _creatorName; }
      }
 
      public string SectionName

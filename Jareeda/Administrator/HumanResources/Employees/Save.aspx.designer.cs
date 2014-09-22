@@ -22,13 +22,22 @@ namespace Administrator.HumanResources.Employees {
         protected global::DevExpress.Web.ASPxEditors.ASPxTextBox miPersonName;
         
         /// <summary>
-        /// btnSave control.
+        /// btnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSave;
+        protected global::DevExpress.Web.ASPxEditors.ASPxButton btnCancel;
+        
+        /// <summary>
+        /// btnSaveandNew control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxEditors.ASPxButton btnSaveandNew;
         
         /// <summary>
         /// btnSaveandClose control.
@@ -37,25 +46,16 @@ namespace Administrator.HumanResources.Employees {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveandClose;
+        protected global::DevExpress.Web.ASPxEditors.ASPxButton btnSaveandClose;
         
         /// <summary>
-        /// SaveandNew control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveandNew;
-        
-        /// <summary>
-        /// btnCancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancel;
+        protected global::DevExpress.Web.ASPxEditors.ASPxButton btnSave;
         
         /// <summary>
         /// miPersonImage control.
@@ -229,13 +229,13 @@ namespace Administrator.HumanResources.Employees {
         protected global::System.Web.UI.WebControls.Literal Literal8;
         
         /// <summary>
-        /// employeeUserName control.
+        /// employeeCredential control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxEditors.ASPxTextBox employeeUserName;
+        protected global::DevExpress.Web.ASPxEditors.ASPxTextBox employeeCredential;
         
         /// <summary>
         /// Literal9 control.

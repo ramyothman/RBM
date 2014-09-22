@@ -55,6 +55,61 @@
     }
     </script>
 
+     <script type="text/javascript">
+         // <![CDATA[
+         var GridViewAdjustRequired = true;
+         function DropDownHandler(s, e) {
+             TreeSynchronizeFocusedRow(SectionTreeView);
+         }
+
+         function TreeViewInitHandler(s, e) {
+             
+             TreeSynchronizeFocusedRow(SectionTreeView);
+         }
+
+         function NodeClickHandler(s, e) {
+             var keyValue = SectionTreeView.GetFocusedNodeKey();
+             if(keyValue != null)
+                SectionTreeView.GetNodeValues(keyValue, 'Name', ASPxClientTreeListValuesCallback);
+         }
+         
+         function DoubleClickHandler(s, e) {
+             DropDownEdit.HideDropDown();
+         }
+         
+         function ASPxClientTreeListValuesCallback(result) {
+             var keyValue = SectionTreeView.GetFocusedNodeKey();
+             DropDownEdit.SetKeyValue(keyValue);
+             DropDownEdit.SetText(result);
+             //DropDownEdit.HideDropDown();
+         }
+
+         function TreeSynchronizeFocusedRow(s) {
+             var keyValue = DropDownEdit.GetKeyValue();
+             var index = -1;
+             //if (keyValue != null)
+               //  index = ASPxClientUtils.ArrayIndexOf(SectionTreeView.cpSectionKeyValues, keyValue);
+             //var node = s.FindNodeByKeyValue(keyValue);
+             
+             if (keyValue != null) {
+                 SectionTreeView.SelectNode(keyValue);
+                 //TreeUpdateEditBox();
+             }
+         }
+         function TreeUpdateEditBox() {
+             var rowObject = SectionTreeView.GetFocusedNodeKey();
+             if (rowObject == null) return;
+             SectionTreeView.GetNodeValues(rowObject, 'Name', ASPxClientTreeListValuesCallback);
+             //var rowIndex = names == null ? -1 : rowObject.index;
+             //var focusedEmployeeName = names == null ? "" : names[0];
+             //var employeeNameInEditBox = DropDownEdit.GetText();
+             //if (employeeNameInEditBox != focusedEmployeeName)
+             //    DropDownEdit.SetText(focusedEmployeeName);
+         }
+         
+         // ]]> 
+    </script>
+     
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
     <h1><asp:Literal ID="AFTitle" runat="server" Text="<%$Resources:ContentManagement, SATitle %>"></asp:Literal></h1>
@@ -131,7 +186,40 @@
         <div id="SectionRow" class="row">
             <span class="label"><asp:Literal ID="Literal3" runat="server" Text="<%$Resources:ContentManagement, SASection %>"></asp:Literal></span>
             <div class="editor">
-                             <dx:ASPxComboBox ID="pageSection" runat="server" Font-Size="14px" Width="100%"  
+                <dx:ASPxDropDownEdit ID="DropDownEdit" Height="23px"  Font-Bold="true" runat="server" ClientInstanceName="DropDownEdit"
+        Width="275px" AllowUserInput="False"  AnimationType="None">
+        <DropDownWindowStyle>
+            <Border BorderWidth="0px" />
+        </DropDownWindowStyle>
+        <DropDownWindowTemplate>
+            <dx:ASPxTreeList ID="SectionTreeView"  ClientInstanceName="SectionTreeView"  runat="server" AutoGenerateColumns="False" DataSourceID="SectionObjectDS" KeyFieldName="SiteSectionId" ParentFieldName="SiteSectionParentId" OnCustomJSProperties="TreeView_CustomJSProperties" OnCustomDataCallback="treeList_CustomDataCallback" Height="300px" >
+                
+                <Columns>
+                    <dx:TreeListDataColumn FieldName="SiteSectionId" ReadOnly="True" Visible="False" VisibleIndex="0">
+                    </dx:TreeListDataColumn>
+                    <dx:TreeListDataColumn Caption="Section" FieldName="Name" VisibleIndex="1" Width="200px">
+                    </dx:TreeListDataColumn>
+                    <dx:TreeListDataColumn FieldName="SiteSectionParentId" Visible="False" VisibleIndex="2">
+                    </dx:TreeListDataColumn>
+                </Columns>
+                <Settings ScrollableHeight="300" ShowColumnHeaders="False" ShowTreeLines="False" VerticalScrollBarMode="Auto" />
+                <SettingsBehavior AllowFocusedNode="True" />
+                <SettingsDataSecurity AllowDelete="False" AllowEdit="False" AllowInsert="False" />
+                
+                <ClientSideEvents Init="TreeViewInitHandler" CustomDataCallback="function(s, e) { DropDownEdit.SetKeyValue(SectionTreeView.GetFocusedNodeKey());DropDownEdit.SetText(e.result); }" FocusedNodeChanged="function(s, e) { 
+            var key = SectionTreeView.GetFocusedNodeKey();
+            SectionTreeView.PerformCustomDataCallback(key); 
+        }" NodeDblClick="DoubleClickHandler" />
+                
+            </dx:ASPxTreeList>
+            
+        </DropDownWindowTemplate>
+        <ClientSideEvents DropDown="DropDownHandler"  />
+                    <ValidationSettings CausesValidation="True">
+                        <RequiredField IsRequired="True" />
+                    </ValidationSettings>
+    </dx:ASPxDropDownEdit>
+                             <dx:ASPxComboBox Visible="false" ID="pageSection" runat="server" Font-Size="14px" Width="100%"  
                         ClientInstanceName="pageSection" DataSourceID="SectionObjectDS" 
                         oncallback="pageSection_Callback" TextField="Name" ValueField="SiteSectionId" 
                         ValueType="System.Int32">
@@ -143,7 +231,7 @@
                         OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllBySiteId" 
                         TypeName="BusinessLogicLayer.Components.ContentManagement.SiteSectionLogic">
                         <SelectParameters>
-                            <asp:Parameter Name="SiteId" Type="String" />
+                            <asp:Parameter Name="SiteId" Type="String" DefaultValue="0" />
                         </SelectParameters>
                     </asp:ObjectDataSource>
             </div>
@@ -268,12 +356,12 @@
                     
                 <div id="PageContentRow" class="row">
                     <div class="editor">
-                         <dx:ASPxPageControl ID="ArticlePageControl" runat="server" ActiveTabIndex="2" Width="100%">
+                         <dx:ASPxPageControl ID="ArticlePageControl" runat="server" ActiveTabIndex="0" Width="100%">
                         <TabPages>
                             <dx:TabPage Text="<%$Resources:ContentManagement, SAArticleContent %>">
                                 <ContentCollection>
                                     <dx:ContentControl ID="ContentControl1" runat="server">
-                                        <dx:ASPxHtmlEditor ID="pageContent" runat="server" Width="100%">
+                                        <dx:ASPxHtmlEditor ID="pageContent" runat="server" Width="90%">
                                             <SettingsHtmlEditing AllowIFrames="True" EnterMode="BR" />
                                             <SettingsImageUpload UploadImageFolder="~/ContentData/Images/">
                                             </SettingsImageUpload>

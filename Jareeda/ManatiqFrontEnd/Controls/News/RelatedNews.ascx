@@ -2,7 +2,7 @@
 <div runat="server" id="MainBlockContainer" class="block-news international">
     <div class="block-head">
         <h1 runat="server" id="ModuleTitleText"></h1>
-        <a href="#" id="MoreLink" runat="server" class="more_btn-head">المزيد</a>
+        <a href="#" id="MoreLink" runat="server" visible="false" class="more_btn-head">المزيد</a>
     </div>
     <div class="txt-wrapper">
 

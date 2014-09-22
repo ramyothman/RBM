@@ -13,6 +13,7 @@ namespace ManatiqFrontEnd.Controls.News
         {
             if (!IsPostBack)
             {
+                
                 LoadData();
                 if (Articles.Count > 0)
                 {
@@ -23,7 +24,9 @@ namespace ManatiqFrontEnd.Controls.News
                 ModuleTitleText.InnerText = ModuleTitle;
             }
             if (!IsFirst)
-                MainBlockContainer.Attributes.Add("class", "aside-block mrg-top");
+                MainBlockContainer.Attributes.Add("class", "aside-block mrg-top " + GetBackground());
+            else
+                MainBlockContainer.Attributes.Add("class", "aside-block-head " + GetBackground());
             if (IsPostBack && !this.Page.IsCallback)
             {
                 LoadJavaScript();

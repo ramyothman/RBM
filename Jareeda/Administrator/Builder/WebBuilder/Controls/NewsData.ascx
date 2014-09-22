@@ -54,7 +54,7 @@
     }
     // ]]> 
     </script>
-  <dx:ASPxCallbackPanel ID="callBackPanelGeneral" runat="server" ClientInstanceName="callBackPanelGeneral" Width="100%" OnCallback="callbackPanelSettings_Callback">
+  <dx:ASPxCallbackPanel ID="callBackPanelGeneral" runat="server"  ClientInstanceName="callBackPanelGeneral" Width="100%" OnCallback="callbackPanelSettings_Callback">
         <panelcollection>
             <dx:PanelContent runat="server">
                 <asp:ObjectDataSource ID="ModuleSectionObjectDS" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllByHomePageID" TypeName="BusinessLogicLayer.Components.ContentManagement.ModuleSectionLogic" UpdateMethod="Update">
@@ -142,9 +142,12 @@
                     </dx:GridViewDataTextColumn>
                     <dx:GridViewDataTextColumn FieldName="HomePageID" VisibleIndex="2" Caption="Home Page" Visible="False">
                     </dx:GridViewDataTextColumn>
-                                 <dx:GridViewDataComboBoxColumn Caption="<%$Resources:ContentManagement, HPArticle %>" FieldName="ArticleID" VisibleIndex="3">
-                                     <propertiescombobox datasourceid="ObjectDataSourceArticles" textfield="ArticleName" valuefield="ArticleID" valuetype="System.Int32"></propertiescombobox>
-                                     <editformsettings columnspan="2" />
+                                 <dx:GridViewDataTextColumn FieldName="ArticleName" VisibleIndex="2" Caption="Article">
+                                     <editformsettings columnspan="2" Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                                 <dx:GridViewDataComboBoxColumn Caption="<%$Resources:ContentManagement, HPArticle %>" FieldName="ArticleID" VisibleIndex="3" Visible="false">
+                                     
+                                     <editformsettings columnspan="2" Visible="True" />
                                      <EditItemTemplate>
                                          <table style="width:100%;">
                                              <tr>
@@ -350,7 +353,7 @@
             </asp:ObjectDataSource>
 
 
-            <asp:ObjectDataSource runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.ContentManagement.ArticleLogic" ID="ObjectDataSourceArticles">
+            <asp:ObjectDataSource runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllNew" TypeName="BusinessLogicLayer.Components.ContentManagement.ArticleLogic" ID="ObjectDataSourceArticles">
                 <SelectParameters>
                     <asp:Parameter DefaultValue="0" Name="SiteId" Type="String"></asp:Parameter>
                     <asp:Parameter DefaultValue="0" Name="SectionId" Type="String"></asp:Parameter>

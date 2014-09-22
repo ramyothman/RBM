@@ -81,7 +81,25 @@ namespace ManatiqFrontEnd.Controls.Menus
             if (item != null)
             {
                 if (!string.IsNullOrEmpty(item.PagePath) && item.PagePath != "#")
-                    result = item.PagePath;
+                {
+                    string pagePath = item.PagePath;
+                    if (item.PagePath.Contains("Section="))
+                    {
+                        string[] sp = pagePath.Split('=');
+                        int secId = 0;
+                        Int32.TryParse(sp[sp.Length - 1], out secId);
+                        if (secId != 0)
+                        {
+                            BusinessLogicLayer.Entities.ContentManagement.SiteSection section = BusinessLogicLayer.Common.SiteSectionLogic.GetByID(secId);
+                            if (section != null)
+                            {
+                                if(!string.IsNullOrEmpty(section.Alias))
+                                    pagePath = pagePath.Replace("Section=" + secId, section.Alias);
+                            }
+                        }
+                    }
+                    result = pagePath;
+                }
             }
             return result;
         }
@@ -97,7 +115,25 @@ namespace ManatiqFrontEnd.Controls.Menus
                 if (child != null)
                 {
                     if (!string.IsNullOrEmpty(child.PagePath) && child.PagePath != "#")
-                        result = child.PagePath;
+                    {
+                        string pagePath = child.PagePath;
+                        if (item.PagePath.Contains("Section="))
+                        {
+                            string[] sp = pagePath.Split('=');
+                            int secId = 0;
+                            Int32.TryParse(sp[sp.Length - 1], out secId);
+                            if (secId != 0)
+                            {
+                                BusinessLogicLayer.Entities.ContentManagement.SiteSection section = BusinessLogicLayer.Common.SiteSectionLogic.GetByID(secId);
+                                if (section != null)
+                                {
+                                    if (!string.IsNullOrEmpty(section.Alias))
+                                        pagePath = pagePath.Replace("Section=" + secId, section.Alias);
+                                }
+                            }
+                        }
+                        result = pagePath;
+                    }
                 }
             }
             

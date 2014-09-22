@@ -84,6 +84,24 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
 
 		}
 
+        public DataTable GetAllArticleNew(string where)
+        {
+
+            DataSet ds = new DataSet();
+            string[] tableNames = new string[1];
+            tableNames[0] = "Article";
+            string whereClause = "";
+            if (!string.IsNullOrEmpty(where))
+                whereClause = " Where " + where;
+            string query = " select Top 200 * from GetAllArticle" + whereClause + " Order By PostDate desc";
+            DbCommand command = Database.GetSqlStringCommand(query);
+            DataTable table = new DataTable(tableNames[0]);
+            table.Merge(this.FromCache(command));
+            //Database.LoadDataSet(command,ds,tableNames);
+            return table;// ds.Tables["Article"];
+
+        }
+
         public DataTable GetAllArticleByCountandOrder(string where,int Count)
         {
 
@@ -93,7 +111,25 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
             string whereClause = "";
             if (!string.IsNullOrEmpty(where))
                 whereClause = " Where " + where;
-            string query = " select Top  " + Count + " * from GetAllArticle" + whereClause + " Order By PostDate desc";
+            string query = " select Top  " + Count + " * from GetAllArticle" + whereClause + " and ArticleStatusID = 1 Order By PostDate desc";
+            DbCommand command = Database.GetSqlStringCommand(query);
+            DataTable table = new DataTable(tableNames[0]);
+            table.Merge(this.FromCache(command));
+            //Database.LoadDataSet(command,ds,tableNames);
+            return table;// ds.Tables["Article"];
+
+        }
+
+        public DataTable GetAllArticleByCount(string where, int Count,string orderBy)
+        {
+
+            DataSet ds = new DataSet();
+            string[] tableNames = new string[1];
+            tableNames[0] = "Article";
+            string whereClause = "";
+            if (!string.IsNullOrEmpty(where))
+                whereClause = " Where " + where;
+            string query = String.Format(" select Top  {0} * from GetAllArticle {1} and ArticleStatusID = 1 {2}", Count, whereClause, orderBy);
             DbCommand command = Database.GetSqlStringCommand(query);
             DataTable table = new DataTable(tableNames[0]);
             table.Merge(this.FromCache(command));
@@ -208,6 +244,18 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
                     IDataReader reader = this.FromCache(command).CreateDataReader();// Database.ExecuteReader(command);
 				return reader;
 		}
+
+        public System.Data.IDataReader GetTotalArticlesByDate(int SiteID, DateTime date)
+		{
+            DbCommand command = Database.GetStoredProcCommand("GetTotalArticlesByDate");
+                 Database.AddInParameter(command, "SiteID", DbType.Int32, SiteID);
+                if(date == DateTime.MinValue)
+                    Database.AddInParameter(command, "DateSelected", DbType.DateTime, DBNull.Value);
+                else
+                    Database.AddInParameter(command, "DateSelected", DbType.DateTime, date);
+                    IDataReader reader = this.FromCache(command).CreateDataReader();// Database.ExecuteReader(command);
+				return reader;
+		}
         
         public DateTime GetLastArticleDate(int SiteId)
         {
@@ -231,6 +279,15 @@ namespace DataAccessLayer.DataAccessComponents.ContentManagement
             DbCommand command = Database.GetStoredProcCommand("FindArticles");
             Database.AddInParameter(command, "LanguageID", DbType.String, LanguageID);
             Database.AddInParameter(command, "SearchCriteria", DbType.String, SearchCriteria);
+            Database.AddInParameter(command, "SiteID", DbType.String, SiteID);
+            IDataReader reader = this.FromCache(command).CreateDataReader();//Database.ExecuteReader(command);
+            return reader;
+        }
+
+        public System.Data.IDataReader FindLastArticles(string LanguageID, string SiteID)
+        {
+            DbCommand command = Database.GetStoredProcCommand("FindLastArticles");
+            Database.AddInParameter(command, "LanguageID", DbType.String, LanguageID);
             Database.AddInParameter(command, "SiteID", DbType.String, SiteID);
             IDataReader reader = this.FromCache(command).CreateDataReader();//Database.ExecuteReader(command);
             return reader;

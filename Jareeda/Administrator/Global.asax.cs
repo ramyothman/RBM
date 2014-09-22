@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
@@ -14,7 +15,8 @@ namespace Administrator
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            SqlDependency.Start(ConfigurationManager.ConnectionStrings["MainDB"].ConnectionString);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //SqlDependency.Start(ConfigurationManager.ConnectionStrings["MainDB"].ConnectionString);
         }
 
         protected void Session_Start(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace Administrator
 
         protected void Application_End(object sender, EventArgs e)
         {
-            SqlDependency.Stop(ConfigurationManager.ConnectionStrings["MainDB"].ConnectionString);
+            //SqlDependency.Stop(ConfigurationManager.ConnectionStrings["MainDB"].ConnectionString);
         }
     }
 }

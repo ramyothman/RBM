@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonWeb.Security;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -15,39 +16,50 @@ namespace Administrator.Code
     }
     public class AdminBasePage : CommonWeb.Common.BasePage
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                if (!SecurityManager.isLogged(this))
+                {
+                    Response.Redirect("~/Login/Default.aspx");
+                }
+                else
+                {
+                    
+                    if (Request["Logout"] != null && Request["Logout"].ToLower() == "true")
+                    {
+                        SecurityManager.doLogout(this);
+                    }
+                }
+            }
+        }
+        string JareedaStyleRef
+        {
+            set
+            {
+                _Masters.RootAdmin master = this.Master as _Masters.RootAdmin;
+                if (master == null)
+                {
+                    master = this.Master.Master as _Masters.RootAdmin;
+                }
+                if (master != null)
+                {
+                    master.JareedaStyleRef = value;
+                    AddHeader(value);
+                }
+            }
+        }
 
-        //protected override void InitializeCulture()
-        //{
-        //    try
-        //    {
-        //        base.InitializeCulture();
-        //        string culture = "en";
-        //        string uiculture = "en";
-        //        if (!string.IsNullOrEmpty(Request["Culture"]))
-        //        {
-        //            culture = Request["Culture"];
-        //            uiculture = culture;
-        //            Session["CurrentCulture"] = culture;
-        //            Session["CurrentCultureUI"] = uiculture;
-        //        }
-        //        else if (Session["CurrentCulture"] != null)
-        //            culture = Session["CurrentCulture"].ToString();
-        //        if (Session["CurrentCultureUI"] != null)
-        //            uiculture = Session["CurrentCultureUI"].ToString();
-        //        BusinessLogicLayer.Entities.ContentManagement.Language language = BusinessLogicLayer.Common.LanguageLogic.GetByCode(culture);
-        //        if (language != null)
-        //            Session["LanguageId"] = language.LanguageId;
-        //        //retrieve culture information from user
-        //        //set culture to current thread
-        //        Thread.CurrentThread.CurrentCulture = new CultureInfo(culture);
-        //        Thread.CurrentThread.CurrentUICulture = new CultureInfo(uiculture);
+        void AddHeader(string href)
+        {
+            //_Masters.RootAdmin master = this.Master as _Masters.RootAdmin;
+           //Header.Controls.Remove(master.JareedaStyleControl);
+           Header.Controls.Add(new System.Web.UI.LiteralControl("<link rel=\"stylesheet\" type=\"text/css\" href=\"" + ResolveUrl(href) + "\" />"));
+            
+        }
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        string msg = ex.Message;
-        //    }
-        //}
+        
 
         public AdminBasePageType PageType = AdminBasePageType.Manage;
         #region Client Messages

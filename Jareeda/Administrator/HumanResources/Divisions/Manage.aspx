@@ -1,19 +1,22 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Divisions.Manage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Masters/AdminMain.master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Administrator.HumanResources.Divisions.Manage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="TitlePlaceHolder" runat="server">
+    <div class="col-md-4">
+        <h1>
+            <asp:Literal ID="AFTitle" runat="server" Text="Manage Divisions"></asp:Literal>
+        </h1>
+
+    </div>
+      <div class="col-md-7 control-box pull-right">
+     
+
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="LeftPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    
-     <div class="g12 widgets">
-			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
-				<h3 class="handle">Manage Divisions</h3>
-				<div class="inner-content">
-                    
-
-            <dx:ASPxGridView ID="DivisionsGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="DivisionId"
+     <dx:ASPxGridView ID="DivisionsGrid" runat="server" AutoGenerateColumns="False" KeyFieldName="DivisionId"
                 Width="100%" DataSourceID="DSAirLine" >
                 <Columns>
                      <dx:GridViewCommandColumn ButtonType="Image" VisibleIndex="0" Width="60px" Caption=" ">
@@ -40,7 +43,7 @@
                         <ClearFilterButton Visible="True">
                         </ClearFilterButton>
                     </dx:GridViewCommandColumn>
-                    <dx:GridViewDataTextColumn FieldName="DivisionId" ReadOnly="True" VisibleIndex="1" Caption="Id" Width="50px">
+                    <dx:GridViewDataTextColumn FieldName="DivisionId" ReadOnly="True" VisibleIndex="1" Caption="Id" Width="50px" Visible="False">
                         <EditFormSettings Visible="False" />
                     </dx:GridViewDataTextColumn>
                      <dx:GridViewDataComboBoxColumn Caption="Department" FieldName="DepartmentId" VisibleIndex="2" Width="120px">
@@ -77,8 +80,7 @@
                 <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
                 
             </dx:ASPxGridView>
-            </div>
-
+    
             <asp:ObjectDataSource ID="DSAirLine" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
                 OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.DivisionsLogic"
                 UpdateMethod="Update">
@@ -106,7 +108,5 @@
                 </UpdateParameters>
             </asp:ObjectDataSource>
                 <asp:ObjectDataSource ID="DepartmentOBjectDS" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" TypeName="BusinessLogicLayer.Components.HumanResources.DepartmentsLogic"></asp:ObjectDataSource>
-            <br />
-                </div>
-         </div>
+   
 </asp:Content>
