@@ -1,0 +1,184 @@
+﻿body {
+  min-width: 1024px;
+}
+.top-header {
+  height: 55px;
+  background-color: #1575bf;
+}
+.top-header .top-header-left {
+  height: 55px;
+}
+.top-header .top-header-left .logo {
+  margin-left: 40px;
+  margin-top: 4px;
+}
+.top-header .top-header-right {
+  height: 55px;
+  padding-top: 5px;
+}
+.top-header .top-header-right .account-avatar {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  padding-left: 2px;
+}
+.top-header .top-header-right .navbar-nav li {
+  background-color: none;
+  color: #fff;
+  line-height: 0px;
+}
+.top-header .top-header-right .navbar-nav li span {
+  background-image: url('../images/lock.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-left: 10px;
+}
+.top-header .top-header-right .navbar-nav li span a {
+  padding-left: 20px;
+  font-size: 12px;
+}
+.top-header .top-header-right .navbar-nav li a {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-text-shadow: 2px 2px #333;
+  text-shadow: 2px 2px #333;
+  line-height: 0px;
+}
+.top-header .top-header-right .navbar-nav li a:hover {
+  background: none;
+  color: #fff;
+  text-decoration: none;
+}
+.top-header .notification-area {
+  background-color: #1f3044;
+  height: 55px;
+}
+.top-header .notification-area .notification-center {
+  background-color: #192636;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 12px;
+  width: 90%;
+  border-bottom: 1px solid #3c4b5c;
+  border-radius: 20px;
+  position: relative;
+}
+.top-header .notification-area .notification-center .notification-content-area {
+  height: 38px;
+  width: 100%;
+  border: 1px solid #0f1721;
+  border-radius: 20px;
+  padding-left: 40px;
+  line-height: 35px;
+  font-size: 18px;
+  color: #fff;
+}
+.top-header .notification-area .notification-center .notification-icon {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: -10px;
+  top: 0px;
+  line-height: 32px;
+  border-radius: 50%;
+  color: #fff;
+  -webkit-text-shadow: 2px 2px #333;
+  text-shadow: 2px 2px #333;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 2px;
+}
+.top-header .notification-area .notification-center .alert-icon {
+  background-color: #eb2248;
+  border: 1px solid #a42f46;
+}
+.top-header .notification-area .notification-center .success-icon {
+  background-image: url(images/success.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.top-header .notification-area .alert-success {
+  background-image: linear-gradient(to bottom, #8bc53f 0, #468847 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
+  border-color: #468847;
+  background-color: #8bc53f;
+  color: #fff;
+  -webkit-text-shadow: 2px 2px #333;
+  text-shadow: 2px 1px #333;
+}
+.top-header .notification-area .alert-warning {
+  background-image: -webkit-linear-gradient(top, #fcf8e3 0, #f8efc0 100%);
+  background-image: linear-gradient(to bottom, #fcf8e3 0, #f8efc0 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);
+  border-color: #f5e79e;
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+.top-header .notification-area .alert-danger {
+  background-image: -webkit-linear-gradient(top, #f2dede 0, #e7c3c3 100%);
+  background-image: linear-gradient(to bottom, #f2dede 0, #e7c3c3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+  background-color: #f2dede;
+  color: #a94442;
+}
+.top-header .notification-area .alert-info {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0, #b9def0 100%);
+  background-image: linear-gradient(to bottom, #d9edf7 0, #b9def0 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
+  border-color: #9acfea;
+  background-color: #d9edf7;
+  color: #31708f;
+}
+/******************************************************/
+/*                Menu Css                            */
+/******************************************************/
+.ribbon-menu {
+  /*height: 120px;*/
+}
+/******************************************************/
+/*                Footer Css                            */
+/******************************************************/
+.footer {
+  background-color: #1f3044;
+  border-top: 2px solid #222d36;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  line-height: 42px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 45px;
+}
+.footer .toolbox ul {
+  list-style-type: none;
+}
+.footer .toolbox ul li {
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer .toolbox ul li img {
+  margin-right: 10px;
+}
+/******************************************************/
+/*                Main Content Css                    */
+/******************************************************/
+.main-content {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}

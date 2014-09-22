@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootAdmin.master.cs" Inherits="Administrator._Masters.RootAdmin" %>
+<%@ Register Src="~/Controls/Common/BootstrapMenu.ascx" TagName="MainMenuControl" TagPrefix="jareeda" %>
+<%@ Register Src="~/Controls/Common/WaitControl.ascx" TagName="WaitControl" TagPrefix="jareeda" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:Literal ID="AFTitle" runat="server" Text="<%$Resources:ContentManagement, MainSiteTitle %>"></asp:Literal></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link runat="server" id="JareedaStyleReference" href="<%$Resources:ContentManagement, JareedaStyle %>" rel="stylesheet" />
+    <script src="/Assets/JS/jquery-1.10.2.min.js"></script>
+    <script src="/_Scripts/jNotify.jquery.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formMain" runat="server">
+        <%--<jareeda:WaitControl runat="server" />--%>
+        <jareeda:MainMenuControl  runat="server" />
+        <div>
+            <div class="row header-control-box navbar-fixed-top">
+                <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="row box-container">
+                <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="pull-left">
+                <img src="/App_Themes/Jareeda/images/jareeda.png" height="40" />
+                System Version 2.0</div>
+            <div class="pull-right">powered by 
+                <img src="/App_Themes/Jareeda/images/logo-wide-small.png" height="40" /></div>
+
+        </footer>
+    </form>
+    
+    <script src="/Assets/JS/bootstrap.min.js"></script>
+</body>
+</html>

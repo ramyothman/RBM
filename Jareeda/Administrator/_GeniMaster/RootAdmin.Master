@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootAdmin.master.cs" Inherits="Administrator._GeniMaster.RootAdmin" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxRibbon" TagPrefix="dx" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:Literal ID="AFTitle" runat="server" Text="<%$Resources:ContentManagement, MainSiteTitle %>"></asp:Literal></title>
+    <!-- Latest compiled and minified CSS -->
+    
+    
+    <link runat="server" id="Link1" href="<%$Resources:ContentManagement, JareedaStyleBootstrap %>" rel="stylesheet" />
+    <link runat="server" id="JareedaStyleReference" href="<%$Resources:ContentManagement, JareedaStyle %>" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/_GeniMaster/scripts/QueryString.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#clickme').click(function () {
+                SetNotification('success', 'Successfully Saved Customer Data', '');
+            });
+        });
+
+        function DataSaved(s) {
+            if (s == 'Inserted' || s == 'Updated') {
+                SetNotification('success', 'Data Saved Successfully');
+            }
+            else if (s == 'Deleted') {
+                SetNotification('success', 'Data Deleted Successfully');
+            }
+        }
+
+        function SetNotification(t, m, c) {
+            if (t == 'success') {
+                //$("#notification_area_icon").html(c);
+                $("#notification_area_icon").html(c);
+                $("#notification_area_icon").addClass("alert-icon success-icon", 300, callbackNotificationIcon);
+                $("#notification_area_message").addClass("alert-success", 1000, callbackNotificationMessage);
+                $("#notification_area_message").html(m);
+            }
+        }
+
+        function callbackNotificationIcon() {
+            setTimeout(function () {
+                $("#notification_area_icon").removeClass("alert-icon success-icon", 500);
+                $("#notification_area_icon").html('');
+            }, 2000);
+        }
+
+        function callbackNotificationMessage() {
+            setTimeout(function () {
+                $("#notification_area_message").removeClass("alert-success", 500);
+                $("#notification_area_message").html('');
+            }, 2000);
+        }
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="top-header">
+            <div class="col-md-2 top-header-left">
+                <div class="logo">
+                    <img src="/_GeniMaster/styles/images/natiq-logo-small-white.png" height="45" />
+                </div>
+
+            </div>
+            <div class="col-md-8 notification-area">
+                <div class="notification-center">
+                    <div id="notification_area_icon" class="notification-icon">
+                    </div>
+                    <div id="notification_area_message" class="notification-content-area">
+                        <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 top-header-right">
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a runat="server" href="~/Login/Default">Log in</a></li>
+                        </ul>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <div class="account-avatar">
+                                    <img src="<%= GetUserImage() %>" height="47" />
+                                </div>
+                            </li>
+                            <li>
+                                <a runat="server" href="#" title="Manage your account"><%: GetName()  %> </a>
+                                <span>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="<%$Resources:ContentManagement, RTSignOut %>"  LogoutPageUrl="~/?logout=true" />
+                                    <%--<a runat="server" href="~/?logout=true"><asp:Literal runat="server" Text="<%$Resources:ContentManagement, RTSignOut %>" ></asp:Literal></a>--%>
+                                </span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li class="divider"></li>
+                                    <li></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+
+            </div>
+        </div>
+        <div class="ribbon-menu">
+            <dx:ASPxRibbon ID="ribbon" runat="server" ShowFileTab="False">
+               
+            </dx:ASPxRibbon>
+        </div>
+        
+        <div class="ribbon-toolbar">
+            <asp:ContentPlaceHolder ID="ToolbarContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="col-md-12 main-content">
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div class="col-md-2">
+                <img src="/App_Themes/Jareeda/images/jareeda.png" height="40" />
+                System Version 2.1
+            </div>
+            <div class="col-md-8 footer-content">
+                <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="col-md-2">
+                powered by 
+                <img src="/App_Themes/Jareeda/images/logo-wide-small.png" height="40" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

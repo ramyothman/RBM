@@ -1,0 +1,27 @@
+﻿body {
+    background-color: blue;
+}
+
+.mona-red {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.mona-green .mona-white {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.mona-green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+#mona-id {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
