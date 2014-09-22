@@ -1,0 +1,70 @@
+.dxwscCheckedTextContainer_Moderno
+{
+	background-color: white;
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	border: solid 1px #d1d1d1;
+	vertical-align:top;
+	overflow:auto;
+	width: 340px;	
+	height: 110px;
+	padding: 5px;	
+}
+.dxwscErrorWord_Moderno
+{
+	background: url('scErrorUnderline.gif') bottom;
+	background-repeat:repeat-x;
+	padding-bottom: 3px;
+	font-weight: bold;
+}
+/* -- Loading panel -- */
+.dxwscLoadingDiv_Moderno
+{
+	background-color:Gray;	
+	opacity: 0.01;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=1);
+}
+.dxwscLoadingPanel_Moderno
+{
+	font: 14px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+	color: #2B2B2B;
+	background-color: White;
+	border: 1px solid #cfcfcf;
+
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1);
+}
+.dxwscLoadingPanel_Moderno td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 15px 34px 15px 20px;
+}
+/* -- Forms -- */
+.dxwsc-main .dxpcLite_Moderno .dxwscDlgFooter
+{
+	background-color: #fafafa;
+	border-top: 1px solid #d1d1d1;
+
+	padding: 16px 15px;
+	text-align: right;
+}
+.dxwsc-main.dxwsc-rtl .dxpcLite_Moderno .dxwscDlgFooter
+{
+    text-align: left;
+}
+.dxwsc-main .dxpcLite_Moderno .dxwscDlgFooterBtn
+{
+    width: 100px;
+    margin-left: 10px;
+}
+.dxwsc-main.dxwsc-rtl .dxpcLite_Moderno .dxwscDlgFooterBtn
+{
+    margin-right: 10px;
+    margin-left: 0;
+}
+.dxwsc-main .dxpcLite_Moderno .dxwscDlgSpellCheckBtn
+{
+    width: 120px;
+}
+

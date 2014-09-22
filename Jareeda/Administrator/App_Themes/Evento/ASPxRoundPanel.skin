@@ -1,0 +1,10 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxRoundPanel" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPanel" TagPrefix="dx" %>
+
+<dx:ASPxRoundPanel runat="server" ShowDefaultImages="False" SpriteCssFilePath="~/App_Themes/Evento/{0}/sprite.css" CssPostfix="Moderno" CssFilePath="~/App_Themes/Evento/{0}/styles.css">
+    <GroupBoxHeaderStyle>
+        <Paddings PaddingLeft="6px" PaddingRight="6px"></Paddings>
+    </GroupBoxHeaderStyle>
+</dx:ASPxRoundPanel>
+

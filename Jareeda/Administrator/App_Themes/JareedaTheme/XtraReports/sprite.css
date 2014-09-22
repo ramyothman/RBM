@@ -1,0 +1,195 @@
+.dxXtraReports_BtnFirstPage_GeniTheme,
+.dxXtraReports_BtnFirstPageDisabled_GeniTheme,
+.dxXtraReports_BtnLastPage_GeniTheme,
+.dxXtraReports_BtnLastPageDisabled_GeniTheme,
+.dxXtraReports_BtnNextPage_GeniTheme,
+.dxXtraReports_BtnNextPageDisabled_GeniTheme,
+.dxXtraReports_BtnPrevPage_GeniTheme,
+.dxXtraReports_BtnPrevPageDisabled_GeniTheme,
+.dxXtraReports_BtnPrint_GeniTheme,
+.dxXtraReports_BtnPrintDisabled_GeniTheme,
+.dxXtraReports_BtnPrintPage_GeniTheme,
+.dxXtraReports_BtnPrintPageDisabled_GeniTheme,
+.dxXtraReports_BtnSave_GeniTheme,
+.dxXtraReports_BtnSaveDisabled_GeniTheme,
+.dxXtraReports_BtnSaveWindow_GeniTheme,
+.dxXtraReports_BtnSaveWindowDisabled_GeniTheme,
+.dxXtraReports_BtnSearch_GeniTheme,
+.dxXtraReports_BtnSearchDisabled_GeniTheme,
+.dxXtraReports_PageBorder_blc_GeniTheme,
+.dxXtraReports_PageBorder_brc_GeniTheme,
+.dxXtraReports_PageBorder_tlc_GeniTheme,
+.dxXtraReports_PageBorder_trc_GeniTheme
+{
+    background-image: url('sprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxXtraReports_BtnFirstPage_GeniTheme
+{
+    background-position: 0px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnFirstPageDisabled_GeniTheme
+{
+    background-position: 0px -289px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnLastPage_GeniTheme
+{
+    background-position: 0px -85px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnLastPageDisabled_GeniTheme
+{
+    background-position: 0px -51px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnNextPage_GeniTheme
+{
+    background-position: 0px -255px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnNextPageDisabled_GeniTheme
+{
+    background-position: 0px -119px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrevPage_GeniTheme
+{
+    background-position: 0px -136px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrevPageDisabled_GeniTheme
+{
+    background-position: 0px -204px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrint_GeniTheme
+{
+    background-position: 0px -102px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrintDisabled_GeniTheme
+{
+    background-position: 0px -272px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrintPage_GeniTheme
+{
+    background-position: 0px -34px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrintPageDisabled_GeniTheme
+{
+    background-position: 0px -68px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSave_GeniTheme
+{
+    background-position: 0px -170px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSaveDisabled_GeniTheme
+{
+    background-position: 0px -187px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSaveWindow_GeniTheme
+{
+    background-position: 0px -153px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSaveWindowDisabled_GeniTheme
+{
+    background-position: 0px -221px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSearch_GeniTheme
+{
+    background-position: 0px -17px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSearchDisabled_GeniTheme
+{
+    background-position: 0px -238px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_PageBorder_blc_GeniTheme
+{
+    background-position: 0px -306px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_brc_GeniTheme
+{
+    background-position: 0px -317px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_tlc_GeniTheme
+{
+    background-position: 0px -328px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_trc_GeniTheme
+{
+    background-position: 0px -339px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_t_GeniTheme,
+.dxXtraReports_PageBorder_l_GeniTheme,
+.dxXtraReports_PageBorder_r_GeniTheme,
+.dxXtraReports_PageBorder_b_GeniTheme {
+    padding: 0px;
+    background-color: transparent;
+}
+
+.dxXtraReports_PageBorder_t_GeniTheme {
+    background-image: url('pageTopBorder.png');
+    background-repeat: repeat-x;
+    width: 1px;
+    height: 10px;
+}
+
+.dxXtraReports_PageBorder_l_GeniTheme {
+    background-image: url('pageLeftBorder.png');
+    background-repeat: repeat-y;
+    width: 10px;
+    height: 1px;
+}
+
+.dxXtraReports_PageBorder_r_GeniTheme {
+    background-image: url('pageRightBorder.png');
+    background-repeat: repeat-y;
+    width: 10px;
+    height: 1px;
+}
+
+.dxXtraReports_PageBorder_b_GeniTheme {
+    background-image: url('pageBottomBorder.png');
+    background-repeat: repeat-x;
+    width: 1px;
+    height: 10px;
+}
+

@@ -1,0 +1,729 @@
+.dxEditors_caRefresh_GeniTheme,
+.dxEditors_edtCalendarFNNextYear_GeniTheme,
+.dxEditors_edtCalendarFNPrevYear_GeniTheme,
+.dxEditors_edtCalendarNextMonth_GeniTheme,
+.dxEditors_edtCalendarNextMonthDisabled_GeniTheme,
+.dxEditors_edtCalendarNextYear_GeniTheme,
+.dxEditors_edtCalendarNextYearDisabled_GeniTheme,
+.dxEditors_edtCalendarPrevMonth_GeniTheme,
+.dxEditors_edtCalendarPrevMonthDisabled_GeniTheme,
+.dxEditors_edtCalendarPrevYear_GeniTheme,
+.dxEditors_edtCalendarPrevYearDisabled_GeniTheme,
+.dxEditors_edtDETSClockFace_GeniTheme,
+.dxEditors_edtDETSHourHand_GeniTheme,
+.dxEditors_edtDETSMinuteHand_GeniTheme,
+.dxEditors_edtDETSSecondHand_GeniTheme,
+.dxEditors_edtDropDown_GeniTheme,
+.dxEditors_edtDropDownDisabled_GeniTheme,
+.dxEditors_edtEllipsis_GeniTheme,
+.dxEditors_edtEllipsisDisabled_GeniTheme,
+.dxEditors_edtError_GeniTheme,
+.dxEditors_edtRadioButtonChecked_GeniTheme,
+.dxEditors_edtRadioButtonCheckedDisabled_GeniTheme,
+.dxEditors_edtRadioButtonUnchecked_GeniTheme,
+.dxEditors_edtRadioButtonUncheckedDisabled_GeniTheme,
+.dxEditors_edtSpinEditDecrementImage_GeniTheme,
+.dxEditors_edtSpinEditDecrementImageDisabled_GeniTheme,
+.dxEditors_edtSpinEditIncrementImage_GeniTheme,
+.dxEditors_edtSpinEditIncrementImageDisabled_GeniTheme,
+.dxEditors_edtSpinEditLargeDecImage_GeniTheme,
+.dxEditors_edtSpinEditLargeDecImageDisabled_GeniTheme,
+.dxEditors_edtSpinEditLargeIncImage_GeniTheme,
+.dxEditors_edtSpinEditLargeIncImageDisabled_GeniTheme,
+.dxEditors_edtTBDecBtn_GeniTheme,
+.dxEditors_edtTBDecBtnDisabled_GeniTheme,
+.dxEditors_edtTBDecBtnHover_GeniTheme,
+.dxEditors_edtTBDecBtnPressed_GeniTheme,
+.dxEditors_edtTBIncBtn_GeniTheme,
+.dxEditors_edtTBIncBtnDisabled_GeniTheme,
+.dxEditors_edtTBIncBtnHover_GeniTheme,
+.dxEditors_edtTBIncBtnPressed_GeniTheme,
+.dxEditors_edtTokenBoxTokenRemoveButton_GeniTheme,
+.dxEditors_fcadd_GeniTheme,
+.dxEditors_fcaddhot_GeniTheme,
+.dxEditors_fcgroupaddcondition_GeniTheme,
+.dxEditors_fcgroupaddgroup_GeniTheme,
+.dxEditors_fcgroupand_GeniTheme,
+.dxEditors_fcgroupnotand_GeniTheme,
+.dxEditors_fcgroupnotor_GeniTheme,
+.dxEditors_fcgroupor_GeniTheme,
+.dxEditors_fcgroupremove_GeniTheme,
+.dxEditors_fcopany_GeniTheme,
+.dxEditors_fcopbegin_GeniTheme,
+.dxEditors_fcopbetween_GeniTheme,
+.dxEditors_fcopblank_GeniTheme,
+.dxEditors_fcopcontain_GeniTheme,
+.dxEditors_fcopend_GeniTheme,
+.dxEditors_fcopequal_GeniTheme,
+.dxEditors_fcopgreater_GeniTheme,
+.dxEditors_fcopgreaterorequal_GeniTheme,
+.dxEditors_fcopless_GeniTheme,
+.dxEditors_fcoplessorequal_GeniTheme,
+.dxEditors_fcoplike_GeniTheme,
+.dxEditors_fcopnotany_GeniTheme,
+.dxEditors_fcopnotbetween_GeniTheme,
+.dxEditors_fcopnotblank_GeniTheme,
+.dxEditors_fcopnotcontain_GeniTheme,
+.dxEditors_fcopnotequal_GeniTheme,
+.dxEditors_fcopnotlike_GeniTheme,
+.dxEditors_fcremove_GeniTheme,
+.dxEditors_fcremovehot_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_GeniTheme,
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBMainDH_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBMainDHDisabled_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBMainDHHover_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBMainDHPressed_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBSecondaryDH_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBSecondaryDHDisabled_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBSecondaryDHHover_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBMainDH_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBMainDHDisabled_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBMainDHHover_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBMainDHPressed_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBSecondaryDH_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBSecondaryDHDisabled_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBSecondaryDHHover_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme
+{
+    background-image: url('sprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxEditors_caRefresh_GeniTheme
+{
+    background-position: 0px -114px;
+    width: 25px;
+    height: 25px;
+}
+.dxEditors_edtCalendarFNNextYear_GeniTheme
+{
+    background-position: -48px -140px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarFNPrevYear_GeniTheme
+{
+    background-position: -26px -114px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarNextMonth_GeniTheme
+{
+    background-position: -98px -114px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarNextMonthDisabled_GeniTheme
+{
+    background-position: 0px -140px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarNextYear_GeniTheme
+{
+    background-position: -72px -140px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarNextYearDisabled_GeniTheme
+{
+    background-position: -74px -114px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarPrevMonth_GeniTheme
+{
+    background-position: -24px -140px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarPrevMonthDisabled_GeniTheme
+{
+    background-position: -96px -140px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarPrevYear_GeniTheme
+{
+    background-position: -114px -90px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtCalendarPrevYearDisabled_GeniTheme
+{
+    background-position: -50px -114px;
+    width: 23px;
+    height: 23px;
+}
+.dxEditors_edtDETSClockFace_GeniTheme
+{
+    background-position: 0px 0px;
+    width: 113px;
+    height: 113px;
+}
+.dxEditors_edtDETSHourHand_GeniTheme
+{
+    background-position: -130px 0px;
+    width: 7px;
+    height: 55px;
+}
+.dxEditors_edtDETSMinuteHand_GeniTheme
+{
+    background-position: -122px 0px;
+    width: 7px;
+    height: 55px;
+}
+.dxEditors_edtDETSSecondHand_GeniTheme
+{
+    background-position: -114px 0px;
+    width: 7px;
+    height: 74px;
+}
+.dxEditors_edtDropDown_GeniTheme
+{
+    background-position: -112px -252px;
+    width: 10px;
+    height: 13px;
+}
+.dxEditors_edtDropDownDisabled_GeniTheme
+{
+    background-position: -123px -252px;
+    width: 10px;
+    height: 13px;
+}
+.dxEditors_edtEllipsis_GeniTheme
+{
+    background-position: -126px -224px;
+    width: 11px;
+    height: 13px;
+}
+.dxEditors_edtEllipsisDisabled_GeniTheme
+{
+    background-position: -126px -238px;
+    width: 11px;
+    height: 13px;
+}
+.dxEditors_edtError_GeniTheme
+{
+    background-position: -80px -206px;
+    width: 14px;
+    height: 14px;
+}
+.dxEditors_edtRadioButtonChecked_GeniTheme
+{
+    background-position: -122px -74px;
+    width: 15px;
+    height: 15px;
+}
+.dxEditors_edtRadioButtonCheckedDisabled_GeniTheme
+{
+    background-position: -48px -206px;
+    width: 15px;
+    height: 15px;
+}
+.dxEditors_edtRadioButtonUnchecked_GeniTheme
+{
+    background-position: -64px -206px;
+    width: 15px;
+    height: 15px;
+}
+.dxEditors_edtRadioButtonUncheckedDisabled_GeniTheme
+{
+    background-position: -122px -58px;
+    width: 15px;
+    height: 15px;
+}
+.dxEditors_edtSpinEditDecrementImage_GeniTheme
+{
+    background-position: -124px -158px;
+    width: 7px;
+    height: 5px;
+}
+.dxEditors_edtSpinEditDecrementImageDisabled_GeniTheme
+{
+    background-position: -126px -266px;
+    width: 7px;
+    height: 5px;
+}
+.dxEditors_edtSpinEditIncrementImage_GeniTheme
+{
+    background-position: -114px -76px;
+    width: 7px;
+    height: 5px;
+}
+.dxEditors_edtSpinEditIncrementImageDisabled_GeniTheme
+{
+    background-position: -130px -272px;
+    width: 7px;
+    height: 5px;
+}
+.dxEditors_edtSpinEditLargeDecImage_GeniTheme
+{
+    background-position: -132px -132px;
+    width: 5px;
+    height: 7px;
+}
+.dxEditors_edtSpinEditLargeDecImageDisabled_GeniTheme
+{
+    background-position: -126px -132px;
+    width: 5px;
+    height: 7px;
+}
+.dxEditors_edtSpinEditLargeIncImage_GeniTheme
+{
+    background-position: -114px -82px;
+    width: 5px;
+    height: 7px;
+}
+.dxEditors_edtSpinEditLargeIncImageDisabled_GeniTheme
+{
+    background-position: -132px -156px;
+    width: 5px;
+    height: 7px;
+}
+.dxEditors_edtTBDecBtn_GeniTheme
+{
+    background-position: -42px -164px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTBDecBtnDisabled_GeniTheme
+{
+    background-position: 0px -185px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTBDecBtnHover_GeniTheme
+{
+    background-position: -84px -164px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTBDecBtnPressed_GeniTheme
+{
+    background-position: -21px -185px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTBIncBtn_GeniTheme
+{
+    background-position: -21px -164px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTBIncBtnDisabled_GeniTheme
+{
+    background-position: -105px -164px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTBIncBtnHover_GeniTheme
+{
+    background-position: -63px -164px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTBIncBtnPressed_GeniTheme
+{
+    background-position: 0px -164px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTokenBoxTokenRemoveButton_GeniTheme
+{
+    background-position: -120px -140px;
+    width: 15px;
+    height: 15px;
+}
+.dxEditors_fcadd_GeniTheme
+{
+    background-position: -70px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcaddhot_GeniTheme
+{
+    background-position: -95px -206px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcgroupaddcondition_GeniTheme
+{
+    background-position: -98px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcgroupaddgroup_GeniTheme
+{
+    background-position: -98px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcgroupand_GeniTheme
+{
+    background-position: -42px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcgroupnotand_GeniTheme
+{
+    background-position: -14px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcgroupnotor_GeniTheme
+{
+    background-position: -123px -206px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcgroupor_GeniTheme
+{
+    background-position: 0px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcgroupremove_GeniTheme
+{
+    background-position: -56px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopany_GeniTheme
+{
+    background-position: 0px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopbegin_GeniTheme
+{
+    background-position: -14px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopbetween_GeniTheme
+{
+    background-position: 0px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopblank_GeniTheme
+{
+    background-position: -84px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopcontain_GeniTheme
+{
+    background-position: -98px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopend_GeniTheme
+{
+    background-position: -70px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopequal_GeniTheme
+{
+    background-position: -112px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopgreater_GeniTheme
+{
+    background-position: -28px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopgreaterorequal_GeniTheme
+{
+    background-position: -56px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopless_GeniTheme
+{
+    background-position: -84px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcoplessorequal_GeniTheme
+{
+    background-position: -112px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcoplike_GeniTheme
+{
+    background-position: -28px -238px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopnotany_GeniTheme
+{
+    background-position: -14px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopnotbetween_GeniTheme
+{
+    background-position: -28px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopnotblank_GeniTheme
+{
+    background-position: -42px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopnotcontain_GeniTheme
+{
+    background-position: -109px -206px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopnotequal_GeniTheme
+{
+    background-position: -84px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcopnotlike_GeniTheme
+{
+    background-position: -56px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcremove_GeniTheme
+{
+    background-position: -42px -252px;
+    width: 13px;
+    height: 13px;
+}
+.dxEditors_fcremovehot_GeniTheme
+{
+    background-position: -70px -224px;
+    width: 13px;
+    height: 13px;
+}
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_GeniTheme
+{
+    background-position: -126px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_GeniTheme
+{
+    background-position: -102px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_GeniTheme
+{
+    background-position: 0px -206px;
+    width: 11px;
+    height: 17px;
+}
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_GeniTheme
+{
+    background-position: -122px -114px;
+    width: 11px;
+    height: 17px;
+}
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_GeniTheme
+{
+    background-position: -12px -206px;
+    width: 11px;
+    height: 17px;
+}
+.dxeFocused_GeniTheme .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme
+{
+    background-position: -126px -164px;
+    width: 11px;
+    height: 17px;
+}
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_GeniTheme
+{
+    background-position: -54px -266px;
+    width: 17px;
+    height: 11px;
+}
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_GeniTheme
+{
+    background-position: -90px -266px;
+    width: 17px;
+    height: 11px;
+}
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_GeniTheme
+{
+    background-position: -36px -266px;
+    width: 17px;
+    height: 11px;
+}
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_GeniTheme
+{
+    background-position: -18px -278px;
+    width: 17px;
+    height: 11px;
+}
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_GeniTheme
+{
+    background-position: -108px -278px;
+    width: 17px;
+    height: 11px;
+}
+.dxeFocused_GeniTheme .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme
+{
+    background-position: 0px -266px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBHSys .dxEditors_edtTBMainDH_GeniTheme
+{
+    background-position: -24px -206px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBHSys .dxEditors_edtTBMainDHDisabled_GeniTheme
+{
+    background-position: -54px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBHSys .dxEditors_edtTBMainDHHover_GeniTheme
+{
+    background-position: -36px -206px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBHSys .dxEditors_edtTBMainDHPressed_GeniTheme
+{
+    background-position: -78px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBHSys .dxEditors_edtTBSecondaryDH_GeniTheme
+{
+    background-position: -66px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBHSys .dxEditors_edtTBSecondaryDHDisabled_GeniTheme
+{
+    background-position: -42px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBHSys .dxEditors_edtTBSecondaryDHHover_GeniTheme
+{
+    background-position: -90px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBHSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme
+{
+    background-position: -114px -185px;
+    width: 11px;
+    height: 17px;
+}
+.dxeTBVSys .dxEditors_edtTBMainDH_GeniTheme
+{
+    background-position: -18px -266px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBVSys .dxEditors_edtTBMainDHDisabled_GeniTheme
+{
+    background-position: -36px -278px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBVSys .dxEditors_edtTBMainDHHover_GeniTheme
+{
+    background-position: -108px -266px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBVSys .dxEditors_edtTBMainDHPressed_GeniTheme
+{
+    background-position: -72px -266px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBVSys .dxEditors_edtTBSecondaryDH_GeniTheme
+{
+    background-position: -54px -278px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBVSys .dxEditors_edtTBSecondaryDHDisabled_GeniTheme
+{
+    background-position: 0px -278px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBVSys .dxEditors_edtTBSecondaryDHHover_GeniTheme
+{
+    background-position: -72px -278px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBVSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme
+{
+    background-position: -90px -278px;
+    width: 17px;
+    height: 11px;
+}
+.dxeTBHSys .dxEditors_edtTBMainDHPressed_GeniTheme,
+.dxeTBHSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme
+{
+	z-index: 7;
+}
+.dxeTBVSys .dxEditors_edtTBMainDHPressed_GeniTheme,
+.dxeTBVSys .dxEditors_edtTBSecondaryDHPressed_GeniTheme
+{
+	z-index: 7;
+}
+.dxEditors_edtError_GeniTheme,
+.dxEditors_edtCalendarPrevYear_GeniTheme,
+.dxEditors_edtCalendarPrevYearDisabled_GeniTheme,
+.dxEditors_edtCalendarPrevMonth_GeniTheme,
+.dxEditors_edtCalendarPrevMonthDisabled_GeniTheme,
+.dxEditors_edtCalendarNextMonth_GeniTheme,
+.dxEditors_edtCalendarNextMonthDisabled_GeniTheme,
+.dxEditors_edtCalendarNextYear_GeniTheme,
+.dxEditors_edtCalendarNextYearDisabled_GeniTheme,
+.dxEditors_edtCalendarFNPrevYear_GeniTheme,
+.dxEditors_edtCalendarFNNextYear_GeniTheme,
+.dxEditors_edtEllipsis_GeniTheme,
+.dxEditors_edtEllipsisDisabled_GeniTheme,
+.dxEditors_edtDropDown_GeniTheme,
+.dxEditors_edtDropDownDisabled_GeniTheme,
+.dxEditors_edtSpinEditIncrementImage_GeniTheme,
+.dxEditors_edtSpinEditIncrementImageDisabled_GeniTheme,
+.dxEditors_edtSpinEditDecrementImage_GeniTheme,
+.dxEditors_edtSpinEditDecrementImageDisabled_GeniTheme,
+.dxEditors_edtSpinEditLargeIncImage_GeniTheme,
+.dxEditors_edtSpinEditLargeIncImageDisabled_GeniTheme,
+.dxEditors_edtSpinEditLargeDecImage_GeniTheme,
+.dxEditors_edtSpinEditLargeDecImageDisabled_GeniTheme
+{
+	display:block;
+	margin:auto;
+}
+

@@ -1,0 +1,524 @@
+.dxpgControl_GeniTheme
+{
+	color: #1e395b;
+	font: 11px Verdana, Geneva, sans-serif;
+	border: 1px solid #8ba0bc;
+	background-color: white;
+}
+.dxpgContainerCell_GeniTheme
+{
+	vertical-align: top;
+}
+.dxpgMainTable_GeniTheme
+{
+	color: #0a0a0a;
+	font: 11px Verdana, Geneva, sans-serif;
+	border-width: 0;
+	border-collapse: separate;
+	width: 100%;
+	text-align: left;
+}
+div.dxpgMainTable_GeniTheme
+{
+	-ms-touch-action: pinch-zoom;
+}
+.dxpgMainTable_GeniTheme caption
+{
+	font-size: 11px;
+	font-weight: normal;
+	padding: 3px 3px 5px;
+	text-align: center;
+	background: #bdd0e7 url('TitleBack.png') repeat-x left top;
+	color: #1e395b;
+	border-bottom: 1px solid #8ba0bc;
+}
+.dxpgHeader_GeniTheme
+{
+	border-width: 0;
+	color: #1e395b;
+	background: #e4eefa url('HeaderBack.png') repeat-x left top;
+	cursor: pointer;
+	white-space: nowrap;
+	text-align: left;
+}
+.dxpgHeaderTable_GeniTheme
+{
+	border-width: 1px;
+	width: 100%;
+}
+.dxpgMSDraggable .dxpgHeaderTable_GeniTheme,
+.dxpgCustFieldsDiv_GeniTheme .dxpgHeaderTable_GeniTheme
+{
+	-ms-touch-action: pinch-zoom;
+}
+.dxpgHeaderGroupButton_GeniTheme
+{
+	padding-left: 4px;
+	vertical-align: middle;
+}
+.dxpgHeaderText_GeniTheme
+{
+	padding: 3px 6px;
+}
+.dxpgHeaderSort_GeniTheme
+{
+	padding-left: 0px;
+	padding-right: 4px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding: 0 4px 0 0;
+	vertical-align: middle;
+}
+.dxpgHeaderFilter_GeniTheme
+{
+	padding: 2px 2px 2px 0;
+	vertical-align: middle;
+}
+.dxpgHeaderHover_GeniTheme
+{
+	background: #eef5fc url('HeaderHoverBack.png') repeat-x left top;
+}
+.dxpgArea_GeniTheme, .dxpgArea_GeniTheme table
+{
+	color: #1e395b;
+	font: 11px Verdana, Geneva, sans-serif;
+}
+.dxpgArea_GeniTheme
+{
+	border-width: 1px;
+	border-color: #abbacf;
+	border-style: none;
+	background-color: White;
+}
+.dxpgColumnArea_GeniTheme
+{
+	border-bottom-style: solid;
+}
+.dxpgRowArea_GeniTheme
+{
+}
+.dxpgDataArea_GeniTheme
+{
+}
+.dxpgFilterArea_GeniTheme
+{
+	background-color: #cfddee;
+	color: #1e395b;
+	border-bottom-style: solid;
+}
+.dxpgEmptyArea_GeniTheme
+{
+	cursor: default;
+	padding: 6px;
+}
+.dxpgColumnFieldValue_GeniTheme
+{
+    color: #1e395b;
+	background: #e4eefa url('HeaderBack.png') repeat-x left top;
+	border: 1px solid #abbacf;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: none;
+	border-top-style: none;
+	padding: 4px 6px;
+	font-weight: normal;
+	text-align: left;
+}
+.dxpgColumnTotalFieldValue_GeniTheme
+{
+	background: #cfdbeb url('TotalBack.png') repeat-x left top;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: none;
+	border-top-style: none;
+}
+.dxpgColumnGrandTotalFieldValue_GeniTheme
+{
+	background: #c0d1e2 url('GrandTotalBack.png') repeat-x left top;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: none;
+	border-top-style: none;
+}
+.dxpgRowFieldValue_GeniTheme
+{
+    color: #1e395b;
+	background: #e4eefa url('HeaderBack.png') repeat-x left top;
+	border: 1px solid #abbacf;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: solid;
+	border-top-style: solid;
+	padding: 3px 6px;
+	font-weight: normal;
+	text-align: left;
+}
+.dxpgRowTotalFieldValue_GeniTheme
+{
+	background: #cfdbeb url('TotalBack.png') repeat-x left top;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: solid;
+	border-top-style: solid;
+}
+.dxpgRowTreeFieldValue_GeniTheme
+{	
+	padding: 0px;
+	font: 0px;
+}
+.dxpgRowGrandTotalFieldValue_GeniTheme
+{
+	background: #c0d1e2 url('GrandTotalBack.png') repeat-x left top;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: solid;
+	border-top-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.dxpgCollapsedButton_GeniTheme
+{
+	vertical-align: -2px;
+	border: 0;
+	margin-right: 5px;
+}
+.dxpgSortByColumnImage_GeniTheme
+{
+	vertical-align: -1px;
+	border: 0;
+	margin-left: 5px;
+}
+.dxpgCell_GeniTheme
+{
+	text-align: right;
+	background-color: White;
+	border-color: #c4d9f6;
+	border-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-bottom-style: none;
+	border-right-style: none;
+	padding: 3px 4px;
+	white-space: nowrap;
+}
+.dxpgKPICell_GeniTheme
+{
+	text-align: center;
+	vertical-align: middle;
+}
+.dxpgTotalCell_GeniTheme
+{
+	background-color: #f4f6f9;
+}
+.dxpgGrandTotalCell_GeniTheme
+{
+	background-color: #e4eaf1;
+}
+.dxpgFilterItem_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+    white-space: nowrap;
+}
+.dxpgFilterButton_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	padding: 2px 6px;
+}
+.dxpgLoadingDiv_GeniTheme
+{
+	background-color: White;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+.dxpgTopPager_GeniTheme,
+.dxpgBottomPager_GeniTheme
+{
+    background: #e4effa;
+    border-color: #8ba0bc;
+    border-style: solid;
+}
+.dxpgTopPager_GeniTheme
+{
+    border-width: 0 0 1px 0;
+}
+.dxpgBottomPager_GeniTheme
+{
+	border-width: 1px 0 0 0;
+}
+.dxpgCustomizationFieldsHeader_GeniTheme
+{
+	color: #1e395b;
+	font: 11px Verdana, Geneva, sans-serif;
+}
+.dxpgCustomizationFieldsContent_GeniTheme
+{
+	padding: 0px !important;
+}
+.dxpgLoadingPanel_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+    color: #1e395b;
+    background: White;
+	border: 1px solid #859ebf;
+}
+.dxpgLoadingPanel_GeniTheme td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 10px 14px;
+}
+.dxpgMenuItem_GeniTheme 
+{
+	font: 11px Verdana, Geneva, sans-serif;
+}
+.dxpgDataHeadersImage_GeniTheme
+{
+	margin-right: 5px;
+	vertical-align: -2px;
+}
+.dxpgPrefilterPanelContainer_GeniTheme
+{
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+}
+.dxpgPrefilterPanel_GeniTheme
+{
+	border: none;
+	background: #cfddee;
+}
+.dxpgPrefilterPanelLink_GeniTheme
+{
+	color: #1e395b;
+	text-decoration: underline;
+}
+.dxpgPrefilterPanelCheckBoxCell_GeniTheme
+{
+	padding: 0 3px;
+	padding-right: 7px;
+}
+.dxpgPrefilterPanelImageCell_GeniTheme
+{
+	padding: 0 3px;
+	padding-right: 1px;
+	cursor: pointer;
+}
+.dxpgPrefilterPanelExpressionCell_GeniTheme
+{
+	font-size: 11px;
+	padding: 5px 5px 8px 0;
+	white-space: nowrap;
+}
+.dxpgPrefilterPanelClearButtonCell_GeniTheme
+{
+	font-size: 11px;
+	padding: 5px 6px 8px;
+}
+.dxpgFilterBuilderMainArea_GeniTheme
+{
+	background: white;
+	padding: 6px 2px;
+} 
+.dxpgFilterBuilderButtonArea_GeniTheme
+{
+	background: #cfddee;
+	border-top: 1px solid #aec0d5;
+	padding: 6px;
+	white-space: nowrap;
+}
+.dxpgGroupSeparator_GeniTheme
+{
+	vertical-align: middle;
+}
+.dxpgCustFieldsFilterAreaHeaders_GeniTheme,
+.dxpgCustFieldsRowAreaHeaders_GeniTheme,
+.dxpgCustFieldsColumnAreaHeaders_GeniTheme,
+.dxpgCustFieldsDataAreaHeaders_GeniTheme,
+.BottomPanelOnly1by4 .dxpgFLFRDiv_GeniTheme,
+.BottomPanelOnly1by4 .dxpgFLCDDiv_GeniTheme
+{
+    width: 100%;
+    height: 50%;
+}
+.StackedDefault .dxpgCustFieldsFieldList_GeniTheme
+{
+    height: 33%;
+}
+.StackedDefault .dxpgFLFRDiv_GeniTheme
+{
+    width: 50%;
+    height: 66%;
+    float: left;
+}
+.StackedDefault .dxpgFLCDDiv_GeniTheme
+{
+    width: 50%;
+    height: 66%;
+    float: right;
+}
+.StackedDefault .dxpgCustFieldsFilterAreaHeaders_GeniTheme .dxpgFLTextDiv_GeniTheme,
+.StackedDefault .dxpgCustFieldsColumnAreaHeaders_GeniTheme .dxpgFLTextDiv_GeniTheme
+{
+    height: 47px;
+}
+.TopPanelOnly .dxpgCustFieldsFieldList_GeniTheme
+{
+    width: 100%;
+    height: 100%;
+}
+.TopPanelOnly .dxpgFLDefereDiv_GeniTheme .dxeBase_GeniTheme,
+.TopPanelOnly .dxpgFLDefereDiv_GeniTheme .dxpgFLDefereDB_GeniTheme,
+.BottomPanelOnly1by4 .dxpgCustFieldsFieldList_GeniTheme,
+.TopPanelOnly .dxpgFLFRDiv_GeniTheme,
+.TopPanelOnly .dxpgFLCDDiv_GeniTheme,
+.BottomPanelOnly2by2 .dxpgCustFieldsFieldList_GeniTheme,
+.TopPanelOnly .dxpgFLTextDiv_GeniTheme div
+{
+    display: none;
+}
+.TopPanelOnly .dxpgFLTextDiv_GeniTheme
+{
+    height: 10px;
+}
+.TopPanelOnly .dxpgFLDefereDiv_GeniTheme
+{
+    height: 16px;
+}
+.BottomPanelOnly2by2 .dxpgFLFRDiv_GeniTheme,
+.StackedSideBySide .dxpgCustFieldsFieldList_GeniTheme
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.BottomPanelOnly2by2 .dxpgFLCDDiv_GeniTheme
+{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.StackedSideBySide .dxpgFLFRDiv_GeniTheme,
+.StackedSideBySide .dxpgFLCDDiv_GeniTheme
+{
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+.dxpgCustFields_GeniTheme
+{
+    display: block;
+    position: relative;
+}
+.dxpgFLListDiv_GeniTheme > div
+{
+    border: 1px solid #8ba0bc;
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 1px;
+    background: White;
+    overflow: hidden;
+}
+.dxpgFLListDiv_GeniTheme > div > div
+{
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 0px;
+    background: White;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.DragOver .dxpgFLListDiv_GeniTheme > div
+{
+    background: #ffd324;
+}
+.dxpgFLListDiv_GeniTheme
+{
+    padding: 0px 3px;
+}
+.dxpgFLButtonDiv_GeniTheme .dxbButton_GeniTheme div.dxb
+{
+	border: 1px dotted transparent;
+	padding: 1px 7px 0px;
+}
+.dxpgFLButtonDiv_GeniTheme .dxbButton_GeniTheme div.dxbf
+{
+	border: 1px dotted Black;
+}
+.dxpgFLTextDiv_GeniTheme
+{
+    height: 28px;
+}
+.dxpgFLTextDiv_GeniTheme div
+{
+   display: block;
+   float: left;
+   margin: -17px 0px 3px;
+   left: 6px;
+   top: 100%;
+   position: relative;
+}
+.dxpgFLButtonDiv_GeniTheme
+{
+    float: right;
+    height: 28px;
+    position:relative;
+    z-index:1;
+}
+.dxpgFLDefereDiv_GeniTheme
+{
+    height: 46px;
+}
+.dxpgCustFieldsDiv_GeniTheme
+{
+     clear: both;
+     padding: 0px 9px;
+}
+.dxpgFLButton_GeniTheme
+{
+     margin: 7px 12px 0px 0px;
+     width: 40px;
+     height: 23px;
+}
+.dxpgFLDefereDiv_GeniTheme .dxeBase_GeniTheme
+{
+     float: left;
+     display: block;
+     border-collapse: separate;
+     padding: 13px 0px 0px 0px;
+     margin-left: 8px;
+}
+.dxpgFLDefereDB_GeniTheme
+{
+    float: right;
+    display: block;
+    margin: 12px 12px 0 0;
+}
+.dxpgFLDefereDiv_GeniTheme .dxbButton_GeniTheme div.dxb
+{
+    padding: 1px 13px;
+    border: 1px dotted transparent;
+}
+.dxpgFLDefereDiv_GeniTheme .dxbButton_GeniTheme div.dxbf
+{
+    border: 1px dotted Black;
+}
+.dxpgFLListDiv_GeniTheme table 
+{
+ width:100%;
+ table-layout:fixed;  
+ overflow:visible;
+}
+.dxpgFLListDiv_GeniTheme table table td
+{
+     overflow:hidden; 
+}
+div.dxpgFLTextImgDiv_GeniTheme
+{
+    display:block;
+    height:16px;
+    width:16px;
+    margin:-18px 0px 3px 0px;
+    left:3px;
+}

@@ -1,0 +1,23 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxGridView" Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxGridView RightToLeft="True" runat="server" CssFilePath="~/App_Themes/JareedaAr/devexpress/style.min.css" CssPostfix="MetropolisBlue">
+    <SettingsPager CurrentPageNumberFormat="{0}">
+        <PageSizeItemSettings ShowPopupShadow="False">
+        </PageSizeItemSettings>
+    </SettingsPager>
+    <Images SpriteCssFilePath="~/App_Themes/JareedaAr/devexpress/sprite.min.css">
+        <LoadingPanelOnStatusBar Url="~/App_Themes/MetropolisBlueAr/GridView/gvLoadingOnStatusBar.gif" />
+        <LoadingPanel Url="~/App_Themes/MetropolisBlueAr/GridView/Loading.gif" />
+    </Images>
+    <Styles CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/JareedaAr/devexpress/style.min.css" />
+    <StylesPager>
+        <Pager ItemSpacing="0px" Spacing="0px" />
+    </StylesPager>
+    <StylesEditors>
+        <Calendar>
+            <Border BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" />
+        </Calendar>
+    </StylesEditors>
+</dx:ASPxGridView>
+

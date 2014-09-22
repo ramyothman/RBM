@@ -1,0 +1,253 @@
+/* ----------------- Main ----------------- */
+/* Loading panel */
+.dxheLoadingDiv_MetropolisBlue
+{
+    background: white;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+.dxheLoadingPanel_MetropolisBlue
+{
+	border: 1px solid #C3C3C3;
+	background-color: white;
+	font: 12px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+	color: #333333;
+}
+.dxheLoadingPanel_MetropolisBlue td.dx
+{
+	font-size: 1.17em;
+	white-space: nowrap;
+	text-align: center;
+	padding: 10px 14px;
+}
+.dxheLoadingPanel_MetropolisBlue .dxlp-loadingImage
+{
+	background-image: url('../Web/Loading.gif');
+	height: 32px;
+	width: 32px;
+}
+
+.dxheControl_MetropolisBlue
+{
+    font: 12px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+}
+
+/* Area */
+.dxheContentArea_MetropolisBlue
+{
+    padding: 6px 4px;
+}
+.dxheErrorFrame_MetropolisBlue
+{
+	font: 12px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+	color: #D00707;
+	background-color: #FBC7C7;
+	margin-bottom: 6px;
+}
+.dxheErrorFrame_MetropolisBlue .dxhe 
+{
+    padding: 5px;
+}
+.dxheErrorFrame_MetropolisBlue .dxhe td 
+{
+    padding: 0;
+}
+.dxheErrorFrame_MetropolisBlue .dxheErrorFrameCloseButton_MetropolisBlue 
+{
+    cursor: pointer;
+}
+.dxheContentArea_MetropolisBlue td.dxheViewArea_MetropolisBlue /*B209529*/
+{
+    line-height: 0;
+}
+.dxheHtmlViewArea_MetropolisBlue,
+.dxheDesignViewArea_MetropolisBlue,
+.dxhePreviewArea_MetropolisBlue 
+{
+    margin: 0px;
+    background: none #FFFFFF;
+    border: 0;
+    font-size: smaller;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.dxheContentArea_MetropolisBlue .dxeMemo_MetropolisBlue td,
+body.dxheDesignViewArea_MetropolisBlue,
+body.dxhePreviewArea_MetropolisBlue
+{
+    padding: 0 4px 0 4px;
+}
+.dxheControl_MetropolisBlue .dxheContentArea_MetropolisBlue .dxeMemo_MetropolisBlue td
+{
+    padding-right: 0;
+}
+.dxheContentArea_MetropolisBlue .dxeMemoEditArea_MetropolisBlue
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+.dxheControl_MetropolisBlue.dxhe-rtl .dxheContentArea_MetropolisBlue .dxeMemo_MetropolisBlue td
+{
+	padding: 0 4px 0 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .dxheControl_MetropolisBlue.dxhe-rtl .dxheContentArea_MetropolisBlue .dxeMemo_MetropolisBlue td
+    {
+	    padding: 0 0 0 4px;
+    }
+}
+.dxheControl_MetropolisBlue .dxeMemo_MetropolisBlue textarea 
+{
+	resize: none;
+}
+/* Element appearance in DesignView */
+body.dxheDesignViewArea_MetropolisBlue table.dxEmptyBorderTable_MetropolisBlue,
+body.dxheDesignViewArea_MetropolisBlue table.dxEmptyBorderTable_MetropolisBlue td  {
+    border:1px dotted gray;
+}
+@media print 
+{
+	body.dxheDesignViewArea_MetropolisBlue table.dxEmptyBorderTable_MetropolisBlue,
+	body.dxheDesignViewArea_MetropolisBlue table.dxEmptyBorderTable_MetropolisBlue td  
+	{
+		border:0px;
+	}
+}
+body.dxheDesignViewArea_MetropolisBlue pre
+{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* Status Bar */
+.dxheStatusBar_MetropolisBlue 
+{
+}
+.dxheControl_MetropolisBlue .dxheStatusBar_MetropolisBlue .dxheStatusBarTab_MetropolisBlue .dxtc-link 
+{
+    padding: 4px 12px 5px 11px;
+}
+.dxheStatusBarActiveTab_MetropolisBlue 
+{
+}
+.dxHtmlEditor_heSizeGrip_MetropolisBlue
+{
+    cursor: se-resize;
+}
+.dxHtmlEditor_heSizeGripRtl_MetropolisBlue
+{
+    cursor: ne-resize;
+}
+.dxheSizeGripContainer_MetropolisBlue
+{
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    margin-top: -16px;
+}
+.dxheControl_MetropolisBlue.dxhe-rtl .dxheSizeGripContainer_MetropolisBlue 
+{
+	text-align: left;
+}
+/* ----------------- Dialog Forms ----------------- */
+.dxpcLite_MetropolisBlue .dxheDlgFooter,
+.dxpcLite_MetropolisBlue .dxheCustomDialog_MetropolisBlue .dxhecd-Buttons
+{
+    background-color: white;
+    border-top: Solid 1px #E0E0E0;
+	padding: 10px 11px;
+	text-align: right;
+}
+.dxpcLite_MetropolisBlue.dxRtl .dxheDlgFooter,
+.dxpcLite_MetropolisBlue.dxRtl .dxheCustomDialog_MetropolisBlue .dxhecd-Buttons
+{
+    text-align: left;
+}
+.dxpcLite_MetropolisBlue .dxheDlgFooterBtn
+{
+    width: 80px;
+    margin-left: 8px;
+}
+.dxpcLite_MetropolisBlue.dxRtl .dxheDlgFooterBtn
+{
+    margin-right: 8px;
+    margin-left: 0;
+}
+/* Insert Image Form */
+.dxpcLite_MetropolisBlue .dxheDlgInsertImageForm .dxheDlgImagePreviewCell,
+.dxpcLite_MetropolisBlue .dxheDlgSelectImageForm .dxheDlgImagePreviewCell
+{
+    color: #878787;
+    border: dashed 1px #cac8c8;
+}
+.dxpcLite_MetropolisBlue .dxheDlgPasteFromWordForm .dxheDlgPasteContainerCell td
+{
+	border: Solid 1px #9F9F9F;
+}
+/*----------------- Toolbars -----------------*/
+.dxtbSpacing_MetropolisBlue
+{
+	height: 1px;
+}
+.dxtbControl_MetropolisBlue 
+{
+    color: #333333;
+    width: 100%;
+    border-bottom: Solid 1px #c0c0c0;
+}
+.dxtbControl_MetropolisBlue td.dxmMenu_MetropolisBlue
+{
+	border-width: 0px;
+}
+.dxtbControl_MetropolisBlue .dxmLite_MetropolisBlue .dxm-main 
+{
+	background-color: #FFFFFF;
+}
+.dxtbControl_MetropolisBlue .dxmLite_MetropolisBlue .dxmtb.dxm-horizontal .dxm-separator b
+{
+	background-color: #c0c0c0;
+}
+.dxtbComboBoxMenuItem_MetropolisBlue
+{
+    padding-top: 2px;
+}
+.dxheControl_MetropolisBlue .dxrControl_MetropolisBlue .dxr-minBtn
+{
+    padding-right: 8px;
+}
+.dxheControl_MetropolisBlue .dxtbControl_MetropolisBlue.dxtbr_MetropolisBlue,
+.dxheControl_MetropolisBlue .dxrControl_MetropolisBlue .dxpc-mainDiv.dxr-minPopup
+{
+    border: 0;
+}
+
+/* Toolbars Lightweight Mode */
+.dxtbControl_MetropolisBlue .dxmLite_MetropolisBlue .dxm-main 
+{
+    border-width: 0px;
+}
+.dxmLite_MetropolisBlue .dxhetipControl_MetropolisBlue img
+{
+	vertical-align: top;
+}
+.dxtbControl_MetropolisBlue .dxm-horizontal.dxmtb .dxm-dropDownMode .dxtcbColorDiv_MetropolisBlue
+{
+    margin-top: -1px;
+    margin-bottom: -2px;
+}
+
+/* ToolbarColorButton */
+.dxtcbControl_MetropolisBlue { }
+.dxtcbColorDiv_MetropolisBlue
+{
+	width: 16px;
+	height: 3px;
+	font-size: 0;
+	background-color: Transparent;
+}
+
+/*----------------- RoundPanel -----------------*/
+.dxheRP.dxrpControl_MetropolisBlue .dxrpcontent_MetropolisBlue
+{
+    padding: 9px 10px 10px 10px !important;
+}

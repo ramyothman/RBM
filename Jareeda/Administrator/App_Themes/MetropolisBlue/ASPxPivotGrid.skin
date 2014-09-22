@@ -1,0 +1,22 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.PivotGrid.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraPivotGrid" TagPrefix="dx" %>
+
+<dx:ASPxPivotGrid runat="server" >
+    <OptionsPager CurrentPageNumberFormat="{0}">
+        <PageSizeItemSettings ShowPopupShadow="False">
+        </PageSizeItemSettings>
+    </OptionsPager>
+    <OptionsLoadingPanel>
+        <Image Url="~/App_Themes/MetropolisBlue/PivotGrid/Loading.gif" />
+    </OptionsLoadingPanel>
+    <Images SpriteCssFilePath="~/App_Themes/Jareeda/devexpress/sprite.min.css">
+        <TreeViewNodeLoadingPanel Url="~/App_Themes/MetropolisBlue/PivotGrid/pgTVNodeLoading.gif" />
+        <LoadingPanel Url="~/App_Themes/MetropolisBlue/PivotGrid/Loading.gif" />
+    </Images>
+    <Styles CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/Jareeda/devexpress/style.min.css" />
+    <StylesPager>
+        <Pager ItemSpacing="0px" Spacing="0px" />
+    </StylesPager>
+</dx:ASPxPivotGrid>
+

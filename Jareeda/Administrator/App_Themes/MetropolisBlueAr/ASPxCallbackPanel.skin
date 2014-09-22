@@ -1,0 +1,9 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxRoundPanel" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxCallbackPanel" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPanel" TagPrefix="dx" %>
+
+<dx:ASPxCallbackPanel RightToLeft="True" runat="server" SpriteCssFilePath="~/App_Themes/JareedaAr/devexpress/sprite.min.css" CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/JareedaAr/devexpress/style.min.css">
+    <LoadingPanelImage Url="~/App_Themes/MetropolisBlueAr/Web/Loading.gif" />
+</dx:ASPxCallbackPanel>
+

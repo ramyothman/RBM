@@ -1,0 +1,10 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxTabControl" Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxPageControl runat="server" SpriteCssFilePath="~/App_Themes/Jareeda/devexpress/sprite.min.css" CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/Jareeda/devexpress/style.min.css">
+    <LoadingPanelImage Url="~/App_Themes/MetropolisBlue/Web/Loading.gif" />
+    <ContentStyle>
+        <Border BorderColor="#0072C6" BorderStyle="Solid" BorderWidth="4px" />
+    </ContentStyle>
+</dx:ASPxPageControl>
+

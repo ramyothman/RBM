@@ -1,0 +1,7 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxEditors" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxTokenBox runat="server" Spacing="0" SpriteCssFilePath="~/App_Themes/Jareeda/devexpress/sprite.min.css" CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/Jareeda/devexpress/style.min.css">
+    <LoadingPanelImage Url="~/App_Themes/MetropolisBlue/Editors/Loading.gif" />
+</dx:ASPxTokenBox>
+

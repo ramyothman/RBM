@@ -1,0 +1,892 @@
+.dxHtmlEditor_heConstrainProportionsBottom_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsBottomRtl_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsMiddleOff_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsMiddleOffRtl_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsMiddleOn_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsMiddleOnRtl_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsTop_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsTopRtl_GeniTheme,
+.dxHtmlEditor_heErrorFrameCloseButton_GeniTheme,
+.dxHtmlEditor_heSizeGrip_GeniTheme,
+.dxHtmlEditor_heSizeGripRtl_GeniTheme,
+.dxHtmlEditor_heToolbarPopOut_GeniTheme,
+.dxHtmlEditor_Icons_heBackColor_GeniTheme,
+.dxHtmlEditor_Icons_heBackColorDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heBold_GeniTheme,
+.dxHtmlEditor_Icons_heBoldDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heCenter_GeniTheme,
+.dxHtmlEditor_Icons_heCenterDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableCellDialog_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableCellDialogDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableColumnDialog_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableColumnDialogDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableDialog_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableDialogDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableRowDialog_GeniTheme,
+.dxHtmlEditor_Icons_heChangeTableRowDialogDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heCheckSpelling_GeniTheme,
+.dxHtmlEditor_Icons_heCheckSpellingDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heCopy_GeniTheme,
+.dxHtmlEditor_Icons_heCopyDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heCut_GeniTheme,
+.dxHtmlEditor_Icons_heCutDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heDeleteTable_GeniTheme,
+.dxHtmlEditor_Icons_heDeleteTableColumn_GeniTheme,
+.dxHtmlEditor_Icons_heDeleteTableColumnDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heDeleteTableDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heDeleteTableRow_GeniTheme,
+.dxHtmlEditor_Icons_heDeleteTableRowDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heForeColor_GeniTheme,
+.dxHtmlEditor_Icons_heForeColorDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heFullscreen_GeniTheme,
+.dxHtmlEditor_Icons_heFullscreenDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heIndent_GeniTheme,
+.dxHtmlEditor_Icons_heIndentDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertImageDialog_GeniTheme,
+.dxHtmlEditor_Icons_heInsertImageDialogDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertLinkDialog_GeniTheme,
+.dxHtmlEditor_Icons_heInsertLinkDialogDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertOrderedList_GeniTheme,
+.dxHtmlEditor_Icons_heInsertOrderedListDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableColumnOnLeft_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableColumnOnLeftDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableColumnOnRight_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableColumnOnRightDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableDialog_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableDialogDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableRowAbove_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableRowAboveDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableRowBelow_GeniTheme,
+.dxHtmlEditor_Icons_heInsertTableRowBelowDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heInsertUnorderedList_GeniTheme,
+.dxHtmlEditor_Icons_heInsertUnorderedListDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heItalic_GeniTheme,
+.dxHtmlEditor_Icons_heItalicDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heJustifyFull_GeniTheme,
+.dxHtmlEditor_Icons_heJustifyFullDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heLeft_GeniTheme,
+.dxHtmlEditor_Icons_heLeftDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heMergeTableCellHorizontal_GeniTheme,
+.dxHtmlEditor_Icons_heMergeTableCellHorizontalDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heMergeTableCellVertical_GeniTheme,
+.dxHtmlEditor_Icons_heMergeTableCellVerticalDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heOutdent_GeniTheme,
+.dxHtmlEditor_Icons_heOutdentDisabled_GeniTheme,
+.dxHtmlEditor_Icons_hePaste_GeniTheme,
+.dxHtmlEditor_Icons_hePasteDisabled_GeniTheme,
+.dxHtmlEditor_Icons_hePasteFromWord_GeniTheme,
+.dxHtmlEditor_Icons_hePasteFromWordDisabled_GeniTheme,
+.dxHtmlEditor_Icons_hePrint_GeniTheme,
+.dxHtmlEditor_Icons_hePrintDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heRedo_GeniTheme,
+.dxHtmlEditor_Icons_heRedoDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heRemoveFormat_GeniTheme,
+.dxHtmlEditor_Icons_heRemoveFormatDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heRight_GeniTheme,
+.dxHtmlEditor_Icons_heRightDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsDocx_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsDocxDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsMht_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsMhtDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsOdt_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsOdtDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsPdf_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsPdfDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsRtf_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsRtfDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsTxt_GeniTheme,
+.dxHtmlEditor_Icons_heSaveAsTxtDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSplitTableCellHorizontal_GeniTheme,
+.dxHtmlEditor_Icons_heSplitTableCellHorizontalDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSplitTableCellVertical_GeniTheme,
+.dxHtmlEditor_Icons_heSplitTableCellVerticalDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heStrikethrough_GeniTheme,
+.dxHtmlEditor_Icons_heStrikethroughDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSubscript_GeniTheme,
+.dxHtmlEditor_Icons_heSubscriptDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heSuperscript_GeniTheme,
+.dxHtmlEditor_Icons_heSuperscriptDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heUnderline_GeniTheme,
+.dxHtmlEditor_Icons_heUnderlineDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heUndo_GeniTheme,
+.dxHtmlEditor_Icons_heUndoDisabled_GeniTheme,
+.dxHtmlEditor_Icons_heUnlink_GeniTheme,
+.dxHtmlEditor_Icons_heUnlinkDisabled_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpBottomLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpBottomRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpHeaderTopLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpHeaderTopRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpTopLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpTopRightCorner_GeniTheme
+{
+    background-image: url('sprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxHtmlEditor_heConstrainProportionsBottom_GeniTheme
+{
+    background-position: -54px -359px;
+    width: 11px;
+    height: 6px;
+}
+.dxHtmlEditor_heConstrainProportionsBottomRtl_GeniTheme
+{
+    background-position: -42px -359px;
+    width: 11px;
+    height: 6px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOff_GeniTheme
+{
+    background-position: -12px 0px;
+    width: 11px;
+    height: 18px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOffRtl_GeniTheme
+{
+    background-position: -24px 0px;
+    width: 11px;
+    height: 18px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOn_GeniTheme
+{
+    background-position: -36px 0px;
+    width: 11px;
+    height: 18px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOnRtl_GeniTheme
+{
+    background-position: 0px 0px;
+    width: 11px;
+    height: 18px;
+}
+.dxHtmlEditor_heConstrainProportionsTop_GeniTheme
+{
+    background-position: -66px -359px;
+    width: 11px;
+    height: 5px;
+}
+.dxHtmlEditor_heConstrainProportionsTopRtl_GeniTheme
+{
+    background-position: -73px -367px;
+    width: 11px;
+    height: 5px;
+}
+.dxHtmlEditor_heErrorFrameCloseButton_GeniTheme
+{
+    background-position: -28px -359px;
+    width: 13px;
+    height: 9px;
+}
+.dxHtmlEditor_heSizeGrip_GeniTheme
+{
+    background-position: 0px -359px;
+    width: 13px;
+    height: 13px;
+}
+.dxHtmlEditor_heSizeGripRtl_GeniTheme
+{
+    background-position: -14px -359px;
+    width: 13px;
+    height: 13px;
+}
+.dxHtmlEditor_heToolbarPopOut_GeniTheme
+{
+    background-position: -65px -368px;
+    width: 7px;
+    height: 4px;
+}
+.dxHtmlEditor_Icons_heBackColor_GeniTheme
+{
+    background-position: -51px -342px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heBackColorDisabled_GeniTheme
+{
+    background-position: 0px -104px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heBold_GeniTheme
+{
+    background-position: -51px -70px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heBoldDisabled_GeniTheme
+{
+    background-position: -68px -53px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCenter_GeniTheme
+{
+    background-position: -34px -53px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCenterDisabled_GeniTheme
+{
+    background-position: -34px -240px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableCellDialog_GeniTheme
+{
+    background-position: -17px -19px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableCellDialogDisabled_GeniTheme
+{
+    background-position: 0px -206px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableColumnDialog_GeniTheme
+{
+    background-position: -68px -138px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableColumnDialogDisabled_GeniTheme
+{
+    background-position: -68px -104px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableDialog_GeniTheme
+{
+    background-position: -65px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableDialogDisabled_GeniTheme
+{
+    background-position: -17px -172px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableRowDialog_GeniTheme
+{
+    background-position: 0px -155px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heChangeTableRowDialogDisabled_GeniTheme
+{
+    background-position: 0px -291px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCheckSpelling_GeniTheme
+{
+    background-position: 0px -223px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCheckSpellingDisabled_GeniTheme
+{
+    background-position: 0px -70px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCopy_GeniTheme
+{
+    background-position: 0px -342px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCopyDisabled_GeniTheme
+{
+    background-position: -17px -138px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCut_GeniTheme
+{
+    background-position: -17px -240px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heCutDisabled_GeniTheme
+{
+    background-position: -34px -257px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heDeleteTable_GeniTheme
+{
+    background-position: -17px -206px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heDeleteTableColumn_GeniTheme
+{
+    background-position: -17px -36px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heDeleteTableColumnDisabled_GeniTheme
+{
+    background-position: -68px -240px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heDeleteTableDisabled_GeniTheme
+{
+    background-position: -17px -325px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heDeleteTableRow_GeniTheme
+{
+    background-position: 0px -138px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heDeleteTableRowDisabled_GeniTheme
+{
+    background-position: 0px -19px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heForeColor_GeniTheme
+{
+    background-position: -51px -104px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heForeColorDisabled_GeniTheme
+{
+    background-position: -51px -19px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heFullscreen_GeniTheme
+{
+    background-position: -68px -274px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heFullscreenDisabled_GeniTheme
+{
+    background-position: -51px -87px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heIndent_GeniTheme
+{
+    background-position: 0px -308px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heIndentDisabled_GeniTheme
+{
+    background-position: -34px -87px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertImageDialog_GeniTheme
+{
+    background-position: -34px -172px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertImageDialogDisabled_GeniTheme
+{
+    background-position: -34px -70px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertLinkDialog_GeniTheme
+{
+    background-position: -51px -53px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertLinkDialogDisabled_GeniTheme
+{
+    background-position: -17px -342px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertOrderedList_GeniTheme
+{
+    background-position: 0px -53px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertOrderedListDisabled_GeniTheme
+{
+    background-position: -17px -104px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableColumnOnLeft_GeniTheme
+{
+    background-position: -17px -155px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableColumnOnLeftDisabled_GeniTheme
+{
+    background-position: 0px -257px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableColumnOnRight_GeniTheme
+{
+    background-position: -17px -70px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableColumnOnRightDisabled_GeniTheme
+{
+    background-position: -17px -223px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableDialog_GeniTheme
+{
+    background-position: -68px -19px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableDialogDisabled_GeniTheme
+{
+    background-position: -68px -325px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableRowAbove_GeniTheme
+{
+    background-position: -68px -257px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableRowAboveDisabled_GeniTheme
+{
+    background-position: -68px -121px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableRowBelow_GeniTheme
+{
+    background-position: -17px -87px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertTableRowBelowDisabled_GeniTheme
+{
+    background-position: 0px -325px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertUnorderedList_GeniTheme
+{
+    background-position: 0px -172px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heInsertUnorderedListDisabled_GeniTheme
+{
+    background-position: -34px -342px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heItalic_GeniTheme
+{
+    background-position: -68px -342px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heItalicDisabled_GeniTheme
+{
+    background-position: -68px -172px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heJustifyFull_GeniTheme
+{
+    background-position: -34px -291px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heJustifyFullDisabled_GeniTheme
+{
+    background-position: -51px -189px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heLeft_GeniTheme
+{
+    background-position: -17px -308px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heLeftDisabled_GeniTheme
+{
+    background-position: -51px -138px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heMergeTableCellHorizontal_GeniTheme
+{
+    background-position: -68px -189px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heMergeTableCellHorizontalDisabled_GeniTheme
+{
+    background-position: -68px -206px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heMergeTableCellVertical_GeniTheme
+{
+    background-position: -51px -36px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heMergeTableCellVerticalDisabled_GeniTheme
+{
+    background-position: -34px -206px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heOutdent_GeniTheme
+{
+    background-position: -68px -223px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heOutdentDisabled_GeniTheme
+{
+    background-position: 0px -189px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_hePaste_GeniTheme
+{
+    background-position: -51px -308px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_hePasteDisabled_GeniTheme
+{
+    background-position: -68px -87px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_hePasteFromWord_GeniTheme
+{
+    background-position: -17px -189px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_hePasteFromWordDisabled_GeniTheme
+{
+    background-position: -34px -274px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_hePrint_GeniTheme
+{
+    background-position: -34px -138px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_hePrintDisabled_GeniTheme
+{
+    background-position: -34px -189px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heRedo_GeniTheme
+{
+    background-position: -51px -223px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heRedoDisabled_GeniTheme
+{
+    background-position: -68px -155px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heRemoveFormat_GeniTheme
+{
+    background-position: -34px -121px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heRemoveFormatDisabled_GeniTheme
+{
+    background-position: -51px -121px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heRight_GeniTheme
+{
+    background-position: -51px -155px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heRightDisabled_GeniTheme
+{
+    background-position: -34px -308px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsDocx_GeniTheme
+{
+    background-position: -34px -223px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsDocxDisabled_GeniTheme
+{
+    background-position: -17px -274px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsMht_GeniTheme
+{
+    background-position: -51px -240px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsMhtDisabled_GeniTheme
+{
+    background-position: 0px -274px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsOdt_GeniTheme
+{
+    background-position: -51px -291px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsOdtDisabled_GeniTheme
+{
+    background-position: -51px -206px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsPdf_GeniTheme
+{
+    background-position: -34px -155px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsPdfDisabled_GeniTheme
+{
+    background-position: -34px -104px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsRtf_GeniTheme
+{
+    background-position: -51px -257px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsRtfDisabled_GeniTheme
+{
+    background-position: 0px -87px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsTxt_GeniTheme
+{
+    background-position: -17px -121px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSaveAsTxtDisabled_GeniTheme
+{
+    background-position: -51px -325px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSplitTableCellHorizontal_GeniTheme
+{
+    background-position: -34px -325px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSplitTableCellHorizontalDisabled_GeniTheme
+{
+    background-position: -68px -36px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSplitTableCellVertical_GeniTheme
+{
+    background-position: -68px -70px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSplitTableCellVerticalDisabled_GeniTheme
+{
+    background-position: -17px -291px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heStrikethrough_GeniTheme
+{
+    background-position: 0px -240px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heStrikethroughDisabled_GeniTheme
+{
+    background-position: -51px -274px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSubscript_GeniTheme
+{
+    background-position: -34px -36px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSubscriptDisabled_GeniTheme
+{
+    background-position: -68px -308px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSuperscript_GeniTheme
+{
+    background-position: -17px -257px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heSuperscriptDisabled_GeniTheme
+{
+    background-position: -48px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heUnderline_GeniTheme
+{
+    background-position: -17px -53px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heUnderlineDisabled_GeniTheme
+{
+    background-position: 0px -121px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heUndo_GeniTheme
+{
+    background-position: -68px -291px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heUndoDisabled_GeniTheme
+{
+    background-position: 0px -36px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heUnlink_GeniTheme
+{
+    background-position: -51px -172px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_Icons_heUnlinkDisabled_GeniTheme
+{
+    background-position: -34px -19px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_RoundPanel_herpBottomLeftCorner_GeniTheme
+{
+    background-position: -45px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpBottomRightCorner_GeniTheme
+{
+    background-position: -61px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomLeftCorner_GeniTheme
+{
+    background-position: -78px -359px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomRightCorner_GeniTheme
+{
+    background-position: -53px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopLeftCorner_GeniTheme
+{
+    background-position: -41px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopRightCorner_GeniTheme
+{
+    background-position: -33px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpHeaderTopLeftCorner_GeniTheme
+{
+    background-position: -49px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpHeaderTopRightCorner_GeniTheme
+{
+    background-position: -57px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpTopLeftCorner_GeniTheme
+{
+    background-position: -29px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_RoundPanel_herpTopRightCorner_GeniTheme
+{
+    background-position: -37px -369px;
+    width: 3px;
+    height: 3px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOn_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsMiddleOff_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsBottom_GeniTheme,
+.dxHtmlEditor_heConstrainProportionsTop_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpHeaderTopLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpHeaderTopRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpBottomLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpBottomRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpTopLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpTopRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomRightCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopLeftCorner_GeniTheme,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopRightCorner_GeniTheme,
+.dxHtmlEditor_Icons_heForeColor_GeniTheme,
+.dxHtmlEditor_Icons_heBackColor_GeniTheme
+{
+	display:block;
+}

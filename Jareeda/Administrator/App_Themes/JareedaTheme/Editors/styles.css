@@ -1,0 +1,1838 @@
+/* -- ValidationSummary -- */
+.dxvsValidationSummary_GeniTheme
+{
+	font: 12px Tahoma, Geneva, sans-serif;
+	color: Red;
+}
+.dxvsValidationSummary_GeniTheme td.dxvsRC_GeniTheme
+{
+	vertical-align: top;
+	padding: 2px 5px 4px 6px;
+}
+.dxvsValidationSummary_GeniTheme .dxvsE_GeniTheme
+{
+}
+.dxvsValidationSummary_GeniTheme table.dxvsHT_GeniTheme
+{
+	width: 100%;
+}
+.dxvsValidationSummary_GeniTheme td.dxvsH_GeniTheme
+{
+	padding: 2px 0;
+}
+.dxvsValidationSummary_GeniTheme a.dxvsHL_GeniTheme,
+.dxvsValidationSummary_GeniTheme a.dxvsHL_GeniTheme:visited
+{
+	color: red;
+}
+.dxvsValidationSummary_GeniTheme a.dxvsHL_GeniTheme
+{
+	text-decoration: none;
+	border-bottom: 1px dashed #f70;
+}
+.dxvsValidationSummary_GeniTheme a.dxvsHL_GeniTheme:hover
+{
+	color: #f70;
+}
+.dxvsValidationSummary_GeniTheme table.dxvsT_GeniTheme
+{
+}
+.dxvsValidationSummary_GeniTheme tr.dxvsE_GeniTheme
+{
+}
+.dxvsValidationSummary_GeniTheme td.dxvsETC_GeniTheme
+{
+	padding: 2px 0;
+}
+.dxvsValidationSummary_GeniTheme ul.dxvsL_GeniTheme
+{
+}
+.dxvsValidationSummary_GeniTheme ol.dxvsL_GeniTheme
+{
+}
+.dxvsValidationSummary_GeniTheme li.dxvsE_GeniTheme
+{
+	padding: 2px 0;
+}
+
+/* TrackBar */
+.dxeTrackBar_GeniTheme
+{
+	user-select: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	visibility:hidden;
+}
+
+.dxeDisabled_GeniTheme .dxeTBHSys a,
+.dxeDisabled_GeniTheme .dxeTBVSys a
+{
+    cursor: default;
+}
+
+.dxeTBBarHighlight_GeniTheme
+{
+	font-size: 0;
+}
+
+.dxeTBScale_GeniTheme,
+.dxeTBTrack_GeniTheme,
+.dxeTBBarHighlight_GeniTheme
+{
+	cursor: pointer;
+}
+
+.dxeTBScale_GeniTheme
+{
+    font: 10px Verdana, Geneva, sans-serif;
+	z-index: 1;
+}
+.dxeTBSecondaryDH_GeniTheme,
+.dxeTBMainDH_GeniTheme
+{
+	z-index: 4;
+}
+
+.dxeTBHSys
+{
+	width: 170px;
+	height: 49px;
+}
+.dxeTBVSys
+{
+	height: 170px;
+	width: 49px;
+}
+.dxeTrackBar_GeniTheme.dxeTBBScaleSys.dxeTBVSys
+{
+	width: 76px;
+}
+.dxeTrackBar_GeniTheme.dxeTBBScaleSys.dxeTBHSys
+{	
+	height: 76px;
+}
+
+.dxeTBTrack_GeniTheme
+{
+	z-index: 2;
+	position: absolute;
+}
+
+.dxeTBHSys .dxeTBTrack_GeniTheme
+{
+	background-image:  url('edtTrackBarTrackH.gif');
+}
+.dxeTBVSys .dxeTBTrack_GeniTheme
+{
+	background-image:  url('edtTrackBarTrackV.gif');
+}
+
+.dxeTBHSys .dxeTBTrack_GeniTheme, 
+.dxeTBHSys .dxeTBBarHighlight_GeniTheme
+{
+	height: 9px;
+}
+.dxeTBVSys .dxeTBTrack_GeniTheme, 
+.dxeTBVSys .dxeTBBarHighlight_GeniTheme
+{
+	width: 9px;
+}
+
+.dxeTBHSys .dxeTBMainDH_GeniTheme,
+.dxeTBHSys .dxeTBSecondaryDH_GeniTheme
+{	
+	top: -4px;
+	width:11px;
+	height:17px;
+}
+.dxeTBVSys .dxeTBMainDH_GeniTheme,
+.dxeTBVSys .dxeTBSecondaryDH_GeniTheme
+{
+	left: -4px;
+	width:17px;
+	height:11px;
+}
+
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBTrack_GeniTheme,
+.dxeTBVSys .dxeTBTrack_GeniTheme
+{
+	left: 6px;
+}
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBTrack_GeniTheme
+{
+	right: 6px;
+	left: auto;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBTrack_GeniTheme
+{
+	bottom: 6px;
+	top: auto;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBTrack_GeniTheme,
+.dxeTBHSys .dxeTBTrack_GeniTheme
+{
+	top: 6px;
+}
+
+.dxeTBBarHighlight_GeniTheme
+{
+	left: 0px;
+	top: 0px;
+	position:absolute;
+	z-index: 3;
+}
+
+.dxeTBHSys .dxeTBBarHighlight_GeniTheme
+{
+	background-image:  url('edtTrackBarBarHighlightH.gif');
+}
+.dxeTBVSys .dxeTBBarHighlight_GeniTheme
+{
+	background-image:  url('edtTrackBarBarHighlightV.gif');
+}
+
+.dxeTBRBLabel_GeniTheme,
+.dxeTBLTLabel_GeniTheme
+{
+	text-align: center;
+	cursor: default;
+}
+.dxeTBSmallTickSys .dxeTBRBLabel_GeniTheme,
+.dxeTBSmallTickSys .dxeTBLTLabel_GeniTheme,
+.dxeTBLargeTickSys .dxeTBRBLabel_GeniTheme,
+.dxeTBLargeTickSys .dxeTBLTLabel_GeniTheme
+{	
+	position: absolute;
+}
+
+.dxeTBHSys .dxeTBRBLabel_GeniTheme,
+.dxeTBHSys .dxeTBLTLabel_GeniTheme
+{
+	width: 100%;
+}
+
+.dxeTBIncBtn_GeniTheme,
+.dxeTBDecBtn_GeniTheme
+{
+}
+
+.dxeTBVSys .dxeTBRBLabel_GeniTheme,
+.dxeTBVSys .dxeTBLTLabel_GeniTheme
+{
+	padding-top: 2px;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBRBLabel_GeniTheme
+{
+	margin-left: -4px;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBRBLabel_GeniTheme,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBLTLabel_GeniTheme
+{
+	right: 0px;
+}
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBLTLabel_GeniTheme,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBRBLabel_GeniTheme
+{
+	left: 0px;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBRBLabel_GeniTheme,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBLTLabel_GeniTheme
+{
+	bottom: 0px;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBLTLabel_GeniTheme,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBRBLabel_GeniTheme
+{
+	top: 0px;
+}
+
+.dxeTBHSys .dxeTBItem_GeniTheme .dxeTBRBLabel_GeniTheme,
+.dxeTBHSys .dxeTBItem_GeniTheme .dxeTBLTLabel_GeniTheme
+{
+	display: inline-block;
+	margin-left: 0px!important;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBItem_GeniTheme .dxeTBRBLabel_GeniTheme
+{
+	padding-top: 12px;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBItem_GeniTheme .dxeTBLTLabel_GeniTheme
+{
+	margin-top: 8px;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBItem_GeniTheme .dxeTBRBLabel_GeniTheme 
+{
+	margin-left: 5px;
+}
+
+.dxeTBSelectedItem_GeniTheme .dxeTBRBLabel_GeniTheme,
+.dxeTBSelectedItem_GeniTheme .dxeTBLTLabel_GeniTheme,
+.dxeTBSelectedTick_GeniTheme .dxeTBRBLabel_GeniTheme,
+.dxeTBSelectedTick_GeniTheme .dxeTBLTLabel_GeniTheme
+{
+	color: #566B84;
+}
+
+.dxeDisabled_GeniTheme .dxeTBSelectedItem_GeniTheme .dxeTBRBLabel_GeniTheme,
+.dxeDisabled_GeniTheme .dxeTBSelectedItem_GeniTheme .dxeTBLTLabel_GeniTheme,
+.dxeDisabled_GeniTheme .dxeTBSelectedTick_GeniTheme .dxeTBRBLabel_GeniTheme,
+.dxeDisabled_GeniTheme .dxeTBSelectedTick_GeniTheme .dxeTBLTLabel_GeniTheme
+{
+	color: #C4CBD4;
+}
+
+.dxeTBRBLabel_GeniTheme,
+.dxeTBLTLabel_GeniTheme,
+.dxeTBItem_GeniTheme
+{
+	color: #8E9CAD;
+}
+
+.dxeDisabled_GeniTheme .dxeTBRBLabel_GeniTheme,
+.dxeDisabled_GeniTheme .dxeTBLTLabel_GeniTheme,
+.dxeDisabled_GeniTheme .dxeTBItem_GeniTheme
+{
+	color: #D7DCE2;
+}
+
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBItem_GeniTheme
+{
+	text-align: left;
+}
+
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBItem_GeniTheme
+{
+	text-align: right;
+}
+
+.dxeTBVSys .dxeTBBScaleSys .dxeTBItem_GeniTheme
+{
+	text-align: center;
+}
+
+.dxeTBHSys .dxeTBItem_GeniTheme
+{
+	background-image:  url('edtTrackBarLargeTickH.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBItem_GeniTheme
+{
+	background-image:  url('edtTrackBarDoubleSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBItem_GeniTheme 
+{
+	background-image:  url('edtTrackBarLargeTickV.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBItem_GeniTheme
+{
+	background-image:  url('edtTrackBarDoubleSmallTickV.gif');
+}
+
+.dxeTBHSys .dxeTBLargeTick_GeniTheme
+{
+	background-image:  url('edtTrackBarLargeTickH.gif');
+}
+.dxeTBVSys .dxeTBLargeTick_GeniTheme
+{
+	background-image: url('edtTrackBarLargeTickV.gif');
+}
+.dxeTBHSys .dxeTBSmallTick_GeniTheme
+{
+	background-image: url('edtTrackBarSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBSmallTick_GeniTheme
+{
+	background-image: url('edtTrackBarSmallTickV.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBLargeTick_GeniTheme
+{
+	background-image: url('edtTrackBarDoubleLargeTickH.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBLargeTick_GeniTheme
+{
+	background-image: url('edtTrackBarDoubleLargeTickV.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBSmallTick_GeniTheme
+{
+	background-image: url('edtTrackBarDoubleSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBSmallTick_GeniTheme
+{
+	background-image: url('edtTrackBarDoubleSmallTickV.gif');
+}
+
+.dxeTBVSys .dxeTBIncBtn_GeniTheme,
+.dxeTBVSys .dxeReversedDirectionSys .dxeTBDecBtn_GeniTheme
+{
+	bottom: 0px;
+	top: auto;
+}
+.dxeTBVSys .dxeTBDecBtn_GeniTheme,
+.dxeTBVSys .dxeReversedDirectionSys .dxeTBIncBtn_GeniTheme
+{
+	top: 0px;
+	bottom: auto;
+}
+.dxeTBHSys .dxeTBDecBtn_GeniTheme, 
+.dxeTBHSys .dxeReversedDirectionSys .dxeTBIncBtn_GeniTheme
+{
+	left: 0px;
+	right: auto;
+}
+.dxeTBHSys .dxeTBIncBtn_GeniTheme,
+.dxeTBHSys .dxeReversedDirectionSys .dxeTBDecBtn_GeniTheme
+{
+	right: 0px;
+	left: auto;
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBDecBtn_GeniTheme,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBIncBtn_GeniTheme
+{
+	margin-left: -9px;
+	left: 50%;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBDecBtn_GeniTheme,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBIncBtn_GeniTheme
+{
+	margin-top: -9px;
+	top: 50%;
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBTrack_GeniTheme
+{ 
+	margin-left: -4px;
+	left: 50%;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBTrack_GeniTheme
+{ 
+	margin-top: -4px;
+	top: 50%;
+}
+
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBDecBtn_GeniTheme,
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBIncBtn_GeniTheme
+{
+	right: 1px;
+	left: auto;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBDecBtn_GeniTheme,
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBIncBtn_GeniTheme
+{
+	bottom: 1px;
+	top: auto;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBDecBtn_GeniTheme,
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBIncBtn_GeniTheme,
+.dxeTBVSys .dxeTBDecBtn_GeniTheme,
+.dxeTBVSys .dxeTBIncBtn_GeniTheme
+{
+	left: 1px;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBDecBtn_GeniTheme,
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBIncBtn_GeniTheme,
+.dxeTBHSys .dxeTBDecBtn_GeniTheme,
+.dxeTBHSys .dxeTBIncBtn_GeniTheme
+{
+	top: 1px;
+}
+
+div.dxeHelpText_GeniTheme,
+.dxeTBValueToolTip_GeniTheme
+{
+	padding: 3px 8px 4px 8px;
+    display: inline;
+    position:absolute;
+    border-radius: 3px;
+    z-index: 41998;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #8BA0BC;
+    font: 11px Verdana, Geneva, sans-serif;
+    background: #E1EDFA;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E1EDFA', endColorstr='#D1E0EE');
+	background: -webkit-gradient(linear, left top, left bottom, from(#E1EDFA), to(#D1E0EE));
+	background: -moz-linear-gradient(top,  #E1EDFA,  #D1E0EE);
+}
+td.dxeHelpText_GeniTheme {
+    visibility: visible;
+    color: #9F9F9F;
+    font: 10px Verdana, Geneva, sans-serif;
+}
+td.dxeHelpText_GeniTheme.dxeHHelpTextSys {
+    padding: 0 6px;
+}
+td.dxeHelpText_GeniTheme.dxeVHelpTextSys {
+    padding: 2px 0;
+}
+
+/* InternalCheckBox */
+
+.dxeIRBFocused_GeniTheme
+{
+	border: 1px dotted #dac11e;
+	margin: 0px!important;
+}
+.dxeIRadioButton_GeniTheme
+{
+}
+.dxeLoadingDiv_GeniTheme
+{
+	background: White none;
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+.dxeLoadingDivWithContent_GeniTheme
+{
+	background: White none;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+
+.dxeLoadingPanel_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+}
+.dxeLoadingPanelWithContent_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+	background: White none;
+	border: 1px solid #859ebf;
+}
+
+.dxeLoadingPanel_GeniTheme td.dx,
+.dxeLoadingPanelWithContent_GeniTheme td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 10px 14px;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingDiv_GeniTheme
+{
+	opacity: 1!important;
+	filter: alpha(opacity=100)!important;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_GeniTheme
+{
+    background-color: transparent!important;
+    font: normal 0px arial, verdana!important;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_GeniTheme td.dx
+{
+	padding: 0px!important;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_GeniTheme td.dx > span
+{
+	display: none;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_GeniTheme td.dx > img
+{
+	height: 15px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.dxeReadOnly_GeniTheme
+{
+}
+.dxeBase_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+}
+td.dxic
+{
+	font-size: 0;
+}
+/* -- ErrorFrame -- */
+.dxeErrorCell_GeniTheme,
+.dxeErrorCell_GeniTheme td
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	color: Red;
+}
+.dxeErrorCell_GeniTheme
+{
+	padding-left: 4px;
+	padding-right: 5px;
+}
+.dxeErrorFrameWithoutError_GeniTheme
+{
+	border: 1px solid Red;
+}
+.dxeErrorFrameWithoutError_GeniTheme .dxeControlsCell_GeniTheme,
+.dxeErrorFrameWithoutError_GeniTheme.dxeControlsCell_GeniTheme
+{
+	padding: 2px;
+}
+
+.dxeEditArea_GeniTheme.dxeEditAreaSys
+{
+	font: 11px Verdana, Geneva, sans-serif;
+    height: 13px;
+    margin-bottom: 1px;
+	border: 1px solid #8ba0bc;
+}
+:root input.dxeEditArea_GeniTheme /*Bootstrap correction*/
+{
+    padding-bottom: 1px \0/;
+}
+body input.dxeEditArea_GeniTheme /*Bootstrap correction*/
+{
+    color: black;
+}
+.dxeMemoEditArea_GeniTheme,
+input.dxeEditArea_GeniTheme
+{
+	outline: none;
+}
+
+/* -- Buttons -- */
+.dxeButtonEditButton_GeniTheme,
+.dxeCalendarButton_GeniTheme,
+.dxeSpinIncButton_GeniTheme,
+.dxeSpinDecButton_GeniTheme,
+.dxeSpinLargeIncButton_GeniTheme,
+.dxeSpinLargeDecButton_GeniTheme,
+.dxeColorEditButton_GeniTheme
+{
+	font: normal 11px Verdana, Geneva, sans-serif;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.dxeCalendarButton_GeniTheme,
+.dxeButtonEditButton_GeniTheme,
+.dxeColorEditButton_GeniTheme
+{
+	border-style: solid;
+	border-color: #8ba0bc;
+}
+.dxeCalendarButton_GeniTheme,
+.dxeColorEditButton_GeniTheme
+{
+	border-width: 1px;
+}
+.dxeButtonEditButton_GeniTheme
+{
+	border-width: 0 0 0 1px;
+}
+.dxeSpinIncButton_GeniTheme.dxeHasLarge,
+.dxeSpinDecButton_GeniTheme.dxeHasLarge,
+.dxeSpinLargeIncButton_GeniTheme
+{
+	border-width: 0;
+}
+.dxeButtonEditButton_GeniTheme.dxeButtonLeft
+{
+	border-width: 0 1px 0 0;
+}
+.dxeSpinIncButton_GeniTheme.dxeHasLarge.dxeButtonLeft,
+.dxeSpinDecButton_GeniTheme.dxeHasLarge.dxeButtonLeft,
+.dxeSpinLargeDecButton_GeniTheme.dxeButtonLeft
+{
+	border-width: 0;
+}
+
+.dxeButtonEditButton_GeniTheme,
+.dxeSpinLargeIncButton_GeniTheme,
+.dxeSpinLargeDecButton_GeniTheme
+{
+	background: #c6d7e8 url('edtDropDownBtnBack.png') repeat-x left top;
+}
+.dxeSpinIncButton_GeniTheme
+{
+	background: #d6e4f1 url('edtSpinIncBtnBack.png') repeat-x left top;
+}
+.dxeSpinDecButton_GeniTheme
+{
+	background: #c5d6e7 url('edtSpinDecBtnBack.png') repeat-x left top;
+}
+
+.dxeButtonEditButton_GeniTheme
+{
+	padding: 3px 2px 3px 3px;
+}
+.dxeSpinIncButton_GeniTheme
+{
+	padding: 2px 4px 2px;
+}
+.dxeSpinDecButton_GeniTheme
+{
+	padding: 3px 4px 2px;
+}
+.dxeSpinLargeIncButton_GeniTheme,
+.dxeSpinLargeDecButton_GeniTheme
+{
+	padding: 6px 2px;
+}
+.dxeCalendarButton_GeniTheme
+{
+	font-size: 11px;
+	background: #d1dfee url('edtBtnBack.png') repeat-x left top;
+	padding: 3px 11px 4px;
+	min-width: 37px;
+}
+.dxeColorEditButton_GeniTheme
+{
+	font-size: 11px;
+	background: #d1dfee url('edtBtnBack.png') repeat-x left top;
+}
+
+/* -- Pressed -- */
+.dxeCalendarButtonPressed_GeniTheme,
+.dxeColorEditButton_GeniTheme:active
+{
+	border-color: #c2762b;
+}
+.dxeCalendarButtonPressed_GeniTheme,
+.dxeColorEditButton_GeniTheme:active
+{
+	background: #fee287 url('edtBtnPBack.png') repeat-x left top;
+}
+.dxeButtonEditButtonPressed_GeniTheme,
+.dxeSpinIncButtonPressed_GeniTheme,
+.dxeSpinDecButtonPressed_GeniTheme,
+.dxeSpinLargeIncButtonPressed_GeniTheme, 
+.dxeSpinLargeDecButtonPressed_GeniTheme
+{
+	background: #f3d984 url('edtDropDownBtnPBack.png') repeat-x left top;
+}
+/* -- Hover -- */
+.dxeCalendarButtonHover_GeniTheme,
+.dxeColorEditButton_GeniTheme:hover
+{
+	border-color: #eecc53;
+}
+.dxeCalendarButtonHover_GeniTheme,
+.dxeColorEditButton_GeniTheme:hover
+{
+	background: #fcf8e5 url('edtBtnHBack.png') repeat-x left top;
+}
+.dxeButtonEditButtonHover_GeniTheme,
+.dxeSpinLargeIncButtonHover_GeniTheme,
+.dxeSpinLargeDecButtonHover_GeniTheme
+{
+	background: #f8e9ac url('edtDropDownBtnHBack.png') repeat-x left top;
+}
+.dxeSpinIncButtonHover_GeniTheme,
+.dxeSpinDecButtonHover_GeniTheme
+{
+	background: #f8e18a url('edtSpinIncDecBtnHBack.png') repeat-x left top;
+}
+
+.dxeButtonEdit_GeniTheme
+{
+	background-color: white;
+	border: 1px solid #8ba0bc;
+}
+.dxeButtonEdit_GeniTheme .dxeEditArea_GeniTheme
+{
+	background-color: white;
+}
+.dxeButtonEdit_GeniTheme .dxeIIC,
+.dxeButtonEdit_GeniTheme .dxeIICR
+{
+	padding: 1px;
+}
+.dxeButtonEdit_GeniTheme .dxeIIC img
+{
+	padding-left: 3px;
+}
+.dxeButtonEdit_GeniTheme .dxeIICR img
+{
+	padding-right: 3px;
+}
+
+*[dir="rtl"].dxeTextBox_GeniTheme td.dxic {
+    *padding-right: 2px;
+}
+*[dir="rtl"].dxeButtonEdit_GeniTheme td.dxic {
+    *padding-right: 3px;
+}
+
+.dxeTextBox_GeniTheme,
+.dxeMemo_GeniTheme
+{
+	background-color: white;
+	border: 1px solid #8ba0bc;
+}
+.dxeTextBox_GeniTheme .dxeEditArea_GeniTheme
+{
+	background-color: white;
+}
+.dxeRadioButtonList_GeniTheme,
+.dxeCheckBoxList_GeniTheme
+{
+	border: 1px solid #8ba0bc;
+}
+
+.dxeCheckBoxList_GeniTheme .dxe > table,
+.dxeRadioButtonList_GeniTheme .dxe > table 
+{
+    width: 100%;
+}
+
+.dxeRadioButtonList_GeniTheme,
+.dxeRadioButtonList_GeniTheme table,
+.dxeCheckBoxList_GeniTheme,
+.dxeCheckBoxList_GeniTheme table
+{
+	font: 11px Verdana, Geneva, sans-serif;
+}
+.dxeRadioButtonList_GeniTheme td.dxe,
+.dxeCheckBoxList_GeniTheme td.dxe
+{
+	padding: 7px 5px 6px 11px;
+}
+.dxeRadioButtonList_GeniTheme label,
+.dxeCheckBoxList_GeniTheme label
+{
+	margin-right: 6px;
+}
+.dxeRadioButtonList_GeniTheme img,
+.dxeCheckBoxList_GeniTheme img
+{
+	margin-bottom: -4px;
+    padding-right: 5px;
+}
+/* Disabled */
+.dxeDisabled_GeniTheme .dxeButtonEditButton_GeniTheme,
+.dxeDisabled_GeniTheme .dxeSpinLargeIncButton_GeniTheme,
+.dxeDisabled_GeniTheme .dxeSpinLargeDecButton_GeniTheme
+{
+	background: #ecf2f7 url('edtDropDownBtnDisabledBack.png') repeat-x left top;
+}
+.dxeDisabled_GeniTheme .dxeSpinIncButton_GeniTheme
+{
+	background: #f2f7fb url('edtSpinIncBtnDisabledBack.png') repeat-x left top;
+}
+.dxeDisabled_GeniTheme .dxeSpinDecButton_GeniTheme
+{
+	background: #ecf2f7 url('edtSpinDecBtnDisabledBack.png') repeat-x left top;
+}
+
+/* -- Memo -- */
+.dxeMemo_GeniTheme
+{
+}
+.dxeMemoEditArea_GeniTheme
+{
+	background-color: white;
+	font: 11px Verdana, Geneva, sans-serif;
+}
+
+/* -- Hyperlink -- */
+.dxeHyperlink_GeniTheme
+{
+	font: normal 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+	text-decoration: none;
+}
+a.dxeHyperlink_GeniTheme:hover
+{
+	text-decoration: underline;
+}
+a.dxeHyperlink_GeniTheme:visited
+{
+	color: #8467b2;
+}
+
+/* -- ListBox -- */
+.dxeListBox_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	background-color: white;
+	border: 1px solid #8ba0bc;
+	width: 70px;
+	height: 109px;
+}
+.dxeListBox_GeniTheme div.dxlbd
+{
+	padding-top: 1px;
+	height: 108px;
+}
+.dxeListBoxItemRow_GeniTheme
+{
+	cursor: default;
+}
+.dxeListBoxItem_GeniTheme
+{
+	font: normal 11px Verdana, Geneva, sans-serif;
+	color: Black;
+	padding: 2px 5px;
+	white-space: nowrap;
+	text-align: left;
+	border-top: 0 solid White;
+	border-right: 1px solid White;
+	border-bottom: 1px solid White;
+	border-left: 1px solid White;
+}
+.dxeListBoxItem_GeniTheme em
+{
+	background: #d5e8ff none repeat 0 0;
+	color: Black;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.dxeListBox_GeniTheme td.dxeI,
+.dxeListBox_GeniTheme td.dxeIM,
+.dxeListBox_GeniTheme .dxeHIC, 
+.dxeListBox_GeniTheme td.dxeFTM,
+.dxeListBox_GeniTheme td.dxeTM,
+.dxeListBox_GeniTheme td.dxeC,
+.dxeListBox_GeniTheme td.dxeCM,
+.dxeListBox_GeniTheme td.dxeHCC,
+.dxeListBox_GeniTheme td.dxeMI,
+.dxeListBox_GeniTheme td.dxeMIM
+{
+	border-right-width: 0!important;
+}
+
+.dxeListBox_GeniTheme td.dxeIR,
+.dxeListBox_GeniTheme td.dxeIMR,
+.dxeListBox_GeniTheme .dxeHICR, 
+.dxeListBox_GeniTheme td.dxeFTMR,
+.dxeListBox_GeniTheme td.dxeTMR,
+.dxeListBox_GeniTheme td.dxeCR,
+.dxeListBox_GeniTheme td.dxeCMR,
+.dxeListBox_GeniTheme td.dxeHCCR,
+.dxeListBox_GeniTheme td.dxeMIR,
+.dxeListBox_GeniTheme td.dxeMIMR
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_GeniTheme td.dxeCM,
+.dxeListBox_GeniTheme td.dxeHCC,
+.dxeListBox_GeniTheme td.dxeCMR,
+.dxeListBox_GeniTheme td.dxeHCCR
+{
+	width: 33px;
+	*width: 22px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.dxeListBox_GeniTheme td.dxeIM,
+.dxeListBox_GeniTheme td.dxeIMR
+{
+	width: 0;
+}
+.dxeListBox_GeniTheme td.dxeC
+{
+	padding-right: 3px!important;
+}
+.dxeListBox_GeniTheme td.dxeCR
+{
+	padding-left: 3px!important;
+}
+.dxeListBox_GeniTheme td.dxeC > span,
+.dxeListBox_GeniTheme td.dxeCM > span
+{
+    margin: 2px 2px 2px 3px;
+}
+.dxeListBox_GeniTheme td.dxeCR > span,
+.dxeListBox_GeniTheme td.dxeCMR > span
+{
+    margin: 2px 3px 2px 2px;
+}
+.dxeListBox_GeniTheme td.dxeT
+{
+	width: 100%;
+	padding-left: 0!important;
+}
+
+.dxeListBox_GeniTheme td.dxeTR
+{
+	width: 100%;
+	padding-right: 0!important;
+}
+
+
+.dxeListBox_GeniTheme td.dxeT,
+.dxeListBox_GeniTheme td.dxeMI
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_GeniTheme td.dxeTR,
+.dxeListBox_GeniTheme td.dxeMIR
+{
+	border-right-width: 0!important;
+}
+
+
+.dxeListBox_GeniTheme td.dxeFTM,
+.dxeListBox_GeniTheme td.dxeTM,
+.dxeListBox_GeniTheme td.dxeLTM,
+.dxeListBox_GeniTheme .dxeHFC,
+.dxeListBox_GeniTheme .dxeHC,
+.dxeListBox_GeniTheme .dxeHLC,
+.dxeListBox_GeniTheme td.dxeFTMR,
+.dxeListBox_GeniTheme td.dxeTMR,
+.dxeListBox_GeniTheme td.dxeLTMR,
+.dxeListBox_GeniTheme .dxeHFCR,
+.dxeListBox_GeniTheme .dxeHCR,
+.dxeListBox_GeniTheme .dxeHLCR
+{
+	overflow: hidden;
+}
+
+.dxeListBox_GeniTheme td.dxeFTM,
+.dxeListBox_GeniTheme td.dxeTM,
+.dxeListBox_GeniTheme .dxeHFC,
+.dxeListBox_GeniTheme .dxeHC
+{
+	padding-right: 6px!important;
+}
+
+.dxeListBox_GeniTheme td.dxeFTMR,
+.dxeListBox_GeniTheme td.dxeTMR,
+.dxeListBox_GeniTheme .dxeHFCR,
+.dxeListBox_GeniTheme .dxeHCR
+{
+	padding-left: 6px!important;
+}
+
+
+.dxeListBox_GeniTheme td.dxeLTM,
+.dxeListBox_GeniTheme td.dxeTM,
+.dxeListBox_GeniTheme .dxeHC,
+.dxeListBox_GeniTheme .dxeHLC
+{
+	padding-left: 6px!important;
+}
+
+.dxeListBox_GeniTheme td.dxeLTMR,
+.dxeListBox_GeniTheme td.dxeTMR,
+.dxeListBox_GeniTheme .dxeHCR,
+.dxeListBox_GeniTheme .dxeHLCR
+{
+	padding-right: 6px!important;
+}
+
+.dxeListBox_GeniTheme .dxeFTM,
+.dxeListBox_GeniTheme .dxeTM,
+.dxeListBox_GeniTheme .dxeHFC,
+.dxeListBox_GeniTheme .dxeHC,
+.dxeListBox_GeniTheme .dxeLTM,
+.dxeListBox_GeniTheme .dxeTM,
+.dxeListBox_GeniTheme .dxeHC,
+.dxeListBox_GeniTheme .dxeHLC,
+.dxeListBox_GeniTheme td.dxeIM,
+.dxeListBox_GeniTheme td.dxeFTM,
+.dxeListBox_GeniTheme td.dxeTM,
+.dxeListBox_GeniTheme td.dxeCM,
+.dxeListBox_GeniTheme td.dxeMIM,
+.dxeListBox_GeniTheme .dxeFTMR,
+.dxeListBox_GeniTheme .dxeTMR,
+.dxeListBox_GeniTheme .dxeHFCR,
+.dxeListBox_GeniTheme .dxeHCR,
+.dxeListBox_GeniTheme .dxeLTMR,
+.dxeListBox_GeniTheme .dxeTMR,
+.dxeListBox_GeniTheme .dxeHCR,
+.dxeListBox_GeniTheme .dxeHLCR,
+.dxeListBox_GeniTheme td.dxeIMR,
+.dxeListBox_GeniTheme td.dxeFTMR,
+.dxeListBox_GeniTheme td.dxeTMR,
+.dxeListBox_GeniTheme td.dxeCMR,
+.dxeListBox_GeniTheme td.dxeMIMR
+{
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+
+/*Grid lines*/
+
+.dxeListBox_GeniTheme td.dxeLTM,
+.dxeListBox_GeniTheme td.dxeTM,
+.dxeListBox_GeniTheme td.dxeMIM
+{
+	border-left: 1px solid #cfddee!important;
+}
+
+.dxeListBox_GeniTheme td.dxeLTMR,
+.dxeListBox_GeniTheme td.dxeTMR,
+.dxeListBox_GeniTheme td.dxeMIMR
+{
+	border-right: 1px solid #cfddee!important;
+}
+
+.dxeListBox_GeniTheme td.dxeIM,
+.dxeListBox_GeniTheme td.dxeFTM,
+.dxeListBox_GeniTheme td.dxeTM,
+.dxeListBox_GeniTheme td.dxeLTM,
+.dxeListBox_GeniTheme td.dxeCM,
+.dxeListBox_GeniTheme td.dxeMIM,
+.dxeListBox_GeniTheme td.dxeIMR,
+.dxeListBox_GeniTheme td.dxeFTMR,
+.dxeListBox_GeniTheme td.dxeTMR,
+.dxeListBox_GeniTheme td.dxeLTMR,
+.dxeListBox_GeniTheme td.dxeCMR,
+.dxeListBox_GeniTheme td.dxeMIMR
+{
+	border-bottom: 1px solid #cfddee;
+}
+
+.dxeListBoxItemSelected_GeniTheme     /* inherits dxeListBoxItem */
+{
+	color: Black;
+	background: #e2ecf7 none;
+}
+.dxeListBoxItemHover_GeniTheme        /* inherits dxeListBoxItem */
+{
+	color: Black;
+	background: #d5e8ff none;
+}
+.dxeListBoxItemHover_GeniTheme em,
+.dxeListBoxItemSelected_GeniTheme em
+{
+	background-image: none;
+}
+
+/*Header*/
+
+.dxeListBox_GeniTheme .dxeHD
+{
+	background: #e4effb url('lbHeaderBack.png') repeat-x left top;
+	border-bottom: 1px solid #8ba0bc;
+}
+.dxeHD .dxeListBoxItem_GeniTheme
+{
+	color: #1e395b;
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-bottom-width: 0;
+	border-left-width: 1px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.dxeListBox_GeniTheme .dxeHC,
+.dxeListBox_GeniTheme .dxeHLC,
+.dxeListBox_GeniTheme td.dxeHMIC
+{
+	border-left: 1px solid #8ba0bc;
+}
+
+.dxeListBox_GeniTheme .dxeHCR,
+.dxeListBox_GeniTheme .dxeHLCR,
+.dxeListBox_GeniTheme td.dxeHMICR
+{
+	border-right: 1px solid #8ba0bc;
+	text-align: right;
+}
+
+.dxeListBox_GeniTheme .dxeHIC,
+.dxeListBox_GeniTheme .dxeHFC,
+.dxeListBox_GeniTheme .dxeHCC
+{
+	border-left: 1px solid #e8f0fb;
+}
+
+.dxeListBox_GeniTheme .dxeHICR,
+.dxeListBox_GeniTheme .dxeHFCR,
+.dxeListBox_GeniTheme .dxeHCCR
+{
+	border-right: 1px solid #e8f0fb;
+	text-align: right;
+}
+
+.dxeListBox_GeniTheme .dxeHFC,
+.dxeListBox_GeniTheme .dxeHC,
+.dxeListBox_GeniTheme .dxeHMIC
+{
+	border-right-width: 0;
+}
+
+.dxeListBox_GeniTheme .dxeHFCR,
+.dxeListBox_GeniTheme .dxeHCR,
+.dxeListBox_GeniTheme .dxeHMICR
+{
+	border-left-width: 0;
+	text-align: right;
+}
+
+.dxeListBox_GeniTheme .dxeHLC
+{
+	border-right: 1px solid #cfddee;
+}
+
+.dxeListBox_GeniTheme .dxeHLCR
+{
+	border-left: 1px solid #cfddee;
+	text-align: right;
+}
+
+/* -- Calendar -- */
+.dxeCalendar_GeniTheme
+{
+	font-weight: normal;
+	color: #1e395b;
+	border: 1px solid #8ba0bc;
+	background-color: #cfddee;
+	cursor: default;
+}
+.dxeCalendar_GeniTheme td.dxMonthGrid
+{
+	padding: 1px 8px;
+}
+.dxeCalendar_GeniTheme td.dxMonthGridWithWeekNumbers
+{
+	padding: 1px 20px 6px 8px;
+}
+.dxeCalendar_GeniTheme td.dxMonthGridWithWeekNumbersRtl
+{
+	padding: 1px 8px 1px 20px;
+}
+.dxeCalendarDayHeader_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	padding: 2px 4px 6px;
+	border-bottom: 1px solid #b7c8dd;
+}
+.dxeCalendarWeekNumber_GeniTheme
+{
+	font: 9px Verdana, Geneva, sans-serif;
+	text-align: right;
+	padding: 3px 8px 2px 4px;
+	color: #abb7c6;
+}
+.dxeCalendarDay_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	padding: 2px 5px 3px;
+	text-align: center;
+}
+.dxeCalendarWeekend_GeniTheme        /* inherits dxeCalendarDay */
+{
+	color: #C00000;
+}
+.dxeCalendarOtherMonth_GeniTheme     /* inherits dxeCalendarDay */
+{
+	color: #b6c3d2;
+}
+.dxeCalendarOutOfRange_GeniTheme     /* inherits dxeCalendarDay */
+{
+	color: #b6c3d2;
+}
+.dxeCalendarSelected_GeniTheme       /* inherits dxeCalendarDay */
+{
+	color: #1e395b;
+	background-color: #a9c1de;
+	border-width: 0;
+	padding: 2px 5px 3px;
+}
+.dxeCalendarToday_GeniTheme         /* inherits dxeCalendarDay */
+{
+	padding: 1px 4px 2px;
+	border: 1px solid #c95c05;
+}
+.dxeCalendarHeader_GeniTheme
+{
+	border-style: none;
+	padding: 4px;
+	font: 11px Verdana, Geneva, sans-serif;
+}
+.dxeCalendarHeader_GeniTheme td.dxe
+{
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarFooter_GeniTheme
+{
+	background-color: #cfddee;
+	padding: 10px 0;
+	border-top: 1px solid #b7c8dd;
+}
+.dxeCalendarFastNav_GeniTheme
+{
+	color: #1e395b;
+	background: #cfddee none;
+	border-top: 1px solid #8ba0bc;
+	border-right: 1px solid #8ba0bc;
+	border-bottom: 0 solid #8ba0bc;
+	border-left: 1px solid #8ba0bc;
+	padding: 5px 8px;
+	cursor: default;
+}
+.dxeCalendarFastNavMonthArea_GeniTheme
+{
+	padding: 0px 9px;
+}
+.dxeCalendarFastNavYearArea_GeniTheme
+{
+}
+.dxeCalendarFastNavFooter_GeniTheme
+{
+	color: #1e395b;
+	background: #cfddee none;
+	padding: 8px 0 17px;
+	border-top: 0 solid #8ba0bc;
+	border-right: 1px solid #8ba0bc;
+	border-bottom: 1px solid #8ba0bc;
+	border-left: 1px solid #8ba0bc;
+}
+.dxeCalendarFastNavMonth_GeniTheme,
+.dxeCalendarFastNavYear_GeniTheme
+{
+	font: normal 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+	padding: 3px 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarFastNavYear_GeniTheme
+{
+	padding: 3px 5px;
+}
+.dxeCalendarFastNavMonth_GeniTheme
+{
+	padding: 6px;
+}
+
+.dxeCalendarFastNavMonthHover_GeniTheme,
+.dxeCalendarFastNavYearHover_GeniTheme
+{
+	color: #1e395b;
+	padding: 2px 4px;
+	border: 1px solid #c95c05;
+}
+.dxeCalendarFastNavMonthHover_GeniTheme
+{
+	padding: 5px;
+}
+
+.dxeCalendarFastNavMonthSelected_GeniTheme,
+.dxeCalendarFastNavYearSelected_GeniTheme
+{
+	color: #1e395b;
+	background-color: #a9c1de;
+	border-width: 0;
+}
+.dxeCalendarFastNavYearSelected_GeniTheme
+{
+	padding: 3px 5px;
+}
+.dxeCalendarFastNavMonthSelected_GeniTheme
+{
+	padding: 6px;
+}
+.dxeDateEditTimeEditCell_GeniTheme
+{
+    padding: 6px 25px 15px;
+    width: 100px;
+}
+.dxeDateEditClockCell_GeniTheme
+{
+    padding: 13px 13px 0;
+}
+.dxeCalendarFooter_GeniTheme.dxeDETSF
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.dxeCalendarHeader_GeniTheme.dxeDETSH
+{
+    display: none;
+}
+/* Disabled */
+.dxeDisabled_GeniTheme,
+.dxeDisabled_GeniTheme td.dxe
+{
+	color: #b2b7bd;
+	cursor: default;
+}
+.dxeEditArea_GeniTheme.dxeDisabled_GeniTheme /*Bootstrap correction*/
+{
+    color: #b2b7bd;
+}
+a.dxeDisabled_GeniTheme:hover
+{
+	color: #b2b7bd;
+}
+.dxeButtonDisabled_GeniTheme
+{
+	border-color: #bdcbdf;
+	color: #b2b7bd;
+	cursor: default;
+}
+/* -- Button -- */
+.dxbButton_GeniTheme
+{
+	color: #1e395b;
+	font: normal 11px Verdana, Geneva, sans-serif;
+	border: 1px solid #abbad0;
+	background: #d1dfef url('edtBtnBack.png') repeat-x left top;
+	padding: 1px;
+}
+.dxbButtonHover_GeniTheme
+{
+	color: #1e395b;
+	background: #fcf8e5 url('edtBtnHBack.png') repeat-x left top;
+	border: 1px solid #eecc53;
+}
+.dxbButtonChecked_GeniTheme
+{
+	color: #1e395b;
+	background: #fee287 url('edtBtnPBack.png') repeat-x left top;
+	border: 1px solid #c2762b;
+}
+.dxbButtonPressed_GeniTheme
+{
+	color: #1e395b;
+	background: #fee287 url('edtBtnPBack.png') repeat-x left top;
+	border: 1px solid #c2762b;
+}
+.dxbButton_GeniTheme div.dxb
+{
+	padding: 2px 14px;
+	border: 1px dotted transparent;
+}
+.dxbButton_GeniTheme div.dxbf
+{
+	border: 1px dotted black;
+}
+/* Button Link */
+a.dxbButton_GeniTheme
+{
+	color: #1e395b;
+	text-decoration: none;
+}
+a.dxbButton_GeniTheme:hover
+{
+	text-decoration: underline;
+}
+a.dxbButton_GeniTheme:visited
+{
+	color: #8467b2;
+}
+/* Disabled */
+.dxbDisabled_GeniTheme
+{
+	border-color: #bdcbdf;
+	background: #dae0e6 none;
+}
+.dxbDisabled_GeniTheme,
+a.dxbButton_GeniTheme.dxbDisabled_GeniTheme
+{
+	color: #87929f;
+	cursor: default;
+    text-decoration: none;
+}
+/* -- FilterControl -- */
+.dxfcTable_GeniTheme
+{
+	border-collapse: separate!important;
+}
+.dxfcTable_GeniTheme td.dxfc
+{
+	padding: 0px 0px 0px 3px;
+	vertical-align: middle;
+	font: 11px Verdana, Geneva, sans-serif;
+	color: Black;
+}
+a.dxfcPropertyName_GeniTheme
+{
+	white-space: nowrap!important;
+	color: Blue!important;
+}
+a.dxfcGroupType_GeniTheme
+{
+	white-space: nowrap!important;
+	padding: 0px 3px!important;
+	color: Red!important;
+}
+a.dxfcOperation_GeniTheme
+{
+	white-space: nowrap!important;
+	color: Green!important;
+}
+a.dxfcValue_GeniTheme
+{
+	white-space: nowrap!important;
+	color: Gray!important;
+}
+
+.dxfcLoadingDiv_GeniTheme
+{
+	background: white none;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+.dxfcLoadingPanel_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+	background: White none;
+	border: 1px solid #859ebf;
+}
+.dxfcLoadingPanel_GeniTheme td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 10px 14px;
+}
+
+.dxeMaskHint_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+	background: #ffffe1 none;
+	border: 1px solid Black;
+	padding: 2px 5px 3px;
+}
+
+/* -- ProgressBar -- */
+.dxeProgressBar_GeniTheme
+{
+	background: #f9f9fa url('edtProgressBack.png') repeat-x left top;
+	border: 1px solid #a5acb5;
+}
+.dxeProgressBar_GeniTheme,
+.dxeProgressBar_GeniTheme td.dxe
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+}
+.dxeProgressBar_GeniTheme .dxePBMainCell_GeniTheme,
+.dxeProgressBar_GeniTheme td.dxe
+{
+	padding: 0;
+}
+.dxeProgressBarIndicator_GeniTheme
+{
+	background: #dfe6ed url('edtProgressIndicatorBack.png') repeat-x left top;
+}
+
+/* -- DropDownWindow -- */
+.dxeDropDownWindow_GeniTheme
+{
+	background-color: white;
+	border: 1px solid #8ba0bc;
+}
+
+/*----------------- ColorTable -----------------*/
+.dxeColorIndicator_GeniTheme
+{
+	border: 1px solid #8ba0bc;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.dxeItemPicker_GeniTheme
+{
+	background-color: White;
+	border: 1px solid #a7abb0;
+}
+.dxeColorTable_GeniTheme td.dx,
+.dxeItemPicker_GeniTheme td.dx
+{
+	padding: 4px;
+}
+.dxeColorTableCell_GeniTheme,
+.dxeItemPickerCell_GeniTheme
+{
+	padding: 3px;
+	cursor: pointer;
+}
+.dxeColorTableCellDiv_GeniTheme
+{
+	border: 1px solid #808080;
+	width: 12px;
+	height: 12px;
+	font-size: 0px;
+}
+.dxeColorTableCellSelected_GeniTheme
+{
+	padding: 2px!important;
+	background: #fddc7f url('../Web/mItemSBack.png') repeat-x left top;
+	border: 1px solid #c2762b;
+}
+.dxeColorTableCellHover_GeniTheme,
+.dxeItemPickerCellHover_GeniTheme
+{
+	padding: 2px!important;
+	background: #fcf9df url('../Web/mSubItemHBack.png') repeat-x left top;
+	border: 1px solid #f2ca58;
+}
+
+/* -- Invalid Style -- */
+.dxeInvalid_GeniTheme
+{
+}
+.dxeInvalid_GeniTheme .dxeEditArea_GeniTheme,
+.dxeInvalid_GeniTheme .dxeMemoEditArea_GeniTheme
+{
+}
+
+/* -- Focused Style -- */
+.dxeFocused_GeniTheme
+{
+	border: 1px solid #6c86ad;
+}
+
+.dxeFocused_GeniTheme.dxeTrackBar_GeniTheme
+{	
+	border: 0px;
+}
+
+/* -- Null Text Style -- */
+.dxeNullText_GeniTheme .dxeEditArea_GeniTheme,
+.dxeNullText_GeniTheme .dxeMemoEditArea_GeniTheme
+{
+	color: #b2b7bd;
+}
+
+/* -- Captcha -- */
+.dxcaControl_GeniTheme
+{
+}
+
+.dxcaRefreshButton_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	text-decoration: none;
+	color: #1e395b;
+}
+
+.dxcaDisabledRefreshButton_GeniTheme
+{
+	color: #b2b7bd;
+}
+
+.dxcaRefreshButtonCell_GeniTheme
+{
+	padding-left: 4px;
+}
+
+.dxcaRefreshButtonText_GeniTheme
+{
+}
+
+.dxcaDisabledRefreshButtonText_GeniTheme
+{
+}
+
+.dxcaTextBoxCell_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+}
+
+.dxcaTextBoxCell_GeniTheme,
+.dxcaTextBoxCellNoIndent_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+}
+
+.dxcaTextBoxCell_GeniTheme .dxeErrorCell_GeniTheme
+{
+}
+
+.dxcaTextBoxCellNoIndent_GeniTheme .dxeErrorCell_GeniTheme
+{
+	padding-left: 0px;
+	padding-top: 4px;
+	color: Red;
+}
+
+.dxcaTextBoxLabel_GeniTheme
+{
+	padding-bottom: 4px;
+	display: block;
+}
+
+.dxcaLoadingPanel_GeniTheme
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	color: #1e395b;
+	background: White none;
+	border: 1px solid #859ebf;
+}
+
+.dxcaLoadingPanel_GeniTheme td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 10px 14px;
+}
+
+.dxeButtonEdit_GeniTheme
+{
+    border-collapse: separate !important;
+}
+
+.dxpcControl_GeniTheme .dxHFBPS,
+.dxpcLite_GeniTheme .dxHFBPS
+{
+    width: 6px;
+}
+
+.dxeTextBox_GeniTheme,
+.dxeButtonEdit_GeniTheme,
+.dxeIRadioButton_GeniTheme,
+.dxeRadioButtonList_GeniTheme,
+.dxeCheckBoxList_GeniTheme
+{
+    cursor: default;
+}
+
+/* Removes flicking in iOS Safari*/
+.dxeTrackBar_GeniTheme, 
+.dxeIRadioButton_GeniTheme, 
+.dxeButtonEdit_GeniTheme, 
+.dxeTextBox_GeniTheme, 
+.dxeRadioButtonList_GeniTheme, 
+.dxeCheckBoxList_GeniTheme, 
+.dxeMemo_GeniTheme, 
+.dxeListBox_GeniTheme, 
+.dxeCalendar_GeniTheme, 
+.dxeColorTable_GeniTheme
+{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*B232817*/
+:root .dxeEditArea_GeniTheme /* IE9, IE10 */
+{
+    padding-bottom: 1px \0/;
+    margin-bottom: 0px \0/;
+}
+@media only screen and (device-height : 1024px) and (orientation:portrait),
+       only screen and (device-height : 1024px) and (orientation:landscape) /* iPad */
+{
+    .dxeEditArea_GeniTheme
+    {
+        padding-bottom: 2px!important;
+        margin-bottom: -1px!important;
+    }
+}
+
+/* ASPxCololrEdit */
+.dxcpParametersCell_GeniTheme label
+{
+	font: 11px Verdana, Geneva, sans-serif;
+}
+.dxcpParametersCell_GeniTheme input
+{
+	font: 11px Verdana, Geneva, sans-serif;
+	margin-left: 3px;
+	padding-left: 5px;
+	width: 60px;
+	height: 17px;
+}
+.dxcpWebColorInput_GeniTheme
+{
+	float: right;
+	margin-top: 40px;
+}
+.dxcpColorParameterMainDiv_GeniTheme
+{
+	padding: 0px 0 4px 15px;
+	width: 90px;
+	text-align: right;
+}
+.dxeCustomColorButton_GeniTheme
+{
+	height: 21px;
+	line-height: 21px;
+	margin: 3px 7px;
+	cursor: pointer;
+}
+.dxcpCurrentColor_GeniTheme,
+.dxcpSavedColor_GeniTheme
+{
+	height: 35px;
+}
+.dxcpCurrentAndSaved_GeniTheme
+{
+	width: 65px;
+	margin: 34px 0px 0px auto;
+	cursor: pointer;
+}
+.dxeColorTablesMainDiv_GeniTheme,
+.dxeColorSelectorMainDiv_GeniTheme
+{
+	background-color: #FFFFFF;
+}
+.dxeColorSelectorMainDiv_GeniTheme
+{
+	padding: 7px;
+}
+.dxcpColorArea_GeniTheme,
+.dxcpHueArea_GeniTheme,
+.dxcpCurrentAndSaved_GeniTheme,
+.dxeColorTablesMainDiv_GeniTheme,
+.dxeColorSelectorMainDiv_GeniTheme,
+.dxcpParametersCell_GeniTheme input 
+{
+	border: 1px solid #8ba0bc;
+}
+.dxeButtonsPanelDiv_GeniTheme
+{
+	margin-top: 15px;
+	text-align: right;
+}
+.dxeButtonsPanelDiv_GeniTheme input
+{
+	width: 60px;
+	height: 21px;
+	margin-left: 10px;
+}
+
+/* -- ASPxTokenBox -- */
+input.dxeTokenBoxInput_GeniTheme[type="text"] {
+	display: inline-block;
+	float: left;
+	width: 30px;
+	outline: none;
+	height: 17px;
+	line-height: 17px;
+}
+.dxeToken_GeniTheme {
+    display: inline-block;
+    font: 11px Verdana, Geneva, sans-serif;
+    margin: 0px 0px 1px 1px;
+    padding: 0px;
+	float: left;
+	min-width: 30px;
+	height: 17px;
+}
+.dxeTokenText_GeniTheme, .dxeTokenRemoveButton_GeniTheme {
+	display: block;
+	float: left;
+}
+.dxeTokenText_GeniTheme {
+	padding: 0px 2px 0px 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.dxeTokenRemoveButton_GeniTheme {
+	cursor: pointer;
+}
+.dxeToken_GeniTheme {
+	background: #ffffff url('edtTokenBoxTokenBackground.png') repeat-x top;
+}
+.dxeButtonEdit_GeniTheme td.dxictb {
+    padding: 1px 0px 0px 0px;
+}
+.dxeButtonEdit_GeniTheme td.dxictb {
+    *padding-bottom: 1px;
+}
+.dxeButtonEdit_GeniTheme td.dxictb
+{
+    *padding-left: 2px;
+}

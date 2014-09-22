@@ -1,0 +1,636 @@
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnFirstPage_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnFirstPageLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnLastPage_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnLastPageLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnNextPage_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnNextPageLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrevPage_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrevPageLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrint_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrintLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrintPage_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrintPageLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSave_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSaveLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSaveWindow_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSaveWindowLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSearch_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSearchLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToCsv_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToCsvLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToHtml_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToHtmlLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToImg_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToImgLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToMht_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToMhtLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToPdf_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToPdfLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToRtf_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToRtfLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToTxt_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToTxtLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXls_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXlsLarge_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXlsx_MetropolisBlue,
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXlsxLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnFirstPage_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnFirstPageDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnLastPage_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnLastPageDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnLastPageLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnLastPageLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnNextPage_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnNextPageDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnNextPageLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnNextPageLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrevPage_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrevPageDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrint_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrintDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrintLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrintLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrintPage_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrintPageDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSave_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSaveDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSaveLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSaveLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindow_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSearch_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSearchDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSearchLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_BtnSearchLargeDisabled_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToCsv_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToCsvLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToHtml_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToHtmlLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToImg_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToImgLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToMht_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToMhtLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToPdf_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToPdfLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToRtf_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToRtfLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToTxt_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToTxtLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToXls_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToXlsLarge_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToXlsx_MetropolisBlue,
+.dxWeb_xrdvRibbonIcon_ExportToXlsxLarge_MetropolisBlue
+{
+    background-image: url('DocumentViewerSprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnFirstPage_MetropolisBlue
+{
+    background-position: -102px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnFirstPageLarge_MetropolisBlue
+{
+    background-position: -660px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnLastPage_MetropolisBlue
+{
+    background-position: -459px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnLastPageLarge_MetropolisBlue
+{
+    background-position: -99px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnNextPage_MetropolisBlue
+{
+    background-position: -714px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnNextPageLarge_MetropolisBlue
+{
+    background-position: -264px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrevPage_MetropolisBlue
+{
+    background-position: -476px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrevPageLarge_MetropolisBlue
+{
+    background-position: -528px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrint_MetropolisBlue
+{
+    background-position: -187px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrintLarge_MetropolisBlue
+{
+    background-position: -660px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrintPage_MetropolisBlue
+{
+    background-position: -17px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnPrintPageLarge_MetropolisBlue
+{
+    background-position: -363px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSave_MetropolisBlue
+{
+    background-position: -255px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSaveLarge_MetropolisBlue
+{
+    background-position: -561px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSaveWindow_MetropolisBlue
+{
+    background-position: -561px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSaveWindowLarge_MetropolisBlue
+{
+    background-position: -495px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSearch_MetropolisBlue
+{
+    background-position: -289px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_BtnSearchLarge_MetropolisBlue
+{
+    background-position: -594px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToCsv_MetropolisBlue
+{
+    background-position: -306px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToCsvLarge_MetropolisBlue
+{
+    background-position: -132px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToHtml_MetropolisBlue
+{
+    background-position: -238px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToHtmlLarge_MetropolisBlue
+{
+    background-position: -297px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToImg_MetropolisBlue
+{
+    background-position: 0px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToImgLarge_MetropolisBlue
+{
+    background-position: -462px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToMht_MetropolisBlue
+{
+    background-position: -442px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToMhtLarge_MetropolisBlue
+{
+    background-position: -462px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToPdf_MetropolisBlue
+{
+    background-position: -153px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToPdfLarge_MetropolisBlue
+{
+    background-position: 0px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToRtf_MetropolisBlue
+{
+    background-position: -680px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToRtfLarge_MetropolisBlue
+{
+    background-position: -396px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToTxt_MetropolisBlue
+{
+    background-position: -85px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToTxtLarge_MetropolisBlue
+{
+    background-position: 0px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXls_MetropolisBlue
+{
+    background-position: -51px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXlsLarge_MetropolisBlue
+{
+    background-position: -594px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXlsx_MetropolisBlue
+{
+    background-position: -221px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxr-itemHover .dxWeb_xrdvRibbonIcon_ExportToXlsxLarge_MetropolisBlue
+{
+    background-position: -396px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPage_MetropolisBlue
+{
+    background-position: -743px -33px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPageDisabled_MetropolisBlue
+{
+    background-position: -527px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLarge_MetropolisBlue
+{
+    background-position: -66px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLargeDisabled_MetropolisBlue
+{
+    background-position: -33px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPage_MetropolisBlue
+{
+    background-position: -425px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPageDisabled_MetropolisBlue
+{
+    background-position: -726px -33px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPageLarge_MetropolisBlue
+{
+    background-position: -495px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPageLargeDisabled_MetropolisBlue
+{
+    background-position: -693px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPage_MetropolisBlue
+{
+    background-position: -408px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPageDisabled_MetropolisBlue
+{
+    background-position: -595px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPageLarge_MetropolisBlue
+{
+    background-position: -132px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPageLargeDisabled_MetropolisBlue
+{
+    background-position: -198px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPage_MetropolisBlue
+{
+    background-position: -629px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPageDisabled_MetropolisBlue
+{
+    background-position: -544px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLarge_MetropolisBlue
+{
+    background-position: -561px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLargeDisabled_MetropolisBlue
+{
+    background-position: -231px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrint_MetropolisBlue
+{
+    background-position: -510px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintDisabled_MetropolisBlue
+{
+    background-position: -697px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintLarge_MetropolisBlue
+{
+    background-position: -99px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintLargeDisabled_MetropolisBlue
+{
+    background-position: -627px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPage_MetropolisBlue
+{
+    background-position: -578px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPageDisabled_MetropolisBlue
+{
+    background-position: -493px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLarge_MetropolisBlue
+{
+    background-position: -330px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLargeDisabled_MetropolisBlue
+{
+    background-position: -528px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSave_MetropolisBlue
+{
+    background-position: -357px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveDisabled_MetropolisBlue
+{
+    background-position: -663px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveLarge_MetropolisBlue
+{
+    background-position: -198px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveLargeDisabled_MetropolisBlue
+{
+    background-position: -165px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindow_MetropolisBlue
+{
+    background-position: -374px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowDisabled_MetropolisBlue
+{
+    background-position: -119px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLarge_MetropolisBlue
+{
+    background-position: -429px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLargeDisabled_MetropolisBlue
+{
+    background-position: -726px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearch_MetropolisBlue
+{
+    background-position: -646px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearchDisabled_MetropolisBlue
+{
+    background-position: -340px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearchLarge_MetropolisBlue
+{
+    background-position: -693px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearchLargeDisabled_MetropolisBlue
+{
+    background-position: -627px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToCsv_MetropolisBlue
+{
+    background-position: -391px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToCsvLarge_MetropolisBlue
+{
+    background-position: -33px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToHtml_MetropolisBlue
+{
+    background-position: -170px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToHtmlLarge_MetropolisBlue
+{
+    background-position: -264px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToImg_MetropolisBlue
+{
+    background-position: -612px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToImgLarge_MetropolisBlue
+{
+    background-position: -66px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToMht_MetropolisBlue
+{
+    background-position: -272px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToMhtLarge_MetropolisBlue
+{
+    background-position: -363px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToPdf_MetropolisBlue
+{
+    background-position: -34px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToPdfLarge_MetropolisBlue
+{
+    background-position: -231px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToRtf_MetropolisBlue
+{
+    background-position: -323px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToRtfLarge_MetropolisBlue
+{
+    background-position: -165px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToTxt_MetropolisBlue
+{
+    background-position: -136px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToTxtLarge_MetropolisBlue
+{
+    background-position: -297px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXls_MetropolisBlue
+{
+    background-position: -68px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXlsLarge_MetropolisBlue
+{
+    background-position: -429px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXlsx_MetropolisBlue
+{
+    background-position: -204px -66px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXlsxLarge_MetropolisBlue
+{
+    background-position: -330px -33px;
+    width: 32px;
+    height: 32px;
+}
+

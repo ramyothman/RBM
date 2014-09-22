@@ -1,0 +1,272 @@
+/* ----------------- Main ----------------- */
+/* Loading panel */
+.dxheLoadingDiv_GeniTheme
+{
+    background: White;
+    opacity: 0.85 !important;
+    filter: alpha(opacity=85);
+}
+.dxheLoadingPanel_GeniTheme
+{
+    font: 11px Verdana, Geneva, sans-serif;
+    color: #1e395b;
+}
+.dxheLoadingPanel_GeniTheme td.dx
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px 14px;
+}
+
+.dxheControl_GeniTheme
+{
+    border: 1px solid #8ba0bc;
+}
+
+/* Area */
+.dxheContentArea_GeniTheme
+{
+    padding: 0;
+    background-color: #cfddee;
+}
+.dxheContentArea_GeniTheme .dxheErrorFrame_GeniTheme
+{
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #D00707;
+    background-color: #FBC7C7;
+    border-bottom: solid 1px #DEC0C0;
+}
+.dxheContentArea_GeniTheme .dxheErrorFrame_GeniTheme .dxhe {
+    padding: 5px;
+}
+.dxheContentArea_GeniTheme .dxheErrorFrame_GeniTheme .dxhe td {
+    padding: 0px;
+}
+.dxheContentArea_GeniTheme .dxheErrorFrame_GeniTheme .dxheErrorFrameCloseButton_GeniTheme {
+    cursor: pointer;
+}
+.dxheControl_GeniTheme .dxheViewArea_GeniTheme
+{
+    border-width: 0;
+}
+.dxheContentArea_GeniTheme td.dxheViewArea_GeniTheme {
+    font-size: 0;
+}
+.dxheHtmlViewArea_GeniTheme,
+.dxheDesignViewArea_GeniTheme,
+.dxhePreviewArea_GeniTheme
+{
+    margin: 0px;
+    background-color: White;
+    background-image: none;
+    font-size: smaller;
+    font: normal 12px Arial, Helvetica, sans-serif;
+}
+.dxheHtmlViewArea_GeniTheme td,
+.dxheHtmlViewArea_GeniTheme.dxeMemo_GeniTheme td,
+body.dxheDesignViewArea_GeniTheme, 
+body.dxhePreviewArea_GeniTheme
+{
+    padding: 4px 4px 0 4px;
+}
+.dxheControl_GeniTheme .dxheContentArea_GeniTheme .dxeMemo_GeniTheme td
+{
+    padding-top: 0;
+    padding-right: 0;
+}
+.dxheContentArea_GeniTheme .dxeMemoEditArea_GeniTheme
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+.dxheControl_GeniTheme.dxhe-rtl .dxheHtmlViewArea_GeniTheme td,
+.dxheControl_GeniTheme.dxhe-rtl .dxheHtmlViewArea_GeniTheme.dxeMemo_GeniTheme td
+{
+    padding: 0 4px 0 1px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .dxheControl_GeniTheme.dxhe-rtl .dxheHtmlViewArea_GeniTheme td,
+    .dxheControl_GeniTheme.dxhe-rtl .dxheHtmlViewArea_GeniTheme.dxeMemo_GeniTheme td
+    {
+        padding: 0 0 0 4px;
+    }    
+}
+.dxheControl_GeniTheme .dxeMemo_GeniTheme textarea 
+{
+	resize:none;
+}
+.dxheControl_GeniTheme input.dxeEditArea_GeniTheme
+{
+    margin-top: -1px;
+}
+.dxheControl_GeniTheme input.dxeEditArea_GeniTheme,
+.dxheControl_GeniTheme td.dxic .dxeEditArea_GeniTheme /*Bootstrap correction*/
+{
+    padding-bottom: 0px;
+}
+/* Element appearance in DesignView */
+body.dxheDesignViewArea_GeniTheme table.dxEmptyBorderTable,
+body.dxheDesignViewArea_GeniTheme table.dxEmptyBorderTable td
+{
+    border: 1px dotted Gray;
+}
+@media print
+{
+	body.dxheDesignViewArea_GeniTheme table.dxEmptyBorderTable,
+	body.dxheDesignViewArea_GeniTheme table.dxEmptyBorderTable td
+	{
+		border:0px;
+	}
+}
+body.dxheDesignViewArea_GeniTheme pre
+{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* Status Bar */
+.dxheStatusBar_GeniTheme
+{
+}
+.dxheStatusBar_GeniTheme .dxheStatusBarTab_GeniTheme
+{
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+}
+.dxheControl_GeniTheme .dxheStatusBar_GeniTheme .dxheStatusBarTab_GeniTheme .dxtc-link
+{
+    padding: 4px 35px 5px 34px;
+}
+.dxheControl_GeniTheme.dxhe-rtl .dxheStatusBar_GeniTheme .dxheStatusBarTab_GeniTheme
+{
+    border-left-width: 1px !important;
+    border-right-width: 0 !important;
+}
+.dxheStatusBarActiveTab_GeniTheme
+{
+}
+.dxHtmlEditor_heSizeGrip_GeniTheme
+{
+    cursor: se-resize;
+}
+.dxHtmlEditor_heSizeGripRtl_GeniTheme
+{
+    cursor: ne-resize;
+}
+.dxheSizeGripContainer_GeniTheme
+{
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    margin-top: -13px;
+}
+.dxheControl_GeniTheme.dxhe-rtl .dxheSizeGripContainer_GeniTheme 
+{
+	text-align: left;
+}
+/* ----------------- Dialog Forms ----------------- */
+.dxpcLite_GeniTheme .dxheDlgFooter,
+.dxpcLite_GeniTheme .dxheCustomDialog_GeniTheme .dxhecd-Buttons
+{
+    background-color: #cfddee;
+    border-top: 1px solid #aec0d5;
+	padding: 10px 11px;
+	text-align: right;
+}
+.dxpcLite_GeniTheme.dxRtl .dxheDlgFooter,
+.dxpcLite_GeniTheme.dxRtl .dxheCustomDialog_GeniTheme .dxhecd-Buttons
+{
+    text-align: left;
+}
+.dxpcLite_GeniTheme .dxheDlgFooterBtn
+{
+    width: 80px;
+    margin-left: 8px;
+}
+.dxpcLite_GeniTheme.dxRtl .dxheDlgFooterBtn
+{
+    margin-right: 8px;
+    margin-left: 0;
+}
+.dxpcLite_GeniTheme .dxheDlgInsertImageForm .dxheDlgImagePreviewCell
+{
+    color: #737373;
+    border: 1px dashed #cac8c8;
+}
+.dxpcLite_GeniTheme .dxheDlgPasteFromWordForm .dxheDlgPasteContainerCell td
+{
+	border: 1px solid #8ba0bc;
+}
+/*----------------- Toolbars -----------------*/
+.dxtbSpacing_GeniTheme
+{
+	height: 1px;
+}
+.dxtbControl_GeniTheme
+{
+    font: 11px Verdana, Geneva, sans-serif;
+    color: Black;
+    background-color: #cfddee;
+    width: 100%;
+    border-bottom: 1px solid #859ebf;
+}
+.dxtbControl_GeniTheme td.dxmMenu_GeniTheme
+{
+	border: 0;
+}
+.dxtbComboBoxMenuItem_GeniTheme
+{
+    padding: 2px 2px 1px;
+}
+.dxheControl_GeniTheme .dxrControl_GeniTheme
+{
+    background-color: #CFDDEE;
+}
+.dxheControl_GeniTheme .dxrControl_GeniTheme .dxtcLite_GeniTheme .dxtc-stripContainer .dxtc-spacer,
+.dxheControl_GeniTheme .dxrControl_GeniTheme .dxtcLite_GeniTheme.dxtc-top .dxtc-leftIndent
+{
+    width: 3px;
+}
+.dxheControl_GeniTheme .dxrControl_GeniTheme .dxr-tabContent
+{
+    border-width: 0 0 1px 0;
+}
+.dxheControl_GeniTheme .dxrControl_GeniTheme .dxr-minBtn
+{
+    padding-right: 7px;
+}
+.dxheControl_GeniTheme .dxrControl_GeniTheme .dxpc-mainDiv.dxr-minPopup
+{
+    border: 0;
+}
+
+/* Toolbars Lightweight Mode */
+.dxtbControl_GeniTheme .dxmLite_GeniTheme .dxm-main
+{
+    border-width: 0;
+}
+.dxmLite_GeniTheme .dxhetipControl_GeniTheme img
+{
+	vertical-align: top;
+}
+
+/* ToolbarColorButton */
+.dxtcbControl_GeniTheme
+{
+}
+.dxtcbColorDiv_GeniTheme
+{
+	width: 16px;
+	height: 3px;
+	font-size: 0px;
+	background-color: Transparent;
+    margin-top: -3px;
+}
+
+/*----------------- RoundPanel -----------------*/
+.dxheRP.dxrpControl_GeniTheme .dxrpcontent
+{
+    padding: 9px 8px;
+}

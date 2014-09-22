@@ -1,0 +1,12 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxImageGallery" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxImageGallery runat="server" PagerPanelSpacing="0">
+    <Images SpriteCssFilePath="{0}/sprite.css">
+        <LoadingPanel Url="Web/Loading.gif" />
+    </Images>
+    <Styles CssPostfix="GeniTheme" CssFilePath="{0}/styles.css">
+        <LoadingPanel ImageSpacing="5" />
+    </Styles>
+    <PagerSettings CurrentPageNumberFormat="{0}" />
+</dx:ASPxImageGallery>

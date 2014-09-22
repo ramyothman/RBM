@@ -1,0 +1,146 @@
+.dxGridView_gvCellError_GeniTheme,
+.dxGridView_gvCollapsedButton_GeniTheme,
+.dxGridView_gvCollapsedButtonRtl_GeniTheme,
+.dxGridView_gvDetailCollapsedButton_GeniTheme,
+.dxGridView_gvDetailCollapsedButtonRtl_GeniTheme,
+.dxGridView_gvDetailExpandedButton_GeniTheme,
+.dxGridView_gvDetailExpandedButtonRtl_GeniTheme,
+.dxGridView_gvDragAndDropArrowDown_GeniTheme,
+.dxGridView_gvDragAndDropArrowUp_GeniTheme,
+.dxGridView_gvDragAndDropHideColumn_GeniTheme,
+.dxGridView_gvExpandedButton_GeniTheme,
+.dxGridView_gvExpandedButtonRtl_GeniTheme,
+.dxGridView_gvFilterRowButton_GeniTheme,
+.dxGridView_gvHeaderFilter_GeniTheme,
+.dxGridView_gvHeaderFilterActive_GeniTheme,
+.dxGridView_gvHeaderSortDown_GeniTheme,
+.dxGridView_gvHeaderSortUp_GeniTheme,
+.dxGridView_gvParentGroupRows_GeniTheme,
+.dxGridView_WindowResizer_GeniTheme,
+.dxGridView_WindowResizerRtl_GeniTheme
+{
+    background-image: url('sprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxGridView_gvCellError_GeniTheme
+{
+    background-position: -55px 0px;
+    width: 14px;
+    height: 14px;
+}
+.dxGridView_gvCollapsedButton_GeniTheme
+{
+    background-position: -33px -23px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvCollapsedButtonRtl_GeniTheme
+{
+    background-position: 0px -37px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvDetailCollapsedButton_GeniTheme
+{
+    background-position: -14px -51px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvDetailCollapsedButtonRtl_GeniTheme
+{
+    background-position: -47px -23px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvDetailExpandedButton_GeniTheme
+{
+    background-position: -28px -37px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvDetailExpandedButtonRtl_GeniTheme
+{
+    background-position: -42px -37px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvDragAndDropArrowDown_GeniTheme
+{
+    background-position: -42px -51px;
+    width: 11px;
+    height: 9px;
+}
+.dxGridView_gvDragAndDropArrowUp_GeniTheme
+{
+    background-position: -54px -51px;
+    width: 11px;
+    height: 9px;
+}
+.dxGridView_gvDragAndDropHideColumn_GeniTheme
+{
+    background-position: 0px 0px;
+    width: 22px;
+    height: 22px;
+}
+.dxGridView_gvExpandedButton_GeniTheme
+{
+    background-position: 0px -51px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvExpandedButtonRtl_GeniTheme
+{
+    background-position: -14px -37px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvFilterRowButton_GeniTheme
+{
+    background-position: -19px -23px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_gvHeaderFilter_GeniTheme
+{
+    background-position: -39px 0px;
+    width: 15px;
+    height: 15px;
+}
+.dxGridView_gvHeaderFilterActive_GeniTheme
+{
+    background-position: -23px 0px;
+    width: 15px;
+    height: 15px;
+}
+.dxGridView_gvHeaderSortDown_GeniTheme
+{
+    background-position: -55px -17px;
+    width: 7px;
+    height: 5px;
+}
+.dxGridView_gvHeaderSortUp_GeniTheme
+{
+    background-position: -63px -17px;
+    width: 7px;
+    height: 5px;
+}
+.dxGridView_gvParentGroupRows_GeniTheme
+{
+    background-position: 0px -23px;
+    width: 18px;
+    height: 13px;
+}
+.dxGridView_WindowResizer_GeniTheme
+{
+    background-position: -56px -37px;
+    width: 13px;
+    height: 13px;
+}
+.dxGridView_WindowResizerRtl_GeniTheme
+{
+    background-position: -28px -51px;
+    width: 13px;
+    height: 13px;
+}
+

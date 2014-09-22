@@ -1,0 +1,1087 @@
+.dxigControl_GeniTheme.dxTouchUI .dxWeb_igCloseButton_GeniTheme,
+.dxigControl_GeniTheme.dxTouchUI .dxWeb_igPauseButton_GeniTheme,
+.dxigControl_GeniTheme.dxTouchUI .dxWeb_igPlayButton_GeniTheme,
+.dxpc-collapseBtnChecked .dxWeb_pcCollapseButton_GeniTheme,
+.dxpc-maximizeBtnChecked .dxWeb_pcMaximizeButton_GeniTheme,
+.dxpc-pinBtnChecked .dxWeb_pcPinButton_GeniTheme,
+.dxWeb_edtCheckBoxChecked_GeniTheme,
+.dxWeb_edtCheckBoxCheckedDisabled_GeniTheme,
+.dxWeb_edtCheckBoxGrayed_GeniTheme,
+.dxWeb_edtCheckBoxGrayedDisabled_GeniTheme,
+.dxWeb_edtCheckBoxUnchecked_GeniTheme,
+.dxWeb_edtCheckBoxUncheckedDisabled_GeniTheme,
+.dxWeb_fmCopyButton_GeniTheme,
+.dxWeb_fmCopyButtonDisabled_GeniTheme,
+.dxWeb_fmCreateButton_GeniTheme,
+.dxWeb_fmCreateButtonDisabled_GeniTheme,
+.dxWeb_fmDeleteButton_GeniTheme,
+.dxWeb_fmDeleteButtonDisabled_GeniTheme,
+.dxWeb_fmDwnlButton_GeniTheme,
+.dxWeb_fmDwnlButtonDisabled_GeniTheme,
+.dxWeb_fmFolder_GeniTheme,
+.dxWeb_fmFolderLocked_GeniTheme,
+.dxWeb_fmMoveButton_GeniTheme,
+.dxWeb_fmMoveButtonDisabled_GeniTheme,
+.dxWeb_fmRefreshButton_GeniTheme,
+.dxWeb_fmRefreshButtonDisabled_GeniTheme,
+.dxWeb_fmRenameButton_GeniTheme,
+.dxWeb_fmRenameButtonDisabled_GeniTheme,
+.dxWeb_fmThumbnailCheck_GeniTheme,
+.dxWeb_igCloseButton_GeniTheme,
+.dxWeb_igNavigationBarMarker_GeniTheme,
+.dxWeb_igNextButton_GeniTheme,
+.dxWeb_igNextButtonDisabled_GeniTheme,
+.dxWeb_igNextButtonHover_GeniTheme,
+.dxWeb_igNextButtonPressed_GeniTheme,
+.dxWeb_igPauseButton_GeniTheme,
+.dxWeb_igPlayButton_GeniTheme,
+.dxWeb_igPrevButton_GeniTheme,
+.dxWeb_igPrevButtonDisabled_GeniTheme,
+.dxWeb_igPrevButtonHover_GeniTheme,
+.dxWeb_igPrevButtonPressed_GeniTheme,
+.dxWeb_isDot_GeniTheme,
+.dxWeb_isDotDisabled_GeniTheme,
+.dxWeb_isDotPressed_GeniTheme,
+.dxWeb_isDotSelected_GeniTheme,
+.dxWeb_isNextBtnHor_GeniTheme,
+.dxWeb_isNextBtnHorDisabled_GeniTheme,
+.dxWeb_isNextBtnVert_GeniTheme,
+.dxWeb_isNextBtnVertDisabled_GeniTheme,
+.dxWeb_isNextPageBtnHor_GeniTheme,
+.dxWeb_isNextPageBtnHorDisabled_GeniTheme,
+.dxWeb_isNextPageBtnVert_GeniTheme,
+.dxWeb_isNextPageBtnVertDisabled_GeniTheme,
+.dxWeb_isPauseBtn_GeniTheme,
+.dxWeb_isPlayBtn_GeniTheme,
+.dxWeb_isPrevBtnHor_GeniTheme,
+.dxWeb_isPrevBtnHorDisabled_GeniTheme,
+.dxWeb_isPrevBtnVert_GeniTheme,
+.dxWeb_isPrevBtnVertDisabled_GeniTheme,
+.dxWeb_isPrevPageBtnHor_GeniTheme,
+.dxWeb_isPrevPageBtnHorDisabled_GeniTheme,
+.dxWeb_isPrevPageBtnVert_GeniTheme,
+.dxWeb_isPrevPageBtnVertDisabled_GeniTheme,
+.dxWeb_mHorizontalPopOut_GeniTheme,
+.dxWeb_mScrollDown_GeniTheme,
+.dxWeb_mScrollUp_GeniTheme,
+.dxWeb_mSubMenuItem_GeniTheme,
+.dxWeb_mSubMenuItemChecked_GeniTheme,
+.dxWeb_mVerticalPopOut_GeniTheme,
+.dxWeb_mVerticalPopOutRtl_GeniTheme,
+.dxWeb_nbCollapse_GeniTheme,
+.dxWeb_nbExpand_GeniTheme,
+.dxWeb_ncBackToTop_GeniTheme,
+.dxWeb_pAll_GeniTheme,
+.dxWeb_pAllDisabled_GeniTheme,
+.dxWeb_pcCloseButton_GeniTheme,
+.dxWeb_pcCollapseButton_GeniTheme,
+.dxWeb_pcMaximizeButton_GeniTheme,
+.dxWeb_pcPinButton_GeniTheme,
+.dxWeb_pcRefreshButton_GeniTheme,
+.dxWeb_pcSizeGrip_GeniTheme,
+.dxWeb_pcSizeGripRtl_GeniTheme,
+.dxWeb_pFirst_GeniTheme,
+.dxWeb_pFirstDisabled_GeniTheme,
+.dxWeb_pLast_GeniTheme,
+.dxWeb_pLastDisabled_GeniTheme,
+.dxWeb_pNext_GeniTheme,
+.dxWeb_pNextDisabled_GeniTheme,
+.dxWeb_pPopOut_GeniTheme,
+.dxWeb_pPopOutDisabled_GeniTheme,
+.dxWeb_pPrev_GeniTheme,
+.dxWeb_pPrevDisabled_GeniTheme,
+.dxWeb_rMinBtn_GeniTheme,
+.dxWeb_rMinBtn_GeniTheme.dxWeb_rMinBtnHover_GeniTheme,
+.dxWeb_rMinBtn_GeniTheme.dxWeb_rMinBtnPressed_GeniTheme,
+.dxWeb_rMinBtnChecked_GeniTheme.dxWeb_rMinBtn_GeniTheme,
+.dxWeb_rMinBtnChecked_GeniTheme.dxWeb_rMinBtnHover_GeniTheme,
+.dxWeb_rMinBtnChecked_GeniTheme.dxWeb_rMinBtnPressed_GeniTheme,
+.dxWeb_rpBottomLeftCorner_GeniTheme,
+.dxWeb_rpBottomRightCorner_GeniTheme,
+.dxWeb_rpGroupBoxBottomLeftCorner_GeniTheme,
+.dxWeb_rpGroupBoxBottomRightCorner_GeniTheme,
+.dxWeb_rpGroupBoxTopLeftCorner_GeniTheme,
+.dxWeb_rpGroupBoxTopRightCorner_GeniTheme,
+.dxWeb_rpHeaderTopLeftCorner_GeniTheme,
+.dxWeb_rpHeaderTopRightCorner_GeniTheme,
+.dxWeb_rPopOut_GeniTheme,
+.dxWeb_rpTopLeftCorner_GeniTheme,
+.dxWeb_rpTopRightCorner_GeniTheme,
+.dxWeb_smBullet_GeniTheme,
+.dxWeb_splHCollapseBackwardButton_GeniTheme,
+.dxWeb_splHCollapseBackwardButtonHover_GeniTheme,
+.dxWeb_splHCollapseForwardButton_GeniTheme,
+.dxWeb_splHCollapseForwardButtonHover_GeniTheme,
+.dxWeb_splHSeparator_GeniTheme,
+.dxWeb_splHSeparatorHover_GeniTheme,
+.dxWeb_splVCollapseBackwardButton_GeniTheme,
+.dxWeb_splVCollapseBackwardButtonHover_GeniTheme,
+.dxWeb_splVCollapseForwardButton_GeniTheme,
+.dxWeb_splVCollapseForwardButtonHover_GeniTheme,
+.dxWeb_splVSeparator_GeniTheme,
+.dxWeb_splVSeparatorHover_GeniTheme,
+.dxWeb_tcScrollLeft_GeniTheme,
+.dxWeb_tcScrollLeftDisabled_GeniTheme,
+.dxWeb_tcScrollLeftHover_GeniTheme,
+.dxWeb_tcScrollLeftPressed_GeniTheme,
+.dxWeb_tcScrollRight_GeniTheme,
+.dxWeb_tcScrollRightDisabled_GeniTheme,
+.dxWeb_tcScrollRightHover_GeniTheme,
+.dxWeb_tcScrollRightPressed_GeniTheme,
+.dxWeb_tiBackToTop_GeniTheme,
+.dxWeb_tvColBtn_GeniTheme,
+.dxWeb_tvColBtnRtl_GeniTheme,
+.dxWeb_tvExpBtn_GeniTheme,
+.dxWeb_tvExpBtnRtl_GeniTheme,
+.dxWeb_ucClearButton_GeniTheme,
+.dxWeb_ucClearButtonDisabled_GeniTheme
+{
+    background-image: url('sprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxigControl_GeniTheme.dxTouchUI .dxWeb_igCloseButton_GeniTheme
+{
+    background-position: -137px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxigControl_GeniTheme.dxTouchUI .dxWeb_igPauseButton_GeniTheme
+{
+    background-position: -214px -66px;
+    width: 21px;
+    height: 25px;
+}
+.dxigControl_GeniTheme.dxTouchUI .dxWeb_igPlayButton_GeniTheme
+{
+    background-position: -216px -106px;
+    width: 21px;
+    height: 25px;
+}
+.dxpc-collapseBtnChecked .dxWeb_pcCollapseButton_GeniTheme
+{
+    background-position: -112px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxpc-maximizeBtnChecked .dxWeb_pcMaximizeButton_GeniTheme
+{
+    background-position: -102px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxpc-pinBtnChecked .dxWeb_pcPinButton_GeniTheme
+{
+    background-position: -118px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_edtCheckBoxChecked_GeniTheme
+{
+    background-position: -150px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_edtCheckBoxCheckedDisabled_GeniTheme
+{
+    background-position: -64px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_edtCheckBoxGrayed_GeniTheme
+{
+    background-position: -80px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_edtCheckBoxGrayedDisabled_GeniTheme
+{
+    background-position: -32px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_edtCheckBoxUnchecked_GeniTheme
+{
+    background-position: -134px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_edtCheckBoxUncheckedDisabled_GeniTheme
+{
+    background-position: -182px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_fmCopyButton_GeniTheme
+{
+    background-position: -55px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmCopyButtonDisabled_GeniTheme
+{
+    background-position: -17px -230px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmCreateButton_GeniTheme
+{
+    background-position: -157px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmCreateButtonDisabled_GeniTheme
+{
+    background-position: -123px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmDeleteButton_GeniTheme
+{
+    background-position: -174px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmDeleteButtonDisabled_GeniTheme
+{
+    background-position: -140px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmDwnlButton_GeniTheme
+{
+    background-position: -51px -230px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmDwnlButtonDisabled_GeniTheme
+{
+    background-position: -72px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmFolder_GeniTheme
+{
+    background-position: -89px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmFolderLocked_GeniTheme
+{
+    background-position: -34px -230px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmMoveButton_GeniTheme
+{
+    background-position: -21px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmMoveButtonDisabled_GeniTheme
+{
+    background-position: -68px -230px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmRefreshButton_GeniTheme
+{
+    background-position: -208px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmRefreshButtonDisabled_GeniTheme
+{
+    background-position: -106px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmRenameButton_GeniTheme
+{
+    background-position: -38px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmRenameButtonDisabled_GeniTheme
+{
+    background-position: 0px -230px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmThumbnailCheck_GeniTheme
+{
+    background-position: -211px -215px;
+    width: 10px;
+    height: 10px;
+}
+.dxWeb_igCloseButton_GeniTheme
+{
+    background-position: -172px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_igNavigationBarMarker_GeniTheme
+{
+    background-position: 0px -198px;
+    width: 20px;
+    height: 16px;
+}
+.dxWeb_igNextButton_GeniTheme
+{
+    background-position: 0px -66px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_igNextButtonDisabled_GeniTheme
+{
+    background-position: -92px -66px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_igNextButtonHover_GeniTheme
+{
+    background-position: -92px 0px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_igNextButtonPressed_GeniTheme
+{
+    background-position: -138px 0px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_igPauseButton_GeniTheme
+{
+    background-position: -138px -114px;
+    width: 12px;
+    height: 17px;
+}
+.dxWeb_igPlayButton_GeniTheme
+{
+    background-position: -218px -178px;
+    width: 12px;
+    height: 17px;
+}
+.dxWeb_igPrevButton_GeniTheme
+{
+    background-position: -46px -66px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_igPrevButtonDisabled_GeniTheme
+{
+    background-position: 0px 0px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_igPrevButtonHover_GeniTheme
+{
+    background-position: -184px 0px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_igPrevButtonPressed_GeniTheme
+{
+    background-position: -46px 0px;
+    width: 45px;
+    height: 65px;
+}
+.dxWeb_isDot_GeniTheme
+{
+    background-position: -130px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_isDotDisabled_GeniTheme
+{
+    background-position: -102px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_isDotPressed_GeniTheme
+{
+    background-position: -214px -92px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_isDotSelected_GeniTheme
+{
+    background-position: -88px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_isNextBtnHor_GeniTheme
+{
+    background-position: -195px -66px;
+    width: 18px;
+    height: 31px;
+}
+.dxWeb_isNextBtnHorDisabled_GeniTheme
+{
+    background-position: -157px -66px;
+    width: 18px;
+    height: 31px;
+}
+.dxWeb_isNextBtnVert_GeniTheme
+{
+    background-position: 0px -178px;
+    width: 29px;
+    height: 19px;
+}
+.dxWeb_isNextBtnVertDisabled_GeniTheme
+{
+    background-position: -30px -178px;
+    width: 29px;
+    height: 19px;
+}
+.dxWeb_isNextPageBtnHor_GeniTheme
+{
+    background-position: -221px -156px;
+    width: 14px;
+    height: 21px;
+}
+.dxWeb_isNextPageBtnHorDisabled_GeniTheme
+{
+    background-position: -206px -156px;
+    width: 14px;
+    height: 21px;
+}
+.dxWeb_isNextPageBtnVert_GeniTheme
+{
+    background-position: 0px -215px;
+    width: 21px;
+    height: 14px;
+}
+.dxWeb_isNextPageBtnVertDisabled_GeniTheme
+{
+    background-position: -44px -215px;
+    width: 21px;
+    height: 14px;
+}
+.dxWeb_isPauseBtn_GeniTheme
+{
+    background-position: -205px -178px;
+    width: 12px;
+    height: 17px;
+}
+.dxWeb_isPlayBtn_GeniTheme
+{
+    background-position: -192px -178px;
+    width: 12px;
+    height: 17px;
+}
+.dxWeb_isPrevBtnHor_GeniTheme
+{
+    background-position: -138px -66px;
+    width: 18px;
+    height: 31px;
+}
+.dxWeb_isPrevBtnHorDisabled_GeniTheme
+{
+    background-position: -176px -66px;
+    width: 18px;
+    height: 31px;
+}
+.dxWeb_isPrevBtnVert_GeniTheme
+{
+    background-position: -90px -178px;
+    width: 29px;
+    height: 19px;
+}
+.dxWeb_isPrevBtnVertDisabled_GeniTheme
+{
+    background-position: -60px -178px;
+    width: 29px;
+    height: 19px;
+}
+.dxWeb_isPrevPageBtnHor_GeniTheme
+{
+    background-position: -176px -156px;
+    width: 14px;
+    height: 21px;
+}
+.dxWeb_isPrevPageBtnHorDisabled_GeniTheme
+{
+    background-position: -191px -156px;
+    width: 14px;
+    height: 21px;
+}
+.dxWeb_isPrevPageBtnVert_GeniTheme
+{
+    background-position: -22px -215px;
+    width: 21px;
+    height: 14px;
+}
+.dxWeb_isPrevPageBtnVertDisabled_GeniTheme
+{
+    background-position: -66px -215px;
+    width: 21px;
+    height: 14px;
+}
+.dxWeb_mHorizontalPopOut_GeniTheme
+{
+    background-position: -194px -247px;
+    width: 7px;
+    height: 4px;
+}
+.dxWeb_mScrollDown_GeniTheme
+{
+    background-position: -186px -247px;
+    width: 7px;
+    height: 4px;
+}
+.dxWeb_mScrollUp_GeniTheme
+{
+    background-position: -178px -247px;
+    width: 7px;
+    height: 4px;
+}
+.dxWeb_mSubMenuItem_GeniTheme
+{
+    background-position: -158px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_mSubMenuItemChecked_GeniTheme
+{
+    background-position: -116px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_mVerticalPopOut_GeniTheme
+{
+    background-position: -208px -98px;
+    width: 4px;
+    height: 7px;
+}
+.dxWeb_mVerticalPopOutRtl_GeniTheme
+{
+    background-position: -233px -132px;
+    width: 4px;
+    height: 7px;
+}
+.dxWeb_nbCollapse_GeniTheme
+{
+    background-position: -128px -247px;
+    width: 13px;
+    height: 15px;
+}
+.dxWeb_nbExpand_GeniTheme
+{
+    background-position: -142px -247px;
+    width: 13px;
+    height: 15px;
+}
+.dxWeb_ncBackToTop_GeniTheme
+{
+    background-position: -96px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_pAll_GeniTheme
+{
+    background-position: 0px -132px;
+    width: 40px;
+    height: 23px;
+}
+.dxWeb_pAllDisabled_GeniTheme
+{
+    background-position: -175px -108px;
+    width: 40px;
+    height: 23px;
+}
+.dxWeb_pcCloseButton_GeniTheme
+{
+    background-position: 0px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_pcCollapseButton_GeniTheme
+{
+    background-position: -48px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_pcMaximizeButton_GeniTheme
+{
+    background-position: -166px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_pcPinButton_GeniTheme
+{
+    background-position: -214px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_pcRefreshButton_GeniTheme
+{
+    background-position: -198px -230px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_pcSizeGrip_GeniTheme
+{
+    background-position: -186px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_pcSizeGripRtl_GeniTheme
+{
+    background-position: -144px -215px;
+    width: 13px;
+    height: 13px;
+}
+.dxWeb_pFirst_GeniTheme
+{
+    background-position: -185px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_pFirstDisabled_GeniTheme
+{
+    background-position: -89px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_pLast_GeniTheme
+{
+    background-position: -65px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_pLastDisabled_GeniTheme
+{
+    background-position: -151px -108px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_pNext_GeniTheme
+{
+    background-position: -209px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_pNextDisabled_GeniTheme
+{
+    background-position: -161px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_pPopOut_GeniTheme
+{
+    background-position: -225px -198px;
+    width: 10px;
+    height: 12px;
+}
+.dxWeb_pPopOutDisabled_GeniTheme
+{
+    background-position: -200px -215px;
+    width: 10px;
+    height: 12px;
+}
+.dxWeb_pPrev_GeniTheme
+{
+    background-position: -113px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_pPrevDisabled_GeniTheme
+{
+    background-position: -41px -132px;
+    width: 23px;
+    height: 23px;
+}
+.dxWeb_rMinBtn_GeniTheme
+{
+    background-position: -186px -98px;
+    width: 10px;
+    height: 7px;
+}
+.dxWeb_rMinBtn_GeniTheme.dxWeb_rMinBtnHover_GeniTheme
+{
+    background-position: -197px -98px;
+    width: 10px;
+    height: 7px;
+}
+.dxWeb_rMinBtn_GeniTheme.dxWeb_rMinBtnPressed_GeniTheme
+{
+    background-position: -138px -106px;
+    width: 10px;
+    height: 7px;
+}
+.dxWeb_rMinBtnChecked_GeniTheme.dxWeb_rMinBtn_GeniTheme
+{
+    background-position: -167px -247px;
+    width: 10px;
+    height: 7px;
+}
+.dxWeb_rMinBtnChecked_GeniTheme.dxWeb_rMinBtnHover_GeniTheme
+{
+    background-position: -156px -247px;
+    width: 10px;
+    height: 7px;
+}
+.dxWeb_rMinBtnChecked_GeniTheme.dxWeb_rMinBtnPressed_GeniTheme
+{
+    background-position: -222px -215px;
+    width: 10px;
+    height: 7px;
+}
+.dxWeb_rpBottomLeftCorner_GeniTheme
+{
+    background-position: -234px -23px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpBottomRightCorner_GeniTheme
+{
+    background-position: -233px -140px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpGroupBoxBottomLeftCorner_GeniTheme
+{
+    background-position: -233px -148px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpGroupBoxBottomRightCorner_GeniTheme
+{
+    background-position: -226px -211px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpGroupBoxTopLeftCorner_GeniTheme
+{
+    background-position: -234px -211px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpGroupBoxTopRightCorner_GeniTheme
+{
+    background-position: -230px -211px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpHeaderTopLeftCorner_GeniTheme
+{
+    background-position: -233px -144px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpHeaderTopRightCorner_GeniTheme
+{
+    background-position: -230px -23px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rPopOut_GeniTheme
+{
+    background-position: -228px -93px;
+    width: 7px;
+    height: 4px;
+}
+.dxWeb_rpTopLeftCorner_GeniTheme
+{
+    background-position: -231px -187px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_rpTopRightCorner_GeniTheme
+{
+    background-position: -234px -152px;
+    width: 3px;
+    height: 3px;
+}
+.dxWeb_smBullet_GeniTheme
+{
+    background-position: -231px -191px;
+    width: 6px;
+    height: 6px;
+}
+.dxWeb_splHCollapseBackwardButton_GeniTheme
+{
+    background-position: -222px -223px;
+    width: 7px;
+    height: 6px;
+}
+.dxWeb_splHCollapseBackwardButtonHover_GeniTheme
+{
+    background-position: -230px -240px;
+    width: 7px;
+    height: 6px;
+}
+.dxWeb_splHCollapseForwardButton_GeniTheme
+{
+    background-position: -230px -223px;
+    width: 7px;
+    height: 6px;
+}
+.dxWeb_splHCollapseForwardButtonHover_GeniTheme
+{
+    background-position: -230px -230px;
+    width: 7px;
+    height: 6px;
+}
+.dxWeb_splHSeparator_GeniTheme
+{
+    background-position: -162px -99px;
+    width: 23px;
+    height: 6px;
+}
+.dxWeb_splHSeparatorHover_GeniTheme
+{
+    background-position: -138px -99px;
+    width: 23px;
+    height: 6px;
+}
+.dxWeb_splVCollapseBackwardButton_GeniTheme
+{
+    background-position: -230px -35px;
+    width: 6px;
+    height: 7px;
+}
+.dxWeb_splVCollapseBackwardButtonHover_GeniTheme
+{
+    background-position: -230px -27px;
+    width: 6px;
+    height: 7px;
+}
+.dxWeb_splVCollapseForwardButton_GeniTheme
+{
+    background-position: -228px -98px;
+    width: 6px;
+    height: 7px;
+}
+.dxWeb_splVCollapseForwardButtonHover_GeniTheme
+{
+    background-position: -231px -178px;
+    width: 6px;
+    height: 7px;
+}
+.dxWeb_splVSeparator_GeniTheme
+{
+    background-position: -231px -43px;
+    width: 6px;
+    height: 22px;
+}
+.dxWeb_splVSeparatorHover_GeniTheme
+{
+    background-position: -230px 0px;
+    width: 6px;
+    height: 22px;
+}
+.dxWeb_tcScrollLeft_GeniTheme
+{
+    background-position: -44px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tcScrollLeftDisabled_GeniTheme
+{
+    background-position: -66px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tcScrollLeftHover_GeniTheme
+{
+    background-position: -88px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tcScrollLeftPressed_GeniTheme
+{
+    background-position: -110px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tcScrollRight_GeniTheme
+{
+    background-position: -154px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tcScrollRightDisabled_GeniTheme
+{
+    background-position: 0px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tcScrollRightHover_GeniTheme
+{
+    background-position: -132px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tcScrollRightPressed_GeniTheme
+{
+    background-position: -22px -156px;
+    width: 21px;
+    height: 21px;
+}
+.dxWeb_tiBackToTop_GeniTheme
+{
+    background-position: -16px -247px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_tvColBtn_GeniTheme
+{
+    background-position: -156px -178px;
+    width: 17px;
+    height: 17px;
+}
+.dxWeb_tvColBtnRtl_GeniTheme
+{
+    background-position: -174px -178px;
+    width: 17px;
+    height: 17px;
+}
+.dxWeb_tvExpBtn_GeniTheme
+{
+    background-position: -138px -178px;
+    width: 17px;
+    height: 17px;
+}
+.dxWeb_tvExpBtnRtl_GeniTheme
+{
+    background-position: -120px -178px;
+    width: 17px;
+    height: 17px;
+}
+.dxWeb_ucClearButton_GeniTheme
+{
+    background-position: -85px -230px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_ucClearButtonDisabled_GeniTheme
+{
+    background-position: -191px -198px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_rpHeaderTopLeftCorner_GeniTheme,
+.dxWeb_rpHeaderTopRightCorner_GeniTheme,
+.dxWeb_rpBottomLeftCorner_GeniTheme,
+.dxWeb_rpBottomRightCorner_GeniTheme,
+.dxWeb_rpTopLeftCorner_GeniTheme,
+.dxWeb_rpTopRightCorner_GeniTheme,
+.dxWeb_rpGroupBoxBottomLeftCorner_GeniTheme,
+.dxWeb_rpGroupBoxBottomRightCorner_GeniTheme,
+.dxWeb_rpGroupBoxTopLeftCorner_GeniTheme,
+.dxWeb_rpGroupBoxTopRightCorner_GeniTheme,
+.dxWeb_mHorizontalPopOut_GeniTheme,
+.dxWeb_mVerticalPopOut_GeniTheme,
+.dxWeb_mVerticalPopOutRtl_GeniTheme,
+.dxWeb_mSubMenuItem_GeniTheme,
+.dxWeb_mSubMenuItemChecked_GeniTheme,
+.dxWeb_mScrollUp_GeniTheme,
+.dxWeb_mScrollDown_GeniTheme,
+.dxWeb_tcScrollLeft_GeniTheme,
+.dxWeb_tcScrollRight_GeniTheme,
+.dxWeb_tcScrollLeftHover_GeniTheme,
+.dxWeb_tcScrollRightHover_GeniTheme,
+.dxWeb_tcScrollLeftPressed_GeniTheme,
+.dxWeb_tcScrollRightPressed_GeniTheme,
+.dxWeb_tcScrollLeftDisabled_GeniTheme,
+.dxWeb_tcScrollRightDisabled_GeniTheme,
+.dxWeb_nbCollapse_GeniTheme,
+.dxWeb_nbExpand_GeniTheme,
+.dxWeb_splVSeparator_GeniTheme,
+.dxWeb_splVSeparatorHover_GeniTheme,
+.dxWeb_splHSeparator_GeniTheme,
+.dxWeb_splHSeparatorHover_GeniTheme,
+.dxWeb_splVCollapseBackwardButton_GeniTheme,
+.dxWeb_splVCollapseBackwardButtonHover_GeniTheme,
+.dxWeb_splHCollapseBackwardButton_GeniTheme,
+.dxWeb_splHCollapseBackwardButtonHover_GeniTheme,
+.dxWeb_splVCollapseForwardButton_GeniTheme,
+.dxWeb_splVCollapseForwardButtonHover_GeniTheme,
+.dxWeb_splHCollapseForwardButton_GeniTheme,
+.dxWeb_splHCollapseForwardButtonHover_GeniTheme,
+.dxWeb_pcCloseButton_GeniTheme,
+.dxWeb_pcPinButton_GeniTheme,
+.dxWeb_pcRefreshButton_GeniTheme,
+.dxWeb_pcCollapseButton_GeniTheme,
+.dxWeb_pcMaximizeButton_GeniTheme,
+.dxWeb_pcSizeGrip_GeniTheme,
+.dxWeb_pcSizeGripRtl_GeniTheme,
+.dxWeb_pPopOut_GeniTheme,
+.dxWeb_pPopOutDisabled_GeniTheme,
+.dxWeb_pAll_GeniTheme,
+.dxWeb_pAllDisabled_GeniTheme,
+.dxWeb_pPrev_GeniTheme,
+.dxWeb_pPrevDisabled_GeniTheme,
+.dxWeb_pNext_GeniTheme,
+.dxWeb_pNextDisabled_GeniTheme,
+.dxWeb_pLast_GeniTheme,
+.dxWeb_pLastDisabled_GeniTheme,
+.dxWeb_pFirst_GeniTheme,
+.dxWeb_pFirstDisabled_GeniTheme,
+.dxWeb_tvColBtn_GeniTheme,
+.dxWeb_tvColBtnRtl_GeniTheme,
+.dxWeb_tvExpBtn_GeniTheme,
+.dxWeb_tvExpBtnRtl_GeniTheme,
+.dxWeb_ncBackToTop_GeniTheme,
+.dxWeb_smBullet_GeniTheme,
+.dxWeb_tiBackToTop_GeniTheme,
+.dxWeb_fmFolder_GeniTheme,
+.dxWeb_fmFolderLocked_GeniTheme,
+.dxWeb_fmCreateButton_GeniTheme,
+.dxWeb_fmMoveButton_GeniTheme,
+.dxWeb_fmRenameButton_GeniTheme,
+.dxWeb_fmDeleteButton_GeniTheme,
+.dxWeb_fmRefreshButton_GeniTheme,
+.dxWeb_fmDwnlButton_GeniTheme,
+.dxWeb_fmCreateButtonDisabled_GeniTheme,
+.dxWeb_fmMoveButtonDisabled_GeniTheme,
+.dxWeb_fmRenameButtonDisabled_GeniTheme,
+.dxWeb_fmDeleteButtonDisabled_GeniTheme,
+.dxWeb_fmRefreshButtonDisabled_GeniTheme,
+.dxWeb_fmDwnlButtonDisabled_GeniTheme,
+.dxWeb_fmThumbnailCheck_GeniTheme,
+.dxWeb_ucClearButton_GeniTheme,
+.dxWeb_ucClearButtonDisabled_GeniTheme,
+.dxWeb_isPrevBtnHor_GeniTheme,
+.dxWeb_isNextBtnHor_GeniTheme,
+.dxWeb_isPrevBtnVert_GeniTheme,
+.dxWeb_isNextBtnVert_GeniTheme,
+.dxWeb_isPrevPageBtnHor_GeniTheme,
+.dxWeb_isNextPageBtnHor_GeniTheme,
+.dxWeb_isPrevPageBtnVert_GeniTheme,
+.dxWeb_isNextPageBtnVert_GeniTheme,
+.dxWeb_isPrevBtnHorDisabled_GeniTheme,
+.dxWeb_isNextBtnHorDisabled_GeniTheme,
+.dxWeb_isPrevBtnVertDisabled_GeniTheme,
+.dxWeb_isNextBtnVertDisabled_GeniTheme,
+.dxWeb_isPrevPageBtnHorDisabled_GeniTheme,
+.dxWeb_isNextPageBtnHorDisabled_GeniTheme,
+.dxWeb_isPrevPageBtnVertDisabled_GeniTheme,
+.dxWeb_isNextPageBtnVertDisabled_GeniTheme,
+.dxWeb_isDot_GeniTheme,
+.dxWeb_isDotDisabled_GeniTheme,
+.dxWeb_isDotSelected_GeniTheme,
+.dxWeb_isPlayBtn_GeniTheme,
+.dxWeb_isPauseBtn_GeniTheme,
+.dxWeb_igCloseButton_GeniTheme,
+.dxWeb_igNextButton_GeniTheme,
+.dxWeb_igPrevButton_GeniTheme,
+.dxWeb_igPlayButton_GeniTheme,
+.dxWeb_igPauseButton_GeniTheme,
+.dxWeb_igNavigationBarMarker_GeniTheme
+ { 
+    display:block;
+}
+.dxWeb_mScrollUp_GeniTheme, .dxWeb_mScrollDown_GeniTheme
+{
+	margin: auto;
+}
+.dxWeb_ncBackToTop_GeniTheme,
+.dxWeb_smBullet_GeniTheme,
+.dxWeb_tiBackToTop_GeniTheme
+{
+	display:inline;
+}
+

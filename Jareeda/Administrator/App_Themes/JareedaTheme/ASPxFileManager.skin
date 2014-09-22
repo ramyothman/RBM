@@ -1,0 +1,10 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxFileManager" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxFileManager runat="server">
+    <Styles CssFilePath="{0}/styles.css" CssPostfix="GeniTheme">
+        <LoadingPanel ImageSpacing="5" />
+    </Styles>
+    <Images SpriteCssFilePath="{0}/sprite.css" LoadingPanel-Url="Web/Loading.gif" 
+            FolderContainerNodeLoadingPanel-Url="Web/tvNodeLoading.gif"></Images>
+</dx:ASPxFileManager>
