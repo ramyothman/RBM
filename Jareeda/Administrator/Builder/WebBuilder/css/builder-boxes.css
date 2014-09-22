@@ -1,0 +1,60 @@
+﻿#addWidget {
+  margin-bottom: 60px;
+}
+.module-s-box {
+  float: left;
+  width: 72px;
+  height: 100px;
+  border: 2px solid #2d6828;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #333;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.module-s-box a span {
+  color: #333;
+  font-weight: bold;
+  font-size: 13px;
+}
+.module-s-box a .location {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 100%;
+  background-color: #2d6828;
+  color: #fff;
+  height: 20px;
+  line-height: 15px;
+  border: 1px solid #2d6820;
+  box-shadow: 2px 2px 2px #333;
+  text-align: center;
+}
+.left-builder {
+  position: fixed;
+  overflow: auto;
+  margin-bottom: 50px;
+  height: 100%;
+  width: 295px !important;
+  max-width: 300px;
+}
+.left-builder .jareeda-tabs-content {
+  height: 500px;
+  overflow: auto;
+}
+.jareeda-container {
+  background: url(../images/grid-mode-bg.png) repeat;
+}
+.main-builder {
+  margin-left: 320px;
+  position: fixed;
+  overflow: auto;
+  min-width: 960px;
+  height: 800px;
+  margin-bottom: 60px;
+}
+.main-builder #whitewrap {
+  overflow: hidden;
+}

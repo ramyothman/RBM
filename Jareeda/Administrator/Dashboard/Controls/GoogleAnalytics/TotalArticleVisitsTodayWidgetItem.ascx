@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TotalArticleVisitsTodayWidgetItem.ascx.cs" Inherits="Administrator.Dashboard.Controls.GoogleAnalytics.TotalArticleVisitsTodayWidgetItem" %>
