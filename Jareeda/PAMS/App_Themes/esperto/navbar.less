@@ -1,0 +1,105 @@
+﻿
+.esperto-nav {
+    -webkit-text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    background-color: #104386;
+    border-color: #6699FF;
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+    height: 50px;
+
+    .img-wrapper {
+        width: 32px;
+        display: inline;
+        overflow: hidden;
+    }
+
+    .navbar-brand {
+        color: #fff;
+        font-family: 'pfbeau';
+        font-size: 28px;
+        font-weight: bold;
+        height: 50px;
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar-nav {
+        background-color: #104386;
+        margin: 0.5px -15px;
+
+        li {
+            height: 48px;
+
+            a {
+                color: #eee;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        .active {
+            a {
+                color: #fff;
+                background-color: #FF6600;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #FF6600;
+                }
+            }
+        }
+    }
+
+    .navbar-inverse {
+        .navbar-nav {
+
+            ul {
+                li {
+                    a {
+                        color: #eee;
+
+                        &:hover, &:focus {
+                            color: #fff;
+                            background-color: #FF6600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggle {
+        border-color: #104386;
+
+        &:hover {
+            background-color: #104386;
+            border-color: #6699FF;
+        }
+    }
+
+    ul.navbar-right {
+        li {
+            &:last-child {
+                a {
+                    background: #cb1d36;
+                    color: #fff;
+                    line-height: 1.42857em;
+                    transition: all 0s ease-in-out;
+                    padding: 8px 25px 8px;
+                    text-transform: uppercase;
+                    border-radius: 6px;
+
+                    &:hover {
+                        background: #ea3852;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        max-height: none;
+    }
+}

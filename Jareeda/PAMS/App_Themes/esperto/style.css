@@ -1,0 +1,96 @@
+﻿
+
+body {
+    background: #e9e8e3;
+}
+
+
+/*
+ * Main navigation
+ *
+ * Turn the `.navbar` at the top of the docs purple.
+ */
+
+.bs-docs-nav {
+    -webkit-text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    background-color: #104386;
+    border-color: #6699FF;
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+    height: 50px;
+}
+.bs-docs-nav .navbar-nav {
+margin: 0.5px -15px;
+}
+.bs-docs-nav .navbar-collapse {
+    max-height: none;
+}
+.bs-docs-nav .img-wrapper {
+    width:32px;
+    height:32px;
+    display: inline;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -4px;
+}
+.bs-docs-nav .navbar-collapse {
+  border-color: #463265;
+}
+.bs-docs-nav .navbar-brand {
+  color: #fff;
+  
+  font-family: 'pfbeau';
+  font-size: 28px;
+  font-weight:bold;
+}
+.bs-docs-nav .navbar-brand span {
+    padding-left: 35px;
+}
+.bs-docs-nav .navbar-nav > li > a {
+  color: #eee;
+  background-color: #104386;
+}
+.bs-docs-nav .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #eee;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #FF6600;
+}
+
+.bs-docs-nav .navbar-nav > .active > a,
+.bs-docs-nav .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #FF6600;
+}
+.bs-docs-nav .navbar-inverse .navbar-nav > li > a,
+.bs-docs-nav .navbar-inverse .navbar-nav > li > a:hover {
+  color: #fff;
+  
+}
+.bs-docs-nav .navbar-toggle {
+  border-color: #104386;
+  background-color: #FF6600;
+}
+.bs-docs-nav .navbar-toggle:hover {
+  background-color: #104386;
+  border-color: #6699FF;
+}
+.bs-docs-nav ul.navbar-right li:last-child a {
+    background: #cb1d36;
+
+color: #fff;
+line-height: 1.42857em;
+transition: all 0s ease-in-out;
+padding: 8px 25px 8px;
+text-transform: uppercase;
+border-radius: 6px;
+}
+
+.bs-docs-nav ul.navbar-right li:last-child a:hover {
+    background: #ea3852;
+}
