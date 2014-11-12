@@ -2467,6 +2467,7 @@
     <Content Include="Builder\WebBuilder\Scripts\LayoutBuilder.js" />
     <Content Include="Builder\WebBuilder\Scripts\oldjs.js" />
     <Content Include="Builder\WebBuilder\Scripts\Tools.js" />
+    <Content Include="BulkOperation.aspx" />
     <Content Include="Code\ViewBase.aspx" />
     <Content Include="Conference\Airlines\Manage.aspx" />
     <Content Include="Conference\ConferenceHalls\Manage.aspx" />
@@ -2549,6 +2550,7 @@
     <Content Include="g\Content\ApprovalFlow\Default.aspx" />
     <Content Include="g\Content\Article\Default.aspx" />
     <Content Include="g\Content\Article\Save.aspx" />
+    <Content Include="g\Content\Article\SaveArticle.aspx" />
     <Content Include="g\Content\Comment\Default.aspx" />
     <Content Include="g\Content\Email\Send.aspx" />
     <Content Include="g\Content\Email\Template\Default.aspx" />
@@ -3499,6 +3501,13 @@
     <Compile Include="Builder\WebBuilder\Controls\WidgetData.ascx.designer.cs">
       <DependentUpon>WidgetData.ascx</DependentUpon>
     </Compile>
+    <Compile Include="BulkOperation.aspx.cs">
+      <DependentUpon>BulkOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BulkOperation.aspx.designer.cs">
+      <DependentUpon>BulkOperation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Code\AdminBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -4054,6 +4063,13 @@
     </Compile>
     <Compile Include="g\Content\Article\Save.aspx.designer.cs">
       <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="g\Content\Article\SaveArticle.aspx.cs">
+      <DependentUpon>SaveArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="g\Content\Article\SaveArticle.aspx.designer.cs">
+      <DependentUpon>SaveArticle.aspx</DependentUpon>
     </Compile>
     <Compile Include="g\Content\Comment\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
